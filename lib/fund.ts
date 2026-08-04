@@ -78,7 +78,7 @@ export interface Intro {
 export const INTRO: Intro = {
   headline: 'A running file on healthcare companies and the industry around them.',
   body: [
-    'I am an undergraduate at Michigan studying business and neuroscience, and this is where I keep track of healthcare. Some of it is drug discovery, some is software that sits inside hospitals, some is hardware people put in their skulls, and a lot of it is the money and policy moving underneath all of that. The through line is that I want to understand how a scientific idea turns into something a patient actually receives, and where that process breaks.',
+    'I am an undergraduate at Michigan studying business administration, mathematical biology and neuroscience, and this is where I keep track of healthcare. Some of it is drug discovery, some is software that sits inside hospitals, some is hardware people put in their skulls, and a lot of it is the money and policy moving underneath all of that. The through line is that I want to understand how a scientific idea turns into something a patient actually receives, and where that process breaks.',
     'There are two halves. Twelve companies written up as full memos, because working through the same structure every time forces me to answer questions I would otherwise skip. And a dated record of things happening across the sector with what I made of each one. The second half is the part I care about most. Anyone can write a confident company summary on a single afternoon. Following a sector for a year and recording where your read held up and where it did not is harder, and it is the only way I know to find out whether I am actually learning anything.',
   ],
   method: [

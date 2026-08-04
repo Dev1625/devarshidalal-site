@@ -2,8 +2,13 @@ BEGIN:VCARD
 VERSION:3.0
 N:Dalal;Devarshi;;;
 FN:Devarshi Dalal
+TEL;TYPE=CELL,VOICE:+12482895537
+EMAIL;TYPE=INTERNET,PREF:devdalal@umich.edu
+URL:https://devarshidalal.com
+ADR;TYPE=WORK:;;;Ann Arbor;MI;;United States
 ORG:University of Michigan
-TITLE:Clinical Executive & VC
-EMAIL:devdalal@umich.edu
-URL:https://www.linkedin.com/in/devarshidalal
+TITLE:Ross School of Business and LSA, class of 2028
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/devarshidalal/
+NOTE:Business Administration, Mathematical Biology and Neuroscience. Healthcare investment research at devarshidalal.com
+REV:2026-08-04T03:00:00Z
 END:VCARD

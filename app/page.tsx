@@ -37,7 +37,8 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Hi, I&apos;m Devarshi Dalal. Passionately building and learning at the intersection of clinical science, capital, and strategy.
+          Devarshi Dalal. Business, mathematical biology, and neuroscience at Michigan. I work at the intersection of
+          medicine and capital.
         </motion.p>
 
         {/* Shortcut Dock */}
@@ -49,9 +50,14 @@ export default function Home() {
         >
           {[
             { icon: UserPlus, label: 'Add to contacts', href: '/devarshi.vcf', group: 'contact' },
-            { icon: Mail, label: 'Email', href: 'mailto:devdalal@umich.edu', group: 'email' },
-            { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/devarshidalal', group: 'linkedin' },
-            { icon: Phone, label: 'Contact', href: 'mailto:devdalal@umich.edu', group: 'phone' },
+            { icon: Mail, label: 'devdalal@umich.edu', href: 'mailto:devdalal@umich.edu', group: 'email' },
+            {
+              icon: Linkedin,
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/devarshidalal/',
+              group: 'linkedin',
+            },
+            { icon: Phone, label: '(248) 289-5537', href: 'tel:+12482895537', group: 'phone' },
           ].map((item, idx) => (
             <a 
               key={idx} 
