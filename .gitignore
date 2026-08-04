@@ -22,3 +22,6 @@ ORIGINAL_REQUEST.md
 
 # Unpublished manuscripts and conference submissions. Kept local on purpose.
 .codex-research-extracts/
+
+.vercel
+.env*
