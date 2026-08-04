@@ -12,123 +12,129 @@ const CONTACTS = [
   { icon: Phone, label: '(248) 289-5537', href: 'tel:+12482895537', external: false },
 ];
 
+// The bio animates in a clause at a time. Kept as fragments so the stagger
+// lands on meaning rather than on arbitrary line breaks.
+const BIO = [
+  "Hi, I'm Devarshi.",
+  'I study business, mathematical biology and neuroscience at Michigan, and I work at the intersection of medicine, strategy and investment.',
+  'I built Cirqle, an AI CRM. Away from that I do close-up card magic.',
+];
+
+const HONORS = [
+  'Michigan Brain Bee champion',
+  'USA Brain Bee finalist',
+  'Health Physics Society National Student Science Award',
+  'AlphaSights Employer Challenge, first place',
+  'Deloitte case competition, Michigan finalist',
+  'University Honors, three semesters',
+];
+
 const EXPERIENCE = [
-  {
-    org: 'BOND Consulting Group',
-    role: 'Senior Consultant and Advisor',
-    when: 'Aug 2024 to now',
-    points: [
-      'Led pricing and operations workstreams on five-person teams, turning management interviews and analysis into four presentations for founders and C-suite executives. Promoted, and trained six junior consultants.',
-      'Built a dynamic pricing model for a Minor League Baseball franchise that forecasts attendance within 100 tickets a game. It set website prices and segmented promotions, and the client passed the analysis to its MLB affiliate.',
-      'Trained a gradient boosting demand model on five years of data across 300 SKUs and two plants, reaching 90 percent accuracy and guiding production sequencing and entry into new categories.',
-    ],
-  },
-  {
-    org: 'UpRound Venture Capital',
-    role: 'Deal Flow Pod Co-Lead and Investment Analyst',
-    when: 'Jan 2026 to now',
-    points: [
-      'Sourced and contacted 40 early-stage companies, wrote six investment memos covering market, competitive, business model and founding team diligence, and presented recommendations for $10K checks to the fund team.',
-    ],
-  },
   {
     org: 'Cirqle',
     role: 'Founder',
-    when: 'Jul 2025 to now',
-    points: [
-      'Built an AI relationship management platform alone, across product, design, full-stack engineering, auth and security. Raised $3,000 externally and reached 75 closed-beta users at roughly 70 percent seven-day retention.',
-      'Turned five user interviews into Gmail and Calendar integrations, relationship health scoring, a ranked weekly action plan, and outreach drafts that remember context.',
-    ],
+    when: '2025',
+    line: 'An AI CRM I designed and built alone. In closed beta with 75 users.',
+  },
+  {
+    org: 'UpRound Venture Capital',
+    role: 'Deal flow co-lead',
+    when: '2026',
+    line: 'Sourcing early-stage companies and writing the memos the fund decides on.',
+  },
+  {
+    org: 'BOND Consulting Group',
+    role: 'Senior consultant',
+    when: '2024',
+    line: 'Pricing and operations work for founders and C-suite teams. Promoted, and now train the juniors.',
   },
   {
     org: 'Blueprints for Pangaea',
-    role: 'Expansion Manager',
-    when: 'Aug 2024 to now',
-    points: [
-      'Run operations and expansion for the Michigan State and Ohio State chapters after two promotions, and mentor 15 interns and analysts on national projects.',
-      'Automated classification and costing for more than 10,000 SKUs with a computer vision and LLM pipeline, tested across six inventory events. Throughput up 29 percent, errors down 15 percent against the manual process.',
-      'Consolidated roughly $50K of grants, revenue, expenses and inventory across 16 chapters into Tableau, replacing scattered spreadsheets and giving 50 stakeholders one view for budgeting.',
-    ],
+    role: 'Expansion manager',
+    when: '2024',
+    line: 'Running operations and new chapters for a nonprofit that redistributes surplus medical supplies.',
   },
   {
     org: "Kabir's Prep",
-    role: 'Instructor, and Acting Site Lead over summers 2023 and 2024',
-    when: 'Mar 2022 to now',
-    points: [
-      'Ran summer site operations across two terms, training and scheduling six instructors and handling staffing, materials and proctoring for sittings of up to 250 students.',
-      'Taught three to four weekly SAT and ACT cohorts of about 60 students inside programs serving over 2,000 learners. Site participants averaged 215-point SAT and 5-point ACT gains, and 98 percent improved.',
-    ],
+    role: 'Instructor, then site lead',
+    when: '2022',
+    line: 'Taught SAT and ACT to a couple thousand students, then ran the site over two summers.',
   },
 ];
 
 const PROJECTS = [
   {
     title: 'Healthcare investment research',
-    when: 'Nov 2025 to now',
+    when: '2025',
     href: '/fund',
-    note: 'Twelve invest or pass memos across healthcare AI, biotech, pharma and medtech, using market sizing, valuation, unit economics, clinical trial and regulatory analysis. Alongside them a 179-entry archive tracking financings, M&A, clinical readouts and FDA and CMS decisions, with claims grounded in SEC filings, agency documents and peer-reviewed work.',
+    line: 'Twelve company memos and a 179-entry archive of what happens across the sector.',
   },
   {
     title: 'EEG-fMRI signal validation',
-    when: 'May 2026 to now',
-    note: 'A research collaboration with a Meta AI researcher. Evaluated ICA, OBS and hybrid artifact-correction methods on a 20-participant simultaneous EEG-fMRI dataset, catching neural signal distortion before bad features reached downstream fMRI modelling.',
+    when: '2026',
+    line: 'With a Meta AI researcher. Which artifact-correction methods keep the neural signal intact.',
   },
   {
     title: 'WriVision',
-    when: 'Jun 2021 to Jun 2024',
+    when: '2021',
     href: '/research/wrivision-quality-control',
-    note: 'With Henry Ford Health. Built and clinically piloted a multi-task neural network and clinician-facing app trained on more than 8,700 wrist X-rays, flagging four labelling and acquisition inconsistencies for radiologic technologists. Presented at RSNA 2024.',
+    line: 'A neural network on 8,700 wrist X-rays, piloted at Henry Ford Health. Presented at RSNA.',
   },
 ];
 
 const SECTIONS = [
   { href: '/fund', title: 'Healthcare', meta: '12 memos, 179 entries' },
-  { href: '/research', title: 'Research', meta: '4 papers and posters' },
-  { href: '/library', title: 'The Library', meta: '65 essays, 8 fields' },
+  { href: '/research', title: 'Research', meta: '4 papers' },
+  { href: '/library', title: 'The Library', meta: '65 essays' },
 ];
 
-function Section({
-  label,
-  children,
-  className = '',
-}: {
-  label: string;
-  children: React.ReactNode;
-  className?: string;
-}) {
+function Section({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <motion.section
-      className={`mx-auto w-full max-w-[720px] border-t border-obsidian pt-14 ${className}`}
-      initial={{ opacity: 0, y: 14 }}
+      className="mx-auto mt-16 w-full max-w-[640px] border-t border-stone-light pt-10"
+      initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-80px' }}
-      transition={{ duration: 0.5 }}
+      viewport={{ once: true, margin: '-70px' }}
+      transition={{ duration: 0.45 }}
     >
-      <div className="mb-9 font-mono text-[10px] uppercase tracking-widest text-stone-mid">{label}</div>
+      <div className="mb-7 font-mono text-[10px] uppercase tracking-widest text-stone-mid">{label}</div>
       {children}
     </motion.section>
   );
 }
 
-function Entry({
+/**
+ * One list row. The detail line is hidden until hover on pointer devices and
+ * always shown on touch, where there is no hover to reveal it.
+ */
+function Row({
   when,
   title,
   sub,
-  children,
+  line,
+  arrow = false,
 }: {
   when: string;
   title: string;
   sub?: string;
-  children?: React.ReactNode;
+  line: string;
+  arrow?: boolean;
 }) {
   return (
-    <div className="grid gap-x-8 gap-y-3 border-b border-stone-light py-8 last:border-0 md:grid-cols-[132px_1fr]">
-      <div className="pt-1.5 font-mono text-[10px] uppercase tracking-widest text-stone-mid">{when}</div>
-      <div>
-        <h3 className="font-serif text-xl leading-snug text-obsidian">{title}</h3>
-        {sub && <div className="mt-1 font-sans text-[13px] text-stone-mid">{sub}</div>}
-        {children}
+    <div className="group border-b border-stone-light/70 py-4 last:border-0">
+      <div className="flex items-baseline justify-between gap-5">
+        <div className="flex items-baseline gap-3">
+          <h3 className="flex items-center gap-1.5 font-serif text-lg text-obsidian transition-colors group-hover:text-accent">
+            {title}
+            {arrow && <ArrowUpRight size={13} className="text-stone-mid transition-colors group-hover:text-accent" />}
+          </h3>
+          {sub && <span className="font-sans text-[13px] text-stone-mid">{sub}</span>}
+        </div>
+        <span className="flex-shrink-0 font-mono text-[10px] uppercase tracking-widest text-stone-mid">{when}</span>
       </div>
+      <p className="max-w-[520px] overflow-hidden font-sans text-[14px] font-light leading-[1.7] text-stone-mid transition-all duration-300 md:max-h-0 md:opacity-0 md:group-hover:mt-1.5 md:group-hover:max-h-24 md:group-hover:opacity-100 mt-1.5">
+        {line}
+      </p>
     </div>
   );
 }
@@ -137,15 +143,14 @@ export default function Home() {
   return (
     <div className="px-6 pb-24">
       {/* ── Hero ── */}
-      <section className="mx-auto flex min-h-[74vh] w-full max-w-[720px] flex-col items-center justify-center text-center">
-        {/* The visible name lives in the nav. Search and screen readers still need one here. */}
+      <section className="mx-auto flex min-h-[72vh] w-full max-w-[640px] flex-col items-center justify-center text-center">
         <h1 className="sr-only">Devarshi Dalal</h1>
 
         <motion.div
           initial={{ scale: 0.96, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="relative mb-10 h-[104px] w-[104px] overflow-hidden border border-obsidian"
+          className="relative mb-9 h-[96px] w-[96px] overflow-hidden border border-obsidian"
           data-cursor="hover"
         >
           <div
@@ -155,24 +160,36 @@ export default function Home() {
                 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E")',
             }}
           />
-          <Image src="/headshot.png" alt="Devarshi Dalal" fill sizes="104px" priority className="object-cover" />
+          <Image src="/headshot.png" alt="Devarshi Dalal" fill sizes="96px" priority className="object-cover" />
         </motion.div>
 
         <motion.p
-          className="mb-11 max-w-[520px] font-serif text-[26px] leading-[1.4] text-obsidian md:text-[30px]"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
+          className="mb-10 max-w-[540px] font-serif text-[23px] leading-[1.5] text-obsidian md:text-[26px]"
+          initial="hidden"
+          animate="shown"
+          transition={{ staggerChildren: 0.28, delayChildren: 0.2 }}
         >
-          Business, mathematical biology, and neuroscience at Michigan. I work at the intersection of medicine and
-          capital.
+          {BIO.map((clause, i) => (
+            <motion.span
+              key={i}
+              className="inline"
+              variants={{
+                hidden: { opacity: 0, filter: 'blur(4px)' },
+                shown: { opacity: 1, filter: 'blur(0px)' },
+              }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            >
+              {clause}
+              {i < BIO.length - 1 ? ' ' : ''}
+            </motion.span>
+          ))}
         </motion.p>
 
         <motion.div
-          className="flex w-full items-center justify-center gap-9 border-t border-stone-light/70 pt-9"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.28 }}
+          className="flex w-full items-center justify-center gap-9 border-t border-stone-light/70 pt-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
         >
           {CONTACTS.map((item) => (
             <a
@@ -196,130 +213,83 @@ export default function Home() {
 
       {/* ── Education ── */}
       <Section label="Education">
-        <Entry
-          when="Expected 2028"
-          title="University of Michigan"
-          sub="Dual degree: B.B.A., Ross School of Business and B.S., College of LSA"
-        >
-          <p className="mt-3 max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">
-            Triple major in business administration, mathematical biology and neuroscience, with a 3.7 GPA. Coursework
-            has run from business strategy, financial management and financial trading through linear algebra and
-            biochemistry, which is roughly the split I am trying to hold onto.
-          </p>
-          <div className="mt-5">
-            <div className="mb-2 font-mono text-[9px] uppercase tracking-widest text-stone-mid">Honors</div>
-            <p className="max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">
-              Michigan Brain Bee champion and USA Brain Bee finalist. Health Physics Society National Student Science
-              Award. First place in the AlphaSights Employer Challenge and a Michigan finalist in the Deloitte case
-              competition. University Honors three semesters.
-            </p>
-          </div>
-        </Entry>
+        <div className="flex items-baseline justify-between gap-5">
+          <h3 className="font-serif text-lg text-obsidian">University of Michigan</h3>
+          <span className="font-mono text-[10px] uppercase tracking-widest text-stone-mid">Expected 2028</span>
+        </div>
+        <p className="mt-1.5 font-sans text-[14px] font-light leading-[1.7] text-stone-mid">
+          B.B.A. from Ross and B.S. from LSA. Triple major in business administration, mathematical biology and
+          neuroscience.
+        </p>
+
+        <div className="mt-8">
+          <div className="mb-3 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Honors</div>
+          <ul className="flex flex-col">
+            {HONORS.map((h) => (
+              <li
+                key={h}
+                className="border-b border-stone-light/70 py-2.5 font-sans text-[15px] font-light text-ink last:border-0"
+              >
+                {h}
+              </li>
+            ))}
+          </ul>
+        </div>
       </Section>
 
       {/* ── Experience ── */}
-      <Section label="Experience" className="mt-20">
+      <Section label="Experience">
         <div className="flex flex-col">
           {EXPERIENCE.map((e) => (
-            <Entry key={e.org} when={e.when} title={e.org} sub={e.role}>
-              <ul className="mt-3 flex flex-col gap-2.5">
-                {e.points.map((p, i) => (
-                  <li
-                    key={i}
-                    className="max-w-[520px] border-l border-stone-light pl-4 font-sans text-[15px] font-light leading-[1.75] text-ink"
-                  >
-                    {p}
-                  </li>
-                ))}
-              </ul>
-            </Entry>
+            <Row key={e.org} when={e.when} title={e.org} sub={e.role} line={e.line} />
           ))}
         </div>
       </Section>
 
       {/* ── Projects ── */}
-      <Section label="Selected projects" className="mt-20">
+      <Section label="Projects">
         <div className="flex flex-col">
-          {PROJECTS.map((p) => {
-            const body = (
-              <>
-                <h3 className="flex items-center gap-2 font-serif text-xl leading-snug text-obsidian transition-colors group-hover:text-accent">
-                  {p.title}
-                  {p.href && (
-                    <ArrowUpRight size={15} className="text-stone-mid transition-colors group-hover:text-accent" />
-                  )}
-                </h3>
-                <p className="mt-3 max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">{p.note}</p>
-              </>
-            );
-            const row = (
-              <div className="grid gap-x-8 gap-y-3 border-b border-stone-light py-8 last:border-0 md:grid-cols-[132px_1fr]">
-                <div className="pt-1.5 font-mono text-[10px] uppercase tracking-widest text-stone-mid">{p.when}</div>
-                <div>{body}</div>
-              </div>
-            );
-            return p.href ? (
-              <Link key={p.title} href={p.href} className="group" data-cursor="hover">
-                {row}
+          {PROJECTS.map((p) =>
+            p.href ? (
+              <Link key={p.title} href={p.href} data-cursor="hover" className="contents">
+                <Row when={p.when} title={p.title} line={p.line} arrow />
               </Link>
             ) : (
-              <div key={p.title}>{row}</div>
-            );
-          })}
+              <Row key={p.title} when={p.when} title={p.title} line={p.line} />
+            ),
+          )}
         </div>
       </Section>
 
       {/* ── The rest of the site ── */}
-      <Section label="Also here" className="mt-20">
+      <Section label="Also here">
         <div className="flex flex-col">
           {SECTIONS.map((s) => (
             <Link
               key={s.href}
               href={s.href}
-              className="group flex items-baseline justify-between gap-6 border-b border-stone-light py-5 last:border-0"
+              className="group flex items-baseline justify-between gap-5 border-b border-stone-light/70 py-4 last:border-0"
               data-cursor="hover"
             >
-              <span className="flex items-center gap-2 font-serif text-lg text-obsidian transition-colors group-hover:text-accent">
+              <span className="flex items-center gap-1.5 font-serif text-lg text-obsidian transition-colors group-hover:text-accent">
                 {s.title}
-                <ArrowUpRight size={14} className="text-stone-mid transition-colors group-hover:text-accent" />
+                <ArrowUpRight size={13} className="text-stone-mid transition-colors group-hover:text-accent" />
               </span>
-              <span className="text-right font-mono text-[10px] uppercase tracking-widest text-stone-mid">
-                {s.meta}
-              </span>
+              <span className="font-mono text-[10px] uppercase tracking-widest text-stone-mid">{s.meta}</span>
             </Link>
           ))}
         </div>
       </Section>
 
-      {/* ── Tools and interests ── */}
-      <Section label="Otherwise" className="mt-20">
-        <div className="grid gap-x-8 gap-y-6 md:grid-cols-[132px_1fr]">
-          <div className="pt-1 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Tools</div>
-          <p className="max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">
-            Python, SQL, R, Excel, Tableau, React and TypeScript, Git. Financial modelling, market sizing, valuation and
-            machine learning. This site is Next.js and TypeScript, built and deployed by hand.
-          </p>
-          <div className="pt-1 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Away from work</div>
-          <p className="max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">
-            Close-up card magic, fifteen or so paid shows and one executive audition for America&apos;s Got Talent.
-            Bollywood and hip-hop dance. Vinyl and film scores. I also record explainer videos for the USA Brain Bee,
-            which is how I ended up caring about neuroscience education in the first place.
-          </p>
-        </div>
-      </Section>
-
-      {/* ── Closing contact ── */}
+      {/* ── Contact ── */}
       <motion.section
-        className="mx-auto mt-20 w-full max-w-[720px] border-t border-obsidian pt-12"
+        className="mx-auto mt-16 w-full max-w-[640px] border-t border-stone-light pt-10"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.45 }}
       >
-        <p className="mb-6 max-w-[520px] font-serif text-xl leading-snug text-obsidian">
-          Happy to talk about any of this, especially the healthcare work.
-        </p>
-        <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
+        <div className="flex flex-wrap items-center gap-x-7 gap-y-3">
           <a
             href="mailto:devdalal@umich.edu"
             className="font-mono text-[11px] uppercase tracking-widest text-accent underline underline-offset-4 transition-colors hover:text-obsidian"
