@@ -1,0 +1,24 @@
+node_modules/
+.next/
+out/
+# Test-coverage output only. Anchored so it never swallows lib/coverage.
+/coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Build artifacts
+tsconfig.tsbuildinfo
+next-env.d.ts
+server/pages-manifest.json
+.vercel
+
+# Local tooling and build-process scratch, not part of the site
+.agents/
+.claude/
+scripts/
+ORIGINAL_REQUEST.md
+
+# Unpublished manuscripts and conference submissions. Kept local on purpose.
+.codex-research-extracts/
