@@ -85,7 +85,7 @@ const PROJECTS = [
 const SECTIONS = [
   { href: '/fund', title: 'Healthcare', meta: '12 memos, 179 entries' },
   { href: '/research', title: 'Research', meta: '4 papers' },
-  { href: '/library', title: 'The Library', meta: '65 essays' },
+  { href: '/library', title: 'The Library', meta: 'Coming soon' },
 ];
 
 function Section({ label, children }: { label: string; children: React.ReactNode }) {

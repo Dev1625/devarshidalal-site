@@ -5,6 +5,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { PUBLICATIONS, PUBLICATION_CATEGORIES, type PublicationCategory } from '@/lib/publications';
+import { LIBRARY_PUBLISHED } from '@/lib/site';
+import { LibraryCover } from '@/components/layout/LibraryCover';
 
 function Bubble({
   cat,
@@ -37,6 +39,9 @@ function Bubble({
 export default function LibraryPage() {
   const [selectedCategory, setSelectedCategory] = useState<PublicationCategory | null>(null);
   const isMobile = useIsMobile();
+
+  // Everything below is intact and returns as soon as the flag flips.
+  if (!LIBRARY_PUBLISHED) return <LibraryCover />;
 
   if (isMobile === undefined) return null;
 

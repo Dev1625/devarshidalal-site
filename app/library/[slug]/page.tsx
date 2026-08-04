@@ -6,12 +6,17 @@ import Link from 'next/link';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { getNextPublication, getPublicationBySlug } from '@/lib/publications';
+import { LIBRARY_PUBLISHED } from '@/lib/site';
+import { LibraryCover } from '@/components/layout/LibraryCover';
 
 export default function PostPage() {
   const params = useParams();
   const slug = params.slug as string;
   const post = getPublicationBySlug(slug);
   const nextPost = getNextPublication(slug);
+
+  // Direct essay links should not leak the content while the section is down.
+  if (!LIBRARY_PUBLISHED) return <LibraryCover />;
 
   if (!post) {
     return (
