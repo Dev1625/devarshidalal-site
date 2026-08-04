@@ -15,16 +15,9 @@ export function LibraryCover() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="mb-5 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Not up yet</div>
-
-        <h1 className="mb-7 font-serif text-4xl leading-tight tracking-tight text-obsidian md:text-5xl">
-          The Library is being polished.
+        <h1 className="mb-10 font-serif text-4xl leading-tight tracking-tight text-obsidian md:text-5xl">
+          Currently updating essays. Check back soon.
         </h1>
-
-        <p className="mb-10 max-w-[520px] font-sans text-[16px] font-light leading-[1.8] text-ink">
-          The essays are written. I want another editing pass before they go up, so I have taken them down for now
-          rather than leave up work I am not happy with. Back soon.
-        </p>
 
         <div className="flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-stone-light pt-7">
           <Link
