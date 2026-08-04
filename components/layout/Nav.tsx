@@ -14,7 +14,7 @@ const LINKS = [
       { name: 'USP33 in MS', href: '/research/usp33-deubiquitination-ms' }
     ]
   },
-  { name: 'The Fund', href: '/fund' },
+  { name: 'Healthcare', href: '/fund' },
   { name: 'Library', href: '/library' },
 ];
 

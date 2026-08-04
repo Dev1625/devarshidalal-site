@@ -10,9 +10,9 @@
   --color-accent: #2A4BD7;
   --color-accent-warm: #D44D26;
 
-  --font-sans: "Helvetica Neue", Arial, sans-serif;
-  --font-serif: Georgia, serif;
-  --font-mono: "Courier New", Courier, monospace;
+  --font-sans: var(--font-sans-var), "Helvetica Neue", Arial, sans-serif;
+  --font-serif: var(--font-serif-var), Georgia, serif;
+  --font-mono: var(--font-mono-var), ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 :root {
@@ -31,6 +31,24 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
   cursor: none; /* Custom cursor */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Newsreader sets a touch wide for display use. */
+.font-serif {
+  letter-spacing: -0.011em;
+}
+
+/* Headings break badly on their own at these sizes. */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+/* Tabular figures so the many dates and dollar amounts line up. */
+.font-mono {
+  font-variant-numeric: tabular-nums;
 }
 
 @media (pointer: coarse) {
