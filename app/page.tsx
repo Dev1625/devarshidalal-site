@@ -12,79 +12,123 @@ const CONTACTS = [
   { icon: Phone, label: '(248) 289-5537', href: 'tel:+12482895537', external: false },
 ];
 
-const SECTIONS = [
-  {
-    href: '/fund',
-    title: 'Healthcare investment research',
-    meta: 'Twelve memos, 179 dated entries',
-    body: 'Companies I follow closely enough to have a view on, written up as structured memos, plus a running record of what happens across biopharma, clinical AI, devices and policy and what I make of each one.',
-  },
-  {
-    href: '/research',
-    title: 'Research',
-    meta: 'Four papers and posters',
-    body: 'Deep learning for radiology quality control, USP33 and deubiquitination in multiple sclerosis, and neurocomputational modelling. Presented at RSNA and AMIA.',
-  },
-  {
-    href: '/library',
-    title: 'The Library',
-    meta: '65 essays, 8 fields',
-    body: 'Shorter pieces on philosophy, psychology, economics, law, strategy, science, technology and culture. Mostly things I wanted to work out on paper.',
-  },
-];
-
 const EXPERIENCE = [
   {
     org: 'BOND Consulting Group',
-    role: 'Senior Consultant',
-    when: '2024 to present',
-    note: 'Client workstreams end to end, plus training junior consultants on structured problem solving.',
+    role: 'Senior Consultant and Advisor',
+    when: 'Aug 2024 to now',
+    points: [
+      'Led pricing and operations workstreams on five-person teams, turning management interviews and analysis into four presentations for founders and C-suite executives. Promoted, and trained six junior consultants.',
+      'Built a dynamic pricing model for a Minor League Baseball franchise that forecasts attendance within 100 tickets a game. It set website prices and segmented promotions, and the client passed the analysis to its MLB affiliate.',
+      'Trained a gradient boosting demand model on five years of data across 300 SKUs and two plants, reaching 90 percent accuracy and guiding production sequencing and entry into new categories.',
+    ],
+  },
+  {
+    org: 'UpRound Venture Capital',
+    role: 'Deal Flow Pod Co-Lead and Investment Analyst',
+    when: 'Jan 2026 to now',
+    points: [
+      'Sourced and contacted 40 early-stage companies, wrote six investment memos covering market, competitive, business model and founding team diligence, and presented recommendations for $10K checks to the fund team.',
+    ],
   },
   {
     org: 'Cirqle',
     role: 'Founder',
-    when: '2025 to present',
-    note: 'AI relationship management platform. Product strategy and the full-stack build. In open beta with 75 active users.',
+    when: 'Jul 2025 to now',
+    points: [
+      'Built an AI relationship management platform alone, across product, design, full-stack engineering, auth and security. Raised $3,000 externally and reached 75 closed-beta users at roughly 70 percent seven-day retention.',
+      'Turned five user interviews into Gmail and Calendar integrations, relationship health scoring, a ranked weekly action plan, and outreach drafts that remember context.',
+    ],
   },
   {
     org: 'Blueprints for Pangaea',
-    role: 'Expansion Manager, Operations and Finance',
-    when: '2022 to present',
-    note: 'Operations overhaul at the headquarters of a 16-chapter nonprofit. Throughput up 29 percent, accuracy up 15 percent.',
+    role: 'Expansion Manager',
+    when: 'Aug 2024 to now',
+    points: [
+      'Run operations and expansion for the Michigan State and Ohio State chapters after two promotions, and mentor 15 interns and analysts on national projects.',
+      'Automated classification and costing for more than 10,000 SKUs with a computer vision and LLM pipeline, tested across six inventory events. Throughput up 29 percent, errors down 15 percent against the manual process.',
+      'Consolidated roughly $50K of grants, revenue, expenses and inventory across 16 chapters into Tableau, replacing scattered spreadsheets and giving 50 stakeholders one view for budgeting.',
+    ],
   },
   {
     org: "Kabir's Prep",
-    role: 'Instructor and Acting Site Lead',
-    when: '2022 to present',
-    note: 'Taught SAT and ACT to more than 2,000 students and ran centre operations across two summer terms.',
+    role: 'Instructor, and Acting Site Lead over summers 2023 and 2024',
+    when: 'Mar 2022 to now',
+    points: [
+      'Ran summer site operations across two terms, training and scheduling six instructors and handling staffing, materials and proctoring for sittings of up to 250 students.',
+      'Taught three to four weekly SAT and ACT cohorts of about 60 students inside programs serving over 2,000 learners. Site participants averaged 215-point SAT and 5-point ACT gains, and 98 percent improved.',
+    ],
   },
 ];
 
 const PROJECTS = [
   {
     title: 'Healthcare investment research',
-    when: 'Nov 2025 to present',
-    note: 'Twelve investment memos and a 179-entry coverage archive, every claim sourced to primary material.',
+    when: 'Nov 2025 to now',
     href: '/fund',
+    note: 'Twelve invest or pass memos across healthcare AI, biotech, pharma and medtech, using market sizing, valuation, unit economics, clinical trial and regulatory analysis. Alongside them a 179-entry archive tracking financings, M&A, clinical readouts and FDA and CMS decisions, with claims grounded in SEC filings, agency documents and peer-reviewed work.',
   },
   {
-    title: 'EEG-fMRI encoding pipeline',
-    when: '2026 to present',
-    note: 'With Meta AI. Predicting fMRI network activity from simultaneous EEG, benchmarking three artifact-correction methods.',
+    title: 'EEG-fMRI signal validation',
+    when: 'May 2026 to now',
+    note: 'A research collaboration with a Meta AI researcher. Evaluated ICA, OBS and hybrid artifact-correction methods on a 20-participant simultaneous EEG-fMRI dataset, catching neural signal distortion before bad features reached downstream fMRI modelling.',
   },
   {
     title: 'WriVision',
-    when: '2021 to 2024',
-    note: 'With Henry Ford Health System. A multi-task network trained on 8,700 wrist X-rays, deployed for radiology quality control. Presented at RSNA 2024, National Student Science Award.',
+    when: 'Jun 2021 to Jun 2024',
     href: '/research/wrivision-quality-control',
+    note: 'With Henry Ford Health. Built and clinically piloted a multi-task neural network and clinician-facing app trained on more than 8,700 wrist X-rays, flagging four labelling and acquisition inconsistencies for radiologic technologists. Presented at RSNA 2024.',
   },
 ];
 
-function Row({ label, children }: { label: string; children: React.ReactNode }) {
+const SECTIONS = [
+  { href: '/fund', title: 'Healthcare', meta: '12 memos, 179 entries' },
+  { href: '/research', title: 'Research', meta: '4 papers and posters' },
+  { href: '/library', title: 'The Library', meta: '65 essays, 8 fields' },
+];
+
+function Section({
+  label,
+  children,
+  className = '',
+}: {
+  label: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
-    <div className="grid gap-x-8 gap-y-2 border-b border-stone-light py-7 last:border-0 md:grid-cols-[150px_1fr]">
-      <div className="font-mono text-[10px] uppercase tracking-widest text-stone-mid pt-1">{label}</div>
-      <div>{children}</div>
+    <motion.section
+      className={`mx-auto w-full max-w-[720px] border-t border-obsidian pt-14 ${className}`}
+      initial={{ opacity: 0, y: 14 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="mb-9 font-mono text-[10px] uppercase tracking-widest text-stone-mid">{label}</div>
+      {children}
+    </motion.section>
+  );
+}
+
+function Entry({
+  when,
+  title,
+  sub,
+  children,
+}: {
+  when: string;
+  title: string;
+  sub?: string;
+  children?: React.ReactNode;
+}) {
+  return (
+    <div className="grid gap-x-8 gap-y-3 border-b border-stone-light py-8 last:border-0 md:grid-cols-[132px_1fr]">
+      <div className="pt-1.5 font-mono text-[10px] uppercase tracking-widest text-stone-mid">{when}</div>
+      <div>
+        <h3 className="font-serif text-xl leading-snug text-obsidian">{title}</h3>
+        {sub && <div className="mt-1 font-sans text-[13px] text-stone-mid">{sub}</div>}
+        {children}
+      </div>
     </div>
   );
 }
@@ -93,9 +137,8 @@ export default function Home() {
   return (
     <div className="px-6 pb-24">
       {/* ── Hero ── */}
-      <section className="mx-auto flex min-h-[78vh] w-full max-w-[720px] flex-col items-center justify-center text-center">
-        {/* The visible name lives in the nav. Screen readers and search engines
-            still need a real heading on the page. */}
+      <section className="mx-auto flex min-h-[74vh] w-full max-w-[720px] flex-col items-center justify-center text-center">
+        {/* The visible name lives in the nav. Search and screen readers still need one here. */}
         <h1 className="sr-only">Devarshi Dalal</h1>
 
         <motion.div
@@ -151,68 +194,54 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* ── What is here ── */}
-      <motion.section
-        className="mx-auto w-full max-w-[720px] border-t border-obsidian pt-14"
-        initial={{ opacity: 0, y: 14 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-80px' }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="mb-9 font-mono text-[10px] uppercase tracking-widest text-stone-mid">What is here</div>
-        <div className="flex flex-col">
-          {SECTIONS.map((s) => (
-            <Link
-              key={s.href}
-              href={s.href}
-              className="group grid gap-x-8 gap-y-3 border-b border-stone-light py-8 last:border-0 md:grid-cols-[150px_1fr]"
-              data-cursor="hover"
-            >
-              <div className="font-mono text-[10px] uppercase tracking-widest text-stone-mid pt-1.5">{s.meta}</div>
-              <div>
-                <h2 className="mb-3 flex items-center gap-2 font-serif text-2xl leading-snug text-obsidian transition-colors group-hover:text-accent md:text-[27px]">
-                  {s.title}
-                  <ArrowUpRight size={17} className="text-stone-mid transition-colors group-hover:text-accent" />
-                </h2>
-                <p className="max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">{s.body}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </motion.section>
+      {/* ── Education ── */}
+      <Section label="Education">
+        <Entry
+          when="Expected 2028"
+          title="University of Michigan"
+          sub="Dual degree: B.B.A., Ross School of Business and B.S., College of LSA"
+        >
+          <p className="mt-3 max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">
+            Triple major in business administration, mathematical biology and neuroscience, with a 3.7 GPA. Coursework
+            has run from business strategy, financial management and financial trading through linear algebra and
+            biochemistry, which is roughly the split I am trying to hold onto.
+          </p>
+          <div className="mt-5">
+            <div className="mb-2 font-mono text-[9px] uppercase tracking-widest text-stone-mid">Honors</div>
+            <p className="max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">
+              Michigan Brain Bee champion and USA Brain Bee finalist. Health Physics Society National Student Science
+              Award. First place in the AlphaSights Employer Challenge and a Michigan finalist in the Deloitte case
+              competition. University Honors three semesters.
+            </p>
+          </div>
+        </Entry>
+      </Section>
 
       {/* ── Experience ── */}
-      <motion.section
-        className="mx-auto mt-20 w-full max-w-[720px] border-t border-obsidian pt-14"
-        initial={{ opacity: 0, y: 14 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-80px' }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="mb-9 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Experience</div>
+      <Section label="Experience" className="mt-20">
         <div className="flex flex-col">
           {EXPERIENCE.map((e) => (
-            <Row key={e.org} label={e.when}>
-              <h3 className="font-serif text-xl leading-snug text-obsidian">{e.org}</h3>
-              <div className="mb-2 font-sans text-[13px] text-stone-mid">{e.role}</div>
-              <p className="max-w-[500px] font-sans text-[15px] font-light leading-[1.75] text-ink">{e.note}</p>
-            </Row>
+            <Entry key={e.org} when={e.when} title={e.org} sub={e.role}>
+              <ul className="mt-3 flex flex-col gap-2.5">
+                {e.points.map((p, i) => (
+                  <li
+                    key={i}
+                    className="max-w-[520px] border-l border-stone-light pl-4 font-sans text-[15px] font-light leading-[1.75] text-ink"
+                  >
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </Entry>
           ))}
         </div>
-      </motion.section>
+      </Section>
 
       {/* ── Projects ── */}
-      <motion.section
-        className="mx-auto mt-20 w-full max-w-[720px] border-t border-obsidian pt-14"
-        initial={{ opacity: 0, y: 14 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-80px' }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="mb-9 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Selected projects</div>
+      <Section label="Selected projects" className="mt-20">
         <div className="flex flex-col">
           {PROJECTS.map((p) => {
-            const inner = (
+            const body = (
               <>
                 <h3 className="flex items-center gap-2 font-serif text-xl leading-snug text-obsidian transition-colors group-hover:text-accent">
                   {p.title}
@@ -220,43 +249,64 @@ export default function Home() {
                     <ArrowUpRight size={15} className="text-stone-mid transition-colors group-hover:text-accent" />
                   )}
                 </h3>
-                <p className="mt-2 max-w-[500px] font-sans text-[15px] font-light leading-[1.75] text-ink">{p.note}</p>
+                <p className="mt-3 max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">{p.note}</p>
               </>
             );
+            const row = (
+              <div className="grid gap-x-8 gap-y-3 border-b border-stone-light py-8 last:border-0 md:grid-cols-[132px_1fr]">
+                <div className="pt-1.5 font-mono text-[10px] uppercase tracking-widest text-stone-mid">{p.when}</div>
+                <div>{body}</div>
+              </div>
+            );
             return p.href ? (
-              <Link key={p.title} href={p.href} className="group contents" data-cursor="hover">
-                <Row label={p.when}>{inner}</Row>
+              <Link key={p.title} href={p.href} className="group" data-cursor="hover">
+                {row}
               </Link>
             ) : (
-              <Row key={p.title} label={p.when}>
-                {inner}
-              </Row>
+              <div key={p.title}>{row}</div>
             );
           })}
         </div>
-      </motion.section>
+      </Section>
 
-      {/* ── Education ── */}
-      <motion.section
-        className="mx-auto mt-20 w-full max-w-[720px] border-t border-obsidian pt-14"
-        initial={{ opacity: 0, y: 14 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-80px' }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="mb-9 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Education</div>
-        <Row label="Expected 2028">
-          <h3 className="font-serif text-xl leading-snug text-obsidian">University of Michigan</h3>
-          <div className="mb-2 font-sans text-[13px] text-stone-mid">
-            B.B.A., Ross School of Business and B.S., College of LSA
-          </div>
-          <p className="max-w-[500px] font-sans text-[15px] font-light leading-[1.75] text-ink">
-            Triple major in business administration, mathematical biology and neuroscience. University Honors three
-            times. AlphaSights Employer Challenge winner and Pinkert Healthcare Accelerator. UpRound Venture Capital and
-            the Zell Lurie Institute.
+      {/* ── The rest of the site ── */}
+      <Section label="Also here" className="mt-20">
+        <div className="flex flex-col">
+          {SECTIONS.map((s) => (
+            <Link
+              key={s.href}
+              href={s.href}
+              className="group flex items-baseline justify-between gap-6 border-b border-stone-light py-5 last:border-0"
+              data-cursor="hover"
+            >
+              <span className="flex items-center gap-2 font-serif text-lg text-obsidian transition-colors group-hover:text-accent">
+                {s.title}
+                <ArrowUpRight size={14} className="text-stone-mid transition-colors group-hover:text-accent" />
+              </span>
+              <span className="text-right font-mono text-[10px] uppercase tracking-widest text-stone-mid">
+                {s.meta}
+              </span>
+            </Link>
+          ))}
+        </div>
+      </Section>
+
+      {/* ── Tools and interests ── */}
+      <Section label="Otherwise" className="mt-20">
+        <div className="grid gap-x-8 gap-y-6 md:grid-cols-[132px_1fr]">
+          <div className="pt-1 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Tools</div>
+          <p className="max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">
+            Python, SQL, R, Excel, Tableau, React and TypeScript, Git. Financial modelling, market sizing, valuation and
+            machine learning. This site is Next.js and TypeScript, built and deployed by hand.
           </p>
-        </Row>
-      </motion.section>
+          <div className="pt-1 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Away from work</div>
+          <p className="max-w-[520px] font-sans text-[15px] font-light leading-[1.75] text-ink">
+            Close-up card magic, fifteen or so paid shows and one executive audition for America&apos;s Got Talent.
+            Bollywood and hip-hop dance. Vinyl and film scores. I also record explainer videos for the USA Brain Bee,
+            which is how I ended up caring about neuroscience education in the first place.
+          </p>
+        </div>
+      </Section>
 
       {/* ── Closing contact ── */}
       <motion.section
