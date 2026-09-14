@@ -65,9 +65,18 @@ export interface MacroThesis {
   lastUpdated: string;
 }
 
+export interface IntroPart {
+  /** Matches the tab id above, so the label reads the same as the nav. */
+  id: string;
+  label: string;
+  body: string;
+  cta: string;
+}
+
 export interface Intro {
   headline: string;
   body: string[];
+  parts: IntroPart[];
   method: { title: string; body: string }[];
   disclaimer: string;
   lastUpdated: string;
@@ -79,7 +88,21 @@ export const INTRO: Intro = {
   headline: 'A running file on healthcare companies and the industry around them.',
   body: [
     'I want to understand how a scientific idea turns into something a patient actually receives, and where that process breaks. Some of what follows is drug discovery, some is software inside hospitals, some is hardware people put in their skulls, and a lot of it is the money and policy moving underneath.',
-    'Two halves. Twelve companies as full memos, because the same structure every time forces me to answer questions I would otherwise skip. Then a dated record of what happened across the sector and what I made of it. The second half matters more. Anyone can write a confident company summary in an afternoon. Following a sector for a year and recording where your read held up is harder, and it is the only way I know to find out whether I am learning anything.',
+    'This page has two parts.',
+  ],
+  parts: [
+    {
+      id: 'companies',
+      label: 'Companies',
+      body: 'Twelve companies written up as full memos. The same sections every time, so I have to answer the questions I would otherwise skip.',
+      cta: 'Read the memos',
+    },
+    {
+      id: 'following',
+      label: 'Following',
+      body: 'A dated record of what happened across the sector and what I made of it. This is the half that matters more, because it is where I find out whether my reads held up.',
+      cta: 'Read the record',
+    },
   ],
   method: [
     {

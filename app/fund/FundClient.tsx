@@ -71,7 +71,7 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="max-w-[720px] mb-20">
+              <div className="max-w-[720px] mb-14">
                 <h1 className="font-serif text-[36px] md:text-[50px] leading-[1.14] tracking-tight text-obsidian mb-8">
                   {INTRO.headline}
                 </h1>
@@ -79,6 +79,28 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
                   <p key={i} className="font-sans font-light text-[17px] leading-[1.85] text-ink mb-6">
                     {p}
                   </p>
+                ))}
+              </div>
+
+              <div className="flex flex-col border-t border-stone-light mb-20 max-w-[900px]">
+                {INTRO.parts.map((part) => (
+                  <div
+                    key={part.id}
+                    className="grid gap-4 border-b border-stone-light py-9 md:grid-cols-[260px_1fr]"
+                  >
+                    <h2 className="font-serif text-lg text-obsidian leading-snug">{part.label}</h2>
+                    <div className="max-w-[640px]">
+                      <p className="font-sans text-[16px] font-light leading-[1.85] text-ink">{part.body}</p>
+                      <button
+                        onClick={() => go(part.id, 'all')}
+                        data-cursor="hover"
+                        className="group mt-5 flex items-center gap-1.5 text-stone-mid hover:text-accent transition-colors cursor-none"
+                      >
+                        <span className="font-mono text-[10px] uppercase tracking-widest">{part.cta}</span>
+                        <ArrowUpRight size={12} />
+                      </button>
+                    </div>
+                  </div>
                 ))}
               </div>
 
@@ -141,15 +163,6 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
                 <p className="font-sans text-sm text-stone-mid leading-relaxed max-w-[680px] mt-10">
                   {INTRO.disclaimer}
                 </p>
-                <div className="mt-10">
-                  <button
-                    onClick={() => go('following', 'all')}
-                    className="font-sans text-sm font-medium text-accent underline underline-offset-4 cursor-none"
-                    data-cursor="hover"
-                  >
-                    See what I have been following &rarr;
-                  </button>
-                </div>
               </div>
             </motion.div>
           )}
