@@ -90,19 +90,19 @@ export const INTRO: Intro = {
   headline: 'A running file on healthcare companies and the industry around them.',
   body: [
     'I want to understand how a scientific idea turns into something a patient actually receives, and where that process breaks. Some of what follows is drug discovery, some is software inside hospitals, some is hardware people put in their skulls, and a lot of it is the money and policy moving underneath.',
-    'This page has two parts.',
+    'There are two halves to this, and the second one matters more.',
   ],
   parts: [
     {
       id: 'companies',
       label: 'Companies',
-      body: 'Twelve companies written up as full memos. The same sections every time, so I have to answer the questions I would otherwise skip.',
+      body: 'Twelve companies written up as full memos. I use the same sections every time, which forces me to answer questions I would otherwise skip past.',
       cta: 'Read the memos',
     },
     {
       id: 'following',
       label: 'Following',
-      body: 'A dated record of what happened across the sector and what I made of it. This is the half that matters more, because it is where I find out whether my reads held up.',
+      body: 'A dated record of what happened across the sector and what I made of it at the time. This is where I find out whether I was right, which is the only reason any of it is worth writing down.',
       cta: 'Read the record',
     },
   ],
@@ -126,44 +126,46 @@ export const INTRO: Intro = {
 export const MACRO_THESIS: MacroThesis = {
   version: 'Rewritten September 2026',
   headline:
-    'Clinical software is not priced on how good it is. It is priced on which budget pays for it, and only three budgets have ever carried a company on their own: pharma promotion, recovered collections, and a billing code.',
+    'Whether a healthcare software company works comes down to which budget pays for it. I can only find three that hold up: pharma marketing, a cut of the money you collect, and a billing code.',
   stats: [
-    { label: 'US hospital operating margin, 2026 year to date', value: '1.7%, and down about 5% year over year' },
-    { label: 'Price of roughly the same ambient scribe', value: '$99 a month at Freed, about $2,500 a year at Abridge' },
-    { label: 'Doximity revenue growth, FY2026 into FY2027 guidance', value: '13% falling to 4%' },
-    { label: 'AI given Category I CPT status, January 2026', value: 'Diagnostic results only. Nothing for a note.' },
+    { label: 'US hospital operating margin, 2026 so far', value: '1.7%, and down about 5% from last year' },
+    { label: 'Cost of a similar ambient scribe', value: '$99 a month at Freed, about $2,500 a year at Abridge' },
+    { label: 'Doximity revenue growth, this year into next', value: '13%, guided down to 4%' },
+    { label: 'What the new AI billing codes cover', value: 'Diagnostic results, not notes' },
   ],
   body: [
-    'The argument everyone is having is whether clinical AI is a feature or a company, and it cannot be settled at the product level, because the products are converging. Epic put native AI Charting into general release in February. Freed sells a competent scribe at $99 a month and Abridge sells one at roughly $2,500 per clinician per year. A twenty-five-fold spread on a converging capability is not a quality gap. It is a price that has not finished falling.',
-    'What separates these companies is not the model. It is which budget the invoice lands in. Hospital operating margin was 1.7 percent year to date in March and fell about 5 percent nationally across the first five months of 2026. Software sold into that budget competes with nurse staffing, goes through procurement, and has to show up on this year\'s income statement. I wrote a version of that sentence about aging products, then about stroke software, then about hospital finances, before I noticed I had been circling the actual thesis for nine months.',
-    'Three budgets escape it. Pharma promotion: OpenEvidence charges clinicians nothing and sells access to verified prescribers, which took it from about $150 million annualised at the end of 2025 to roughly $300 million by mid-2026 at close to 90 percent gross margin. Recovered collections: revenue cycle software is priced at three to five percent of what it collects, against six to twelve percent for in-house billing, so it funds itself and never queues behind the IT budget. That is why revenue cycle was the most heavily consolidated category of the half, why Ensemble traded at around $12 billion, and why Abridge, Nabla and Commure all moved into it. Abridge\'s Best in KLAS award is for revenue cycle, not for documentation. And a billing code: in January the AMA gave AI-augmented services Category I CPT status for the first time. Read which ones got it. Coronary plaque assessment, cardiac risk from perivascular fat, burn wound classification. AI that returns a billable diagnostic result is now paid for. AI that returns a note is not.',
-    'The part that should bother anyone holding the pharma-funded companies, me included, is that the best of the three budgets is an advertising budget. Doximity is the only public company monetising physicians the same way. It grew 13 percent in fiscal 2026 and guided to 4 percent for fiscal 2027, telling investors that demand in the HCP digital pharma ad market is soft and that clients are committing for shorter periods. If that pool is growing at or below 5 percent and OpenEvidence doubled inside it, then OpenEvidence is taking share from Doximity rather than opening a market. It is still the best business I follow. But its ceiling is somebody else\'s ad budget, and nobody I have read underwrites it that way. That is the honest answer to the OpenEvidence question I said in August I could not resolve.',
+    'People keep arguing about whether clinical AI is a feature or a real company. I do not think the products can settle it, because they are getting harder to tell apart. Epic put its own AI charting into general release in February. Freed sells a scribe for $99 a month and Abridge sells one for about $2,500 per clinician a year. That is roughly twenty-five times the price for a similar job, which usually means the price has further to fall.',
+    'So I stopped comparing products and started asking a duller question. Whose budget does the invoice come out of? Hospital operating margin was 1.7 percent year to date in March, and it fell about 5 percent nationally across the first five months of 2026. Sell into that budget and you are competing with nurse staffing, you go through procurement, and you have to show a return inside the same fiscal year. I had written a version of that sentence about aging products, then about stroke software, then about hospital finances, before I noticed I had been circling the same idea for nine months without ever saying it plainly.',
+    'The first budget that works is pharma marketing. OpenEvidence charges doctors nothing and sells access to verified prescribers instead. It went from about $150 million annualised at the end of 2025 to roughly $300 million by the middle of 2026, at close to 90 percent gross margin. No hospital had to approve that spend, because there was nothing to approve.',
+    'The second is a cut of the money you collect. Revenue cycle software is priced at three to five percent of what it brings in, against six to twelve percent for doing the billing in house. It pays for itself, so it never queues behind the IT budget. That is why revenue cycle was the most heavily consolidated category of the half year, why Ensemble traded at around $12 billion, and why Abridge, Nabla and Commure all moved into it. Abridge won Best in KLAS for revenue cycle rather than for documentation.',
+    'The third is a billing code. In January the AMA gave AI services Category I CPT status for the first time, which sounds like a general opening until you read which services actually got one. Coronary plaque assessment. Cardiac risk from the fat around the arteries. Burn wound classification. AI that returns a result a hospital can bill for now gets paid for it. AI that returns a note still does not.',
+    'The part that should worry anyone holding the pharma-funded companies, me included, is that the best of the three budgets is an advertising budget. Doximity is the only public company making money from doctors the same way. It grew 13 percent last fiscal year and has guided investors to 4 percent this year, saying demand for HCP digital pharma advertising is soft and that clients are committing for shorter periods. If that pool is growing at 5 percent or less and OpenEvidence doubled inside it, then OpenEvidence is taking Doximity\'s share rather than opening a new market. It is still the best business I follow. But the ceiling is set by somebody else\'s ad budget, and I have not seen anyone price it that way. That is also the answer to the OpenEvidence question I said in August I could not work out.',
   ],
   pillars: [
     {
-      label: 'Ambient documentation is a distribution cost, not a business',
+      label: 'Ambient documentation gets you in the door and not much further',
       body:
-        'Epic put AI Charting into general release in February 2026 and health systems began reassessing standalone scribe contracts within weeks. Every company winning in this category has already left it. Abridge took Lilly equity and moved into trial recruitment and revenue cycle. Ambience became the ambient vendor Epic distributes, which is a good outcome and also a ceiling. The recording buys you the room. It has never been the thing anyone pays for twice.',
+        'Epic put its own AI charting into general release in February 2026, and health systems started rethinking their standalone scribe contracts within weeks. Every company doing well in this category has already moved somewhere else. Abridge took equity from Lilly and went into trial recruitment and revenue cycle. Ambience became the ambient vendor Epic distributes, which is a good outcome and also a ceiling. Transcription is what gets a company into the room. It is also the part that keeps getting cheaper.',
       test:
-        'If Abridge holds its per-seat price and keeps net revenue retention above roughly 110 percent through 2027, with Epic\'s native tool in general release the whole time, then documentation defends itself and I am wrong.',
+        'If Abridge keeps its per-seat price and holds net revenue retention above roughly 110 percent through 2027, with Epic\'s own tool available the whole time, then documentation defends itself and I am wrong.',
     },
     {
-      label: 'In devices, the reimbursement code is the milestone. The clearance is not.',
+      label: 'In devices, the billing code matters more than the FDA clearance',
       body:
-        'Precision Neuroscience has held 510(k) clearance since April 2025, for implantation of up to thirty days, which is not something a hospital can build a service line on. Synchron holds the first IDE for a permanently implanted BCI and is running a pivotal trial. Neither has a CMS pathway, and no implanted BCI in the United States does. China cleared Neuracle\'s NEO on 13 March 2026 and the health security administration attached a reimbursement code almost immediately, because it had built the pricing infrastructure a year before the device existed. That is the entire difference between the two countries here, and it has nothing to do with electrodes.',
+        'Precision Neuroscience has had 510(k) clearance since April 2025, but only for implants that stay in up to thirty days, which is not something a hospital can build a service line around. Synchron holds the first IDE for a permanently implanted BCI and is running a pivotal trial. Neither has a route to getting paid by CMS, and no implanted BCI in the United States does. China approved Neuracle\'s NEO on 13 March 2026 and its health security administration attached a reimbursement code almost straight away, because it had set the pricing up a year before the device existed. Everyone argues about electrodes. This is the part that will decide it.',
       test:
-        'A Category I CPT code or a national coverage determination for an implanted BCI before 2029. If that lands early, I have underrated how fast the payer side moves once a device is real.',
+        'A Category I CPT code or a national coverage decision for an implanted BCI before 2029. If that turns up early, I have underrated how quickly the payer side moves once a device is real.',
     },
     {
-      label: 'Consumer cash is being underwritten as a preference when much of it is a subsidy shock',
+      label: 'A lot of the cash-pay story is people who lost a subsidy',
       body:
-        'The cash-pay thesis, which a16z calls insurance defection, treats people paying out of pocket as a durable consumer segment. Some of it is. Function at $2.2 billion and Oura at $11 billion are not distressed buyers. But the enhanced ACA subsidies expired at the end of 2025, and the share of marketplace enrollees receiving a tax credit fell from 92 to 87 percent, the first decline since 2020. KFF had forecast a 114 percent rise in what enrollees pay. The realised figure was 58 percent, because households traded down to higher deductibles instead of leaving. People with higher deductibles pay cash for more things. That is a different customer from the one in the decks, and it is a worse one.',
+        'The cash-pay thesis, which a16z calls insurance defection, treats people paying out of pocket as a durable group who prefer it that way. Some of them are. Function at $2.2 billion and Oura at $11 billion are not selling to distressed buyers. But the enhanced ACA subsidies ran out at the end of 2025, and the share of marketplace enrollees getting a tax credit fell from 92 to 87 percent, the first drop since 2020. KFF expected what enrollees pay to rise 114 percent. It rose 58 percent, because people moved to cheaper plans with higher deductibles rather than dropping coverage. Someone with a higher deductible pays cash for more things without ever having chosen to. That is a different customer from the one in the pitch decks.',
       test:
-        'Cash-pay volume still growing through 2027, once the subsidy change has annualised. If it holds up then this is a genuine preference and I have called it wrong.',
+        'Cash-pay volume still growing through 2027, once the subsidy change has annualised. If it holds up, then people really do prefer it and I have called this wrong.',
     },
   ],
   whereIAmUnsure:
-    'The third budget is the one I can check least well. Category I status for AI arrived in January and I am reading three codes as though they were a trend. It is entirely possible the AMA opens the taxonomy wide over the next two years and the line I am drawing between a billable result and a note stops mattering. I am also aware that the cleanest evidence for the central claim comes from a single public comparable, and that building a thesis on one comp is the exact thing I criticise other people for doing.',
+    'The billing code argument is the one I can check least well. Category I status arrived in January and I am reading three codes as if they were a trend, which is thin. The AMA could widen the taxonomy over the next two years, and then the line I am drawing between a billable result and a note would stop meaning anything. I am also leaning hard on one public comparable for the central claim, and building an argument on a single comp is the thing I complain about when other people do it.',
   lastUpdated: 'September 2026',
 };
 
