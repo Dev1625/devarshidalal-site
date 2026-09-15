@@ -67,7 +67,7 @@ const PROJECTS = [
     title: 'Healthcare investment research',
     when: '2025',
     href: '/fund',
-    line: 'Twelve company memos and a 179-entry archive of what happens across the sector.',
+    line: 'Twelve company memos, a 179-entry archive of what happens across the sector, and a log of the founders I have talked to.',
   },
   {
     title: 'EEG-fMRI signal validation',
@@ -83,7 +83,7 @@ const PROJECTS = [
 ];
 
 const SECTIONS = [
-  { href: '/fund', title: 'Healthcare', meta: '12 memos, 179 entries' },
+  { href: '/fund', title: 'Healthcare', meta: '12 memos, 179 entries, 12 founders' },
   { href: '/research', title: 'Research', meta: '4 papers' },
   { href: '/library', title: 'The Library', meta: 'Coming soon' },
 ];

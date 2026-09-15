@@ -90,7 +90,7 @@ export const INTRO: Intro = {
   headline: 'A running file on healthcare companies and the industry around them.',
   body: [
     'I want to understand how a scientific idea turns into something a patient actually receives, and where that process breaks. Some of what follows is drug discovery, some is software inside hospitals, some is hardware people put in their skulls, and a lot of it is the money and policy moving underneath.',
-    'There are two halves to this, and the second one matters more.',
+    'Three sections follow. Two of them are research, the memos and the dated record, and the record is the one that matters. The third is a log of who I have been talking to.',
   ],
   parts: [
     {
@@ -98,6 +98,12 @@ export const INTRO: Intro = {
       label: 'Companies',
       body: 'Twelve companies written up as full memos. I use the same sections every time, which forces me to answer questions I would otherwise skip past.',
       cta: 'Read the memos',
+    },
+    {
+      id: 'founders',
+      label: 'Founder log',
+      body: 'Who I have been talking to, and what I took from it rather than what was said. Some of these are conversations and some are messages I have sent. I keep the ones where the useful part was somebody telling me I was doing it wrong.',
+      cta: 'Read the log',
     },
     {
       id: 'following',

@@ -8,10 +8,13 @@ import { ArrowUpRight, Search, X } from 'lucide-react';
 import { COMPANIES, INTRO, MACRO_THESIS } from '@/lib/fund';
 import { ALL_ENTRIES, FILTERS, groupByMonth, searchEntries, COVERAGE_COUNT } from '@/lib/coverage';
 import { EntryRow } from '@/components/fund/EntryRow';
+import { FounderTimeline } from '@/components/fund/FounderTimeline';
+import { FOUNDER_COUNT } from '@/lib/founders';
 
 const TABS = [
   { id: 'thesis', label: 'The thesis' },
   { id: 'companies', label: 'Companies' },
+  { id: 'founders', label: 'Founder log' },
   { id: 'following', label: 'Following' },
 ];
 
@@ -49,7 +52,7 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
             <button
               key={tab.id}
               onClick={() => go(tab.id, tab.id === 'following' ? activeFilter : 'all')}
-              className={`flex-1 min-w-[130px] px-5 py-4 text-left transition-colors ${
+              className={`flex-1 min-w-[104px] px-4 py-4 text-left transition-colors sm:px-5 ${
                 activeTab === tab.id ? 'bg-obsidian text-bone' : 'bg-bone text-obsidian hover:bg-stone-light/30'
               }`}
               data-cursor="hover"
@@ -217,6 +220,30 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
                   </Link>
                 ))}
               </div>
+            </motion.div>
+          )}
+
+          {/* ═══ Founder log ═══ */}
+          {activeTab === 'founders' && (
+            <motion.div
+              key="founders"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="font-mono text-[10px] uppercase tracking-widest text-stone-mid mb-4">
+                {FOUNDER_COUNT} founders and operators
+              </div>
+              <h1 className="font-serif text-4xl md:text-5xl text-obsidian tracking-tight mb-4">Founder log.</h1>
+              <p className="font-sans font-light text-[16px] text-ink max-w-[640px] leading-relaxed mb-16">
+                Reading about a company and talking to someone who has built one are different activities, and I was
+                only doing the first. So this is the running record of the second. Some of these are conversations that
+                happened and some are messages I have sent, and the notes say which. I keep the ones where the useful
+                part was somebody telling me I was doing it wrong.
+              </p>
+
+              <FounderTimeline />
             </motion.div>
           )}
 
