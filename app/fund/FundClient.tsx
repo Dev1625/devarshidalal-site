@@ -254,7 +254,7 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
               transition={{ duration: 0.3 }}
             >
               <div className="font-mono text-[10px] uppercase tracking-widest text-stone-mid mb-4">
-                {COVERAGE_COUNT} entries &middot; November 2025 to August 2026
+                {COVERAGE_COUNT} entries &middot; November 2025 to September 2026
               </div>
               <h1 className="font-serif text-4xl md:text-5xl text-obsidian tracking-tight mb-4">Following.</h1>
               <p className="font-sans font-light text-[16px] text-ink max-w-[640px] leading-relaxed mb-10">

@@ -646,4 +646,171 @@ export const ENTRIES_2026_Q3: CoverageEntry[] = [
       },
     ],
   },
+  {
+    id: '2026-09-ipo-window-twentyone',
+    headline: 'Twenty-one biotech IPOs, five of them in August',
+    entryDate: 'September 2026',
+    sortKey: '2026-09-02',
+    entryType: 'financing',
+    scope: 'industry',
+    themes: ['ipo', 'financing'],
+    relatedEntryIds: ['2025-12-ipo-window-shut', '2026-06-ipo-window-open', '2026-02-ipo-q1-larger'],
+    analysis:
+      'Twenty-one biotech and biopharma IPOs have priced in 2026, raising around $6.5 billion, against eleven in the whole of 2025. Five of them priced in August.\n\nAs of late August all but four of the new class were trading at least 20 percent above their debut, and Veradermics, Hemab, Vogenx and Avalyn had each more than doubled.\n\nI ended 2025 writing that the window was mostly shut, and in June I said it was open selectively. The qualifier is the part I would now change. For anything with a drug in a human the window is simply open. For everything else it is still shut, and the gap between those two states has not narrowed all year.\n\nThe detail I keep thinking about is that Vogenx pricing $81.3 million at $13.00 on 11 August was the first of the August run that did not upsize. That is the kind of small fact that tells you where the demand actually stops, and it is more useful than the headline count.',
+    sources: [
+      {
+        title: "This week in charts: Biotech's rebound is undeniable",
+        publisher: 'BioPharma Dive',
+        url: 'https://www.biopharmadive.com/news/biotech-charts-biopharma-xbi-deals-mergers-ipos/828794/',
+      },
+      {
+        title: 'Biotech IPO Tracker 2026',
+        publisher: 'BioBucks',
+        url: 'https://www.biobucks.co/biotech-ipo-tracker-2026',
+      },
+    ],
+  },
+  {
+    id: '2026-09-bioage-dme-dosing',
+    headline: 'BioAge starts the eye trial before the heart trial has read out',
+    entryDate: 'September 2026',
+    sortKey: '2026-09-08',
+    eventDate: 'September 8, 2026',
+    entryType: 'clinical',
+    scope: 'company',
+    themes: ['inflammation', 'clinical-trials'],
+    relatedCompanyIds: ['bioage-labs'],
+    relatedEntryIds: ['2026-01-bioage-dme', '2026-04-bioage-phase1', '2026-05-bioage-q1'],
+    analysis:
+      'First participant dosed in QUELL-DME on 8 September, a Phase 2 of BGE-102 in diabetic macular edema. Data are not expected until the second half of 2027.\n\nThe trial that matters more is still QUELL-CV, which has finished enrolling with topline due in the second half of this year. The Phase 1 in April showed median hsCRP reductions of 85 percent or better at both 60mg and 120mg, with IL-1beta suppression up to 98 percent. Those are large numbers for a direct pharmacological readout, which is also why they prove less than they appear to.\n\nStarting a second Phase 2 before the first one reads out says something about how the company feels about its own data, and something about a balance sheet that wants a second shot on goal. I wrote in January that adding an eye indication was a decision about cash as much as about biology. I still think that, and I no longer mean it as a criticism. A company that lost its lead asset in 2024 and rebuilt around a different mechanism has earned the right to hedge.',
+    sources: [
+      {
+        title: 'BioAge Labs Announces First Participant Dosed in QUELL-DME, a Phase 2 Trial of BGE-102 in Diabetic Macular Edema',
+        publisher: 'GlobeNewswire',
+        url: 'https://www.globenewswire.com/news-release/2026/09/08/3357592/0/en/bioage-labs-announces-first-participant-dosed-in-quell-dme-a-phase-2-trial-of-bge-102-a-novel-oral-nlrp3-inhibitor-in-diabetic-macular-edema.html',
+        publishedAt: 'September 8, 2026',
+      },
+    ],
+  },
+  {
+    id: '2026-09-beeline-phase2-hit',
+    headline: 'Beeline hits on afimetoran, and I have to work out whether I knew anything',
+    entryDate: 'September 2026',
+    sortKey: '2026-09-09',
+    eventDate: 'September 9, 2026',
+    entryType: 'clinical',
+    scope: 'company',
+    themes: ['immunology', 'clinical-trials'],
+    relatedCompanyIds: ['beeline-medicines'],
+    relatedEntryIds: ['2026-04-beeline-debut', '2026-06-beeline-upsize'],
+    analysis:
+      'Topline on 9 September. All three afimetoran dose groups beat placebo on SRI-4 at week 48, with p below 0.001 across all three, safety consistent with the Phase 1 experience and no new signals. The company is going into pivotal studies for both systemic and cutaneous lupus.\n\nThis is the readout I said in the memo would tell me more than further reading would, so I should be straight about what it actually tells me. It does not tell me I was right about the science, because I had no differentiated view on TLR7/8 inhibition and I still do not. I wrote that memo because I noticed I was covering nothing in immunology while immunology was taking more than 40 percent of biotech venture dollars. That is a coverage decision. A coverage decision that pays does not turn into a thesis afterwards.\n\nWhat I will claim is the structural read. Five clinical programs handed over by BMS, a CEO who had just sold his last company to Merck KGaA, and a readout close enough to be scored quickly. That was the actual bet, and it was about people and assets rather than pharmacology.\n\nThe useful question now is one I can do work on. Lupus has a long history of Phase 2 results that did not repeat in Phase 3. Separation across all three doses at week 48 is a better starting point than one dose scraping past, but I want to understand the base rate before I say anything else about this company.',
+    sources: [
+      {
+        title: 'Beeline Medicines Announces Positive Topline Results from Global Phase 2 Study of Afimetoran in Systemic Lupus Erythematosus',
+        publisher: 'GlobeNewswire',
+        url: 'https://www.globenewswire.com/news-release/2026/09/09/3358503/0/en/beeline-medicines-announces-positive-topline-results-from-global-phase-2-study-of-afimetoran-in-systemic-lupus-erythematosus.html',
+        publishedAt: 'September 9, 2026',
+      },
+      {
+        title: 'Beeline flies into phase 3 as oral lupus drug soars past placebo',
+        publisher: 'Fierce Biotech',
+        url: 'https://www.fiercebiotech.com/biotech/beeline-flies-phase-3-oral-lupus-drug-soars-past-placebo',
+      },
+    ],
+  },
+  {
+    id: '2026-09-jama-autonomous-ai',
+    headline: 'A JAMA piece argues that the doctor checking the AI makes it worse',
+    entryDate: 'September 2026',
+    sortKey: '2026-09-10',
+    eventDate: 'August 17, 2026',
+    entryType: 'care-delivery',
+    scope: 'industry',
+    themes: ['clinical-ai', 'care-delivery'],
+    relatedEntryIds: ['2026-08-ambient-ai-where-it-lands'],
+    analysis:
+      'Published in JAMA on 17 August and picked up more widely in the first week of September. Ezekiel Emanuel, Abe Baker-Butler, Neal Khosla and Vinod Khosla reviewed the studies published since January 2024 comparing autonomous AI against physicians with and without AI, and argue that autonomous AI will beat both at five cognitive tasks by around 2030. The five are gathering patient information, differential diagnosis, choosing cost-efficient tests, prescribing guideline-concordant treatment, and managing chronic illness.\n\nThe prediction is not the interesting part. The mechanism is. They argue that human oversight can actively degrade performance, on the reasoning that when AI alone beats a human alone, putting the two together lands you somewhere between rather than above. That contradicts the American Medical Association framing of augmented intelligence and the American College of Physicians position that AI should stay in a supporting role, and the authors say so directly rather than talking around it.\n\nThe best objection I have read is that most of the superiority studies use curated case vignettes, and that performance drops substantially when the model has to gather the history itself. That is not a small caveat. Gathering patient information is the first item on their own list of five, and it is precisely the task a vignette does for you.\n\nI do not have a view on whether they are right by 2030. I do notice this is unusually falsifiable for the genre, which is more than I can say for most of what gets written about clinical AI, and that it will be scoreable long before 2030 if anyone bothers to keep the receipt.',
+    sources: [
+      {
+        title: 'Will Autonomous AI Exceed AI-Aided Physicians as the Best Medical Care?',
+        publisher: 'JAMA',
+        url: 'https://jamanetwork.com/journals/jama/article-abstract/2852952',
+        publishedAt: 'August 17, 2026',
+      },
+      {
+        title: 'Autonomous AI will beat AI-assisted physicians at some medical tasks by 2030',
+        publisher: 'STAT News',
+        url: 'https://www.statnews.com/2026/09/09/ai-medicine-assisted-physicians-research-autonomy/',
+        publishedAt: 'September 9, 2026',
+      },
+      {
+        title: 'The Commoditization of Clinical Intelligence',
+        publisher: 'Christian Pean',
+        url: 'https://techysurgeon.substack.com/p/the-commoditization-of-clinical-intelligence',
+      },
+    ],
+  },
+  {
+    id: '2026-09-doximity-ceiling',
+    headline: "The most important number for OpenEvidence is on Doximity's income statement",
+    entryDate: 'September 2026',
+    sortKey: '2026-09-11',
+    entryType: 'industry-observation',
+    scope: 'industry',
+    themes: ['clinical-ai', 'pharma-marketing'],
+    relatedCompanyIds: ['openevidence'],
+    relatedEntryIds: ['2026-08-openevidence-open-question', '2026-01-openevidence-series-d'],
+    analysis:
+      'Doximity closed its 2026 fiscal year with $645 million of revenue, up 13 percent, and guided to between $664 million and $676 million for fiscal 2027. That is roughly 4 percent at the midpoint. Management told investors that demand in the HCP digital pharma advertising market is soft, that clients are committing for shorter periods instead of signing annual contracts, and that they expect overall market growth this year at or below 5 percent.\n\nI read that release months ago as a Doximity story and filed it. It is not a Doximity story. It is the only public read anyone has on the size of the pool OpenEvidence sells into, because OpenEvidence is private and the rest of that market is sales representatives and conference sponsorships.\n\nSo put the two together. OpenEvidence went from about $150 million annualised at the end of 2025 to roughly $300 million by the middle of 2026. If the pool is growing at 5 percent or less, then that doubling is share taken from an incumbent rather than a market being created. That is a perfectly good way to reach $300 million. It is a much harder way to reach a billion, because share runs out, and an advertising budget you do not control is a ceiling you cannot argue with.\n\nThis does not make me think less of the company. It makes me think the way everyone has been describing its runway, me included, has been sloppy. In August I wrote that the question I could not answer about OpenEvidence was how the advertising layer is separated from the answer layer. That is still open. This is a second question I had not thought to ask.',
+    sources: [
+      {
+        title: 'Doximity (DOCS) Q4 2026 Earnings Call Transcript',
+        publisher: 'The Motley Fool',
+        url: 'https://www.fool.com/earnings/call-transcripts/2026/05/13/doximity-docs-q4-2026-earnings-transcript/',
+        publishedAt: 'May 13, 2026',
+      },
+    ],
+  },
+  {
+    id: '2026-09-isomorphic-clock',
+    headline: 'Three and a half months left on the Isomorphic promise',
+    entryDate: 'September 2026',
+    sortKey: '2026-09-14',
+    entryType: 'platform',
+    scope: 'company',
+    themes: ['ai-drug-discovery'],
+    relatedCompanyIds: ['isomorphic-labs'],
+    relatedEntryIds: ['2026-01-isomorphic-delay', '2026-05-isomorphic-2b'],
+    analysis:
+      'Third time I am noting this. Demis Hassabis moved first-trial guidance from the end of 2025 to the end of 2026 at Davos in January. It is the middle of September and there is still no announcement that anyone has been dosed.\n\nThe company raised $2.1 billion in May, four months after announcing the delay. That is the part I keep returning to. The delay was not priced at all.\n\nI wrote in the memo that a second slip without a clear explanation would change my view. The year is not over and I am not calling it. But I said in January that nobody seemed to mind the first slip, and if a second one lands the same way then I am wrong about something more basic than this one company, which is my assumption that evidence is what moves prices in this part of the market.',
+    sources: [
+      {
+        title: 'Isomorphic Labs raises $2.1B',
+        publisher: 'Isomorphic Labs',
+        url: 'https://www.isomorphiclabs.com/press/isomorphic-labs-funding',
+        publishedAt: 'May 12, 2026',
+      },
+    ],
+  },
+  {
+    id: '2026-09-thesis-rewrite',
+    headline: 'I rewrote the thesis around who pays',
+    entryDate: 'September 2026',
+    sortKey: '2026-09-15',
+    entryType: 'industry-observation',
+    scope: 'industry',
+    status: 'current-view',
+    themes: ['clinical-ai', 'reimbursement'],
+    relatedEntryIds: ['2026-08-hospital-margins', '2026-08-ambient-ai-where-it-lands', '2026-08-bci-reimbursement'],
+    analysis:
+      'The old version was an observation about the funding market. Money left healthcare, AI took a larger share of what remained, and the companies with a drug already in a human got funded. All of that is true and none of it is something a reasonable person could disagree with, which is a bad sign for a thesis.\n\nWhat I actually believe, and have apparently been writing for nine months without noticing, is that clinical software lives or dies on which budget pays for it. I wrote a version of that sentence about aging products in July, about stroke software a week later, and about hospital margins in August, and each time I treated it as a fact about that one category.\n\nSo the thesis now says it outright. Three budgets work: pharma marketing, a cut of the money you collect, and a billing code. The hospital operating budget does not, because margin is 1.7 percent, and anything sold into it competes with nurse staffing and has to pay itself back inside the same fiscal year.\n\nI also put a falsification test under each part, which I should have done the first time. If I cannot say what would prove me wrong, I am not making a claim. I am describing the weather.',
+    sources: [
+      {
+        title: 'Hospitals Face the 2026 New Normal: Rising Expenses and Shifts in Revenue Mix',
+        publisher: 'Kaufman Hall',
+        url: 'https://www.kaufmanhall.com/news/hospitals-face-2026-new-normal-rising-expenses-and-shifts-revenue-mix',
+      },
+    ],
+  },
 ];
