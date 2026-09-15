@@ -258,10 +258,7 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
               </div>
               <h1 className="font-serif text-4xl md:text-5xl text-obsidian tracking-tight mb-4">Following.</h1>
               <p className="font-sans font-light text-[16px] text-ink max-w-[640px] leading-relaxed mb-10">
-                A financing, a trial result, a policy change, someone quietly leaving a company. I write down what
-                happened and then what I think it actually means, which is the part worth reading. Some entries are two
-                sentences. A few are much longer because the thing deserved it. Later notes argue with earlier ones
-                fairly often.
+                A dated record of what happened across the sector and what I made of it.
               </p>
 
               <div className="border-y border-stone-light py-4 mb-12">
