@@ -237,9 +237,7 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
               </div>
               <h1 className="font-serif text-4xl md:text-5xl text-obsidian tracking-tight mb-4">Founder log.</h1>
               <p className="font-sans font-light text-[16px] text-ink max-w-[640px] leading-relaxed mb-16">
-                Reading about a company and talking to someone who has built one are different activities, and I was
-                only doing the first. So this is the running record of the second. Short notes on what we actually
-                covered, kept because the useful part is usually the thing I would not have thought to ask.
+                Conversations with founders and operators building healthcare companies.
               </p>
 
               <FounderTimeline />
