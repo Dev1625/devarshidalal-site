@@ -187,10 +187,10 @@ export const COMPANIES: Company[] = [
       { label: 'Total raised', value: '~$700M' },
       { label: 'Last round', value: '$250M at $12B, January 21 2026' },
       { label: 'Lead investors', value: 'Thrive Capital, DST Global, GV, Sequoia, Kleiner Perkins' },
-      { label: 'Revenue', value: '~$150M annualised, ~90% gross margin' },
+      { label: 'Revenue', value: '~$300M annualised (mid 2026), ~90% gross margin' },
     ],
     summary:
-      'The most convincing company on this list and the one I would put the most weight behind. Doctors face clinical questions mid-visit with about ninety seconds to resolve them, and the existing options are guessing, asking a colleague, or searching something not built for the job. OpenEvidence answers with citations from journals it pays for. Revenue went from roughly $7.9 million annualised in 2024 to about $150 million in 2025 at close to 90 percent gross margins, which settles the question of whether free-product adoption converts into a business. The risk here is the entry price, not the company.',
+      'The most convincing company on this list and the one I would put the most weight behind. Doctors face clinical questions mid-visit with about ninety seconds to resolve them, and the existing options are guessing, asking a colleague, or searching something not built for the job. OpenEvidence answers with citations from journals it pays for. Revenue went from roughly $7.9 million annualised in 2024 to about $150 million in 2025, and then doubled again to roughly $300 million by the middle of 2026, all at close to 90 percent gross margins. That settles the question of whether giving the product away converts into a business. What it does not settle is where the money comes from, which is an advertising budget somebody else controls.',
     problem:
       'Medical knowledge doubles faster than any clinician can read, and the moment of need is not a moment with time in it. A physician sees a patient with an unusual drug interaction or an atypical presentation, and needs an answer during the visit. The realistic alternatives are recalling something from training, asking whoever is nearby, or using a general search engine that surfaces content optimised for consumers rather than clinicians. UpToDate exists and is good, but it is a subscription product with editorial lag, and it answers the question someone anticipated rather than the one being asked.',
     product:
@@ -198,12 +198,12 @@ export const COMPANIES: Company[] = [
     whyNow:
       'Two things converged. Language models got good enough to synthesise medical literature reliably around 2023, and the journals became willing to license. The second is the harder and more recent condition. Publishers spent two decades treating AI as a threat to their subscription businesses; the shift to seeing it as a distribution channel is what makes this company possible now and not in 2019. There is also a bleaker driver: physician time per patient keeps compressing, so anything that resolves a question in seconds rather than minutes gets adopted without a procurement process.',
     market:
-      'There are roughly a million practising physicians in the United States and the company reports over 40 percent using it daily. The revenue model is pharma advertising targeted at verified prescribers, which is a large and established market currently served by sales representatives, journal ads and conference sponsorships, all of which have far worse attribution than a platform that knows exactly which clinical question preceded the impression. At about $150 million annualised on 20 million monthly consultations, revenue per consultation is small, which is either the ceiling or the opportunity depending on whether an enterprise product ever lands.',
+      'There are roughly a million practising physicians in the United States and the company reports over 40 percent using it daily. The revenue model is pharma advertising targeted at verified prescribers, which is a large and established market currently served by sales representatives, journal ads and conference sponsorships, all of which have far worse attribution than a platform that knows exactly which clinical question preceded the impression. Even at roughly $300 million annualised, revenue per consultation is small, which is either the ceiling or the opportunity depending on whether an enterprise product ever lands.',
     traction: [
       {
         label: 'Revenue',
-        value: '~$7.9M annualised (2024) to ~$150M (2025)',
-        read: 'Roughly twentyfold in a year at around 90 percent gross margin. The margin is what convinced me. That is a software profile, not a media one, and it is very hard to fake.',
+        value: '~$7.9M (2024), ~$150M (2025), ~$300M (mid 2026)',
+        read: 'Roughly twentyfold, then a double in about seven months, at around 90 percent gross margin throughout. The margin is what convinced me. It is a software profile rather than a media one, and it is very hard to fake.',
       },
       {
         label: 'Consultations',
@@ -222,8 +222,8 @@ export const COMPANIES: Company[] = [
       },
       {
         label: 'Valuation path',
-        value: '$750M (Feb 2025) to $3.5B (Jul) to $6.1B (Oct) to $12B (Jan 2026)',
-        read: 'Four rounds in eleven months. I read this as a bubble signature until the revenue disclosure arrived, and I was wrong to.',
+        value: '$750M (Feb 2025) to $3.5B (Jul) to $6.1B (Oct) to $12B (Jan 2026), with $20B reported in August',
+        read: 'Four rounds in eleven months, and press reports in August 2026 of a further $200M being discussed at $20B. I read the early sequence as a bubble signature until the revenue disclosure arrived, and I was wrong to. The August round is reported rather than announced, so I am not counting it.',
       },
     ],
     competition:
@@ -232,9 +232,9 @@ export const COMPANIES: Company[] = [
       'Co-founded in 2022 by Daniel Nadler and Zachary Ziegler. Nadler holds a PhD from Harvard and previously founded Kensho Technologies, which S&P Global acquired in 2018, so this is a second-time founder who has already built and sold a data business into a regulated industry. Ziegler is CTO, an ML researcher out of Alexander Rush\'s NLP lab at Harvard. Both cite personal medical experiences as motivation, which I mention because it is consistent with a company that chose to give the product away to clinicians rather than charge them.',
     risks: [
       {
-        risk: 'A $12B entry on roughly $150M of revenue leaves no room for a slow year.',
+        risk: 'The entry price assumes the growth continues. At $12B on roughly $300M the multiple has already come down from 80x to about 40x, but a reported $20B would put it back where it started.',
         mitigant:
-          'Revenue is growing at a rate that closes the multiple quickly if it holds, and gross margin near 90 percent means incremental revenue mostly drops through.',
+          'Revenue closed half the multiple in seven months without new capital, and gross margin near 90 percent means incremental revenue mostly drops through.',
       },
       {
         risk: 'Revenue is pharma advertising inside a clinical decision tool, which is a structural conflict a regulator will eventually examine.',
@@ -242,9 +242,9 @@ export const COMPANIES: Company[] = [
           'The advertising market for physicians is long-established and heavily regulated already, so there is precedent to build against rather than a blank sheet.',
       },
       {
-        risk: 'Ad spend is cyclical and concentrated among a small number of pharma buyers.',
+        risk: 'Ad spend is cyclical and concentrated among a small number of pharma buyers. This is the risk I now weight most, because Doximity grew 13 percent last fiscal year and guided to 4 percent this one, telling investors that HCP digital pharma demand is soft.',
         mitigant:
-          'An enterprise or health-system product would diversify this, though I have not seen evidence one exists at scale yet.',
+          'There is not much of one. If the pool grows at 5 percent and OpenEvidence doubles inside it, the growth is share taken from Doximity, and share runs out. An enterprise product would diversify this and I have still not seen evidence one exists at scale.',
       },
       {
         risk: 'General models improve fast and could make synthesis a commodity.',
@@ -266,7 +266,7 @@ export const COMPANIES: Company[] = [
       'Disclosure that revenue depends on a small number of advertisers.',
     ],
     view:
-      'My view as of August 2026 is that this is the clearest product-market fit in healthcare software right now, and the price is the risk rather than the business. If someone made me pick one company here to be right about, it would be this one.',
+      'My view as of September 2026 is that this is still the clearest product-market fit in healthcare software, and revenue closed half the entry multiple in seven months without the company raising again. What changed for me is the ceiling rather than the business. Doximity guiding to 4 percent growth says the pool OpenEvidence sells into is barely growing, so the last year was share taken from an incumbent rather than a market being made. That is a fine way to reach $300 million and a much harder way to reach a billion. I would still pick it to be right about.',
   },
 
   // ── Abridge ────────────────────────────────────────────────────────────────
@@ -480,7 +480,7 @@ export const COMPANIES: Company[] = [
       { label: 'Total raised', value: '$345M' },
       { label: 'Last round', value: '$200M, November 6 2025, Double Point Ventures' },
       { label: 'Other investors', value: 'ARCH, Khosla, Bezos Expeditions, QIA, IQT, Australian NRF' },
-      { label: 'Clinical status', value: '10 patients implanted, pivotal trial enrolling 2026' },
+      { label: 'Clinical status', value: '12 patients implanted, pivotal trial preparing through 2026' },
     ],
     summary:
       'Most argument about brain-computer interfaces is about electrode count. I think that is the wrong axis. The binding constraint is how many hospitals can perform the procedure and whether anyone will pay for it. Synchron threads a stent with electrodes up the jugular vein into a vessel running above the motor cortex and reads through the vessel wall, which means an interventional neuroradiologist can place it in a cath lab using skills they already have. That makes it the most likely device to be approved, reimbursed and actually used, despite having sixteen electrodes against a thousand-plus for competitors.',
@@ -950,10 +950,10 @@ export const COMPANIES: Company[] = [
       { label: 'Total raised', value: '$426.3M Series A' },
       { label: 'Investors', value: 'Bain Capital, Bristol Myers Squibb, CPPIB' },
       { label: 'Lead asset', value: 'Afimetoran, oral TLR7/8 inhibitor, lupus' },
-      { label: 'Near-term catalyst', value: 'Phase 2 SLE readout, H2 2026' },
+      { label: 'Phase 2 SLE', value: 'Met primary endpoint, September 9 2026' },
     ],
     summary:
-      'I started following this because I was writing constantly about a market where autoimmune and inflammation take more than 40 percent of biotech venture dollars while covering nothing in it. That is a coverage gap rather than a considered thesis, and this memo is shorter on original scientific insight than the others as a result. What makes it worth holding is structural: five clinical programs from BMS, a CEO who just sold his last company to Merck KGaA, and a Phase 2 readout close enough that I will find out soon whether the interest was warranted.',
+      'I started following this because I was writing constantly about a market where autoimmune and inflammation take more than 40 percent of biotech venture dollars while covering nothing in it. That is a coverage gap rather than a considered thesis, and this memo is shorter on original scientific insight than the others as a result. What makes it worth holding is structural: five clinical programs from BMS, a CEO who just sold his last company to Merck KGaA, and a Phase 2 readout close enough that I would find out quickly whether the interest was warranted. It read out on 9 September 2026 and it worked. So I now have to separate two things that feel the same from the inside, which is whether I understood this going in or simply got a good result.',
     problem:
       'Lupus is treated with a combination of old immunosuppressants that people tolerate badly and newer biologics that must be infused. There is no good oral option. The disease disproportionately affects young women, it flares unpredictably, and the existing regimens carry cumulative toxicity that matters enormously over a lifetime of treatment.',
     product:
@@ -975,8 +975,8 @@ export const COMPANIES: Company[] = [
       },
       {
         label: 'Phase 2 readout',
-        value: 'SLE, second half of 2026',
-        read: 'Unusually close for a company I recently started following. It will tell me more than any further reading would.',
+        value: 'SRI-4 at week 48, all three doses beat placebo, p below 0.001',
+        read: 'A clean result. All three dose groups separated on the endpoint regulators have accepted in lupus before, safety matched the Phase 1 experience, and the company is going into pivotal studies for both systemic and cutaneous disease. I did not have a scientific view going in, so this is a result I received rather than one I called.',
       },
       {
         label: 'BMS retained stake',
@@ -990,9 +990,9 @@ export const COMPANIES: Company[] = [
       'Saqib Islam is CEO, having previously led SpringWorks Therapeutics through its acquisition by Merck KGaA in 2025. That is the fact I weight most in this memo. A CEO who has just completed a sale to large pharma knows exactly what a buyer diligences and builds the company backwards from that. The board is chaired by Daniel S. Lynch, with Robert Plenge, Nicholas Downing, Adam Koppel and Andrew Kaplan since the July 2025 Series A close.',
     risks: [
       {
-        risk: 'Afimetoran misses on Phase 2 SLE endpoints, which would take most of the thesis with it.',
+        risk: 'Phase 2 in lupus is not Phase 3 in lupus, and confirmatory trials in this disease have gone badly for other drugs.',
         mitigant:
-          'Four additional clinical programs provide diversification, though none has the same visibility.',
+          'Separation across all three doses at week 48 is a better starting point than a single dose squeaking past. I have not done the work on the base rate yet, and that is now the main thing worth doing on this name.',
       },
       {
         risk: 'I do not have a differentiated scientific view here, which makes this closer to category exposure than a pick.',
@@ -1012,20 +1012,20 @@ export const COMPANIES: Company[] = [
     ],
     diligence: [
       'Why did BMS deprioritise these five programs specifically? This is the central question and I do not have an answer.',
-      'What are the Phase 2 primary endpoints, and are they the endpoints regulators have accepted in lupus previously?',
+      'What does the pivotal program look like, how large, and does the FDA agree on the endpoint for cutaneous disease?',
       'What safety data exists on TLR7/8 inhibition to date, including anything from the BMS-run studies?',
       'What are the terms of the BMS arrangement? Royalties, milestones, equity, and does BMS retain any option to reacquire?',
       'What are the other four programs and their stages?',
       'How much of the $426M is allocated to afimetoran versus the rest of the portfolio?',
     ],
     changeMyMind: [
-      'The H2 2026 Phase 2 SLE readout, which determines whether this becomes a real position or gets closed.',
+      'Phase 3 failing to reproduce the week 48 separation, which is the risk that now carries the position.',
       'Disclosure of the BMS deprioritisation rationale.',
       'Autoimmune CAR-T showing durable drug-free remission with acceptable toxicity.',
       'A safety signal on TLR7/8 inhibition in any program.',
     ],
     view:
-      'My view as of August 2026 is that this is the entry I have done the least work on, and the Phase 2 readout will tell me more than further reading would. I am following it rather than arguing for it.',
+      'My view as of September 2026 is that the readout landed and I still do not have a differentiated scientific view, which is an uncomfortable pair of things to hold at once. I bought category exposure and the category paid. I am keeping it because Phase 3 is a real question I can now do work on, not because Phase 2 vindicated anything I actually said.',
   },
 
   // ── Turn Biotechnologies ───────────────────────────────────────────────────
@@ -1132,7 +1132,7 @@ export const COMPANIES: Company[] = [
       { label: 'IPO', value: 'September 2024' },
       { label: 'Lead asset', value: 'BGE-102, oral brain-penetrant NLRP3 inhibitor' },
       { label: 'Discontinued', value: 'Azelaprag, December 6 2024, liver transaminitis' },
-      { label: 'Near-term catalyst', value: 'Phase 2 cardiovascular risk data, H2 2026' },
+      { label: 'Near-term catalyst', value: 'QUELL-CV Phase 2 topline, H2 2026' },
     ],
     summary:
       'The thesis that drew me in was that GLP-1 drugs cause people to lose a large share of their weight as muscle rather than fat, which is dangerous specifically in older patients, and a drug preserving muscle during that treatment would be close to mandatory. I still think that argument is right. It was just not an argument about this drug. The company killed azelaprag on liver toxicity in December 2024 and has rebuilt around an NLRP3 inhibitor, which is arguably a more interesting company than the one I thought I owned.',
@@ -1143,17 +1143,17 @@ export const COMPANIES: Company[] = [
     whyNow:
       'The brain-penetrant property is the differentiating claim and the reason the company can pursue neuroinflammation alongside cardiovascular indications. NLRP3 has been a target of interest for a decade without a clean win, so the timing argument rests on this molecule specifically rather than on the target becoming newly tractable.',
     market:
-      'Cardiovascular risk reduction is one of the largest markets in medicine and one of the hardest to win, because the standard of care is cheap generics and the trials required are enormous. Diabetic macular edema is a smaller, faster, better-defined market with visible endpoints, which is why the January 2026 indication expansion makes sense for a company managing its cash.',
+      'Cardiovascular risk reduction is one of the largest markets in medicine and one of the hardest to win, because the standard of care is cheap generics and the trials required are enormous. Diabetic macular edema is a smaller, faster, better-defined market with visible endpoints, which is why the January 2026 indication expansion makes sense for a company managing its cash. The first patient in that trial, QUELL-DME, was dosed on 8 September 2026, with data not expected until the second half of 2027.',
     traction: [
       {
         label: 'BGE-102 Phase 1',
-        value: 'Completed April 2026, company-reported best-in-class hsCRP reduction',
-        read: 'hsCRP is a biomarker, not an outcome. Plenty of anti-inflammatory programs have moved CRP and failed on events. This is a company characterisation, not an independent read.',
+        value: 'April 21 2026: median hsCRP down 85% or more at 60mg and 120mg, IL-1beta suppression up to 98%',
+        read: 'The numbers are large and they are also biomarkers rather than outcomes. Plenty of anti-inflammatory programs have moved CRP and then failed on events. The company calls it best in class, which is a characterisation rather than an independent read.',
       },
       {
         label: 'Phase 2 cardiovascular',
-        value: 'Started H1 2026, data expected H2 2026',
-        read: 'The real test and it arrives soon.',
+        value: 'QUELL-CV, first patient dosed June 2026, enrolment complete, topline H2 2026',
+        read: 'The real test, and it is now close. Enrolment closing on schedule is the first thing this company has done on time since the azelaprag failure.',
       },
       {
         label: 'Azelaprag discontinuation',
