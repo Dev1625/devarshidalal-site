@@ -135,7 +135,15 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
                   {MACRO_THESIS.pillars.map((p) => (
                     <div key={p.label} className="grid gap-4 border-b border-stone-light py-9 md:grid-cols-[260px_1fr]">
                       <h3 className="font-serif text-lg text-obsidian leading-snug">{p.label}</h3>
-                      <p className="font-sans text-[16px] font-light leading-[1.85] text-ink">{p.body}</p>
+                      <div className="max-w-[640px]">
+                        <p className="font-sans text-[16px] font-light leading-[1.85] text-ink">{p.body}</p>
+                        <div className="mt-5 border-l-2 border-stone-light pl-4">
+                          <div className="font-mono text-[9px] uppercase tracking-widest text-stone-mid mb-1.5">
+                            What would prove this wrong
+                          </div>
+                          <p className="font-sans text-[15px] font-light leading-[1.8] text-stone-mid">{p.test}</p>
+                        </div>
+                      </div>
                     </div>
                   ))}
                 </div>

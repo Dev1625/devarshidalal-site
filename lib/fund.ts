@@ -53,6 +53,8 @@ export interface Company {
 export interface MacroPillar {
   label: string;
   body: string;
+  /** The observable thing that would tell me this sub-thesis is wrong. */
+  test: string;
 }
 
 export interface MacroThesis {
@@ -113,10 +115,6 @@ export const INTRO: Intro = {
       title: 'Which numbers I trust',
       body: 'The ones that are hard to manufacture. Revenue growth with a margin attached. Patients dosed. Regulatory decisions. Whether a sophisticated partner paid real money. I discount registered users, market size projections, and anything a company can improve by changing a definition. Where a figure is company-reported and unaudited, the memo says so.',
     },
-    {
-      title: 'Where I am weakest',
-      body: 'I read papers, I do not run experiments, and I have never worked inside a hospital or a pharma company. So I am better on business models, financing and regulatory paths than on whether a specific molecule will work. On the science I lean on what independent parties do rather than on my own read of the data, which is why the diligence sections are as long as they are.',
-    },
   ],
   disclaimer:
     'Nothing here is investment advice, and I am not managing money. These are companies I would want to own if I were, written up in memo form as a way of forcing myself to think clearly.',
@@ -126,42 +124,47 @@ export const INTRO: Intro = {
 // ─── Macro thesis ────────────────────────────────────────────────────────────
 
 export const MACRO_THESIS: MacroThesis = {
-  version: 'Rewritten August 2026',
+  version: 'Rewritten September 2026',
   headline:
-    'The money left healthcare, AI took a bigger share of what remained, and the survivors are the ones who already have a drug in a human.',
+    'Clinical software is not priced on how good it is. It is priced on which budget pays for it, and only three budgets have ever carried a company on their own: pharma promotion, recovered collections, and a billing code.',
   stats: [
-    { label: 'Healthcare venture investment, 2025', value: '$46.8B, down 12%' },
-    { label: 'AI share of that', value: '46%, roughly $18B' },
-    { label: 'New capital raised by healthcare VCs, 2025', value: '$7B, against $41B in 2021' },
-    { label: 'H1 2026 biotech rounds going to companies already in humans', value: 'About two thirds' },
+    { label: 'US hospital operating margin, 2026 year to date', value: '1.7%, and down about 5% year over year' },
+    { label: 'Price of roughly the same ambient scribe', value: '$99 a month at Freed, about $2,500 a year at Abridge' },
+    { label: 'Doximity revenue growth, FY2026 into FY2027 guidance', value: '13% falling to 4%' },
+    { label: 'AI given Category I CPT status, January 2026', value: 'Diagnostic results only. Nothing for a note.' },
   ],
   body: [
-    'Everyone quotes the statistic that AI took 46 percent of healthcare venture dollars last year. Almost nobody puts the other number next to it. Total healthcare investment fell 12 percent, to $46.8 billion, with biopharma down 19 and diagnostics down 33. AI did not grow the pie. It ate a larger slice of a shrinking one.',
-    'The number that explains the year sits further upstream. Healthcare venture firms raised about $7 billion in new funds during 2025, against roughly $41 billion in 2021. The limited partners left. Firms deploying older, smaller funds cannot afford many misses, and a fund that cannot afford misses buys things that already work.',
-    'You can see it in the first half of 2026. Around 68 biotechs raised $9.1 billion, the strongest first half since 2022, which sounds like recovery. But two thirds of those rounds went to companies with an asset already in humans. The same pressure runs on the buy side: more than $230 billion of pharma revenue loses exclusivity by 2030, Keytruda alone comes off around 2028, and dealmaking passed $123 billion by late June. Lilly spent close to $21 billion in a year.',
-    'So if you have human data you have never had more leverage, because the venture market and the pharma market now want the same scarce thing. If your pitch is that you will eventually generate assets, you are being repriced, and not gently. Turn Bio had good Stanford science, a licensing deal and encouraging FDA feedback, and its technology was auctioned in May because it could not raise. Most of what I find interesting sits on that side of the line. I do not think the market is wrong, and I do not have a reliable way to tell in advance which platform companies survive it.',
+    'The argument everyone is having is whether clinical AI is a feature or a company, and it cannot be settled at the product level, because the products are converging. Epic put native AI Charting into general release in February. Freed sells a competent scribe at $99 a month and Abridge sells one at roughly $2,500 per clinician per year. A twenty-five-fold spread on a converging capability is not a quality gap. It is a price that has not finished falling.',
+    'What separates these companies is not the model. It is which budget the invoice lands in. Hospital operating margin was 1.7 percent year to date in March and fell about 5 percent nationally across the first five months of 2026. Software sold into that budget competes with nurse staffing, goes through procurement, and has to show up on this year\'s income statement. I wrote a version of that sentence about aging products, then about stroke software, then about hospital finances, before I noticed I had been circling the actual thesis for nine months.',
+    'Three budgets escape it. Pharma promotion: OpenEvidence charges clinicians nothing and sells access to verified prescribers, which took it from about $150 million annualised at the end of 2025 to roughly $300 million by mid-2026 at close to 90 percent gross margin. Recovered collections: revenue cycle software is priced at three to five percent of what it collects, against six to twelve percent for in-house billing, so it funds itself and never queues behind the IT budget. That is why revenue cycle was the most heavily consolidated category of the half, why Ensemble traded at around $12 billion, and why Abridge, Nabla and Commure all moved into it. Abridge\'s Best in KLAS award is for revenue cycle, not for documentation. And a billing code: in January the AMA gave AI-augmented services Category I CPT status for the first time. Read which ones got it. Coronary plaque assessment, cardiac risk from perivascular fat, burn wound classification. AI that returns a billable diagnostic result is now paid for. AI that returns a note is not.',
+    'The part that should bother anyone holding the pharma-funded companies, me included, is that the best of the three budgets is an advertising budget. Doximity is the only public company monetising physicians the same way. It grew 13 percent in fiscal 2026 and guided to 4 percent for fiscal 2027, telling investors that demand in the HCP digital pharma ad market is soft and that clients are committing for shorter periods. If that pool is growing at or below 5 percent and OpenEvidence doubled inside it, then OpenEvidence is taking share from Doximity rather than opening a market. It is still the best business I follow. But its ceiling is somebody else\'s ad budget, and nobody I have read underwrites it that way. That is the honest answer to the OpenEvidence question I said in August I could not resolve.',
   ],
   pillars: [
     {
-      label: 'Runway is a competitive advantage, and I learned that the expensive way',
-      body: 'I spent last year evaluating preclinical companies on the science and treating milestones as evidence of health. Turn Bio taught me those are close to independent variables. A licensing deal and positive FDA feedback do not put money in the bank on a schedule that keeps a company alive. NewLimit raising $435 million for the same mechanism five weeks after Turn went to auction is the cleanest illustration that the difference was framing and timing, not science.',
+      label: 'Ambient documentation is a distribution cost, not a business',
+      body:
+        'Epic put AI Charting into general release in February 2026 and health systems began reassessing standalone scribe contracts within weeks. Every company winning in this category has already left it. Abridge took Lilly equity and moved into trial recruitment and revenue cycle. Ambience became the ambient vendor Epic distributes, which is a good outcome and also a ceiling. The recording buys you the room. It has never been the thing anyone pays for twice.',
+      test:
+        'If Abridge holds its per-seat price and keeps net revenue retention above roughly 110 percent through 2027, with Epic\'s native tool in general release the whole time, then documentation defends itself and I am wrong.',
     },
     {
-      label: 'The proof for AI drug discovery is thinner than the funding',
-      body: 'Isomorphic has raised $2.7 billion and still has not put a molecule into a person, with its first-trial timeline slipping from end of 2025 to end of 2026. Insilico, which raises far less, dosed a human with an AI-designed NLRP3 inhibitor in June. So I stopped watching benchmarks, which companies choose for themselves, and started watching three things: a regulator allowing a computationally designed molecule into a human, a serious domain partner paying real money for the capability, and a molecule surviving Phase 1. Alnylam paying Inceptive satisfies the second. Nobody has done the third, and Phase 1 is exactly where structure prediction has no advantage.',
+      label: 'In devices, the reimbursement code is the milestone. The clearance is not.',
+      body:
+        'Precision Neuroscience has held 510(k) clearance since April 2025, for implantation of up to thirty days, which is not something a hospital can build a service line on. Synchron holds the first IDE for a permanently implanted BCI and is running a pivotal trial. Neither has a CMS pathway, and no implanted BCI in the United States does. China cleared Neuracle\'s NEO on 13 March 2026 and the health security administration attached a reimbursement code almost immediately, because it had built the pricing infrastructure a year before the device existed. That is the entire difference between the two countries here, and it has nothing to do with electrodes.',
+      test:
+        'A Category I CPT code or a national coverage determination for an implanted BCI before 2029. If that lands early, I have underrated how fast the payer side moves once a device is real.',
     },
     {
-      label: 'The durable clinical software is whatever sits next to the decision',
-      body: 'Ambient transcription is commoditised and the pricing shows it. What matters is what a company converts that access into. Abridge turned it into billing codes and now pharma trial recruitment, with Lilly taking equity. OpenEvidence skipped documentation entirely and built the reference layer physicians use during the decision, growing revenue from roughly $7.9 million to about $150 million annualised at 90 percent gross margins. The recording is worthless. The position next to the clinician is not.',
-    },
-    {
-      label: 'Speed of development is now a country-level advantage',
-      body: 'Roughly 38 percent of large pharma licensing deals now originate with Chinese partners, and average upfronts have gone from about $52 million in 2022 to well past $150 million. That is not mainly about price, and not mainly about novel biology either. The advantage is development rather than discovery. A company that enrols a trial in months rather than years reaches human data on a known mechanism before a Western company reaches it on a better one, and you cannot out-innovate an execution advantage.',
+      label: 'Consumer cash is being underwritten as a preference when much of it is a subsidy shock',
+      body:
+        'The cash-pay thesis, which a16z calls insurance defection, treats people paying out of pocket as a durable consumer segment. Some of it is. Function at $2.2 billion and Oura at $11 billion are not distressed buyers. But the enhanced ACA subsidies expired at the end of 2025, and the share of marketplace enrollees receiving a tax credit fell from 92 to 87 percent, the first decline since 2020. KFF had forecast a 114 percent rise in what enrollees pay. The realised figure was 58 percent, because households traded down to higher deductibles instead of leaving. People with higher deductibles pay cash for more things. That is a different customer from the one in the decks, and it is a worse one.',
+      test:
+        'Cash-pay volume still growing through 2027, once the subsidy change has annualised. If it holds up then this is a genuine preference and I have called it wrong.',
     },
   ],
   whereIAmUnsure:
-    'Whether the platform companies I find most interesting are early or simply wrong. Every argument I make about compressed discovery timelines depends on evidence that has not arrived, and the market has spent two years saying it will not wait. I do not think the 2021 vintage of AI biology companies ends up remembered the way digital therapeutics did, but I cannot rule it out, and the most confident-sounding parts of this rest on the least evidence.',
-  lastUpdated: 'August 2026',
+    'The third budget is the one I can check least well. Category I status for AI arrived in January and I am reading three codes as though they were a trend. It is entirely possible the AMA opens the taxonomy wide over the next two years and the line I am drawing between a billable result and a note stops mattering. I am also aware that the cleanest evidence for the central claim comes from a single public comparable, and that building a thesis on one comp is the exact thing I criticise other people for doing.',
+  lastUpdated: 'September 2026',
 };
 
 // ─── Companies ───────────────────────────────────────────────────────────────
