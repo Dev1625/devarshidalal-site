@@ -8,6 +8,80 @@ import remarkGfm from 'remark-gfm';
 import { getNextPublication, getPublicationBySlug } from '@/lib/publications';
 import { LIBRARY_PUBLISHED } from '@/lib/site';
 import { LibraryCover } from '@/components/layout/LibraryCover';
+import React from 'react';
+
+/**
+ * Flatten a react-markdown node tree down to its text.
+ *
+ * Needed because markdown hands a blockquote its children as ['\n', <p>, '\n'],
+ * so anything that reads the text has to skip the whitespace nodes and walk
+ * into the paragraph. Joining the array directly leaves a leading newline,
+ * which breaks a regex anchored with ^, and turns any nested element such as
+ * bold text into "[object Object]".
+ */
+function toText(node: any): string {
+  if (node === null || node === undefined || typeof node === 'boolean') return '';
+  if (typeof node === 'string' || typeof node === 'number') return String(node);
+  if (Array.isArray(node)) return node.map(toText).join('');
+  if (node?.props?.children) return toText(node.props.children);
+  return '';
+}
+
+function CustomBlockquote({ children }: any) {
+  const textContent = toText(children).trim();
+
+  const match = textContent.match(/^\[!([a-zA-Z0-9_-]+)\]\s*(.*)/);
+
+  if (match) {
+    const rawType = match[1].toLowerCase();
+    const headerTitle = match[2] || rawType.toUpperCase();
+
+    let variantClass = 'callout-concept';
+    let icon = '⚡';
+
+    if (['concept', 'definition', 'tools'].includes(rawType)) {
+      variantClass = `callout-${rawType}`;
+      icon = rawType === 'tools' ? '🛠️' : rawType === 'definition' ? '📖' : '⚡';
+    } else if (['warning', 'aim', 'danger'].includes(rawType)) {
+      variantClass = `callout-${rawType}`;
+      icon = rawType === 'aim' ? '🎯' : rawType === 'danger' ? '🚨' : '⚠️';
+    } else if (['insight', 'customize', 'note', 'history'].includes(rawType)) {
+      variantClass = `callout-${rawType}`;
+      icon = rawType === 'customize' ? '🏷️' : rawType === 'history' ? '📜' : '🌾';
+    } else if (['takeaway', 'levelup', 'summary'].includes(rawType)) {
+      variantClass = `callout-${rawType}`;
+      icon = rawType === 'levelup' ? '🌱' : '🚀';
+    } else if (['tip', 'intuition'].includes(rawType)) {
+      variantClass = `callout-${rawType}`;
+      icon = rawType === 'intuition' ? '💧' : '💡';
+    }
+
+    const cleanedChildren = React.Children.map(children, (child: any) => {
+      if (child?.props?.children) {
+        const pText = toText(child.props.children);
+        if (pText.trimStart().startsWith(`[!${match[1]}]`)) {
+          const lines = pText.split('\n');
+          const remainingText = lines.slice(1).join('\n').trim();
+          if (!remainingText) return null;
+          return <p>{remainingText}</p>;
+        }
+      }
+      return child;
+    });
+
+    return (
+      <div className={`callout-box ${variantClass}`}>
+        <div className="callout-header">
+          <span>{icon}</span>
+          <span>{headerTitle}</span>
+        </div>
+        <div>{cleanedChildren}</div>
+      </div>
+    );
+  }
+
+  return <blockquote className="standard-quote">{children}</blockquote>;
+}
 
 export default function PostPage() {
   const params = useParams();
@@ -51,13 +125,13 @@ export default function PostPage() {
         </p>
       </div>
 
-      <div className="prose prose-stone prose-lg max-w-none font-sans font-light leading-[1.8] text-ink
-        prose-headings:font-serif prose-headings:font-normal prose-headings:text-obsidian
-        prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6
-        prose-blockquote:font-serif prose-blockquote:italic prose-blockquote:text-xl prose-blockquote:text-obsidian prose-blockquote:border-l-[2px] prose-blockquote:border-accent prose-blockquote:pl-6 prose-blockquote:my-10
-        prose-p:mb-6 prose-li:mb-2
-      ">
-         <Markdown remarkPlugins={[remarkGfm]}>
+      <div className="essay-content max-w-none">
+         <Markdown 
+           remarkPlugins={[remarkGfm]}
+           components={{
+             blockquote: CustomBlockquote
+           }}
+         >
             {post.content}
          </Markdown>
       </div>

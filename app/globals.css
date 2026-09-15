@@ -73,3 +73,145 @@ html.lenis, html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/* Essay Content Typography & Spacing */
+.essay-content p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.85;
+  font-size: 1.125rem;
+  color: var(--color-ink);
+}
+
+.essay-content h2 {
+  font-family: var(--font-serif);
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: var(--color-obsidian);
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.015em;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.08);
+}
+
+.essay-content h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-obsidian);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.essay-content ul, .essay-content ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.essay-content ul { list-style-type: disc; }
+.essay-content ol { list-style-type: decimal; }
+
+.essay-content li {
+  margin-bottom: 0.6rem;
+  line-height: 1.75;
+}
+
+.essay-content strong {
+  font-weight: 600;
+  color: var(--color-obsidian);
+}
+
+.essay-content hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-top: 1px solid rgba(10, 10, 10, 0.1);
+}
+
+/* Standard Quote Blockquote */
+.essay-content blockquote.standard-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-obsidian);
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.essay-content blockquote.standard-quote p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Custom Rectangular Callouts */
+.callout-box {
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-sans);
+}
+
+.callout-box p {
+  margin-top: 0.4rem !important;
+  margin-bottom: 0.4rem !important;
+  font-size: 1rem !important;
+  line-height: 1.65 !important;
+  color: #2D3748 !important;
+}
+
+.callout-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Callout Variants matching user screenshot */
+/* 1. Purple/Lavender: Concept, Definition, Tools */
+.callout-concept, .callout-definition, .callout-tools {
+  background-color: #EEF0FA;
+}
+.callout-concept .callout-header, .callout-definition .callout-header, .callout-tools .callout-header {
+  color: #4A55A2;
+}
+
+/* 2. Soft Red/Pink: Warning, Aim, Danger */
+.callout-warning, .callout-aim, .callout-danger {
+  background-color: #FBF0F0;
+}
+.callout-warning .callout-header, .callout-aim .callout-header, .callout-danger .callout-header {
+  color: #C0392B;
+}
+
+/* 3. Warm Beige/Amber: Insight, Customize, Note */
+.callout-insight, .callout-customize, .callout-note {
+  background-color: #FDF8F0;
+}
+.callout-insight .callout-header, .callout-customize .callout-header, .callout-note .callout-header {
+  color: #B87333;
+}
+
+/* 4. Mint Green: Takeaway, Levelup, Summary */
+.callout-takeaway, .callout-levelup, .callout-summary {
+  background-color: #F0F7F2;
+}
+.callout-takeaway .callout-header, .callout-levelup .callout-header, .callout-summary .callout-header {
+  color: #2E7D32;
+}
+
+/* 5. Soft Teal/Cyan: Intuition, Tip */
+.callout-intuition, .callout-tip {
+  background-color: #F0F9FA;
+}
+.callout-intuition .callout-header, .callout-tip .callout-header {
+  color: #0D9488;
+}

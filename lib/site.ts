@@ -5,4 +5,4 @@
  * Flip this to true and both /library and /library/[slug] go live again.
  * Nothing else needs to change, and no content has been removed.
  */
-export const LIBRARY_PUBLISHED = false;
+export const LIBRARY_PUBLISHED = true;
