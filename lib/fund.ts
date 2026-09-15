@@ -102,7 +102,7 @@ export const INTRO: Intro = {
     {
       id: 'founders',
       label: 'Founder log',
-      body: 'Who I have been talking to, and what I took from it rather than what was said. Some of these are conversations and some are messages I have sent. I keep the ones where the useful part was somebody telling me I was doing it wrong.',
+      body: 'Conversations with founders and operators who have built the kind of companies I write memos about. Short notes on what we covered, because this is a different way of learning than reading filings.',
       cta: 'Read the log',
     },
     {

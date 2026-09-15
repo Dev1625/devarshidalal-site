@@ -83,7 +83,7 @@ const PROJECTS = [
 ];
 
 const SECTIONS = [
-  { href: '/fund', title: 'Healthcare', meta: '12 memos, 179 entries, 12 founders' },
+  { href: '/fund', title: 'Healthcare', meta: '12 memos, 179 entries, 7 founders' },
   { href: '/research', title: 'Research', meta: '4 papers' },
   { href: '/library', title: 'The Library', meta: 'Coming soon' },
 ];
