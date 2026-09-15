@@ -653,7 +653,7 @@ export const COMPANIES: Company[] = [
       'Synchron securing a reimbursement pathway first, which would matter more than any technical comparison.',
     ],
     view:
-      'My view as of August 2026 is that I follow both this and Synchron and am aware that is a way of not choosing. I think that is defensible while the central technical question is genuinely open, and I would rather say so than call it strategy.',
+      'My view as of September 2026 is that holding this and Synchron together is still a way of not choosing, but I do now have a view on this one on its own. The chronic wireless implant was targeted for first-in-human during 2026. It is the middle of September and there is nothing public. I said in January that this was the milestone that would decide the company, and I have now recorded its absence twice. Implantable neurotechnology slips constantly and the cleared 30-day device is generating real data in the meantime, so this is not yet alarming. It becomes alarming if the year ends with no human. That is the specific thing I am waiting on, and naming the date is more useful than describing the film again.',
   },
 
   // ── Ambience Healthcare ────────────────────────────────────────────────────
@@ -661,7 +661,7 @@ export const COMPANIES: Company[] = [
     id: 'ambience-healthcare',
     name: 'Ambience Healthcare',
     what:
-      'Ambient documentation, medical coding and clinical documentation integrity sold as one product to health systems, across more than 30 specialties.',
+      'Ambient documentation, medical coding and clinical documentation integrity sold as one product to health systems, across more than 200 specialties by the company\'s own count.',
     followingSince: 'Following since mid 2025',
     snapshot: [
       { label: 'Sector', value: 'Clinical workflow AI' },
@@ -672,18 +672,25 @@ export const COMPANIES: Company[] = [
       { label: 'Last round', value: '$243M at $1.25B, July 2025' },
       { label: 'Lead investors', value: 'Oak HC/FT, a16z, OpenAI Startup Fund, Kleiner Perkins, Optum Ventures' },
       { label: 'Distribution', value: 'Epic Toolbox member since August 2025' },
+      { label: 'Deployment', value: '40+ health systems, including Cleveland Clinic, UCSF and Houston Methodist' },
+      { label: 'Pricing model', value: 'Began offering performance-based contracts, April 2026' },
     ],
     summary:
-      'The same argument as Abridge, one tier down in scale and price, with one genuinely different asset: Ambience joined Epic\'s Toolbox program in August 2025, so it is distributed through the EHR rather than sold around it. The CDI line interests me most, because clinical documentation integrity is a function hospitals already staff with expensive human reviewers, which makes the sales conversation arithmetic rather than persuasion. I hold this as a cheaper expression of a thesis I already own, and I am aware that is a correlation problem rather than a second idea.',
+      'The same argument as Abridge, one tier down in scale and price, with one genuinely different asset: Ambience joined Epic\'s Toolbox program in August 2025, so it is distributed through the EHR rather than sold around it. The CDI line interests me most, because clinical documentation integrity is a function hospitals already staff with expensive human reviewers, which makes the sales conversation arithmetic rather than persuasion. I filed this for a year as a cheaper expression of a thesis I already owned, which I now think was the wrong read. In April 2026 the company started offering contracts where part of its fee depends on the financial outcome it produces for the hospital, and that is a different kind of business from the one I thought I was following.',
     problem:
       'Hospitals lose revenue through under-coding and claim denials, and they pay clinical documentation integrity specialists to review charts and query physicians for the detail that changes reimbursement. It is slow, retrospective, and staffed by people who are expensive and hard to hire. Meanwhile the documentation burden on clinicians is the same problem Abridge addresses. Ambience is attacking both ends of one workflow.',
     product:
-      'A suite covering ambient note generation, real-time code assignment, and clinical documentation integrity, spanning more than thirty specialties. The Epic integration through the Ambient Module and Haiku means it appears inside the workflow clinicians already use rather than as a separate application, which removes the largest friction point in this category.',
+      'A suite covering ambient note generation, real-time code assignment for HCC, E/M, ICD-10 and CPT, and clinical documentation integrity. The Epic integration through the Ambient Module and Haiku means it appears inside the workflow clinicians already use rather than as a separate application, which removes the largest friction point in this category.',
     whyNow:
       'Two things. Health system margins have tightened to the point where documentation products must justify themselves on revenue capture rather than physician satisfaction, which favours a suite that includes coding and CDI over a pure scribe. And Epic opened Toolbox to third-party ambient vendors in 2025, which is a distribution window that did not previously exist and may not stay open.',
     market:
       'The same roughly $90 billion US revenue cycle market Abridge is pursuing, approached from the documentation integrity side rather than the ambient side. CDI specifically is a well-defined budget line inside hospitals with existing headcount attached, which makes it the easiest part of this market to sell into and the easiest to quantify.',
     traction: [
+      {
+        label: 'Performance-based contracts',
+        value: 'Announced April 16 2026 as part of a platform roadmap',
+        read: 'The most interesting thing this company has done. Tying fees to financial outcomes moves the product out of the IT budget and into the money it helps recover, which is the only reliable way I know of to survive in this category. It also means it only gets paid if it works, so I want to see signed terms rather than a stated willingness.',
+      },
       {
         label: 'Funding',
         value: '$243M Series C at $1.25B, July 2025; ~$345M total',
@@ -746,7 +753,7 @@ export const COMPANIES: Company[] = [
       'An Optum acquisition, which would resolve this position one way or the other.',
     ],
     view:
-      'My view as of August 2026 is that this is a good company in a good category that probably gets bought by Optum before it becomes a large independent business. That is a fine outcome and not the thing that makes a portfolio work.',
+      'My view as of September 2026 is that I had this filed as a cheaper Abridge and that was lazy. Ambience is trying to get paid out of revenue capture rather than out of the software budget, which is the specific move I argue elsewhere is the only durable one in clinical software, and it is the only company I follow actually attempting it contractually. Optum Ventures being on the cap table still makes an acquisition the likeliest ending. But the thing I want now is a signed performance contract with disclosed terms, because that would be the first hard evidence for the central claim I make on the thesis page, and its absence by mid-2027 would be evidence against it.',
   },
 
   // ── Inceptive ──────────────────────────────────────────────────────────────
@@ -839,7 +846,7 @@ export const COMPANIES: Company[] = [
       'The Alnylam collaboration lapsing quietly at term.',
     ],
     view:
-      'My view as of August 2026 is that this is the company where my opinion improved on outside evidence rather than my own reasoning, and I think that is a good reason to hold it rather than a suspicious one.',
+      'My view as of September 2026 is that Inceptive is the cleanest test I follow of whether counterparty quality works as a signal when I cannot judge the science myself. I cannot evaluate these RNA models. Alnylam can, has done almost nothing else for twenty years, and paid $30 million and took equity for access to them. That satisfies the second of the three tests I set for this field, a serious domain partner paying real money. The third, a molecule surviving Phase 1, is still unmet by anyone. So I hold this as evidence that the capability is worth something to people qualified to price it, and not as evidence that it produces drugs.',
   },
 
   // ── Xaira Therapeutics ─────────────────────────────────────────────────────
@@ -932,7 +939,7 @@ export const COMPANIES: Company[] = [
       'Senior scientific departures, which in a company assembled around specific people would matter more than usual.',
     ],
     view:
-      'My view as of August 2026 is that I follow this more than I understand it. The perturbation dataset is a real and expensive-to-replicate asset, and that is most of why I would still hold it. If you asked me to defend the model itself I could not.',
+      'My view as of September 2026 is that the dataset is the asset and the model is still unproven, and I have stopped treating those as one bet. X-Atlas/Pisces is 25.6 million perturbed single-cell transcriptomes and nobody has published anything close to it. X-Cell, the model trained on it, has no development candidate and no pharma partner two and a half years in. So the question I care about is whether anyone who can judge the capability will pay for it. The trade I would most like to see is Alnylam and Xaira swapping data rather than money, because Alnylam has twenty years of validated in vivo RNAi results and just showed with Inceptive that it will pay for computational work. I think that is the most logical unconsummated deal in the sector. If it or something like it has not happened by the end of 2027, the honest read is that this is a research asset and not a business.',
   },
 
   // ── Beeline Medicines ──────────────────────────────────────────────────────
@@ -1033,7 +1040,7 @@ export const COMPANIES: Company[] = [
     id: 'turn-bio',
     name: 'Turn Biotechnologies',
     what:
-      'Developed a way to make old cells behave like young ones using short bursts of mRNA, and sold its technology at auction in May 2026 after running out of money.',
+      'Developed a way to make old cells behave like young ones using short bursts of mRNA, and sold its technology at auction in May 2026.',
     followingSince: 'Followed from 2025 through mid 2026',
     snapshot: [
       { label: 'Sector', value: 'Longevity, cellular rejuvenation' },
@@ -1046,7 +1053,7 @@ export const COMPANIES: Company[] = [
       { label: 'Regulatory status', value: 'Positive FDA INTERACT feedback, pre-IND' },
     ],
     summary:
-      'The science was good and I still think so. You can reset the epigenetic marks that accumulate as a cell ages by briefly expressing reprogramming factors, and if you stop early enough the cell rejuvenates without reverting to a stem cell, which is what makes tumours. The company ran out of money anyway. I am keeping this memo in the same format as the others because the discipline of writing it that way is what would have caught the problem, and the risk section is where the failure is visible in hindsight.',
+      'The science was good and I still think so. You can reset the epigenetic marks that accumulate as a cell ages by briefly expressing reprogramming factors, and if you stop early enough the cell rejuvenates without reverting to a stem cell, which is what makes tumours. The company went to auction anyway. No filing or statement I can find says why in those words, and there was never an announced wind-down, so \'ran out of money\' is my inference from a live asset auction and a lifetime raise of around $80 million rather than something I can cite. I am keeping this memo in the same format as the others because the discipline of writing it that way is what would have caught the problem, and the risk section is where the failure is visible in hindsight.',
     problem:
       'Cellular ageing drives a long list of degenerative conditions, and essentially all existing treatment manages symptoms rather than the underlying decline. Partial epigenetic reprogramming offers a route to restoring youthful cell function directly. The danger is that full reprogramming produces pluripotent stem cells, which form teratomas, so the therapeutic question is whether you can go partway and stop.',
     product:
@@ -1212,7 +1219,7 @@ export const COMPANIES: Company[] = [
       'A competitor NLRP3 program failing on outcomes despite biomarker success.',
     ],
     view:
-      'My view as of August 2026 is that the current company is more interesting than the one I thought I understood, and I am following it without arguing for it. I have been wrong about this name once in an entirely avoidable way, and I would rather earn the read back slowly.',
+      'My view as of September 2026 is that QUELL-CV reads out within months, so I should say what I expect before it does, because saying it afterwards is worth nothing. I expect the hsCRP effect to hold, since that is a direct pharmacological readout and Phase 1 showed it plainly at two doses. I have much less confidence it converts into a cardiovascular signal in a Phase 2 this size, and a result that looks strong on biomarkers while saying nothing about events would not surprise me. I was wrong about this company once by trusting an argument about the category over the data on the drug, so the useful discipline is to commit to the prediction in advance and be scored on it.',
   },
 
   // ── EvolutionaryScale ──────────────────────────────────────────────────────
