@@ -8,6 +8,8 @@ Maintain Healthcare only: the thesis, company memos, past research cases, Follow
 
 Write in the existing exploratory student voice, in first person, with specific observations, subjective reactions and honest uncertainty. Preserve good existing prose. Separate what a source says from what I infer. Avoid press-release language, generic praise, repetitive conclusions and unsupported certainty. A modest update is better than pretending to have a differentiated view. Do not manufacture changes or add news merely to fill a daily quota.
 
+Read `WEBSITE_VOICE.md` before drafting or rewriting. The owner requires approval of the exact addition before any new personal information from LifeOS, Google Drive or another private source is published anywhere on the website. That approval requirement also applies to additions to Home. Healthcare publication authority does not grant authority to publish private biography, recruiting, school, travel or project records. Existing public facts may be reworded without adding personal claims; healthcare counts may be maintained as described above.
+
 Prefer private medtech, biotech and life sciences businesses. Software, care delivery and insurance can belong when the evidence supports a stronger case. Public companies can belong with an explicit reason, such as unusually useful disclosure or a strong comparative case. There is no fixed number of current companies; select enough to investigate well. Existing ten active memos are the starting collection, not a permanent constraint.
 
 ## Daily run

@@ -7,6 +7,8 @@ import { Mail, Linkedin, Phone, UserPlus, ArrowUpRight } from 'lucide-react';
 import { ACTIVE_COMPANIES, ARCHIVED_COMPANIES } from '@/lib/fund';
 import { COVERAGE_COUNT } from '@/lib/coverage';
 import { FOUNDER_COUNT } from '@/lib/founders';
+import { PUBLICATIONS } from '@/lib/publications';
+import { LIBRARY_PUBLISHED } from '@/lib/site';
 
 const CONTACTS = [
   { icon: UserPlus, label: 'Add to contacts', href: '/devarshi.vcf', external: false },
@@ -19,8 +21,8 @@ const CONTACTS = [
 // lands on meaning rather than on arbitrary line breaks.
 const BIO = [
   "Hi, I'm Devarshi.",
-  'I study business, mathematical biology and neuroscience at Michigan, and I work at the intersection of medicine, strategy and investment.',
-  'I built Cirqle, an AI CRM. Away from that I do close-up card magic.',
+  'I study business, mathematical biology and neuroscience at Michigan. I work on problems in medicine, strategy and investing.',
+  'I built Cirqle, an AI CRM. Away from that, I do close-up card magic.',
 ];
 
 const HONORS = [
@@ -37,58 +39,63 @@ const EXPERIENCE = [
     org: 'Cirqle',
     role: 'Founder',
     when: '2025',
-    line: 'An AI CRM I designed and built alone. In closed beta with 75 users.',
+    line: 'I designed and built an AI CRM on my own. It is in closed beta with 75 users.',
   },
   {
     org: 'UpRound Venture Capital',
     role: 'Deal flow co-lead',
     when: '2026',
-    line: 'Sourcing early-stage companies and writing the memos the fund decides on.',
+    line: 'I source early-stage companies and write memos to help the fund decide which ones to back.',
   },
   {
     org: 'BOND Consulting Group',
     role: 'Senior consultant',
     when: '2024',
-    line: 'Pricing and operations work for founders and C-suite teams. Promoted, and now train the juniors.',
+    line: 'I work on pricing and operations with founders and C-suite teams. After a promotion, I started training junior consultants too.',
   },
   {
     org: 'Blueprints for Pangaea',
     role: 'Expansion manager',
     when: '2024',
-    line: 'Running operations and new chapters for a nonprofit that redistributes surplus medical supplies.',
+    line: 'I run operations and help open new chapters for a nonprofit that redistributes surplus medical supplies.',
   },
   {
     org: "Kabir's Prep",
     role: 'Instructor, then site lead',
     when: '2022',
-    line: 'Taught SAT and ACT to a couple thousand students, then ran the site over two summers.',
+    line: 'I taught SAT and ACT to a couple thousand students, then ran the site over two summers.',
   },
 ];
 
 const PROJECTS = [
   {
+    title: 'TapMed',
+    when: '2026',
+    line: 'I’m building an early prototype for medication logging with NFC tags. I’m testing whether it makes the process easier for patients and useful to caregivers or pharmacies.',
+  },
+  {
     title: 'Healthcare investment research',
     when: '2025',
     href: '/fund',
-    line: `${ACTIVE_COMPANIES.length} current company memos, ${ARCHIVED_COMPANIES.length} past research cases, a ${COVERAGE_COUNT}-entry sector archive, and a log of the founders I have talked to.`,
+    line: `I follow ${ACTIVE_COMPANIES.length} companies, keep ${ARCHIVED_COMPANIES.length} past cases, and write down what changes my view. There are ${COVERAGE_COUNT} dated notes and a log of the founders I have talked to.`,
   },
   {
     title: 'EEG-fMRI signal validation',
     when: '2026',
-    line: 'With a Meta AI researcher. Which artifact-correction methods keep the neural signal intact.',
+    line: 'With a Meta AI researcher, I compare artifact-correction methods to see which keep the neural signal intact.',
   },
   {
     title: 'WriVision',
     when: '2021',
     href: '/research/wrivision-quality-control',
-    line: 'A neural network on 8,700 wrist X-rays, piloted at Henry Ford Health. Presented at RSNA.',
+    line: 'I worked on a neural network using 8,700 wrist X-rays, piloted at Henry Ford Health and presented at RSNA.',
   },
 ];
 
 const SECTIONS = [
   { href: '/fund', title: 'Healthcare', meta: `${ACTIVE_COMPANIES.length} current, ${ARCHIVED_COMPANIES.length} past cases, ${COVERAGE_COUNT} entries, ${FOUNDER_COUNT} founders` },
-  { href: '/research', title: 'Research', meta: '4 papers' },
-  { href: '/library', title: 'The Library', meta: 'Coming soon' },
+  { href: '/research', title: 'Research', meta: '2 projects' },
+  { href: '/library', title: 'The Library', meta: LIBRARY_PUBLISHED ? `${PUBLICATIONS.length} essays` : 'Coming soon' },
 ];
 
 function Section({ label, children }: { label: string; children: React.ReactNode }) {
@@ -221,8 +228,8 @@ export default function Home() {
           <span className="font-mono text-[10px] uppercase tracking-widest text-stone-mid">Expected 2028</span>
         </div>
         <p className="mt-1.5 font-sans text-[14px] font-light leading-[1.7] text-stone-mid">
-          B.B.A. from Ross and B.S. from LSA. Triple major in business administration, mathematical biology and
-          neuroscience.
+          I am working toward a B.B.A. from Ross and a B.S. from LSA, with majors in business administration,
+          mathematical biology and neuroscience.
         </p>
 
         <div className="mt-8">

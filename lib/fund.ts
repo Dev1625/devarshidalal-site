@@ -520,12 +520,12 @@ export const COMPANIES: Company[] = [
     whyNow:
       'AlphaFold 2 solved structure prediction for single proteins in 2020 and AlphaFold 3 extended it to complexes with small molecules and nucleic acids. That capability is only about three years old at production quality. The reason to fund this now rather than later is that the compute and talent required are concentrated in very few places, and Alphabet is one of them.',
     market:
-      'Global pharmaceutical R&D spend is well over $200 billion annually, and the addressable value is not software licences but ownership of drugs. A single approved oncology asset can produce billions in annual revenue. That is why the business model shifted toward holding internal programs rather than licensing the engine: the licensing business is worth a fraction of the asset business, as EvolutionaryScale demonstrated by being absorbed into a nonprofit.',
+      "Global pharmaceutical R&D spend is well over $200 billion annually, and the addressable value is not software licences but ownership of drugs. A single approved oncology asset can produce billions in annual revenue. That is why the business model shifted toward holding internal programs rather than licensing the engine: a licensing business captures value differently from one that owns drugs. EvolutionaryScale made me ask that question, but its move to Biohub does not establish what investors received.",
     traction: [
       {
         label: 'Molecules in humans',
-        value: 'Zero',
-        read: 'The only metric that matters and it is still at zero. First trials are now targeted for the end of 2026, revised at Davos in January from an end-2025 target.',
+        value: "No dosing announcement located",
+        read: "I have not located a patient-dosing announcement in the material reviewed. First trials are now targeted for the end of 2026, revised at Davos in January from an end-2025 target.",
       },
       {
         label: 'Capital raised',
@@ -801,7 +801,7 @@ export const COMPANIES: Company[] = [
     whyNow:
       'The 510(k) clearance in March 2025 changed the company from a research program into a commercial one, and it is the first full regulatory clearance granted to a company developing a next-generation wireless BCI. That creates a feedback loop the rest of the field does not have: real recordings, from real patients, in ordinary clinical settings, legally, at volume, feeding the submission for the chronic device.',
     market:
-      'Two markets stacked. The near-term one is intraoperative cortical mapping during neurosurgery, an existing procedure with existing reimbursement where Precision is selling a better electrode. That is a modest business and it is a business. The larger one is the same chronic paralysis market Synchron is pursuing, which does not exist commercially yet. The near-term product funds data collection toward the large one, which is a genuinely well-constructed sequencing.',
+      "Two markets stacked. The near-term one is intraoperative cortical mapping during neurosurgery, an existing procedure with existing reimbursement where Precision is selling a better electrode. That is a modest business and it is a business. The larger one is the same chronic paralysis market Synchron is pursuing, which does not exist commercially yet. I like the sequencing: the near-term product funds data collection toward the larger market.",
     traction: [
       {
         "label": "FDA clearance",
@@ -905,7 +905,7 @@ export const COMPANIES: Company[] = [
       { label: 'Pricing model', value: 'Began offering performance-based contracts, April 2026' },
     ],
     summary:
-      'The same argument as Abridge, one tier down in scale and price, with one genuinely different asset: Ambience joined Epic\'s Toolbox program in August 2025, so it is distributed through the EHR rather than sold around it. The CDI line interests me most, because clinical documentation integrity is a function hospitals already staff with expensive human reviewers, which makes the sales conversation arithmetic rather than persuasion. I filed this for a year as a cheaper expression of a thesis I already owned, which I now think was the wrong read. In April 2026 the company started offering contracts where part of its fee depends on the financial outcome it produces for the hospital, and that is a different kind of business from the one I thought I was following.',
+      "The same argument as Abridge, one tier down in scale and price, with one different asset: Ambience joined Epic's Toolbox program in August 2025, so it is distributed through the EHR rather than sold around it. The CDI line interests me most, because clinical documentation integrity is a function hospitals already staff with expensive human reviewers, which makes the sales conversation arithmetic rather than persuasion. I filed this for a year as a cheaper expression of a thesis I already owned, which I now think was the wrong read. In April 2026 the company started offering contracts where part of its fee depends on the financial outcome it produces for the hospital, and that is a different kind of business from the one I thought I was following.",
     problem:
       'Hospitals lose revenue through under-coding and claim denials, and they pay clinical documentation integrity specialists to review charts and query physicians for the detail that changes reimbursement. It is slow, retrospective, and staffed by people who are expensive and hard to hire. Meanwhile the documentation burden on clinicians is the same problem Abridge addresses. Ambience is attacking both ends of one workflow.',
     product:
@@ -1016,7 +1016,7 @@ export const COMPANIES: Company[] = [
     summary:
       'RNA drugs have an engineering problem more than a biology problem. You can specify the protein you want a cell to make, but the molecule degrades quickly, folds in ways that suppress expression, and often needs cold storage. Inceptive treats that as an optimisation problem and trains on experimental data it generates itself. The Alnylam collaboration is the strongest third-party validation any company on this list has received, and it is the reason this moved from an interesting bet to a position I would defend.',
     problem:
-      'The promise of RNA medicine is that you can encode any protein and let the body manufacture it. The reality is that RNA is fragile and its behaviour is dominated by secondary structure that is hard to predict and harder to control. Two sequences encoding the identical protein can differ enormously in stability, expression level and duration. Getting that right has been done by intuition and screening, which is slow and does not generalise.',
+      "The promise of RNA medicine is that you can encode any protein and let the body manufacture it. But RNA is fragile and its behaviour is dominated by secondary structure that is hard to predict and harder to control. Two sequences encoding the identical protein can differ enormously in stability, expression level and duration. Getting that right has been done by intuition and screening, which is slow and does not generalise.",
     product:
       'Models that generate RNA sequences optimised for stability and expression, trained on high-throughput experimental measurements produced in the company\'s own automated laboratory. This is the important structural detail: the training data is proprietary and generated in-house rather than assembled from public sources, which is what makes the position defensible as general models improve. Under the Alnylam collaboration the work covers siRNA design, modelling target messenger RNAs and exploring chemical modifications.',
     whyNow:
@@ -1037,7 +1037,7 @@ export const COMPANIES: Company[] = [
       {
         label: 'Equity purchase',
         value: 'Alnylam took equity alongside the cash',
-        read: 'This is the part I weight. An option is cheap; buying equity is a longer commitment and a stronger signal than a licensing fee alone.',
+        read: "I give the equity purchase more weight than an option or licensing fee alone because it is a longer commitment.",
       },
       {
         label: 'Proprietary data generation',
@@ -1154,7 +1154,7 @@ export const COMPANIES: Company[] = [
       {
         "label": "Capital",
         "value": "$1.3B at launch",
-        "read": "One of the largest biotech launches on record. It buys years of runway, which given what happened to Turn Bio is a genuine asset rather than a vanity number."
+        "read": "One of the largest biotech launches on record. It buys years of runway. After following Turn Bio, I care more about how long that funds the work than about the size of the round."
       },
       {
         "label": "X-Cell and X-Atlas/Pisces",
@@ -1317,7 +1317,7 @@ export const COMPANIES: Company[] = [
       'A safety signal on TLR7/8 inhibition in any program.',
     ],
     view:
-      'My view as of September 2026 is that the readout landed and I still do not have a differentiated scientific view, which is an uncomfortable pair of things to hold at once. I bought category exposure and the category paid. I am keeping it because Phase 3 is a real question I can now do work on, not because Phase 2 vindicated anything I actually said.',
+      "My view as of September 2026 is that the readout landed and I still do not have a differentiated scientific view, which is an uncomfortable pair of things to hold at once. I added the company for category exposure, and the readout was positive. I am keeping it because Phase 3 is a real question I can now do work on, not because Phase 2 vindicated anything I actually said.",
 
     lastReviewed: "October 13, 2026",
     sources: [
@@ -1366,7 +1366,7 @@ export const COMPANIES: Company[] = [
       {
         label: 'FDA INTERACT feedback',
         value: 'Positive, on the path toward IND',
-        read: 'A genuine scientific milestone that puts no money in the bank. I had this in my "progressing" column and it was not a measure of company health.',
+        read: "A scientific milestone that puts no money in the bank. I had this in my \"progressing\" column and it was not a measure of company health.",
       },
       {
         label: 'Klotho letter of intent',
@@ -1402,7 +1402,7 @@ export const COMPANIES: Company[] = [
       {
         risk: 'Delivery specificity of LNPs to cartilage was unproven.',
         mitigant:
-          'Genuinely open at wind-down, and never the thing that killed it.',
+          "Still open at wind-down, and never the thing that killed it.",
       },
     ],
     diligence: [

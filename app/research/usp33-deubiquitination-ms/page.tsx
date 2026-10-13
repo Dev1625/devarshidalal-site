@@ -115,10 +115,10 @@ function GenePlot() {
             Gene expression screen
           </div>
           <h2 className="mb-6 font-serif text-4xl leading-tight text-obsidian">
-            USP33 came out of a broader search, not a pre-picked story.
+            I found USP33 through a broader gene-expression screen.
           </h2>
           <p className="font-sans text-lg font-light leading-relaxed text-ink">
-            The first phase used GEO2R on brain-tissue samples from 10 controls and 40 MS patients. Genes were filtered using statistical significance and fold-change, then interpreted through pathway and network tools.
+            I used GEO2R on brain-tissue samples from 10 controls and 40 MS patients. I filtered genes by statistical significance and fold-change, then used pathway and network tools to interpret the results.
           </p>
 
           <div className="mt-8 border border-stone-light bg-bone p-6">
@@ -225,11 +225,11 @@ function MechanismExplorer() {
             Mechanism hypothesis
           </div>
           <h2 className="font-serif text-4xl leading-tight text-obsidian">
-            The biological idea is about protein regulation becoming part of demyelination.
+            I wanted to understand how protein regulation might contribute to demyelination.
           </h2>
         </div>
         <p className="font-sans text-lg font-light leading-relaxed text-ink">
-          Multiple sclerosis damages the myelin sheath around neurons. This project connects that clinical phenotype to a molecular path: USP33 overexpression, ubiquitin-mediated proteolysis, and potential degradation of myelin-related proteins such as MBP and PLPs.
+          Multiple sclerosis damages the myelin sheath around neurons. I investigated a possible connection between that clinical phenotype and a molecular path: USP33 overexpression, ubiquitin-mediated proteolysis, and potential degradation of myelin-related proteins such as MBP and PLPs.
         </p>
       </div>
 
@@ -300,10 +300,10 @@ function RnaiExplorer() {
             Phase 2
           </div>
           <h2 className="mb-6 font-serif text-4xl leading-tight">
-            The therapeutic direction was RNAi: reduce USP33 expression instead of just describing it.
+            Could reducing USP33 expression change the biology?
           </h2>
           <p className="font-sans text-lg font-light leading-relaxed text-stone-200">
-            After identifying USP33, the next step was asking whether its expression could be intentionally downregulated. The poster moves through UCSC, ENCODE, JASPAR, and miRBase to connect gene location, regulatory structure, and RNAi feasibility.
+            After identifying USP33, I asked whether we could downregulate its expression. The poster moves through UCSC, ENCODE, JASPAR, and miRBase to connect gene location, regulatory structure, and RNAi feasibility.
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-3">
@@ -365,7 +365,7 @@ export default function Usp33DeubiquitinationPage() {
             Targeting USP33 in multiple sclerosis.
           </h1>
           <p className="max-w-3xl font-sans text-xl font-light leading-relaxed text-ink">
-            This project started with a disease question: what molecular signals could help explain demyelination in MS, and could one of those signals become a therapeutic target? The page follows the work from gene expression analysis to the RNAi hypothesis.
+            This project started with a disease question: what molecular signals could help explain demyelination in MS, and could one of those signals become a therapeutic target? I followed the gene-expression signal through pathway analysis to an RNAi hypothesis.
           </p>
         </motion.div>
 
@@ -411,7 +411,7 @@ export default function Usp33DeubiquitinationPage() {
               Evidence, limits, next experiments
             </div>
             <h2 className="font-serif text-4xl leading-tight text-obsidian">
-              The page should make the ambition clear, but also show where the evidence still needs to grow.
+              I have a hypothesis to test, with limits the computational analysis cannot resolve.
             </h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
@@ -419,21 +419,21 @@ export default function Usp33DeubiquitinationPage() {
               <CheckCircle2 className="mb-6 text-accent" size={22} />
               <h3 className="mb-3 font-serif text-2xl text-obsidian">What worked</h3>
               <p className="font-sans text-sm leading-relaxed text-ink">
-                The analysis connected a significantly dysregulated gene to a biologically meaningful pathway. KEGG identified ubiquitin-mediated proteolysis with FDR 2.61E-06, and STRING-DB added network context around USP33.
+                I connected a significantly dysregulated gene to a pathway relevant to protein degradation. KEGG identified ubiquitin-mediated proteolysis with FDR 2.61E-06, and STRING-DB added network context around USP33.
               </p>
             </div>
             <div className="border border-stone-light bg-white p-6">
               <AlertTriangle className="mb-6 text-accent-warm" size={22} />
               <h3 className="mb-3 font-serif text-2xl text-obsidian">What to be careful about</h3>
               <p className="font-sans text-sm leading-relaxed text-ink">
-                The sample classes were imbalanced: 10 controls versus 40 MS samples. That means the USP33 signal is promising, but it should be treated as a hypothesis that needs validation rather than a completed therapeutic claim.
+                The sample classes were imbalanced: 10 controls versus 40 MS samples. I treat the USP33 signal as a hypothesis that needs validation. The analysis does not establish that reducing its expression would treat MS.
               </p>
             </div>
             <div className="border border-stone-light bg-white p-6 md:col-span-2">
               <FlaskConical className="mb-6 text-accent" size={22} />
               <h3 className="mb-3 font-serif text-2xl text-obsidian">Next experiments</h3>
               <p className="font-sans text-sm leading-relaxed text-ink">
-                The next step is prospective validation: testing whether reducing USP33 changes MS-relevant biology. The poster points toward cDNA synthesis, IHC on MS brain samples, and drug-screening assays as the bridge from bioinformatics signal to experimental evidence.
+                I would next test whether reducing USP33 changes MS-relevant biology. The poster points toward cDNA synthesis, IHC on MS brain samples, and drug-screening assays as the bridge from bioinformatics signal to experimental evidence.
               </p>
             </div>
           </div>

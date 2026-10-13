@@ -196,7 +196,7 @@ export const ENTRIES_2026_Q1: CoverageEntry[] = [
     entryType: 'regulation-policy',
     scope: 'industry',
     analysis:
-      'The Commissioner\'s National Priority Voucher pilot compresses review from ten to twelve months down to one or two, for drugs touching five stated priorities including onshoring and supply chain resilience.\n\nA voucher that saves nine months of review is worth an enormous amount on a drug with real revenue, and it is now partly awarded on whether you manufacture domestically. Read alongside the tariff, this is the same industrial policy arriving through a second door. The government is not only taxing imports, it is paying for onshoring in regulatory time.',
+      "The Commissioner's National Priority Voucher pilot compresses review from ten to twelve months down to one or two, for drugs touching five stated priorities including onshoring and supply chain resilience.\n\nA voucher that saves nine months of review is worth an enormous amount on a drug with product revenue, and it is now partly awarded on whether you manufacture domestically. Read alongside the tariff, this is the same industrial policy arriving through a second door. The government is not only taxing imports, it is paying for onshoring in regulatory time.",
     sources: [
       {
         title: 'Commissioner\'s National Priority Voucher (CNPV) Pilot Program',

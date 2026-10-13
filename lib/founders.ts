@@ -28,7 +28,7 @@ export const FOUNDER_NOTES: FounderNote[] = [
     name: 'Badreddin Edris',
     company: 'Beeline Medicines',
     background: 'Previously co-founded Silverback Therapeutics and Edgewise Therapeutics',
-    note: 'Career paths in biotech, and why moving toward promising opportunities beats working backward from a title you have already decided you want.',
+    note: "We talked about career paths in biotech, and why moving toward promising opportunities beats working backward from a title you have already decided you want.",
     companyId: 'beeline-medicines',
   },
   {
@@ -36,7 +36,7 @@ export const FOUNDER_NOTES: FounderNote[] = [
     name: 'Lava Sunder',
     company: 'Corner Health',
     role: 'Co-Founder and CEO',
-    note: 'Her move out of consulting into founding Corner, and why hands-on time at an early-stage company counted for more than the McKinsey name did.',
+    note: "We talked about her move out of consulting into founding Corner, and why hands-on time at an early-stage company counted for more than the McKinsey name did.",
   },
   {
     id: 'ben-grynol',
@@ -44,7 +44,7 @@ export const FOUNDER_NOTES: FounderNote[] = [
     company: 'Throne Science',
     role: 'VP of Growth',
     background: 'Previously a startup founder',
-    note: 'Early-stage growth, and what it takes to build a business around passive health data collection.',
+    note: "We talked about early-stage growth, and what it takes to build a business around passive health data collection.",
   },
   {
     id: 'douglas-mcmillin',
@@ -52,7 +52,7 @@ export const FOUNDER_NOTES: FounderNote[] = [
     company: 'CORE Biomedicine',
     role: 'Head of Business Development and Operations',
     background: 'Former oncology startup founder',
-    note: 'The technical rigour behind biotech business development, how to balance a broad platform against a focused lead asset, and how early pharma partnerships get structured.',
+    note: "We talked about the technical rigour behind biotech business development, how to balance a broad platform against a focused lead asset, and how early pharma partnerships get structured.",
   },
   {
     id: 'keith-oneill',
@@ -60,7 +60,7 @@ export const FOUNDER_NOTES: FounderNote[] = [
     company: 'Vivid Dx',
     role: 'CEO',
     background: 'Co-Founder of Novus Diagnostics',
-    note: 'Taking rapid sepsis diagnostics through clinical validation and into the market, including outcomes modelling, cost savings analysis and go-to-market.',
+    note: "We talked about taking rapid sepsis diagnostics through clinical validation and into the market, including outcomes modelling, cost savings analysis and go-to-market.",
   },
   {
     id: 'rahul-shivkumar',
@@ -68,14 +68,14 @@ export const FOUNDER_NOTES: FounderNote[] = [
     company: 'Assured',
     role: 'Co-Founder',
     background: 'Previously co-founded Dawn Health',
-    note: 'How running a virtual clinic exposed the infrastructure problems underneath healthcare delivery.',
+    note: "We talked about how running a virtual clinic exposed the infrastructure problems underneath healthcare delivery.",
   },
   {
     id: 'ben-rathi',
     name: 'Ben Rathi',
     company: 'Blueprints for Pangaea',
     role: 'Founder and Chairman; Partner at Predictive VC',
-    note: 'Blueprints in its early days, and his route from operating roles at McKinsey and Nuro into venture investing.',
+    note: "We talked about Blueprints in its early days, and his route from operating roles at McKinsey and Nuro into venture investing.",
   },
 ];
 

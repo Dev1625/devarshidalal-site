@@ -129,7 +129,7 @@ export const ENTRIES_SUPPLEMENTAL: CoverageEntry[] = [
     relatedCompanyIds: ['synchron'],
     themes: ['bci'],
     analysis:
-      'A year ago Synchron unveiled a foundation model trained on neural data and I could not decide whether it was substance or a GTC keynote slot.\n\nI am still not sure, and the reason is the data. Ten implanted patients is not a training corpus by any modern standard. What might make it work is that the signal is extremely dense per patient, so hours of continuous recording from ten people is not the same as ten samples.\n\nIf a better decoder genuinely extracts more from sixteen electrodes, it partly answers the channel-count objection I keep raising. That would matter more than another partnership announcement.',
+      "A year ago Synchron unveiled a foundation model trained on neural data and I could not decide whether it was substance or a GTC keynote slot.\n\nI am still not sure, and the reason is the data. Ten implanted patients is not a training corpus by any modern standard. What might make it work is that the signal is extremely dense per patient, so hours of continuous recording from ten people is not the same as ten samples.\n\nIf a better decoder extracts more from sixteen electrodes, it partly answers the channel-count objection I keep raising. That would matter more than another partnership announcement.",
     sources: [
       {
         title: 'Synchron Unveils Chiral, the World\'s First Cognitive AI Brain Foundation Model',
@@ -344,7 +344,7 @@ export const ENTRIES_SUPPLEMENTAL: CoverageEntry[] = [
     scope: 'industry',
     themes: ['ipo-window'],
     analysis:
-      'When the public market is only open to late-stage companies and venture funds are smaller, commercial-stage biotechs with real revenue turn to royalty monetisation and structured debt instead of equity.\n\nIt is non-dilutive and it is expensive, and it works well for a company with an approved product and a predictable revenue line. It does nothing for anyone preclinical, which is exactly the group with the problem. The financing innovation is happening at the end of the pipeline that least needs it.',
+      "When the public market is only open to late-stage companies and venture funds are smaller, commercial-stage biotechs with product revenue turn to royalty monetisation and structured debt instead of equity.\n\nIt is non-dilutive and it is expensive, and it works well for a company with an approved product and a predictable revenue line. It does nothing for anyone preclinical, which is exactly the group with the problem. The financing innovation is happening at the end of the pipeline that least needs it.",
     sources: [
       {
         title: 'Biotech IPO Tracker 2026',

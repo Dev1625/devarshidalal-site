@@ -9,7 +9,7 @@ const PROJECTS = [
     title: 'WriVision: AI Quality Control for Wrist X-rays',
     href: '/research/wrivision-quality-control',
     eyebrow: 'Medical imaging AI',
-    dek: 'A multi-task DenseNet121 model designed to detect projection, laterality, cast, and hardware so technologists can catch wrist X-ray quality problems before a patient leaves.',
+    dek: 'I worked on a multi-task DenseNet121 model to check projection, laterality, cast, and hardware in wrist X-rays. The aim was to help technologists catch quality problems before a patient leaves.',
     icon: ScanSearch,
     stats: ['6,823 filtered radiographs', '4 simultaneous output heads', '97.23% projection F1'],
   },
@@ -17,7 +17,7 @@ const PROJECTS = [
     title: 'Targeting USP33 in Multiple Sclerosis',
     href: '/research/usp33-deubiquitination-ms',
     eyebrow: 'Bioinformatics / Neuroimmunology',
-    dek: 'A gene-expression and pathway analysis connecting USP33 overexpression to ubiquitin-mediated proteolysis, demyelination, and a proposed RNAi therapeutic strategy.',
+    dek: 'I used gene-expression and pathway analysis to investigate USP33 overexpression in multiple sclerosis, then asked whether reducing its expression with RNAi could be a useful therapeutic direction.',
     icon: Dna,
     stats: ['40 MS samples', 'USP33 p = 1.49E-08', 'UMP FDR = 2.61E-06'],
   },
@@ -36,7 +36,7 @@ export default function ResearchHome() {
           Research.
         </h1>
         <p className="font-sans font-light text-xl text-stone-mid mb-16 leading-relaxed max-w-4xl">
-          Two projects that sit in the space I keep coming back to: using computation to make clinical systems more precise. One looks at radiology workflow quality control; the other follows a molecular signal in multiple sclerosis toward a possible therapeutic direction.
+          I use computation to investigate clinical problems. In one project, I worked on quality control for wrist X-rays. In the other, I followed a molecular signal in multiple sclerosis toward a possible therapeutic target. Both left me with questions that the analysis alone could not answer.
         </p>
 
         <div className="grid gap-6 border-t border-stone-300 pt-16 lg:grid-cols-2">

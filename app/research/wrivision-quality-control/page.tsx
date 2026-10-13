@@ -426,11 +426,11 @@ function ArchitectureExplorer() {
               Interactive architecture
             </div>
             <h2 className="font-serif text-4xl leading-tight text-obsidian md:text-5xl">
-              The poster architecture, rebuilt as a cleaner full-width model map.
+              How the model works.
             </h2>
           </div>
           <p className="font-sans text-lg font-light leading-relaxed text-ink">
-            The key design choice was not just using a CNN. It was using a multi-task DenseNet121 backbone so the same visual representation could support four quality-control decisions. Click a layer in the diagram or selector to inspect what it contributed.
+            We used a multi-task DenseNet121 backbone so the same visual representation could support four quality-control decisions. Click a layer in the diagram or selector to inspect what it contributed.
           </p>
         </div>
 
@@ -489,11 +489,11 @@ function WorkflowPanel() {
             Clinical workflow
           </div>
           <h2 className="font-serif text-4xl leading-tight text-obsidian">
-            The point was quality control before the patient leaves.
+            I wanted the quality check to happen before the patient leaves.
           </h2>
         </div>
         <p className="font-sans text-lg font-light leading-relaxed text-ink">
-          Most MSK radiographs are not reviewed by a radiologist until after acquisition. That delay matters: if a wrist is mislabeled, the patient may already be gone. This system reframes the model as a near-real-time technologist assistant rather than a diagnostic black box.
+          Most MSK radiographs are not reviewed by a radiologist until after acquisition. That delay matters: if a wrist is mislabeled, the patient may already be gone. We designed the system to help technologists check image quality in near real time.
         </p>
       </div>
 
@@ -548,7 +548,7 @@ function ResultsDashboard() {
             Four outputs, one quality-control decision.
           </h2>
           <p className="font-sans text-lg font-light leading-relaxed text-stone-200">
-            The model only becomes useful when the outputs are interpreted together. Projection, laterality, cast, and hardware each answer a different question about whether the image is safe to send forward.
+            I think the outputs are most useful when we interpret them together. Projection, laterality, cast, and hardware each answer a different question about whether the image is safe to send forward.
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-3">
@@ -634,17 +634,17 @@ function ValidationGrid() {
             Training and validation
           </div>
           <h2 className="mb-6 font-serif text-4xl leading-tight text-obsidian">
-            The model was tuned for generalization, not a clean-looking demo.
+            We tested whether the model could generalize.
           </h2>
           <div className="space-y-5 font-sans text-base font-light leading-relaxed text-ink">
             <p>
               The dataset started with 8,718 wrist radiographs and was filtered to 6,823 de-identified images from 2,591 patients after excluding low-quantity views and enforcing label consistency.
             </p>
             <p>
-              Images were split into training/validation and test subsets with stratification based on projection. The final training setup used mini-batches of 64, Adam optimization, weighted categorical cross-entropy, learning-rate decay, and early stopping after validation loss plateaued.
+              We split images into training/validation and test subsets, stratifying by projection. The final training setup used mini-batches of 64, Adam optimization, weighted categorical cross-entropy, learning-rate decay, and early stopping after validation loss plateaued.
             </p>
             <p>
-              Five-fold cross-validation checked that the model was not simply memorizing the training distribution. That was especially important because the class balance varied across projection, marker, cast, and hardware labels.
+              We used five-fold cross-validation to check whether the model generalized beyond the training distribution. That was especially important because the class balance varied across projection, marker, cast, and hardware labels.
             </p>
           </div>
         </div>
@@ -705,7 +705,7 @@ export default function WriVisionQualityControlPage() {
             WriVision: AI quality control for wrist X-rays.
           </h1>
           <p className="max-w-3xl font-sans text-xl font-light leading-relaxed text-ink">
-            This project asked a practical question: can an AI model help technologists catch wrist X-ray labeling and acquisition problems before the patient leaves? I built the page around the actual research arc: the clinical problem, the DenseNet121 multi-task model, and the places where the model worked or still struggled.
+            This project asked a practical question: can an AI model help technologists catch wrist X-ray labeling and acquisition problems before the patient leaves? I worked on a DenseNet121 multi-task model for those checks. Here I explain where it worked and where it still struggled.
           </p>
         </motion.div>
 
@@ -735,7 +735,7 @@ export default function WriVisionQualityControlPage() {
             ))}
           </div>
           <div className="mt-8 border-l-2 border-accent pl-5 font-sans text-sm leading-relaxed text-ink">
-            The model was built for four checks: projection/view, laterality marker, cast presence, and hardware presence. A disagreement could trigger a correction while the patient was still in the department.
+            We built the model for four checks: projection/view, laterality marker, cast presence, and hardware presence. A disagreement could trigger a correction while the patient was still in the department.
           </div>
         </motion.div>
       </section>
@@ -752,7 +752,7 @@ export default function WriVisionQualityControlPage() {
               What I learned
             </div>
             <h2 className="font-serif text-4xl leading-tight text-obsidian">
-              The hard part was not whether the model could classify. It was whether it could be trusted in the workflow.
+              I learned to ask what happens when the model gets a quality check wrong.
             </h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
@@ -774,7 +774,7 @@ export default function WriVisionQualityControlPage() {
               <Workflow className="mb-6 text-accent" size={22} />
               <h3 className="mb-3 font-serif text-2xl text-obsidian">Next version</h3>
               <p className="font-sans text-sm leading-relaxed text-ink">
-                The natural extension is moving upstream: apply a similar model to a live patient-hand view before radiation is administered, then expand from wrist radiographs into other anatomy such as ankle studies where projection and laterality checks matter in a similar way.
+                I would like to test whether this can move upstream: apply a similar model to a live patient-hand view before radiation is administered, then expand from wrist radiographs into other anatomy such as ankle studies where projection and laterality checks matter in a similar way.
               </p>
             </div>
           </div>

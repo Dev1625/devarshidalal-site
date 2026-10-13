@@ -106,7 +106,7 @@ export const ENTRIES_2026_Q2: CoverageEntry[] = [
     scope: 'industry',
     themes: ['lilly-ma'],
     analysis:
-      'Antibody-drug conjugates, small price, announced alongside a $7 billion deal. Doing a $300 million tuck-in on the same day you announce a multi-billion dollar acquisition is a sign of a corporate development team operating at genuinely unusual throughput.',
+      "Antibody-drug conjugates, small price, announced alongside a $7 billion deal. Doing a $300 million tuck-in on the same day you announce a multi-billion dollar acquisition is a sign of a corporate development team operating at unusual throughput.",
     sources: [
       {
         title: 'Eli Lilly builds on deal streak with $7B oncology acquisition',
@@ -185,7 +185,7 @@ export const ENTRIES_2026_Q2: CoverageEntry[] = [
     scope: 'industry',
     themes: ['ipo-window', 'obesity', 'china-licensing'],
     analysis:
-      'One of the largest biotech IPOs in years. Kailera is also a useful data point on China licensing, since its lead assets came out of a Chinese partner and it has moved them quickly.\n\nThe pattern worth noting: license a de-risked asset from China, run it through Western clinical and regulatory machinery, and take it public at a valuation reflecting the Western obesity multiple. That is a genuinely new company-building model and I expect to see it copied a lot.',
+      "One of the largest biotech IPOs in years. Kailera is also a useful data point on China licensing, since its lead assets came out of a Chinese partner and it has moved them quickly.\n\nThe pattern worth noting: license a de-risked asset from China, run it through Western clinical and regulatory machinery, and take it public at a valuation reflecting the Western obesity multiple. That is a new company-building model and I expect to see it copied a lot.",
     sources: [
       {
         title: 'Biotech IPO Tracker 2026',
@@ -408,7 +408,7 @@ export const ENTRIES_2026_Q2: CoverageEntry[] = [
     relatedCompanyIds: ['abridge'],
     themes: ['ambient-ai', 'bionemo'],
     analysis:
-      'Two announcements the same day. NVIDIA is co-developing a foundation model for clinical conversation. Eli Lilly took an equity stake connected to using the platform for clinical trial screening.\n\nThe Lilly piece is the one I keep turning over. Trial recruitment is one of the genuinely broken parts of drug development. Most trials miss enrolment targets, and delay costs enormous amounts because every month of slippage is a month off the patent life of the eventual product. If you can flag eligible patients from conversations already happening across 300 health systems, you are selling something pharma has wanted for decades and could not buy.\n\nI had been writing about Abridge as a documentation company with a coding upsell. That framing is too narrow now. It also means the Epic competitive worry I have been carrying matters less than I thought, because this is not a product Epic is positioned to sell. Epic has no pharma relationship business.\n\nThe part I cannot assess is consent. Using clinical conversation data for trial recruitment sits in a legal area nobody has properly litigated, and I would not be surprised to see this become the test case.',
+      "Two announcements the same day. NVIDIA is co-developing a foundation model for clinical conversation. Eli Lilly took an equity stake connected to using the platform for clinical trial screening.\n\nThe Lilly piece is the one I keep turning over. Trial recruitment is one of the broken parts of drug development. Most trials miss enrolment targets, and delay costs enormous amounts because every month of slippage is a month off the patent life of the eventual product. If you can flag eligible patients from conversations already happening across 300 health systems, you are selling something pharma has wanted for decades and could not buy.\n\nI had been writing about Abridge as a documentation company with a coding upsell. That framing is too narrow now. It also means the Epic competitive worry I have been carrying matters less than I thought, because this is not a product Epic is positioned to sell. Epic has no pharma relationship business.\n\nThe part I cannot assess is consent. Using clinical conversation data for trial recruitment sits in a legal area nobody has properly litigated, and I would not be surprised to see this become the test case.",
     sources: [
       {
         title: 'Abridge inks deals with Nvidia and Lilly',
