@@ -25,6 +25,10 @@ export interface MemoSection {
 export interface Company {
   id: string;
   name: string;
+  status?: 'active' | 'archived';
+  archivedReason?: string;
+  lastReviewed?: string;
+  sources?: { title: string; publisher: string; url: string; publishedAt?: string }[];
   /** One sentence, plain language. */
   what: string;
   followingSince: string;
@@ -65,6 +69,7 @@ export interface MacroThesis {
   pillars: MacroPillar[];
   whereIAmUnsure: string;
   lastUpdated: string;
+  sources?: { title: string; publisher: string; url: string; publishedAt?: string }[];
 }
 
 export interface IntroPart {
@@ -89,28 +94,34 @@ export interface Intro {
 export const INTRO: Intro = {
   headline: 'A running file on healthcare companies and the industry around them.',
   body: [
-    'I want to understand how a scientific idea turns into something a patient actually receives, and where that process breaks. Some of what follows is drug discovery, some is software inside hospitals, some is hardware people put in their skulls, and a lot of it is the money and policy moving underneath.',
-    'This page has three sections.',
+    "I want to understand how a scientific idea turns into something a patient actually receives, and where that process breaks. Some of what follows is drug discovery, some is software inside hospitals, some is hardware people put in their skulls, and a lot of it is the money and policy moving underneath.",
+    "Current company memos, past research cases, a founder log and a dated record of what I am following."
   ],
   parts: [
     {
-      id: 'companies',
-      label: 'Companies',
-      body: 'Companies I would want to own, written up as full memos.',
-      cta: 'Read the memos',
+      "id": "companies",
+      "label": "Companies",
+      "body": "Companies I would want to own, written up as full memos.",
+      "cta": "Read the memos"
     },
     {
-      id: 'founders',
-      label: 'Founder log',
-      body: 'Conversations with founders and operators building healthcare companies.',
-      cta: 'Read the log',
+      "id": "founders",
+      "label": "Founder log",
+      "body": "Conversations with founders and operators building healthcare companies.",
+      "cta": "Read the log"
     },
     {
-      id: 'following',
-      label: 'Following',
-      body: 'A dated record of what happened across the sector and what I made of it.',
-      cta: 'Read the record',
+      "id": "following",
+      "label": "Following",
+      "body": "A dated record of what happened across the sector and what I made of it.",
+      "cta": "Read the record"
     },
+    {
+      "id": "archive",
+      "label": "Past research",
+      "body": "Earlier cases and what I learned from their outcomes.",
+      "cta": "Read past cases"
+    }
   ],
   method: [
     {
@@ -124,55 +135,97 @@ export const INTRO: Intro = {
   ],
   disclaimer:
     'Nothing here is investment advice, and I am not managing money. These are companies I would want to own if I were, written up in memo form as a way of forcing myself to think clearly.',
-  lastUpdated: 'August 2026',
+  lastUpdated: "October 2026",
 };
 
 // ─── Macro thesis ────────────────────────────────────────────────────────────
 
 export const MACRO_THESIS: MacroThesis = {
-  version: 'Rewritten September 2026',
+  version: "Rewritten October 2026",
   headline:
-    'Whether a healthcare software company works comes down to which budget pays for it. I can only find three that hold up: pharma marketing, a cut of the money you collect, and a billing code.',
+    "I want to own the part that turns a scientific capability into something a patient can actually receive.",
   stats: [
-    { label: 'US hospital operating margin, 2026 so far', value: '1.7%, and down about 5% from last year' },
-    { label: 'Cost of a similar ambient scribe', value: '$99 a month at Freed, about $2,500 a year at Abridge' },
-    { label: 'Doximity revenue growth, this year into next', value: '13%, guided down to 4%' },
-    { label: 'What the new AI billing codes cover', value: 'Diagnostic results, not notes' },
+    {
+      "label": "Precision’s September financing",
+      "value": "$250M Series D; valuation undisclosed"
+    },
+    {
+      "label": "Xaira’s antibody-design disclosure",
+      "value": "Two company-reported preclinical case studies"
+    },
+    {
+      "label": "BioAge’s near-term test",
+      "value": "hsCRP dose response, not cardiovascular events"
+    },
+    {
+      "label": "Inceptive’s partner validation",
+      "value": "$30M upfront consideration from Alnylam"
+    }
   ],
   body: [
-    'People keep arguing about whether clinical AI is a feature or a real company. I do not think the products can settle it, because they are getting harder to tell apart. Epic put its own AI charting into general release in February. Freed sells a scribe for $99 a month and Abridge sells one for about $2,500 per clinician a year. That is roughly twenty-five times the price for a similar job, which usually means the price has further to fall.',
-    'So I stopped comparing products and started asking a duller question. Whose budget does the invoice come out of? Hospital operating margin was 1.7 percent year to date in March, and it fell about 5 percent nationally across the first five months of 2026. Sell into that budget and you are competing with nurse staffing, you go through procurement, and you have to show a return inside the same fiscal year. I had written a version of that sentence about aging products, then about stroke software, then about hospital finances, before I noticed I had been circling the same idea for nine months without ever saying it plainly.',
-    'The first budget that works is pharma marketing. OpenEvidence charges doctors nothing and sells access to verified prescribers instead. It went from about $150 million annualised at the end of 2025 to roughly $300 million by the middle of 2026, at close to 90 percent gross margin. No hospital had to approve that spend, because there was nothing to approve.',
-    'The second is a cut of the money you collect. Revenue cycle software is priced at three to five percent of what it brings in, against six to twelve percent for doing the billing in house. It pays for itself, so it never queues behind the IT budget. That is why revenue cycle was the most heavily consolidated category of the half year, why Ensemble traded at around $12 billion, and why Abridge, Nabla and Commure all moved into it. Abridge won Best in KLAS for revenue cycle rather than for documentation.',
-    'The third is a billing code. In January the AMA gave AI services Category I CPT status for the first time, which sounds like a general opening until you read which services actually got one. Coronary plaque assessment. Cardiac risk from the fat around the arteries. Burn wound classification. AI that returns a result a hospital can bill for now gets paid for it. AI that returns a note still does not.',
-    'The part that should worry anyone holding the pharma-funded companies, me included, is that the best of the three budgets is an advertising budget. Doximity is the only public company making money from doctors the same way. It grew 13 percent last fiscal year and has guided investors to 4 percent this year, saying demand for HCP digital pharma advertising is soft and that clients are committing for shorter periods. If that pool is growing at 5 percent or less and OpenEvidence doubled inside it, then OpenEvidence is taking Doximity\'s share rather than opening a new market. It is still the best business I follow. But the ceiling is set by somebody else\'s ad budget, and I have not seen anyone price it that way. That is also the answer to the OpenEvidence question I said in August I could not work out.',
+    "In September I organised the thesis around who pays for healthcare software. I still think that is a useful question. It is too narrow for the companies I most want to understand, which are trying to make a new treatment possible rather than sell a tool inside an existing workflow.",
+    "The working idea now is that the valuable step is often the one after the impressive demonstration. Can a designed molecule survive development? Can a device be manufactured, placed safely and used long enough to matter? Can the company keep funding the work until someone will pay for the result? I find that space more interesting than another comparison of model benchmarks, partly because it connects the science to a business I can try to reason about.",
+    "The recent disclosures give me reasons to keep looking, not a reason to declare the field solved. Xaira has shown two antibody-design case studies. Precision has raised more capital and published a much larger recording footprint. Each makes a company easier to investigate. Neither settles the eventual clinical outcome.",
+    "My preference is private biotech, medtech and life sciences, but that is a research preference rather than a rule about what can work. BioAge stays because public trial designs let me check my own reasoning. Software can still belong when the evidence on adoption, retention and payment is better than the story. I want this collection to show the quality of the questions and how the answers change, not how consistently I can defend a category."
   ],
   pillars: [
     {
-      label: 'Ambient documentation gets you in the door and not much further',
-      body:
-        'Epic put its own AI charting into general release in February 2026, and health systems started rethinking their standalone scribe contracts within weeks. Every company doing well in this category has already moved somewhere else. Abridge took equity from Lilly and went into trial recruitment and revenue cycle. Ambience became the ambient vendor Epic distributes, which is a good outcome and also a ceiling. Transcription is what gets a company into the room. It is also the part that keeps getting cheaper.',
-      test:
-        'If Abridge keeps its per-seat price and holds net revenue retention above roughly 110 percent through 2027, with Epic\'s own tool available the whole time, then documentation defends itself and I am wrong.',
+      "label": "Wet-lab results should change the case before model scores do",
+      "body": "I give more weight to a designed molecule tested against relevant controls than to a benchmark alone. Xaira’s disclosure helps, but company-selected examples are still a limited test. Inceptive’s paid partnership tells me a qualified buyer values the capability; it does not tell me a medicine will work.",
+      "test": "Independent replication, disclosed development economics or repeated clinical failures could change the relative weight I put on model capability and experimental evidence."
     },
     {
-      label: 'In devices, the billing code matters more than the FDA clearance',
-      body:
-        'Precision Neuroscience has had 510(k) clearance since April 2025, but only for implants that stay in up to thirty days, which is not something a hospital can build a service line around. Synchron holds the first IDE for a permanently implanted BCI and is running a pivotal trial. Neither has a route to getting paid by CMS, and no implanted BCI in the United States does. China approved Neuracle\'s NEO on 13 March 2026 and its health security administration attached a reimbursement code almost straight away, because it had set the pricing up a year before the device existed. Everyone argues about electrodes. This is the part that will decide it.',
-      test:
-        'A Category I CPT code or a national coverage decision for an implanted BCI before 2029. If that turns up early, I have underrated how quickly the payer side moves once a device is real.',
+      "label": "In medtech, durability and delivery are part of the product",
+      "body": "The BCI question is not settled by electrode count. I want to know how the signal holds up, which clinicians can place the device, what manufacturing costs and whether payment supports a service. Precision and Synchron let me follow different routes through that problem without pretending either route has won.",
+      "test": "Long-term home use with reproducible functional benefit, acceptable safety and a workable payment path would matter more than another recording demonstration."
     },
     {
-      label: 'A lot of the cash-pay story is people who lost a subsidy',
-      body:
-        'The cash-pay thesis, which a16z calls insurance defection, treats people paying out of pocket as a durable group who prefer it that way. Some of them are. Function at $2.2 billion and Oura at $11 billion are not selling to distressed buyers. But the enhanced ACA subsidies ran out at the end of 2025, and the share of marketplace enrollees getting a tax credit fell from 92 to 87 percent, the first drop since 2020. KFF expected what enrollees pay to rise 114 percent. It rose 58 percent, because people moved to cheaper plans with higher deductibles rather than dropping coverage. Someone with a higher deductible pays cash for more things without ever having chosen to. That is a different customer from the one in the pitch decks.',
-      test:
-        'Cash-pay volume still growing through 2027, once the subsidy change has annualised. If it holds up, then people really do prefer it and I have called this wrong.',
+      "label": "Read the endpoint before interpreting the result",
+      "body": "BioAge exposed a mistake in my own work. I described a biomarker study as if it could answer a cardiovascular outcomes question. A positive result is only useful relative to the trial that produced it. I need to carry that discipline into lupus, RNA design and neural interfaces as well.",
+      "test": "A surrogate reliably predicting patient benefit across independent trials would justify more confidence in it. Until then I will keep the two claims separate."
     },
+    {
+      "label": "Runway and value capture belong in the scientific case",
+      "body": "I want to ask early who owns the eventual asset, who funds the next experiment and who receives the upside. Turn Bio and EvolutionaryScale stay visible as past cases. I can learn from their direction of travel without inventing investor returns that were never disclosed.",
+      "test": "Licensing businesses repeatedly producing durable revenue and attractive returns without owning therapeutic assets would make me less insistent on asset ownership."
+    }
   ],
   whereIAmUnsure:
-    'The billing code argument is the one I can check least well. Category I status arrived in January and I am reading three codes as if they were a trend, which is thin. The AMA could widen the taxonomy over the next two years, and then the line I am drawing between a billable result and a note would stop meaning anything. I am also leaning hard on one public comparable for the central claim, and building an argument on a single comp is the thing I complain about when other people do it.',
-  lastUpdated: 'September 2026',
+    "I am still more comfortable reading an experiment than pricing its commercial value. The preference for biotech and devices could be partly taste: I find the mechanisms interesting, which is not a reason they are good investments. The next useful step is to compare the cases against alternatives and entry price, including businesses I find less exciting.",
+  lastUpdated: "October 13, 2026",
+
+  sources: [
+    {
+      "title": "De Novo Design of Progressable Antibodies to Therapeutic Targets",
+      "publisher": "Xaira Therapeutics",
+      "url": "https://www.xaira.com/news/de-novo-design-of-progressable-antibodies-to-therapeutic-targets",
+      "publishedAt": "October 2, 2026"
+    },
+    {
+      "title": "Precision closes $250M Series D",
+      "publisher": "Precision Neuroscience / GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/09/24/3368254/0/en/precision-neuroscience-closes-oversubscribed-250m-series-d-led-by-pershing-square-inc-the-ackman-oxman-institute-and-a-leading-life-sciences-investment-fund.html",
+      "publishedAt": "September 24, 2026"
+    },
+    {
+      "title": "Precision releases a human nervous system atlas",
+      "publisher": "Precision Neuroscience / GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/10/08/3377330/0/en/precision-neuroscience-unveils-a-new-map-of-the-human-nervous-system.html",
+      "publishedAt": "October 8, 2026"
+    },
+    {
+      "title": "QUELL-CV trial design and primary endpoint",
+      "publisher": "BioAge Labs",
+      "url": "https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-announces-first-participant-dosed-quell-cv-phase-2",
+      "publishedAt": "June 16, 2026"
+    },
+    {
+      "title": "Alnylam and Inceptive collaboration terms",
+      "publisher": "Alnylam",
+      "url": "https://investors.alnylam.com/press-release?id=12c82628-531a-443b-b21b-26cc5b51230b",
+      "publishedAt": "June 3, 2026"
+    }
+  ],
 };
 
 // ─── Companies ───────────────────────────────────────────────────────────────
@@ -186,17 +239,41 @@ export const COMPANIES: Company[] = [
       'A free clinical search tool that answers doctors\' questions using medical literature it licenses directly from NEJM and JAMA.',
     followingSince: 'Following since early 2025',
     snapshot: [
-      { label: 'Sector', value: 'Clinical decision support' },
-      { label: 'Stage', value: 'Series D' },
-      { label: 'Founded', value: '2022' },
-      { label: 'Headquarters', value: 'Cambridge, MA' },
-      { label: 'Total raised', value: '~$700M' },
-      { label: 'Last round', value: '$250M at $12B, January 21 2026' },
-      { label: 'Lead investors', value: 'Thrive Capital, DST Global, GV, Sequoia, Kleiner Perkins' },
-      { label: 'Revenue', value: '~$300M annualised (mid 2026), ~90% gross margin' },
+      {
+        "label": "Sector",
+        "value": "Clinical decision support"
+      },
+      {
+        "label": "Stage",
+        "value": "Growth round, September 2026"
+      },
+      {
+        "label": "Founded",
+        "value": "2022"
+      },
+      {
+        "label": "Headquarters",
+        "value": "Cambridge, MA"
+      },
+      {
+        "label": "Total raised",
+        "value": "Nearly $1B, reported September 2026"
+      },
+      {
+        "label": "Last round",
+        "value": "$250M at $15B, CEO-confirmed to Becker’s September 28, 2026"
+      },
+      {
+        "label": "Lead investors",
+        "value": "a16z and Byers Capital (September round); earlier backers include Thrive, DST, GV and Sequoia"
+      },
+      {
+        "label": "Revenue",
+        "value": "~$300M annualised, July 2026 estimate from Sacra; reported ~90% gross margin"
+      }
     ],
     summary:
-      'The most convincing company on this list and the one I would put the most weight behind. Doctors face clinical questions mid-visit with about ninety seconds to resolve them, and the existing options are guessing, asking a colleague, or searching something not built for the job. OpenEvidence answers with citations from journals it pays for. Revenue went from roughly $7.9 million annualised in 2024 to about $150 million in 2025, and then doubled again to roughly $300 million by the middle of 2026, all at close to 90 percent gross margins. That settles the question of whether giving the product away converts into a business. What it does not settle is where the money comes from, which is an advertising budget somebody else controls.',
+      "The strongest adoption story in this collection, and still a business whose economics I want to understand better. Verified clinicians receive literature-backed answers without paying for access. Sacra estimates a roughly $300 million annualised revenue run rate in July 2026; it is not audited revenue. September’s completed financing puts the reported valuation at $15 billion. I like the habit being built, but advertising concentration and entry price remain open questions.",
     problem:
       'Medical knowledge doubles faster than any clinician can read, and the moment of need is not a moment with time in it. A physician sees a patient with an unusual drug interaction or an atypical presentation, and needs an answer during the visit. The realistic alternatives are recalling something from training, asking whoever is nearby, or using a general search engine that surfaces content optimised for consumers rather than clinicians. UpToDate exists and is good, but it is a subscription product with editorial lag, and it answers the question someone anticipated rather than the one being asked.',
     product:
@@ -204,33 +281,33 @@ export const COMPANIES: Company[] = [
     whyNow:
       'Two things converged. Language models got good enough to synthesise medical literature reliably around 2023, and the journals became willing to license. The second is the harder and more recent condition. Publishers spent two decades treating AI as a threat to their subscription businesses; the shift to seeing it as a distribution channel is what makes this company possible now and not in 2019. There is also a bleaker driver: physician time per patient keeps compressing, so anything that resolves a question in seconds rather than minutes gets adopted without a procurement process.',
     market:
-      'There are roughly a million practising physicians in the United States and the company reports over 40 percent using it daily. The revenue model is pharma advertising targeted at verified prescribers, which is a large and established market currently served by sales representatives, journal ads and conference sponsorships, all of which have far worse attribution than a platform that knows exactly which clinical question preceded the impression. Even at roughly $300 million annualised, revenue per consultation is small, which is either the ceiling or the opportunity depending on whether an enterprise product ever lands.',
+      "The market begins with clinicians using literature at the point of care and pharma advertisers paying to reach them. Becker’s reports that more than half of US physicians use the platform regularly; regular use is not the same metric as daily active use. I want revenue per active clinician, advertiser concentration and renewal behaviour before treating registrations as a commercial moat.",
     traction: [
       {
-        label: 'Revenue',
-        value: '~$7.9M (2024), ~$150M (2025), ~$300M (mid 2026)',
-        read: 'Roughly twentyfold, then a double in about seven months, at around 90 percent gross margin throughout. The margin is what convinced me. It is a software profile rather than a media one, and it is very hard to fake.',
+        "label": "Revenue",
+        "value": "~$300M annualised in July 2026, estimated by Sacra",
+        "read": "The growth matters, but this is an estimate of a run rate, not audited annual revenue. I should not have treated the margin as impossible to fake."
       },
       {
-        label: 'Consultations',
-        value: '~20M per month (Jan 2026), against ~3M a year earlier',
-        read: 'Better than registrations, because a physician has to choose to use it inside a live visit. On March 10 2026 it handled a million in twenty-four hours.',
+        "label": "Consultations",
+        "value": "~20M per month (Jan 2026), against ~3M a year earlier",
+        "read": "Better than registrations, because a physician has to choose to use it inside a live visit. On March 10 2026 it handled a million in twenty-four hours."
       },
       {
-        label: 'Physician adoption',
-        value: '757,000+ verified clinicians, 40%+ of US physicians daily',
-        read: 'Distribution is the hardest problem in health tech and most companies never solve it. This one appears to have, though "free" does a lot of work in that sentence.',
+        "label": "Physician adoption",
+        "value": "757,000+ verified clinicians, 40%+ of US physicians daily",
+        "read": "Distribution is the hardest problem in health tech and most companies never solve it. This one appears to have, though \"free\" does a lot of work in that sentence."
       },
       {
-        label: 'New registrations',
-        value: '~65,000 verified clinicians per month',
-        read: 'Still adding at a rate that implies it has not saturated, which matters because the US ceiling is around a million.',
+        "label": "New registrations",
+        "value": "~65,000 verified clinicians per month",
+        "read": "Still adding at a rate that implies it has not saturated, which matters because the US ceiling is around a million."
       },
       {
-        label: 'Valuation path',
-        value: '$750M (Feb 2025) to $3.5B (Jul) to $6.1B (Oct) to $12B (Jan 2026), with $20B reported in August',
-        read: 'Four rounds in eleven months, and press reports in August 2026 of a further $200M being discussed at $20B. I read the early sequence as a bubble signature until the revenue disclosure arrived, and I was wrong to. The August round is reported rather than announced, so I am not counting it.',
-      },
+        "label": "Valuation path",
+        "value": "$12B in January 2026; $15B in September 2026",
+        "read": "The CEO confirmed the new $250M financing to Becker’s. The older $20B report was a proposed mark, not the completed round."
+      }
     ],
     competition:
       'UpToDate is the incumbent, owned by Wolters Kluwer, subscription-based and editorially curated. It is trusted and slow. General models like ChatGPT are free and capable but cannot cite licensed full text and carry no clinical accountability. Other clinical AI companies mostly attack documentation rather than decision support, which means OpenEvidence is competing less with Abridge than with a habit. The defensibility question is whether the journal licences hold as exclusive, because that is the only part of this a well-funded competitor cannot simply rebuild. My honest view is that the licences plus the usage habit are the moat, and the model is not.',
@@ -238,25 +315,21 @@ export const COMPANIES: Company[] = [
       'Co-founded in 2022 by Daniel Nadler and Zachary Ziegler. Nadler holds a PhD from Harvard and previously founded Kensho Technologies, which S&P Global acquired in 2018, so this is a second-time founder who has already built and sold a data business into a regulated industry. Ziegler is CTO, an ML researcher out of Alexander Rush\'s NLP lab at Harvard. Both cite personal medical experiences as motivation, which I mention because it is consistent with a company that chose to give the product away to clinicians rather than charge them.',
     risks: [
       {
-        risk: 'The entry price assumes the growth continues. At $12B on roughly $300M the multiple has already come down from 80x to about 40x, but a reported $20B would put it back where it started.',
-        mitigant:
-          'Revenue closed half the multiple in seven months without new capital, and gross margin near 90 percent means incremental revenue mostly drops through.',
+        "risk": "A $15B entry price on an estimated $300M annualised run rate is roughly 50x. Estimates, ad-budget exposure and entry price all matter.",
+        "mitigant": "Rapid adoption is encouraging, but it is not a substitute for audited revenue and retention."
       },
       {
-        risk: 'Revenue is pharma advertising inside a clinical decision tool, which is a structural conflict a regulator will eventually examine.',
-        mitigant:
-          'The advertising market for physicians is long-established and heavily regulated already, so there is precedent to build against rather than a blank sheet.',
+        "risk": "Revenue is pharma advertising inside a clinical decision tool, which is a structural conflict a regulator will eventually examine.",
+        "mitigant": "The advertising market for physicians is long-established and heavily regulated already, so there is precedent to build against rather than a blank sheet."
       },
       {
-        risk: 'Ad spend is cyclical and concentrated among a small number of pharma buyers. This is the risk I now weight most, because Doximity grew 13 percent last fiscal year and guided to 4 percent this one, telling investors that HCP digital pharma demand is soft.',
-        mitigant:
-          'There is not much of one. If the pool grows at 5 percent and OpenEvidence doubles inside it, the growth is share taken from Doximity, and share runs out. An enterprise product would diversify this and I have still not seen evidence one exists at scale.',
+        "risk": "Ad spend is cyclical and concentrated among a small number of pharma buyers. This is the risk I now weight most, because Doximity grew 13 percent last fiscal year and guided to 4 percent this one, telling investors that HCP digital pharma demand is soft.",
+        "mitigant": "There is not much of one yet. A slow-growing comparable makes share-taking plausible, but the buyers, budgets and market definitions need to be checked before attributing growth to a specific incumbent."
       },
       {
-        risk: 'General models improve fast and could make synthesis a commodity.',
-        mitigant:
-          'The journal licences are contractual rather than technical, so a better model does not by itself get you the corpus.',
-      },
+        "risk": "General models improve fast and could make synthesis a commodity.",
+        "mitigant": "The journal licences are contractual rather than technical, so a better model does not by itself get you the corpus."
+      }
     ],
     diligence: [
       'How is the advertising layer structurally separated from the answer layer? Not the policy, the architecture. Can a sponsor influence which evidence surfaces, and who audits that?',
@@ -272,7 +345,22 @@ export const COMPANIES: Company[] = [
       'Disclosure that revenue depends on a small number of advertisers.',
     ],
     view:
-      'My view as of September 2026 is that this is still the clearest product-market fit in healthcare software, and revenue closed half the entry multiple in seven months without the company raising again. What changed for me is the ceiling rather than the business. Doximity guiding to 4 percent growth says the pool OpenEvidence sells into is barely growing, so the last year was share taken from an incumbent rather than a market being made. That is a fine way to reach $300 million and a much harder way to reach a billion. I would still pick it to be right about.',
+      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion against Sacra’s estimated $300 million annualised revenue, the rough multiple is 50 times, before asking what revenue will actually be earned over a year. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. I want advertiser concentration and retention data before turning that suspicion into a conclusion.",
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "OpenEvidence raises $250M at $15B valuation; CEO confirms to Becker’s",
+        "publisher": "Becker's Hospital Review",
+        "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/openevidence-raises-250m-at-15b-valuation/",
+        "publishedAt": "September 28, 2026"
+      },
+      {
+        "title": "OpenEvidence revenue, valuation and funding estimates",
+        "publisher": "Sacra",
+        "url": "https://sacra.com/c/openevidence/"
+      }
+    ],
   },
 
   // ── Abridge ────────────────────────────────────────────────────────────────
@@ -287,8 +375,8 @@ export const COMPANIES: Company[] = [
       { label: 'Stage', value: 'Series E extension' },
       { label: 'Founded', value: '2018' },
       { label: 'Headquarters', value: 'Pittsburgh, PA' },
-      { label: 'Total raised', value: '~$1.1B' },
-      { label: 'Last round', value: '$316M extension at $5.3B, April 2026' },
+      { label: 'Total raised', value: '~$830M, reported June 2026' },
+      { label: 'Last round', value: 'Series E extended to $316M, reported April 2026; $5.3B reported valuation' },
       { label: 'Lead investors', value: 'a16z, Khosla, NVentures, Lightspeed, Bessemer, Eli Lilly' },
       { label: 'Deployment', value: '300+ health systems, 100M+ conversations/year' },
     ],
@@ -304,30 +392,35 @@ export const COMPANIES: Company[] = [
       'US revenue cycle management is roughly a $90 billion market, currently staffed by people. That is the near-term expansion. The Lilly arrangement points at something structurally better: clinical trial recruitment, where most studies miss enrolment targets and every month of delay consumes patent life on the eventual product. Pharma has wanted a way to find eligible patients at the point of care for decades and has never had one. Margins on a data and services relationship with pharma are considerably better than on hospital software.',
     traction: [
       {
-        label: 'Health systems live',
-        value: '300+',
-        read: 'Enterprise healthcare sales cycles run twelve to eighteen months, so this represents years of accumulated distribution that a new entrant cannot short-circuit.',
+        "label": "Health systems live",
+        "value": "300+",
+        "read": "Enterprise healthcare sales cycles run twelve to eighteen months, so this represents years of accumulated distribution that a new entrant cannot short-circuit."
       },
       {
-        label: 'Clinical conversations',
-        value: '100M+ per year',
-        read: 'Volume is a technical asset here, not just a commercial one. Coding accuracy improves with denial data at scale.',
+        "label": "Clinical conversations",
+        "value": "100M+ per year",
+        "read": "Volume is a technical asset here, not just a commercial one. Coding accuracy improves with denial data at scale."
       },
       {
-        label: 'Capital and valuation',
-        value: '~$1.1B raised, $5.3B, flat since June 2025',
-        read: 'The April 2026 extension came at an unchanged mark. I read that as discipline rather than weakness, but flat after a year of doubling is information.',
+        "label": "Capital and valuation",
+        "value": "~$830M raised, reported June 2026; $5.3B reported valuation",
+        "read": "The April 2026 extension came at an unchanged mark. I read that as discipline rather than weakness, but flat after a year of doubling is information."
       },
       {
-        label: 'Best in KLAS',
-        value: 'Ambient AI, 2025 and 2026',
-        read: 'KLAS surveys the hospitals paying the bills, which makes it one of very few third-party signals in a category where everyone publishes their own accuracy numbers.',
+        "label": "Best in KLAS",
+        "value": "Ambient AI, 2025 and 2026",
+        "read": "KLAS surveys the hospitals paying the bills, which makes it one of very few third-party signals in a category where everyone publishes their own accuracy numbers."
       },
       {
-        label: 'Strategic capital',
-        value: 'NVIDIA and Eli Lilly, June 2026',
-        read: 'Lilly taking equity tied to trial screening is a customer validating a business line by investing in it, which is a stronger signal than a commercial contract.',
+        "label": "Strategic capital",
+        "value": "NVIDIA and Eli Lilly, June 2026",
+        "read": "Lilly taking equity tied to trial screening is a customer validating a business line by investing in it, which is a stronger signal than a commercial contract."
       },
+      {
+        "label": "Pre-bill review",
+        "value": "Announced September 14, 2026",
+        "read": "A concrete extension into CDI and coding. Human teams keep control over claim decisions; the announcement does not establish net new RCM revenue."
+      }
     ],
     competition:
       'Epic ships its own note-drafting tool and controls somewhere around 42 percent of US hospital EHR installs, which I treated as the central threat for most of a year. I have revised that. In August 2025 Epic admitted Ambience into its Toolbox program and distributes it through Haiku, which suggests Epic sees documentation as a category where needs vary too much to service directly. Microsoft Nuance DAX is the scaled incumbent, Ambience the closest direct competitor, Nabla the price disruptor. Defensibility rests on the coding layer, where switching costs are real because a coding error is a False Claims Act exposure and the software line is a rounding error next to it.',
@@ -370,7 +463,35 @@ export const COMPANIES: Company[] = [
       'An S-1 revealing that coding revenue is a much smaller share than I have assumed.',
     ],
     view:
-      'My view as of August 2026 is that this is the strongest business in ambient clinical software and the most expensive way to own the idea. The interesting upside now comes from the pharma side rather than from selling more scribes.',
+      "My view as of October 2026 is that pre-bill review makes the coding thesis more concrete. The VA enterprise contract is another distribution route, but its $775.72 million ceiling is shared across vendors and is not booked Abridge revenue. I still want module-level revenue and renewal economics. More places to deploy a product and a better product are both useful; neither settles what I should pay for the company.",
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "Pre-bill review for CDI and coding teams",
+        "publisher": "Abridge",
+        "url": "https://www.abridge.com/press-release/pre-bill-review-for-cdi-and-coding-teams",
+        "publishedAt": "September 14, 2026"
+      },
+      {
+        "title": "Abridge selected for VA enterprise contract",
+        "publisher": "Abridge",
+        "url": "https://www.abridge.com/press-release/va-enterprise-contract",
+        "publishedAt": "September 22, 2026"
+      },
+      {
+        "title": "2026 Best in KLAS for Ambient AI",
+        "publisher": "Abridge",
+        "url": "https://www.abridge.com/press-release/best-in-klas-2026-press",
+        "publishedAt": "February 4, 2026"
+      },
+      {
+        "title": "Abridge platform expansion and reported financing history",
+        "publisher": "MobiHealthNews",
+        "url": "https://www.mobihealthnews.com/news/abridge-partners-nvidia-expands-beyond-clinical-documentation",
+        "publishedAt": "June 12, 2026"
+      }
+    ],
   },
 
   // ── Isomorphic Labs ────────────────────────────────────────────────────────
@@ -430,7 +551,7 @@ export const COMPANIES: Company[] = [
     competition:
       'Insilico Medicine is the most instructive comparison, because it raises far less, attracts far less attention, and got an AI-designed molecule into a human in June 2026 before Isomorphic did. Recursion and Schrodinger occupy adjacent positions with more disclosure. The larger competitive question is whether large pharma simply builds this internally, and the January 2026 NVIDIA and Lilly co-innovation lab, worth up to $1 billion, is evidence that at least one of them intends to try. Isomorphic\'s durable advantage is Alphabet compute and DeepMind talent density, which is real and which also means the moat partly belongs to the parent.',
     team:
-      'Founded and led by Demis Hassabis, who also runs Google DeepMind and shared the 2024 Nobel Prize in Chemistry for AlphaFold. Colin Murdoch, previously DeepMind chief business officer, is president. Max Jaderberg moved from Chief AI Officer to President effective January 1 2026. This is possibly the strongest computational team assembled anywhere in biology, and it is thinner on the thing that actually kills drugs, which is clinical development and translational medicine.',
+      "Founded and led by Demis Hassabis, who also runs Google DeepMind and shared the 2024 Nobel Prize in Chemistry for AlphaFold. Colin Murdoch was an early business leader. Max Jaderberg moved from Chief AI Officer to President effective January 1 2026. Ben Wolf was appointed Chief Medical Officer in June 2025. I missed that when I described the clinical bench as invisible. The question is now how that team translates the computational work, not whether the company has hired a CMO.",
     risks: [
       {
         risk: 'A second timeline slip. One delay is normal, two starts to look like a pattern.',
@@ -454,12 +575,12 @@ export const COMPANIES: Company[] = [
       },
     ],
     diligence: [
-      'What is the actual status of the lead program? IND-enabling toxicology complete, or still in optimisation? The public statements do not distinguish.',
-      'What does the company pay Alphabet for compute, and on what terms? This is the single largest unknown in the cost structure.',
-      'How are the Lilly and Novartis milestones structured, and how much has been earned to date rather than committed?',
-      'Who owns IP generated jointly under the pharma collaborations?',
-      'What is the internal attrition rate from computational candidate to development candidate? That number would tell you more about the platform than any benchmark.',
-      'What clinical development leadership has been hired? The team is exceptional computationally and I cannot see the translational bench.',
+      "What is the actual status of the lead program? IND-enabling toxicology complete, or still in optimisation? The public statements do not distinguish.",
+      "What does the company pay Alphabet for compute, and on what terms? This is the single largest unknown in the cost structure.",
+      "How are the Lilly and Novartis milestones structured, and how much has been earned to date rather than committed?",
+      "Who owns IP generated jointly under the pharma collaborations?",
+      "What is the internal attrition rate from computational candidate to development candidate? That number would tell you more about the platform than any benchmark.",
+      "How is Ben Wolf’s clinical organisation staffed, and what decisions does it control as the first programs approach human testing?"
     ],
     changeMyMind: [
       'First patient dosed before the end of 2026, which would restore the timeline claim.',
@@ -468,7 +589,29 @@ export const COMPANIES: Company[] = [
       'Two or three additional INDs cleared, which would turn one anecdote into a platform.',
     ],
     view:
-      'My view as of August 2026 is that this is the most important company in AI drug discovery and the one with the least evidence behind it, and those two facts are connected. I would hold it and expect to wait years. A second timeline slip without a clear explanation would change that.',
+      "My view as of October 2026 is that I still want to follow this through its first human data. The October 7 Virtual Biology Initiative is a useful commitment to shared biological data, not a patient-dosing milestone. I also corrected my own blind spot on the CMO appointment. I have not located a first-patient announcement in the material reviewed, which is narrower than knowing that nobody has been dosed. The end-2026 promise remains the thing to score.",
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "Isomorphic joins the Virtual Biology Initiative",
+        "publisher": "Isomorphic Labs",
+        "url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-joins-the-virtual-biology-initiative",
+        "publishedAt": "October 7, 2026"
+      },
+      {
+        "title": "Ben Wolf appointed Chief Medical Officer",
+        "publisher": "Isomorphic Labs",
+        "url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-appoints-dr-ben-wolf-as-chief-medical-officer-and-establishes-us-presence",
+        "publishedAt": "June 17, 2025"
+      },
+      {
+        "title": "Building a new path to make medicines with AI",
+        "publisher": "Isomorphic Labs",
+        "url": "https://www.isomorphiclabs.com/articles/building-a-new-path-to-make-medicines-with-ai",
+        "publishedAt": "September 29, 2026"
+      }
+    ],
   },
 
   // ── Synchron ───────────────────────────────────────────────────────────────
@@ -479,14 +622,38 @@ export const COMPANIES: Company[] = [
       'A brain-computer interface that reaches the brain through a blood vessel instead of through the skull, so someone with paralysis can control a phone without open brain surgery.',
     followingSince: 'Following since late 2024',
     snapshot: [
-      { label: 'Sector', value: 'Neurotechnology, implantable BCI' },
-      { label: 'Stage', value: 'Series D' },
-      { label: 'Founded', value: '2016' },
-      { label: 'Headquarters', value: 'New York, NY' },
-      { label: 'Total raised', value: '$345M' },
-      { label: 'Last round', value: '$200M, November 6 2025, Double Point Ventures' },
-      { label: 'Other investors', value: 'ARCH, Khosla, Bezos Expeditions, QIA, IQT, Australian NRF' },
-      { label: 'Clinical status', value: '12 patients implanted, pivotal trial preparing through 2026' },
+      {
+        "label": "Sector",
+        "value": "Neurotechnology, implantable BCI"
+      },
+      {
+        "label": "Stage",
+        "value": "Series D"
+      },
+      {
+        "label": "Founded",
+        "value": "2016"
+      },
+      {
+        "label": "Headquarters",
+        "value": "New York, NY"
+      },
+      {
+        "label": "Total raised",
+        "value": "$345M"
+      },
+      {
+        "label": "Last round",
+        "value": "$200M, November 6 2025, Double Point Ventures"
+      },
+      {
+        "label": "Other investors",
+        "value": "ARCH, Khosla, Bezos Expeditions, QIA, IQT, Australian NRF"
+      },
+      {
+        "label": "Clinical status",
+        "value": "Investigational; 10 patients reported November 2025; current pivotal enrolment not confirmed"
+      }
     ],
     summary:
       'Most argument about brain-computer interfaces is about electrode count. I think that is the wrong axis. The binding constraint is how many hospitals can perform the procedure and whether anyone will pay for it. Synchron threads a stent with electrodes up the jugular vein into a vessel running above the motor cortex and reads through the vessel wall, which means an interventional neuroradiologist can place it in a cath lab using skills they already have. That makes it the most likely device to be approved, reimbursed and actually used, despite having sixteen electrodes against a thousand-plus for competitors.',
@@ -495,35 +662,35 @@ export const COMPANIES: Company[] = [
     product:
       'The Stentrode is a nitinol stent with sixteen platinum-iridium electrodes, delivered through the jugular vein into the superior sagittal sinus, a large venous channel running along the top of the brain directly above motor cortex. It expands, endothelium grows over it, and it reads motor cortex activity through a few millimetres of tissue. Signals pass to an implanted transmitter and are decoded into digital commands. Since May 2025 it integrates natively with Apple\'s BCI Human Interface Device profile, so users control iPhone, iPad and Vision Pro directly.',
     whyNow:
-      'The COMMAND study reported in September 2024 that all six US participants met the twelve-month primary safety endpoint with no device-related serious adverse events and no serious vascular or brain events. That answered the question that had to be answered first, which was whether putting hardware inside a cerebral vein causes clotting or vessel damage. With safety established, the pivotal trial supporting a premarket approval submission is the next step, and it is enrolling now.',
+      "The COMMAND study reported in September 2024 that all six US participants met the twelve-month primary safety endpoint with no device-related serious adverse events and no serious vascular or brain events. That answered the question that had to be answered first, which was whether putting hardware inside a cerebral vein causes clotting or vessel damage. With safety established, the pivotal trial supporting a premarket approval submission is the next step, but I have not verified current pivotal enrolment.",
     market:
       'Roughly 30,000 people in the US live with ALS at any time, with several hundred thousand more affected by severe paralysis from stroke and spinal cord injury. This is a device market with a procedure attached, so revenue depends on a reimbursement code covering both the implant and the placement. No implantable motor BCI has full FDA premarket approval yet, and analysts do not expect one before 2027 or 2028, so the commercial market currently does not exist. That cuts both ways: nothing to capture, and nothing to defend against.',
     traction: [
       {
-        label: 'Patients implanted',
-        value: '10, across US and Australian trials',
-        read: 'A thin base heading into a pivotal trial, though every one of them is generating continuous neural data that feeds the decoder.',
+        "label": "Patients implanted",
+        "value": "10 reported in the November 2025 financing release",
+        "read": "This is a dated company figure, not a reconfirmed October 2026 total. I removed the conflicting twelve-patient number."
       },
       {
-        label: 'COMMAND primary endpoint',
-        value: '6 of 6 met at 12 months, no device-related SAEs',
-        read: 'The first FDA-approved investigational trial of a permanently implanted BCI. Small n, but this is the actual regulatory record rather than a demo.',
+        "label": "COMMAND primary endpoint",
+        "value": "6 of 6 met at 12 months, no device-related SAEs",
+        "read": "The first FDA-approved investigational trial of a permanently implanted BCI. Small n, but this is the actual regulatory record rather than a demo."
       },
       {
-        label: 'Apple integration',
-        value: 'Native BCI HID profile, May 2025',
-        read: 'Underrated. Assistive technology usually fails at the software edges rather than the device, and this hands Synchron a maintained ecosystem it did not have to build.',
+        "label": "Apple integration",
+        "value": "Native BCI HID profile, May 2025",
+        "read": "Underrated. Assistive technology usually fails at the software edges rather than the device, and this hands Synchron a maintained ecosystem it did not have to build."
       },
       {
-        label: 'Funding',
-        value: '$345M total, $200M Series D',
-        read: 'Led by Double Point rather than a marquee venture firm, which suggests the round was available rather than contested. Sovereign and strategic participation implies patient capital for a long regulatory process.',
+        "label": "Funding",
+        "value": "$345M total, $200M Series D",
+        "read": "Led by Double Point rather than a marquee venture firm, which suggests the round was available rather than contested. Sovereign and strategic participation implies patient capital for a long regulatory process."
       },
       {
-        label: 'Chiral foundation model',
-        value: 'Unveiled March 2025 with NVIDIA',
-        read: 'A decoder trained on neural data. If it extracts more from sixteen electrodes, it partially answers the channel-count objection. Ten patients is a thin training corpus.',
-      },
+        "label": "Chiral foundation model",
+        "value": "Unveiled March 2025 with NVIDIA",
+        "read": "A decoder trained on neural data. If it extracts more from sixteen electrodes, it partially answers the channel-count objection. Ten patients is a thin training corpus."
+      }
     ],
     competition:
       'Neuralink has over a thousand electrodes and roughly 21 participants implanted by early 2026, and requires a craniotomy. Precision Neuroscience puts 1,024 electrodes on a surface film through a sub-millimetre slit and holds a 510(k) clearance for thirty-day use. Paradromics and Science Corporation occupy adjacent positions. Synchron has by far the lowest surgical barrier and by far the lowest bandwidth. The bet is that the first device approved and reimbursed defines the clinical pathway, the CPT codes and the surgical training, and that this is worth more than being technically better in 2030. I hold that at roughly 65 percent.',
@@ -567,6 +734,21 @@ export const COMPANIES: Company[] = [
     ],
     view:
       'My view as of August 2026 is that Synchron is the most likely BCI to reach patients first and the one whose ceiling I am least sure about. I also notice I find the mechanism unusually elegant, and I try to discount my own enthusiasm accordingly.',
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "Synchron Series D and clinical footprint",
+        "publisher": "Synchron / Business Wire",
+        "url": "https://www.businesswire.com/news/home/20251106150841/en/Synchron-Raises-%24200-Million-Series-D-to-Advance-Brain-Computer-Interface-Technology",
+        "publishedAt": "November 6, 2025"
+      },
+      {
+        "title": "Synchron technology and investigational status",
+        "publisher": "Synchron",
+        "url": "https://synchron.com/"
+      }
+    ],
   },
 
   // ── Precision Neuroscience ─────────────────────────────────────────────────
@@ -577,17 +759,41 @@ export const COMPANIES: Company[] = [
       'A brain interface built as a film thinner than a hair holding 1,024 electrodes, slid through a slit in the skull to rest on the surface of the brain without penetrating it.',
     followingSince: 'Following since spring 2025',
     snapshot: [
-      { label: 'Sector', value: 'Neurotechnology, implantable BCI' },
-      { label: 'Stage', value: 'Series C' },
-      { label: 'Founded', value: '2021' },
-      { label: 'Headquarters', value: 'New York, NY' },
-      { label: 'Total raised', value: '$155M+' },
-      { label: 'Valuation', value: 'Approaching $500M' },
-      { label: 'Investors', value: 'Breyer Capital, Forepont, Draper Associates, Steadview' },
-      { label: 'Regulatory', value: 'FDA 510(k) cleared March 2025, up to 30 days' },
+      {
+        "label": "Sector",
+        "value": "Neurotechnology, implantable BCI"
+      },
+      {
+        "label": "Stage",
+        "value": "Series D"
+      },
+      {
+        "label": "Founded",
+        "value": "2021"
+      },
+      {
+        "label": "Headquarters",
+        "value": "New York, NY"
+      },
+      {
+        "label": "Total raised",
+        "value": "$430M, company-reported September 2026"
+      },
+      {
+        "label": "Valuation",
+        "value": "Undisclosed in the September 2026 financing release"
+      },
+      {
+        "label": "Investors",
+        "value": "Pershing Square Inc., Ackman Oxman Institute, an undisclosed life sciences fund and others"
+      },
+      {
+        "label": "Regulatory",
+        "value": "FDA 510(k) cleared March 2025, up to 30 days"
+      }
     ],
     summary:
-      'Precision is the counterargument to my Synchron thesis and I follow it partly for that reason. Its claim is that you do not have to choose between resolution and surgical risk: the array sits on the cortical surface rather than being pushed into tissue, avoiding the scarring that degrades penetrating implants, while carrying a thousand-plus electrodes. It is also the only next-generation BCI with a cleared product on the market, which gives it a data and revenue loop nobody else has.',
+      "Precision is the counterargument to my Synchron thesis. The surface-array approach tries to combine recording density with less tissue injury. September’s financing gives it more room to attempt that. The important distinction is between recordings made during a procedure and a chronic system someone can use at home; I should not collapse those into one measure of progress.",
     problem:
       'Same underlying problem as Synchron: restoring communication and control for people with severe paralysis. The technical framing is different. High-bandwidth decoding, particularly of speech, needs many electrodes close to the cortex. Penetrating arrays deliver that and cause localised tissue scarring that degrades signal over time. Non-invasive EEG avoids the damage and lacks the resolution. The gap between them is where Precision is operating.',
     product:
@@ -598,25 +804,30 @@ export const COMPANIES: Company[] = [
       'Two markets stacked. The near-term one is intraoperative cortical mapping during neurosurgery, an existing procedure with existing reimbursement where Precision is selling a better electrode. That is a modest business and it is a business. The larger one is the same chronic paralysis market Synchron is pursuing, which does not exist commercially yet. The near-term product funds data collection toward the large one, which is a genuinely well-constructed sequencing.',
     traction: [
       {
-        label: 'FDA clearance',
-        value: '510(k), cleared March 30 2025, announced April 17',
-        read: 'The only cleared next-generation BCI I am aware of. Narrow, and it means data collection under a real regulatory framework while competitors work under research protocols.',
+        "label": "FDA clearance",
+        "value": "510(k), cleared March 30 2025, announced April 17",
+        "read": "The only cleared next-generation BCI I am aware of. Narrow, and it means data collection under a real regulatory framework while competitors work under research protocols."
       },
       {
-        label: 'Electrode density',
-        value: '1,024 on a ~50 micron film',
-        read: 'Roughly 64 times Synchron\'s channel count without penetrating tissue. If chronic stability holds, this is the strongest technical position in the field.',
+        "label": "Electrode density",
+        "value": "1,024 on a ~50 micron film",
+        "read": "Roughly 64 times Synchron's channel count without penetrating tissue. If chronic stability holds, this is the strongest technical position in the field."
       },
       {
-        label: 'Chronic wireless implant',
-        value: 'Targeted first-in-human during 2026, not yet public',
-        read: 'I have now noted the absence of this twice, in January and August. Not alarming on its own, since neurotech timelines slip as a rule, but it is the milestone I said would determine the position.',
+        "label": "Chronic wireless implant",
+        "value": "Targeted first-in-human during 2026, not yet public",
+        "read": "I have now noted the absence of this twice, in January and August. Not alarming on its own, since neurotech timelines slip as a rule, but it is the milestone I said would determine the position."
       },
       {
-        label: 'Valuation',
-        value: '~$500M against Neuralink at $9B',
-        read: 'Either a substantial opportunity or a signal that better-informed people disagree with the surface-array approach. I genuinely cannot tell which.',
+        "label": "Series D",
+        "value": "$250M raised; $430M total, September 24, 2026",
+        "read": "Runway and manufacturing capacity now matter more to my case than the old, unconfirmed valuation comparison."
       },
+      {
+        "label": "Neural atlas",
+        "value": "70-patient dataset; total program surpassed 100 patients, October 8, 2026",
+        "read": "Company-reported recordings, with a manuscript on bioRxiv. These are not 100 permanent home-use implants."
+      }
     ],
     competition:
       'Neuralink is the high-bandwidth penetrating benchmark with far more capital and far more surgical risk. Synchron is the low-invasiveness endovascular alternative with far fewer channels and a pivotal trial already running. Precision sits between them and is arguably the technically best-positioned if surface arrays hold their signal chronically, which is precisely the unproven part. Blackrock Neurotech occupies the legacy research-array position. The competitive risk is timing: Synchron may define the reimbursement pathway first.',
@@ -624,33 +835,29 @@ export const COMPANIES: Company[] = [
       'Co-founded in 2021 by Michael Mager, who is CEO and came from private equity, and Benjamin Rapoport, a neurosurgeon who was a founding member of Neuralink. Rapoport leaving Neuralink to build a non-penetrating alternative is itself an argument, and it is the single most informative fact about this company. A practising neurosurgeon who has seen the inside of both approaches chose this one.',
     risks: [
       {
-        risk: 'Chronic signal stability for a thin film in cerebrospinal fluid is unproven and is the whole question.',
-        mitigant:
-          'Surface placement avoids the gliosis that degrades penetrating arrays, and the 30-day cleared product is generating relevant durability data.',
+        "risk": "Chronic signal stability for a thin film in cerebrospinal fluid is unproven and is the whole question.",
+        "mitigant": "Surface placement avoids the gliosis that degrades penetrating arrays, and the 30-day cleared product is generating relevant durability data."
       },
       {
-        risk: 'The chronic implant milestone has slipped past mid-2026 without a public update.',
-        mitigant:
-          'The cleared product generates revenue and data in the meantime, so the company is not idle while the timeline moves.',
+        "risk": "The chronic implant milestone has slipped past mid-2026 without a public update.",
+        "mitigant": "The cleared product generates revenue and data in the meantime, so the company is not idle while the timeline moves."
       },
       {
-        risk: 'Surgeons must learn a new placement technique, and surgical adoption curves are slow.',
-        mitigant:
-          'The micro-slit approach is far less demanding than a craniotomy, and intraoperative use builds familiarity before the chronic product arrives.',
+        "risk": "Surgeons must learn a new placement technique, and surgical adoption curves are slow.",
+        "mitigant": "The micro-slit approach is far less demanding than a craniotomy, and intraoperative use builds familiarity before the chronic product arrives."
       },
       {
-        risk: 'At ~$500M against Neuralink at $9B, the capital gap could become a talent and speed gap.',
-        mitigant:
-          'A cleared product and a focused indication require less capital than Neuralink\'s broader ambition.',
-      },
+        "risk": "The new round’s valuation was not disclosed, so I cannot judge entry price against competing BCI businesses.",
+        "mitigant": "More capital reduces financing pressure. It does not answer chronic durability or reimbursement."
+      }
     ],
     diligence: [
-      'What is the longest continuous recording from a Layer 7 array to date, and what does signal quality look like across that period?',
-      'What revenue does the 510(k) product generate, and is it a real commercial line or a data-collection subsidy?',
-      'What is the current status of the chronic wireless system? IDE submitted, in review, or still preclinical?',
-      'How does decoding performance compare to penetrating arrays on the same speech or motor task, measured independently?',
-      'What is the burn rate against $155M raised, and when is the next financing required?',
-      'How many neurosurgeons have been trained on micro-slit placement?',
+      "What is the longest continuous recording from a Layer 7 array to date, and what does signal quality look like across that period?",
+      "What revenue does the 510(k) product generate, and is it a real commercial line or a data-collection subsidy?",
+      "What is the current status of the chronic wireless system? IDE submitted, in review, or still preclinical?",
+      "How does decoding performance compare to penetrating arrays on the same speech or motor task, measured independently?",
+      "What is the burn rate and runway after the $250M Series D, and how much funds chronic-device development versus manufacturing?",
+      "How many neurosurgeons have been trained on micro-slit placement?"
     ],
     changeMyMind: [
       'First chronic wireless human implant, which is the event that determines this position.',
@@ -659,7 +866,23 @@ export const COMPANIES: Company[] = [
       'Synchron securing a reimbursement pathway first, which would matter more than any technical comparison.',
     ],
     view:
-      'My view as of September 2026 is that holding this and Synchron together is still a way of not choosing, but I do now have a view on this one on its own. The chronic wireless implant was targeted for first-in-human during 2026. It is the middle of September and there is nothing public. I said in January that this was the milestone that would decide the company, and I have now recorded its absence twice. Implantable neurotechnology slips constantly and the cleared 30-day device is generating real data in the meantime, so this is not yet alarming. It becomes alarming if the year ends with no human. That is the specific thing I am waiting on, and naming the date is more useful than describing the film again.',
+      "My view as of October 2026 is that the financing and atlas improve the operating case. I am still waiting for verified chronic human-use data. Surface recordings across many procedures can teach the company a great deal without demonstrating durability in a permanent implant. The distinction is what I want to keep testing.",
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "Precision closes $250M Series D",
+        "publisher": "Precision Neuroscience / GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2026/09/24/3368254/0/en/precision-neuroscience-closes-oversubscribed-250m-series-d-led-by-pershing-square-inc-the-ackman-oxman-institute-and-a-leading-life-sciences-investment-fund.html",
+        "publishedAt": "September 24, 2026"
+      },
+      {
+        "title": "Precision releases a human nervous system atlas",
+        "publisher": "Precision Neuroscience / GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2026/10/08/3377330/0/en/precision-neuroscience-unveils-a-new-map-of-the-human-nervous-system.html",
+        "publishedAt": "October 8, 2026"
+      }
+    ],
   },
 
   // ── Ambience Healthcare ────────────────────────────────────────────────────
@@ -693,30 +916,30 @@ export const COMPANIES: Company[] = [
       'The same roughly $90 billion US revenue cycle market Abridge is pursuing, approached from the documentation integrity side rather than the ambient side. CDI specifically is a well-defined budget line inside hospitals with existing headcount attached, which makes it the easiest part of this market to sell into and the easiest to quantify.',
     traction: [
       {
-        label: 'Performance-based contracts',
-        value: 'Announced April 16 2026 as part of a platform roadmap',
-        read: 'The most interesting thing this company has done. Tying fees to financial outcomes moves the product out of the IT budget and into the money it helps recover, which is the only reliable way I know of to survive in this category. It also means it only gets paid if it works, so I want to see signed terms rather than a stated willingness.',
+        "label": "Performance-based contracts",
+        "value": "The Ambience Standard, August 19, 2026",
+        "read": "The company describes fees at risk against customer outcome targets. I still want contract-level economics, not just a description of the model."
       },
       {
-        label: 'Funding',
-        value: '$243M Series C at $1.25B, July 2025; ~$345M total',
-        read: 'Oak HC/FT leading matters. They are a healthcare services and revenue cycle specialist rather than a generalist, which is a vote on the coding thesis specifically.',
+        "label": "Funding",
+        "value": "$243M Series C at $1.25B, July 2025; ~$345M total",
+        "read": "Oak HC/FT leading matters. They are a healthcare services and revenue cycle specialist rather than a generalist, which is a vote on the coding thesis specifically."
       },
       {
-        label: 'Epic Toolbox',
-        value: 'Member since August 2025',
-        read: 'The fact that most changed my read of the whole ambient category. Epic distributing a third-party ambient product implies a platform posture rather than a displacement one.',
+        "label": "Epic Toolbox",
+        "value": "Member since August 2025",
+        "read": "The fact that most changed my read of the whole ambient category. Epic distributing a third-party ambient product implies a platform posture rather than a displacement one."
       },
       {
-        label: 'Specialty coverage',
-        value: '30+',
-        read: 'Breadth is a real differentiator against Epic\'s native tool, which handles routine documentation well and specialty depth poorly. It also widens audit exposure.',
+        "label": "Specialty coverage",
+        "value": "200+, current company claim",
+        "read": "I replaced the old thirty-specialty figure. Breadth is company-reported; consistent performance across that breadth is a separate question."
       },
       {
-        label: 'Strategic investor',
-        value: 'Optum Ventures',
-        read: 'A distribution channel and a fairly clear signal about who eventually buys this company. That caps the upside and raises the floor.',
-      },
+        "label": "Strategic investor",
+        "value": "Optum Ventures",
+        "read": "A distribution channel and a fairly clear signal about who eventually buys this company. That caps the upside and raises the floor."
+      }
     ],
     competition:
       'Abridge is the direct competitor with roughly three times the capital and better name recognition. Microsoft Nuance DAX is the scaled incumbent, Suki is growing, and Epic\'s own AI Charting is the free default. Ambience\'s differentiation is the combined coding and CDI product plus Epic distribution. My honest assessment is that I cannot articulate why Ambience wins a competitive account against Abridge other than price and channel, which is a real weakness in this memo.',
@@ -724,25 +947,21 @@ export const COMPANIES: Company[] = [
       'Founded in 2020 by Mike Ng and Nikhil Buduma, who met at MIT in 2013. Buduma became CEO in September 2025, with Ng moving to President and Chairman. Buduma was previously chief scientist and wrote an early widely used deep learning textbook. A founder-to-founder CEO transition inside a company this size usually signals a shift from building the product to scaling the commercial organisation, and both founders remaining is a better sign than one leaving.',
     risks: [
       {
-        risk: 'Competing directly against a better-capitalised, better-known company in the same accounts.',
-        mitigant:
-          'Epic distribution reaches customers Abridge has to sell around, and the price point is lower.',
+        "risk": "Competing directly against a better-capitalised, better-known company in the same accounts.",
+        "mitigant": "Epic distribution reaches customers Abridge has to sell around, and the price point is lower."
       },
       {
-        risk: 'Epic could change or close the Toolbox program, removing a channel Ambience did not build.',
-        mitigant:
-          'The product is differentiated by CDI and specialty depth independent of channel, and direct enterprise sales continue in parallel.',
+        "risk": "Epic could change or close the Toolbox program, removing a channel Ambience did not build.",
+        "mitigant": "The product is differentiated by CDI and specialty depth independent of channel, and direct enterprise sales continue in parallel."
       },
       {
-        risk: 'Coding accuracy across 30-plus specialties is harder than in primary care, and audit exposure scales with breadth.',
-        mitigant:
-          'CDI as a product line is inherently about review and accuracy, so the company is built around the failure mode rather than exposed to it blindly.',
+        "risk": "Coding accuracy across 200-plus claimed specialties is harder than in primary care, and audit exposure scales with breadth.",
+        "mitigant": "CDI as a product line is inherently about review and accuracy, so the company is built around the failure mode rather than exposed to it blindly."
       },
       {
-        risk: 'Optum on the cap table likely means a strategic acquisition price rather than a venture outcome.',
-        mitigant:
-          'A strategic floor is worth something in a market where the IPO window is closed to companies this size.',
-      },
+        "risk": "Optum on the cap table likely means a strategic acquisition price rather than a venture outcome.",
+        "mitigant": "A strategic floor is worth something in a market where the IPO window is closed to companies this size."
+      }
     ],
     diligence: [
       'What is the revenue split across scribe, coding and CDI, and which line is growing fastest?',
@@ -760,6 +979,21 @@ export const COMPANIES: Company[] = [
     ],
     view:
       'My view as of September 2026 is that I had this filed as a cheaper Abridge and that was lazy. Ambience is trying to get paid out of revenue capture rather than out of the software budget, which is the specific move I argue elsewhere is the only durable one in clinical software, and it is the only company I follow actually attempting it contractually. Optum Ventures being on the cap table still makes an acquisition the likeliest ending. But the thing I want now is a signed performance contract with disclosed terms, because that would be the first hard evidence for the central claim I make on the thesis page, and its absence by mid-2027 would be evidence against it.',
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "The Ambience Standard and performance-based contracts",
+        "publisher": "Ambience Healthcare",
+        "url": "https://www.ambiencehealthcare.com/blog-legacy/ambience-healthcare-sets-a-new-standard-for-ai-partnerships-in-healthcare",
+        "publishedAt": "August 19, 2026"
+      },
+      {
+        "title": "Current platform and specialty coverage",
+        "publisher": "Ambience Healthcare",
+        "url": "https://www.ambiencehealthcare.com/"
+      }
+    ],
   },
 
   // ── Inceptive ──────────────────────────────────────────────────────────────
@@ -852,7 +1086,17 @@ export const COMPANIES: Company[] = [
       'The Alnylam collaboration lapsing quietly at term.',
     ],
     view:
-      'My view as of September 2026 is that Inceptive is the cleanest test I follow of whether counterparty quality works as a signal when I cannot judge the science myself. I cannot evaluate these RNA models. Alnylam can, has done almost nothing else for twenty years, and paid $30 million and took equity for access to them. That satisfies the second of the three tests I set for this field, a serious domain partner paying real money. The third, a molecule surviving Phase 1, is still unmet by anyone. So I hold this as evidence that the capability is worth something to people qualified to price it, and not as evidence that it produces drugs.',
+      "My view as of October 2026 is that Inceptive is the cleanest test I follow of whether counterparty quality works as a signal when I cannot judge the science myself. I cannot evaluate these RNA models. Alnylam can, has done almost nothing else for twenty years, and committed $30 million of upfront consideration, including cash and an equity purchase, for access to them. That satisfies the second of the three tests I set for this field, a serious domain partner paying real money. The third, a molecule surviving Phase 1, is still a milestone I need to evaluate program by program. So I hold this as evidence that the capability is worth something to people qualified to price it, and not as evidence that it produces drugs.",
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "Alnylam and Inceptive collaboration terms",
+        "publisher": "Alnylam",
+        "url": "https://investors.alnylam.com/press-release?id=12c82628-531a-443b-b21b-26cc5b51230b",
+        "publishedAt": "June 3, 2026"
+      }
+    ],
   },
 
   // ── Xaira Therapeutics ─────────────────────────────────────────────────────
@@ -863,14 +1107,38 @@ export const COMPANIES: Company[] = [
       'Launched with over a billion dollars to build models that predict how a whole cell responds when you perturb it, rather than just predicting what a single protein looks like.',
     followingSince: 'Following since 2024',
     snapshot: [
-      { label: 'Sector', value: 'Generative biology' },
-      { label: 'Stage', value: 'Series A' },
-      { label: 'Founded', value: '2023, launched April 2024' },
-      { label: 'Headquarters', value: 'South San Francisco, CA' },
-      { label: 'Total raised', value: '$1.3B' },
-      { label: 'Investors', value: 'ARCH Venture Partners, Foresite Capital, F-Prime, NVentures, Sequoia' },
-      { label: 'Platform', value: 'X-Cell virtual cell model, X-Atlas/Pisces dataset' },
-      { label: 'Clinical status', value: 'No development candidate announced' },
+      {
+        "label": "Sector",
+        "value": "Generative biology"
+      },
+      {
+        "label": "Stage",
+        "value": "Series A"
+      },
+      {
+        "label": "Founded",
+        "value": "2023, launched April 2024"
+      },
+      {
+        "label": "Headquarters",
+        "value": "South San Francisco, CA"
+      },
+      {
+        "label": "Total raised",
+        "value": "$1.3B"
+      },
+      {
+        "label": "Investors",
+        "value": "ARCH Venture Partners, Foresite Capital, F-Prime, NVentures, Sequoia"
+      },
+      {
+        "label": "Platform",
+        "value": "X-Cell virtual cell model, X-Atlas/Pisces dataset"
+      },
+      {
+        "label": "Clinical status",
+      "value": "Preclinical pipeline disclosed; no human dosing announced in the material reviewed"
+      }
     ],
     summary:
       'The premise is that structure prediction solved the easy half. Knowing the shape of a protein does not tell you what happens to a cell when you interfere with it, and that second question is closer to what determines whether a drug works. Xaira generates enormous perturbation datasets in its own lab and trains on them. I hold this on the strength of the data asset and the people rather than on any independent evaluation of the model, because no independent evaluation is possible.',
@@ -881,28 +1149,28 @@ export const COMPANIES: Company[] = [
     whyNow:
       'Single-cell sequencing costs fell far enough that genome-scale perturbation screens became affordable around 2022, which is what makes the dataset possible. Before that you could not generate enough data to train a model of this kind at any price. The talent condition was David Baker winning the 2024 Nobel and the surrounding field maturing into something a company could hire out of.',
     market:
-      'Xaira is not selling models. The intended value capture is an internal pipeline of antibody and large-molecule therapeutics against difficult targets, weighted to immunology and oncology, which means the market is the same one every biotech is in. The distinguishing claim is a faster and better-targeted route into it. Nothing has been nominated yet, so the market question is entirely prospective.',
+      'Xaira’s intended value capture is an internal pipeline of biologic therapeutics, rather than only selling model access. Its current platform page shows preclinical programs across oncology, immunology and undisclosed indications. I want to assess how that pipeline progresses before attributing value to the platform beyond the data and experimental work already disclosed.',
     traction: [
       {
-        label: 'Capital',
-        value: '$1.3B at launch',
-        read: 'One of the largest biotech launches on record. It buys years of runway, which given what happened to Turn Bio is a genuine asset rather than a vanity number.',
+        "label": "Capital",
+        "value": "$1.3B at launch",
+        "read": "One of the largest biotech launches on record. It buys years of runway, which given what happened to Turn Bio is a genuine asset rather than a vanity number."
       },
       {
-        label: 'X-Cell and X-Atlas/Pisces',
-        value: 'Released March 2026',
-        read: 'I cannot independently grade this and I want that stated plainly. Structure prediction has CASP, a blind competition. Virtual cell modelling has no equivalent, so every company evaluates its own model on data it chose.',
+        "label": "X-Cell and X-Atlas/Pisces",
+        "value": "Released March 2026",
+        "read": "I cannot independently grade this and I want that stated plainly. Structure prediction has CASP, a blind competition. Virtual cell modelling has no equivalent, so every company evaluates its own model on data it chose."
       },
       {
-        label: 'Partnership posture',
-        value: 'At BIO in July 2026, seeking preclinical data rather than capital',
-        read: 'Candid and revealing. It suggests even $1.3B does not buy enough biology, and that the generate-everything-yourself premise has limits that arrived faster than expected.',
+        "label": "Partnership posture",
+        "value": "At BIO in July 2026, seeking preclinical data rather than capital",
+        "read": "Candid and revealing. It suggests even $1.3B does not buy enough biology, and that the generate-everything-yourself premise has limits that arrived faster than expected."
       },
       {
-        label: 'Development candidates',
-        value: 'None announced, two years after launch',
-        read: 'Not alarming yet given the stage, and it is the clock that matters. A launch of this size creates an expectation timeline whether the company wants one or not.',
-      },
+        "label": "Disclosed pipeline work",
+        "value": "XA-1 and XA-4, October 2, 2026",
+        "read": "Company-reported preclinical examples are a more useful starting point than my old “none announced” shorthand. They are not human evidence."
+      }
     ],
     competition:
       'Isomorphic Labs on the structural side, Recursion on phenotypic screening, and the internal AI groups at every large pharma. The more interesting competitive dynamic is with the platform layer: as BioNeMo improves and general models get better at biological reasoning, the modelling advantage narrows and the data asset becomes the defensible part. That is a smaller position than the company pitched at launch, and it is a real one.',
@@ -945,7 +1213,22 @@ export const COMPANIES: Company[] = [
       'Senior scientific departures, which in a company assembled around specific people would matter more than usual.',
     ],
     view:
-      'My view as of September 2026 is that the dataset is the asset and the model is still unproven, and I have stopped treating those as one bet. X-Atlas/Pisces is 25.6 million perturbed single-cell transcriptomes and nobody has published anything close to it. X-Cell, the model trained on it, has no development candidate and no pharma partner two and a half years in. So the question I care about is whether anyone who can judge the capability will pay for it. The trade I would most like to see is Alnylam and Xaira swapping data rather than money, because Alnylam has twenty years of validated in vivo RNAi results and just showed with Inceptive that it will pay for computational work. I think that is the most logical unconsummated deal in the sector. If it or something like it has not happened by the end of 2027, the honest read is that this is a research asset and not a business.',
+      "My view as of October 2026 is more specific: I now have experimental claims to investigate alongside the data asset. X-Design’s antibody examples strengthen the case for doing that work without settling platform generality or clinical translation. I still want a partner who can independently assess the work, and I would like to see the promised systematic evaluation rather than only selected campaigns.",
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "De Novo Design of Progressable Antibodies to Therapeutic Targets",
+        "publisher": "Xaira Therapeutics",
+        "url": "https://www.xaira.com/news/de-novo-design-of-progressable-antibodies-to-therapeutic-targets",
+        "publishedAt": "October 2, 2026"
+      },
+      {
+        "title": "Xaira platform and current preclinical pipeline",
+        "publisher": "Xaira Therapeutics",
+        "url": "https://www.xaira.com/platform"
+      }
+    ],
   },
 
   // ── Beeline Medicines ──────────────────────────────────────────────────────
@@ -1003,25 +1286,21 @@ export const COMPANIES: Company[] = [
       'Saqib Islam is CEO, having previously led SpringWorks Therapeutics through its acquisition by Merck KGaA in 2025. That is the fact I weight most in this memo. A CEO who has just completed a sale to large pharma knows exactly what a buyer diligences and builds the company backwards from that. The board is chaired by Daniel S. Lynch, with Robert Plenge, Nicholas Downing, Adam Koppel and Andrew Kaplan since the July 2025 Series A close.',
     risks: [
       {
-        risk: 'Phase 2 in lupus is not Phase 3 in lupus, and confirmatory trials in this disease have gone badly for other drugs.',
-        mitigant:
-          'Separation across all three doses at week 48 is a better starting point than a single dose squeaking past. I have not done the work on the base rate yet, and that is now the main thing worth doing on this name.',
+        "risk": "Phase 2 in lupus is not Phase 3 in lupus, and confirmatory trials in this disease have gone badly for other drugs.",
+        "mitigant": "Separation across all three doses at week 48 is a better starting point than a single dose squeaking past. I have not done the work on the base rate yet, and that is now the main thing worth doing on this name."
       },
       {
-        risk: 'I do not have a differentiated scientific view here, which makes this closer to category exposure than a pick.',
-        mitigant:
-          'The position is deliberately framed as a starting point rather than a conviction, and the readout arrives quickly.',
+        "risk": "I do not have a differentiated scientific view here, which makes this closer to category exposure than a pick.",
+        "mitigant": "The position is deliberately framed as a starting point rather than a conviction, and the Phase 2 readout has now arrived."
       },
       {
-        risk: 'A company assembled from another company\'s deprioritised programs raises the question of why they were deprioritised.',
-        mitigant:
-          'BMS retained equity and Bain and CPPIB diligenced the assets, which is not proof but is not nothing.',
+        "risk": "A company assembled from another company's deprioritised programs raises the question of why they were deprioritised.",
+        "mitigant": "BMS retained equity and Bain and CPPIB diligenced the assets, which is not proof but is not nothing."
       },
       {
-        risk: 'Autoimmune cell therapy could redefine the standard of care while this is still in Phase 2.',
-        mitigant:
-          'Cell therapy requires conditioning chemotherapy and hospitalisation, which limits its reach in a chronic non-fatal disease.',
-      },
+        "risk": "Autoimmune cell therapy could redefine the standard of care while this is still in Phase 2.",
+        "mitigant": "Cell therapy requires conditioning chemotherapy and hospitalisation, which limits its reach in a chronic non-fatal disease."
+      }
     ],
     diligence: [
       'Why did BMS deprioritise these five programs specifically? This is the central question and I do not have an answer.',
@@ -1039,6 +1318,16 @@ export const COMPANIES: Company[] = [
     ],
     view:
       'My view as of September 2026 is that the readout landed and I still do not have a differentiated scientific view, which is an uncomfortable pair of things to hold at once. I bought category exposure and the category paid. I am keeping it because Phase 3 is a real question I can now do work on, not because Phase 2 vindicated anything I actually said.',
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "Afimetoran Phase 2 topline results",
+        "publisher": "Beeline Medicines",
+        "url": "https://beelinemedicines.com/press-releases/beeline-medicines-announces-positive-topline-results-from-global-phase-2-study-of-afimetoran-in-systemic-lupus-erythematosus/",
+        "publishedAt": "September 9, 2026"
+      }
+    ],
   },
 
   // ── Turn Biotechnologies ───────────────────────────────────────────────────
@@ -1050,16 +1339,16 @@ export const COMPANIES: Company[] = [
     followingSince: 'Followed from 2025 through mid 2026',
     snapshot: [
       { label: 'Sector', value: 'Longevity, cellular rejuvenation' },
-      { label: 'Stage', value: 'Preclinical at wind-down' },
+      { label: 'Stage', value: 'Preclinical at technology-asset sale' },
       { label: 'Founded', value: '2018' },
       { label: 'Headquarters', value: 'Mountain View, CA' },
-      { label: 'Total raised', value: '$80M+' },
-      { label: 'Outcome', value: 'Assets auctioned May 6 2026, acquired by Daewoong Pharmaceutical' },
+      { label: 'Total raised', value: 'Not independently reconciled' },
+      { label: 'Outcome', value: 'Technology assets acquired by Daewoong, announced May 2026' },
       { label: 'Key partnership', value: 'HanAll Biopharma licence, up to $239M, May 2024' },
       { label: 'Regulatory status', value: 'Positive FDA INTERACT feedback, pre-IND' },
     ],
     summary:
-      'The science was good and I still think so. You can reset the epigenetic marks that accumulate as a cell ages by briefly expressing reprogramming factors, and if you stop early enough the cell rejuvenates without reverting to a stem cell, which is what makes tumours. The company went to auction anyway. No filing or statement I can find says why in those words, and there was never an announced wind-down, so \'ran out of money\' is my inference from a live asset auction and a lifetime raise of around $80 million rather than something I can cite. I am keeping this memo in the same format as the others because the discipline of writing it that way is what would have caught the problem, and the risk section is where the failure is visible in hindsight.',
+      'The scientific idea still interests me: transient reprogramming might rejuvenate cells without taking them all the way back to pluripotency. Daewoong acquired the technology assets after an auction in May 2026. Financing pressure is my interpretation of that sequence, not a disclosed explanation, and I have not reconciled the funding total or investor proceeds. I keep the memo because I tracked scientific progress without asking enough about the money required to reach the next experiment.',
     problem:
       'Cellular ageing drives a long list of degenerative conditions, and essentially all existing treatment manages symptoms rather than the underlying decline. Partial epigenetic reprogramming offers a route to restoring youthful cell function directly. The danger is that full reprogramming produces pluripotent stem cells, which form teratomas, so the therapeutic question is whether you can go partway and stop.',
     product:
@@ -1124,10 +1413,22 @@ export const COMPANIES: Company[] = [
       'Was there an active Series B process, and what feedback was it getting?',
     ],
     changeMyMind: [
-      'Realised. The assets transferred to Daewoong Pharmaceutical in May 2026 and the equity received nothing.',
+      "The technology assets transferred in May 2026. Public reporting reviewed here does not establish what every equity holder received."
     ],
     view:
       'My view as of August 2026 is that following this company taught me more than any of the ones that worked. I now write a rough runway estimate into any note about a preclinical company, and I no longer read a licensing deal as unambiguously good news without asking who is better positioned if things get worse.',
+
+    status: "archived",
+    archivedReason: "Archived after the May 2026 technology-asset auction. I keep the case because the financing questions I missed are part of the research record.",
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "Daewoong acquires Turn Bio technology assets",
+        "publisher": "The Korea Herald",
+        "url": "https://www.koreaherald.com/article/10742748",
+        "publishedAt": "May 21, 2026"
+      }
+    ],
   },
 
   // ── BioAge Labs ────────────────────────────────────────────────────────────
@@ -1159,30 +1460,30 @@ export const COMPANIES: Company[] = [
       'Cardiovascular risk reduction is one of the largest markets in medicine and one of the hardest to win, because the standard of care is cheap generics and the trials required are enormous. Diabetic macular edema is a smaller, faster, better-defined market with visible endpoints, which is why the January 2026 indication expansion makes sense for a company managing its cash. The first patient in that trial, QUELL-DME, was dosed on 8 September 2026, with data not expected until the second half of 2027.',
     traction: [
       {
-        label: 'BGE-102 Phase 1',
-        value: 'April 21 2026: median hsCRP down 85% or more at 60mg and 120mg, IL-1beta suppression up to 98%',
-        read: 'The numbers are large and they are also biomarkers rather than outcomes. Plenty of anti-inflammatory programs have moved CRP and then failed on events. The company calls it best in class, which is a characterisation rather than an independent read.',
+        "label": "BGE-102 Phase 1",
+        "value": "April 21 2026: median hsCRP down 85% or more at 60mg and 120mg, IL-1beta suppression up to 98%",
+        "read": "The numbers are large and they are also biomarkers rather than outcomes. Plenty of anti-inflammatory programs have moved CRP and then failed on events. The company calls it best in class, which is a characterisation rather than an independent read."
       },
       {
-        label: 'Phase 2 cardiovascular',
-        value: 'QUELL-CV, first patient dosed June 2026, enrolment complete, topline H2 2026',
-        read: 'The real test, and it is now close. Enrolment closing on schedule is the first thing this company has done on time since the azelaprag failure.',
+        "label": "Phase 2 cardiovascular",
+        "value": "QUELL-CV, first patient dosed June 2026, enrolment complete, topline H2 2026",
+        "read": "A dose-ranging biomarker study, not a cardiovascular outcomes trial. Its primary endpoint is percent change in hsCRP over twelve weeks."
       },
       {
-        label: 'Azelaprag discontinuation',
-        value: '11 of 204 subjects with transaminase elevations, December 2024',
-        read: 'No signal in the tirzepatide-only arm, so it was the BioAge drug. The clean example of why binding prediction does not predict metabolism.',
+        "label": "Azelaprag discontinuation",
+        "value": "11 of 204 subjects with transaminase elevations, December 2024",
+        "read": "No signal in the tirzepatide-only arm, so it was the BioAge drug. The clean example of why binding prediction does not predict metabolism."
       },
       {
-        label: 'Public filings',
-        value: 'Quarterly, audited',
-        read: 'After Turn Bio this is worth something on its own. Cash, burn and trial status are disclosed on a schedule with legal consequences for getting them wrong.',
+        "label": "Public filings",
+        "value": "Quarterly, audited",
+        "read": "After Turn Bio this is worth something on its own. Cash, burn and trial status are disclosed on a schedule with legal consequences for getting them wrong."
       },
       {
-        label: 'Indication expansion',
-        value: 'Diabetic macular edema, announced January 2026',
-        read: 'Adding a second indication before the first has Phase 2 data usually means a company wants more shots with the cash it has. Retinal trials are shorter and cheaper.',
-      },
+        "label": "Indication expansion",
+        "value": "Diabetic macular edema, announced January 2026",
+        "read": "Adding a second indication before the first has Phase 2 data usually means a company wants more shots with the cash it has. Retinal trials are shorter and cheaper."
+      }
     ],
     competition:
       'NLRP3 is crowded, with programs at Novartis, Roche and several biotechs, and a mixed clinical history. On the cardiovascular inflammation thesis the reference point is colchicine and canakinumab, both of which showed that reducing inflammation reduces events and neither of which became a commercial success. That is the cautionary structure here: being right about the biology has not historically been sufficient.',
@@ -1190,42 +1491,60 @@ export const COMPANIES: Company[] = [
       'Co-founded in 2015 and led by Kristen Fortney, who took the company public in September 2024 and then had to discontinue its lead asset ten weeks later. Managing that transition without the company folding, and having a credible Phase 2 program eighteen months on, is a real operational result. I weight it more than I would weight a founder who has never had to do it.',
     risks: [
       {
-        risk: 'Moving hsCRP is not the same as preventing cardiovascular events, and the field has failed here before.',
-        mitigant:
-          'The Phase 2 is designed to test exactly this and reads out within months rather than years.',
+        "risk": "Moving hsCRP is not the same as preventing cardiovascular events, and the field has failed here before.",
+        "mitigant": "QUELL-CV tests dose response and biomarker activity. Demonstrating fewer cardiovascular events requires a different, larger trial."
       },
       {
-        risk: 'NLRP3 is crowded with better-capitalised competitors.',
-        mitigant:
-          'Brain penetrance differentiates the molecule and opens neuroinflammation indications others cannot pursue.',
+        "risk": "NLRP3 is crowded with better-capitalised competitors.",
+        "mitigant": "Brain penetrance differentiates the molecule and opens neuroinflammation indications others cannot pursue."
       },
       {
-        risk: 'A company that pivoted after a safety failure may be valued on the memory of the old program.',
-        mitigant:
-          'That is also the opportunity, if the new program is being underpriced for reasons unrelated to it.',
+        "risk": "A company that pivoted after a safety failure may be valued on the memory of the old program.",
+        "mitigant": "That is also the opportunity, if the new program is being underpriced for reasons unrelated to it."
       },
       {
-        risk: 'It is publicly traded, so this sits outside the framing of the rest of these memos.',
-        mitigant:
-          'Public filings make it the easiest company here to diligence, which after Turn Bio I value more than I used to.',
-      },
+        "risk": "It is publicly traded, so this sits outside the framing of the rest of these memos.",
+        "mitigant": "Public filings make it the easiest company here to diligence, which after Turn Bio I value more than I used to."
+      }
     ],
     diligence: [
-      'What are the Phase 2 cardiovascular primary endpoints, and is the trial powered for events or only for biomarkers?',
-      'What is the full safety database on BGE-102 to date, particularly any hepatic signal given the azelaprag history?',
-      'What is cash on hand and runway through the DME readout?',
-      'How does the hsCRP reduction compare quantitatively to canakinumab and to competing NLRP3 programs?',
-      'What did the biobank actually contribute to identifying BGE-102, as opposed to the platform narrative?',
-      'Has the azelaprag mechanism been abandoned entirely, or is a backup being pursued?',
+      "How would a successful hsCRP result translate into the design, cost and timing of a cardiovascular outcomes trial?",
+      "What is the full safety database on BGE-102 to date, particularly any hepatic signal given the azelaprag history?",
+      "What is cash on hand and runway through the DME readout?",
+      "How does the hsCRP reduction compare quantitatively to canakinumab and to competing NLRP3 programs?",
+      "What did the biobank actually contribute to identifying BGE-102, as opposed to the platform narrative?",
+      "Has the azelaprag mechanism been abandoned entirely, or is a backup being pursued?"
     ],
     changeMyMind: [
-      'Phase 2 cardiovascular data in H2 2026 showing event reduction rather than only biomarker movement.',
-      'Any hepatic safety signal on BGE-102, which would raise questions about the platform rather than the molecule.',
-      'The DME proof-of-concept reading out positively, which would open a faster commercial path.',
-      'A competitor NLRP3 program failing on outcomes despite biomarker success.',
+      "QUELL-CV showing a reproducible dose response with acceptable safety, followed by a credible outcomes-trial plan.",
+      "Any hepatic safety signal on BGE-102, which would raise questions about the platform rather than the molecule.",
+      "The DME proof-of-concept reading out positively, which would open a faster commercial path.",
+      "A competitor NLRP3 program failing on outcomes despite biomarker success."
     ],
     view:
-      'My view as of September 2026 is that QUELL-CV reads out within months, so I should say what I expect before it does, because saying it afterwards is worth nothing. I expect the hsCRP effect to hold, since that is a direct pharmacological readout and Phase 1 showed it plainly at two doses. I have much less confidence it converts into a cardiovascular signal in a Phase 2 this size, and a result that looks strong on biomarkers while saying nothing about events would not surprise me. I was wrong about this company once by trusting an argument about the category over the data on the drug, so the useful discipline is to commit to the prediction in advance and be scored on it.',
+      "My view as of October 2026 is that I asked the wrong question of QUELL-CV. It is a roughly 160-person, twelve-week dose-ranging study with hsCRP as its primary endpoint. It cannot establish fewer heart attacks. I expect biomarker activity, but the useful questions are dose response, safety and whether the result justifies the next trial. The retinal study adds a separate path with a functional endpoint. I still like having a public company whose assumptions I can check against filings.",
+
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "QUELL-CV trial design and primary endpoint",
+        "publisher": "BioAge Labs",
+        "url": "https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-announces-first-participant-dosed-quell-cv-phase-2",
+        "publishedAt": "June 16, 2026"
+      },
+      {
+        "title": "Second quarter financial results and development update",
+        "publisher": "BioAge Labs",
+        "url": "https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-reports-second-quarter-2026-financial-results-and",
+        "publishedAt": "August 5, 2026"
+      },
+      {
+        "title": "First participant dosed in QUELL-DME",
+        "publisher": "BioAge Labs",
+        "url": "https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-announces-first-participant-dosed-quell-dme-phase-2",
+        "publishedAt": "September 8, 2026"
+      }
+    ],
   },
 
   // ── EvolutionaryScale ──────────────────────────────────────────────────────
@@ -1246,7 +1565,7 @@ export const COMPANIES: Company[] = [
       { label: 'Headline result', value: 'esmGFP, published in Science, January 2025' },
     ],
     summary:
-      'The technical claim was real and it held up. What I got wrong was assuming that a company doing important work would find a way to capture value from it. Those are separate questions and I had collapsed them into one. This memo exists mainly to hold the value-capture section, which is the part I now write before I write about whether the technology works.',
+      'The technical work was impressive and the company is now part of Biohub. That made me revisit an assumption: important research does not explain how investors capture value. I do not know the transaction terms well enough to score the return. I keep this case because it made the commercial questions harder to ignore, even when I like the science.',
     problem:
       'Natural evolution has explored a tiny fraction of possible protein sequence space. Traditional biologic discovery screens natural libraries or makes incremental mutations, which limits what can be built. A model reasoning jointly over sequence, structure and function would let you specify a desired function and generate a protein that performs it.',
     product:
@@ -1257,25 +1576,25 @@ export const COMPANIES: Company[] = [
       'The intended market was licensing model access to biopharma. That market turned out to be much smaller than it appeared, for reasons that are obvious in hindsight: customers are large and conservative, capable of running open-weights alternatives, and the research moves fast enough that any specific model has a short commercial life. There was no recurring revenue mechanism that a better free model would not undercut.',
     traction: [
       {
-        label: 'esmGFP',
-        value: '58% sequence identity to nearest natural protein, published in Science January 2025',
-        read: 'Cleared peer review, which a lot of AI-for-biology claims never do. The technical bet was correct and verifiable.',
+        "label": "esmGFP",
+        "value": "58% sequence identity to nearest natural protein, published in Science January 2025",
+        "read": "Cleared peer review, which a lot of AI-for-biology claims never do. The technical bet was correct and verifiable."
       },
       {
-        label: 'Distribution',
-        value: 'AWS Bedrock and NVIDIA BioNeMo',
-        read: 'Wide availability and no pricing power. Being distributed through platforms that also commoditise you is a structural problem, not a channel win.',
+        "label": "Distribution",
+        "value": "AWS Bedrock and NVIDIA BioNeMo",
+        "read": "Wide availability and no pricing power. Being distributed through platforms that also commoditise you is a structural problem, not a channel win."
       },
       {
-        label: 'Commercial traction',
-        value: 'No disclosed licensing revenue at scale',
-        read: 'The absence is the finding. I wrote eleven paragraphs about the model and four sentences about monetisation.',
+        "label": "Commercial traction",
+        "value": "No disclosed licensing revenue at scale",
+        "read": "The absence is the finding. I wrote eleven paragraphs about the model and four sentences about monetisation."
       },
       {
-        label: 'Outcome',
-        value: 'Acquired by CZ Biohub November 2025, team joined as staff',
-        read: 'Alexander Rives became Head of Science. Everything I believed about the technology was correct and it produced no venture return.',
-      },
+        "label": "Outcome",
+        "value": "Now part of Biohub",
+        "read": "The destination is public. Investor proceeds and transaction terms are not established by the company website, so I removed the claim that it produced no venture return."
+      }
     ],
     competition:
       'Isomorphic Labs, Xaira, and academic open-source protein models. The decisive competitive factor was not a rival company but the open-weights ecosystem, including Baker lab releases like RFdiffusion3, which went open source in June 2026. When the free alternative is close enough and improving, a licensing business has no floor.',
@@ -1305,10 +1624,21 @@ export const COMPANIES: Company[] = [
       'What is the burn rate against $142M and how long does that fund a model of this size?',
     ],
     changeMyMind: [
-      'Realised. Acquired by Chan Zuckerberg Biohub in November 2025 at approximately cost to investors.',
+      "The company is now part of Biohub. I have not established investor proceeds from primary public disclosures."
     ],
     view:
-      'My view as of August 2026 is that this was the right technical call and a bad commercial one, and separating those two judgments is the most useful thing following this company taught me. I now write the value-capture section before the technology section, which is why every memo above has one.',
+      'My view as of October 2026 is that the technical and commercial questions need separate evidence. I initially read the move to Biohub as a poor venture outcome, but I have not established the investor proceeds and should not score it that way. The useful lesson is to investigate value capture as early as the model, rather than assume one follows from the other.',
+
+    status: "archived",
+    archivedReason: "Archived after the team and technology joined Biohub. The scientific result and the commercial outcome remain separate questions.",
+    lastReviewed: "October 13, 2026",
+    sources: [
+      {
+        "title": "EvolutionaryScale is now part of Biohub",
+        "publisher": "EvolutionaryScale",
+        "url": "https://www.evolutionaryscale.ai/"
+      }
+    ],
   },
 ];
 
@@ -1321,3 +1651,6 @@ export function getCompanyBySlug(slug: string): Company | undefined {
 export function getAllCompanies(): Company[] {
   return COMPANIES;
 }
+
+export const ACTIVE_COMPANIES = COMPANIES.filter((c) => c.status !== 'archived');
+export const ARCHIVED_COMPANIES = COMPANIES.filter((c) => c.status === 'archived');

@@ -104,7 +104,7 @@ export const FEATURED_IDS = new Set<string>([
 export const FILTERS: { id: string; label: string; match: (e: CoverageEntry) => boolean }[] = [
   { id: 'all', label: 'All', match: () => true },
   { id: 'best', label: 'Start here', match: (e) => FEATURED_IDS.has(e.id) },
-  { id: 'companies', label: 'Companies I follow', match: (e) => e.scope === 'company' },
+  { id: 'companies', label: 'Company notes', match: (e) => e.scope === 'company' || Boolean(e.relatedCompanyIds?.length) },
   { id: 'industry', label: 'Industry', match: (e) => e.scope === 'industry' },
   { id: 'financing', label: 'Financing', match: (e) => e.entryType === 'financing' },
   { id: 'ma-licensing', label: 'M&A and licensing', match: (e) => e.entryType === 'ma-licensing' },

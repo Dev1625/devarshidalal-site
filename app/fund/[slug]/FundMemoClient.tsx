@@ -71,21 +71,23 @@ export default function FundMemoClient({ company, others, entries }: Props) {
           className="flex flex-col gap-12"
         >
           <Link
-            href="/fund?view=companies"
+            href={company.status === 'archived' ? '/fund?view=archive' : '/fund?view=companies'}
             className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-stone-mid hover:text-obsidian transition-colors self-start cursor-none"
             data-cursor="hover"
           >
             <ArrowLeft size={13} />
-            All companies
+            {company.status === 'archived' ? 'Past research' : 'All companies'}
           </Link>
 
           {/* ── Memo header ── */}
           <header>
             <div className="font-mono text-[10px] uppercase tracking-widest text-stone-mid mb-4">
-              Investment memo &middot; {company.followingSince}
+              {company.status === 'archived' ? 'Archived research memo' : 'Investment research memo'} &middot; {company.followingSince}
             </div>
             <h1 className="font-serif text-5xl md:text-6xl text-obsidian tracking-tight mb-5">{company.name}</h1>
             <p className="font-sans font-light text-xl text-ink leading-relaxed max-w-[640px]">{company.what}</p>
+            {company.archivedReason && <p className="mt-5 border-l-2 border-accent pl-4 font-sans text-sm leading-relaxed text-stone-mid">{company.archivedReason}</p>}
+            {company.lastReviewed && <p className="mt-5 font-mono text-[10px] uppercase tracking-widest text-stone-mid">Last reviewed {company.lastReviewed}</p>}
           </header>
 
           {/* ── Snapshot ── */}
@@ -205,6 +207,14 @@ export default function FundMemoClient({ company, others, entries }: Props) {
           </section>
 
           {/* ── Coverage history ── */}
+          {company.sources && company.sources.length > 0 && (
+            <section className="border-t border-stone-light pt-8">
+              <h2 className="font-mono text-[10px] uppercase tracking-widest text-stone-mid mb-4">Sources for the latest review</h2>
+              {company.sources.map((source) => (
+                <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer" className="block font-sans text-sm leading-relaxed text-stone-mid hover:text-accent mb-2">{source.title} · {source.publisher}{source.publishedAt ? `, ${source.publishedAt}` : ''}</a>
+              ))}
+            </section>
+          )}
           {history.length > 0 && (
             <section>
               <h2 className="font-serif text-xl text-obsidian mb-2">How this developed</h2>

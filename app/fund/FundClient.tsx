@@ -5,15 +5,17 @@ import { useCallback, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { ArrowUpRight, Search, X } from 'lucide-react';
-import { COMPANIES, INTRO, MACRO_THESIS } from '@/lib/fund';
+import { ACTIVE_COMPANIES, ARCHIVED_COMPANIES, INTRO, MACRO_THESIS } from '@/lib/fund';
 import { ALL_ENTRIES, FILTERS, groupByMonth, searchEntries, COVERAGE_COUNT } from '@/lib/coverage';
 import { EntryRow } from '@/components/fund/EntryRow';
 import { FounderTimeline } from '@/components/fund/FounderTimeline';
 import { FOUNDER_COUNT } from '@/lib/founders';
+import { THESIS_HISTORY } from '@/lib/thesis-history';
 
 const TABS = [
   { id: 'thesis', label: 'The thesis' },
   { id: 'companies', label: 'Companies' },
+  { id: 'archive', label: 'Past research' },
   { id: 'founders', label: 'Founder log' },
   { id: 'following', label: 'Following' },
 ];
@@ -43,6 +45,11 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
   }, [activeFilter, query]);
 
   const months = useMemo(() => groupByMonth(filtered), [filtered]);
+  const companyList = activeTab === 'archive' ? ARCHIVED_COMPANIES : ACTIVE_COMPANIES;
+  const coverageRange = [ALL_ENTRIES[ALL_ENTRIES.length - 1], ALL_ENTRIES[0]].filter((entry) => entry !== undefined).map((entry) => {
+    const [year, month] = entry.sortKey.split('-');
+    return new Date(Number(year), Number(month) - 1, 1).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  }).join(' to ');
 
   return (
     <div className="min-h-screen relative">
@@ -158,7 +165,24 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
                   <p className="font-sans font-light text-[16px] leading-[1.85] text-ink">
                     {MACRO_THESIS.whereIAmUnsure}
                   </p>
+                  <div className="mt-8 border-t border-stone-light pt-5">
+                    <p className="font-mono text-[10px] uppercase tracking-widest text-stone-mid mb-3">Sources for this view · Updated {MACRO_THESIS.lastUpdated}</p>
+                    {MACRO_THESIS.sources?.map((source) => (
+                      <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer" className="block font-sans text-sm leading-relaxed text-stone-mid hover:text-accent mb-2">{source.title} · {source.publisher}</a>
+                    ))}
+                  </div>
                 </div>
+              </div>
+
+              <div className="max-w-[720px] border-t border-stone-light pt-8 mb-14">
+                {THESIS_HISTORY.map((thesis) => (
+                  <details key={thesis.version} className="mb-5">
+                    <summary className="cursor-pointer font-serif text-lg text-stone-mid">Previous thesis · {thesis.version}</summary>
+                    <h3 className="mt-6 mb-5 font-serif text-2xl leading-snug">{thesis.headline}</h3>
+                    {thesis.body.map((paragraph, i) => <p key={i} className="mb-5 font-sans font-light text-[16px] leading-[1.85] text-ink">{paragraph}</p>)}
+                    <p className="font-sans text-sm leading-relaxed text-stone-mid">Retired when the thesis broadened in October 2026. The monthly-versus-annual price comparison and KLAS award wording have been corrected.</p>
+                  </details>
+                ))}
               </div>
 
               <div className="border-t border-stone-light pt-14 max-w-[900px]">
@@ -179,23 +203,23 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
           )}
 
           {/* ═══ Companies ═══ */}
-          {activeTab === 'companies' && (
+          {(activeTab === 'companies' || activeTab === 'archive') && (
             <motion.div
-              key="companies"
+              key={activeTab}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
             >
               <h1 className="font-serif text-4xl md:text-5xl text-obsidian tracking-tight mb-4">
-                Companies I follow.
+                {activeTab === 'archive' ? 'Past research and calls.' : 'Companies I follow.'}
               </h1>
               <p className="font-sans font-light text-[16px] text-stone-mid max-w-[620px] leading-relaxed mb-14">
-                Each one has a current view and the dated notes that got me there.
+                {activeTab === 'archive' ? 'Earlier company cases, what happened, and what I took from them. These are research positions, not a record of capital invested.' : 'Each one has a current view and the dated notes that got me there. Mostly private companies, with public names where the case is strong enough.'}
               </p>
 
               <div className="flex flex-col border-t border-stone-light">
-                {COMPANIES.map((c) => (
+                {companyList.map((c) => (
                   <Link
                     key={c.id}
                     href={`/fund/${c.id}`}
@@ -212,6 +236,7 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
                     </div>
                     <div className="flex flex-col gap-3">
                       <p className="font-sans font-light text-[16px] leading-[1.8] text-ink max-w-[640px]">{c.what}</p>
+                      {c.archivedReason && <p className="font-sans text-sm leading-relaxed text-stone-mid max-w-[640px]">{c.archivedReason}</p>}
                       <div className="flex items-center gap-1.5 text-stone-mid group-hover:text-accent transition-colors">
                         <span className="font-mono text-[10px] uppercase tracking-widest">Read</span>
                         <ArrowUpRight size={12} />
@@ -254,7 +279,7 @@ export default function FundClient({ view, filter }: { view?: string; filter?: s
               transition={{ duration: 0.3 }}
             >
               <div className="font-mono text-[10px] uppercase tracking-widest text-stone-mid mb-4">
-                {COVERAGE_COUNT} entries &middot; November 2025 to September 2026
+                {COVERAGE_COUNT} entries &middot; {coverageRange}
               </div>
               <h1 className="font-serif text-4xl md:text-5xl text-obsidian tracking-tight mb-4">Following.</h1>
               <p className="font-sans font-light text-[16px] text-ink max-w-[640px] leading-relaxed mb-10">

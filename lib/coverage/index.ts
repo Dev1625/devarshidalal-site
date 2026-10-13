@@ -3,6 +3,7 @@ import { ENTRIES_2025 } from './entries-2025';
 import { ENTRIES_2026_Q1 } from './entries-2026-q1';
 import { ENTRIES_2026_Q2 } from './entries-2026-q2';
 import { ENTRIES_2026_Q3 } from './entries-2026-q3';
+import { ENTRIES_2026_Q4 } from './entries-2026-q4';
 import { ENTRIES_SUPPLEMENTAL } from './entries-supplemental';
 import { ENTRIES_SCIENCE } from './entries-science';
 
@@ -14,6 +15,7 @@ export const ALL_ENTRIES: CoverageEntry[] = [
   ...ENTRIES_2026_Q1,
   ...ENTRIES_2026_Q2,
   ...ENTRIES_2026_Q3,
+  ...ENTRIES_2026_Q4,
   ...ENTRIES_SUPPLEMENTAL,
   ...ENTRIES_SCIENCE,
 ].sort((a, b) => (a.sortKey < b.sortKey ? 1 : a.sortKey > b.sortKey ? -1 : 0));

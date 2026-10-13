@@ -4,6 +4,9 @@ import { motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Mail, Linkedin, Phone, UserPlus, ArrowUpRight } from 'lucide-react';
+import { ACTIVE_COMPANIES, ARCHIVED_COMPANIES } from '@/lib/fund';
+import { COVERAGE_COUNT } from '@/lib/coverage';
+import { FOUNDER_COUNT } from '@/lib/founders';
 
 const CONTACTS = [
   { icon: UserPlus, label: 'Add to contacts', href: '/devarshi.vcf', external: false },
@@ -67,7 +70,7 @@ const PROJECTS = [
     title: 'Healthcare investment research',
     when: '2025',
     href: '/fund',
-    line: 'Twelve company memos, a 186-entry archive of what happens across the sector, and a log of the founders I have talked to.',
+    line: `${ACTIVE_COMPANIES.length} current company memos, ${ARCHIVED_COMPANIES.length} past research cases, a ${COVERAGE_COUNT}-entry sector archive, and a log of the founders I have talked to.`,
   },
   {
     title: 'EEG-fMRI signal validation',
@@ -83,7 +86,7 @@ const PROJECTS = [
 ];
 
 const SECTIONS = [
-  { href: '/fund', title: 'Healthcare', meta: '12 memos, 186 entries, 7 founders' },
+  { href: '/fund', title: 'Healthcare', meta: `${ACTIVE_COMPANIES.length} current, ${ARCHIVED_COMPANIES.length} past cases, ${COVERAGE_COUNT} entries, ${FOUNDER_COUNT} founders` },
   { href: '/research', title: 'Research', meta: '4 papers' },
   { href: '/library', title: 'The Library', meta: 'Coming soon' },
 ];

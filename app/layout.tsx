@@ -35,12 +35,12 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Devarshi Dalal',
   description:
-    'Business, mathematical biology and neuroscience at Michigan. Healthcare investment research: twelve company memos and a dated coverage archive.',
+    'Business, mathematical biology and neuroscience at Michigan. Healthcare investment research: current company memos, past cases and a dated coverage archive.',
   metadataBase: new URL('https://devarshidalal.com'),
   openGraph: {
     title: 'Devarshi Dalal',
     description:
-      'Healthcare investment research. Twelve company memos and a dated coverage archive spanning biopharma, clinical AI, devices and policy.',
+      'Healthcare investment research. Current company memos, past cases and a dated coverage archive spanning biopharma, clinical AI, devices and policy.',
     url: 'https://devarshidalal.com',
     siteName: 'Devarshi Dalal',
     type: 'website',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Devarshi Dalal',
-    description: 'Healthcare investment research. Twelve company memos and a dated coverage archive.',
+    description: 'Healthcare investment research. Current company memos, past cases and a dated coverage archive.',
   },
 };
 
