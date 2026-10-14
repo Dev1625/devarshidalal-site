@@ -1,11 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": 1,
-  "lock": {
-    "owner": "migration-lock-verification-A",
-    "acquiredAt": "2026-10-14T02:33:21.948Z",
-    "kind": "setup-test"
-  },
+  "revision": 2,
+  "lock": null,
   "production": {
     "branch": "main",
     "lastVerifiedSha": "f47ad390a31d1c82ce59f55f8d4dab92f8d2e0c1",
@@ -21,7 +17,13 @@
     }
   },
   "pendingPublication": null,
-  "recentRuns": [],
+  "recentRuns": [
+    {
+      "kind": "setup-lock-test",
+      "at": "2026-10-14T02:34:37.811Z",
+      "result": "PASS: acquisition/readback, stale contender rejected with HTTP 409, owner release."
+    }
+  ],
   "schedules": {
     "daily": null,
     "saturday": null
