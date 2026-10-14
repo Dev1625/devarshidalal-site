@@ -307,10 +307,15 @@ export const COMPANIES: Company[] = [
         "label": "Valuation path",
         "value": "$12B in January 2026; $15B in September 2026",
         "read": "The CEO confirmed the new $250M financing to Becker’s. The older $20B report was a proposed mark, not the completed round."
+      },
+      {
+        label: 'Northwestern deployment',
+        value: 'Epic access live October 8; announced October 12, 2026',
+        read: 'Hospital credentials now open the tool to physicians, nurses, pharmacists and other clinical staff. I read this as distribution progress; the announcement gives no contract value or patient-outcome results.',
       }
     ],
     competition:
-      'UpToDate is the incumbent, owned by Wolters Kluwer, subscription-based and editorially curated. It is trusted and slow. General models like ChatGPT are free and capable but cannot cite licensed full text and carry no clinical accountability. Other clinical AI companies mostly attack documentation rather than decision support, which means OpenEvidence is competing less with Abridge than with a habit. The defensibility question is whether the journal licences hold as exclusive, because that is the only part of this a well-funded competitor cannot simply rebuild. My honest view is that the licences plus the usage habit are the moat, and the model is not.',
+      'UpToDate is the incumbent, owned by Wolters Kluwer, subscription-based and editorially curated. General models are another alternative, though access to medical sources and clinical workflows varies. I can no longer put Abridge in a separate documentation category: it offers chart-connected clinical intelligence across its partner systems. Northwestern’s OpenEvidence deployment gives me a concrete example on the other side of that overlap. I want to compare source access, patient context and repeat use. The journal licences and the usage habit still matter, but I need to check their terms rather than assume exclusivity.',
     team:
       'Co-founded in 2022 by Daniel Nadler and Zachary Ziegler. Nadler holds a PhD from Harvard and previously founded Kensho Technologies, which S&P Global acquired in 2018, so this is a second-time founder who has already built and sold a data business into a regulated industry. Ziegler is CTO, an ML researcher out of Alexander Rush\'s NLP lab at Harvard. Both cite personal medical experiences as motivation, which I mention because it is consistent with a company that chose to give the product away to clinicians rather than charge them.',
     risks: [
@@ -336,7 +341,7 @@ export const COMPANIES: Company[] = [
       'What is revenue per active physician, and how concentrated is it across pharma advertisers? A handful of large sponsors would change the risk profile substantially.',
       'What are the actual terms and durations of the NEJM and JAMA agreements, and are they exclusive?',
       'What does weekly active use look like against the 757,000 registration figure? Registrations and habits are different assets.',
-      'Is there an enterprise product with signed health system contracts, and what does it price at?',
+      'What are the commercial terms of enterprise deployments such as Northwestern: who pays, what is priced, and does the arrangement diversify revenue beyond advertising?',
     ],
     changeMyMind: [
       'Any regulatory action or credible journalism on advertiser influence over clinical answers.',
@@ -345,7 +350,7 @@ export const COMPANIES: Company[] = [
       'Disclosure that revenue depends on a small number of advertisers.',
     ],
     view:
-      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion against Sacra’s estimated $300 million annualised revenue, the rough multiple is 50 times, before asking what revenue will actually be earned over a year. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. I want advertiser concentration and retention data before turning that suspicion into a conclusion.",
+      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion against Sacra’s estimated $300 million annualised revenue, the rough multiple is 50 times, before asking what revenue will actually be earned over a year. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic deployment strengthens the distribution case and extends access beyond physicians. It does not disclose a new revenue stream. I still want advertiser concentration, enterprise terms and retention data.",
 
     lastReviewed: "October 13, 2026",
     sources: [
@@ -359,6 +364,18 @@ export const COMPANIES: Company[] = [
         "title": "OpenEvidence revenue, valuation and funding estimates",
         "publisher": "Sacra",
         "url": "https://sacra.com/c/openevidence/"
+      },
+      {
+        title: 'OpenEvidence and Northwestern integrate clinical evidence into the EHR',
+        publisher: 'Northwestern Medicine',
+        url: 'https://news.nm.org/openevidence-and-northwestern-medicine-launch-collaboration-to-integrate-clinical-evidence-into-the-ehr/',
+        publishedAt: 'October 12, 2026',
+      },
+      {
+        title: 'Abridge extends chart-connected clinical intelligence to partner systems',
+        publisher: 'Abridge',
+        url: 'https://www.abridge.com/press-release/context-aware-clinical-intelligence-extended-to-all-partners',
+        publishedAt: 'August 17, 2026',
       }
     ],
   },
@@ -420,6 +437,11 @@ export const COMPANIES: Company[] = [
         "label": "Pre-bill review",
         "value": "Announced September 14, 2026",
         "read": "A concrete extension into CDI and coding. Human teams keep control over claim decisions; the announcement does not establish net new RCM revenue."
+      },
+      {
+        label: 'University of Texas System',
+        value: 'Enterprise-wide access agreement, October 8, 2026',
+        read: 'The framework preserves local institutional decisions. The pilot covered five locations and more than 50 specialties; I would not count every eligible institution as a completed deployment.',
       }
     ],
     competition:
@@ -463,7 +485,7 @@ export const COMPANIES: Company[] = [
       'An S-1 revealing that coding revenue is a much smaller share than I have assumed.',
     ],
     view:
-      "My view as of October 2026 is that pre-bill review makes the coding thesis more concrete. The VA enterprise contract is another distribution route, but its $775.72 million ceiling is shared across vendors and is not booked Abridge revenue. I still want module-level revenue and renewal economics. More places to deploy a product and a better product are both useful; neither settles what I should pay for the company.",
+      "My view as of October 2026 is that pre-bill review makes the coding thesis more concrete. The VA enterprise contract is another distribution route, but its $775.72 million ceiling is shared across vendors and is not booked Abridge revenue. The October 8 UT System agreement creates another route to expansion while leaving local institutions in control. I want to know how many turn access into sustained use, and what the modules earn. More places to deploy a product and a better product are both useful; neither settles what I should pay for the company.",
 
     lastReviewed: "October 13, 2026",
     sources: [
@@ -490,6 +512,12 @@ export const COMPANIES: Company[] = [
         "publisher": "MobiHealthNews",
         "url": "https://www.mobihealthnews.com/news/abridge-partners-nvidia-expands-beyond-clinical-documentation",
         "publishedAt": "June 12, 2026"
+      },
+      {
+        title: 'Abridge announces enterprise-wide agreement with the UT System',
+        publisher: 'Abridge',
+        url: 'https://www.abridge.com/press-release/ut-health-enterprise-wide',
+        publishedAt: 'October 8, 2026',
       }
     ],
   },
@@ -509,7 +537,7 @@ export const COMPANIES: Company[] = [
       { label: 'Total raised', value: '$2.7B outside capital' },
       { label: 'Last round', value: '$2.1B, May 12 2026, Thrive Capital' },
       { label: 'Other investors', value: 'Alphabet, GV, MGX, Temasek, CapitalG, UK Sovereign AI Fund' },
-      { label: 'Valuation', value: 'Undisclosed' },
+      { label: 'Valuation', value: 'Completed rounds undisclosed; Oct 8 talks reportedly target $40B–$50B' },
     ],
     summary:
       'The company whose outcome I care most about and where I have the least ability to check anything independently. The bet is that predicting how a molecule and a protein fit together accurately enough lets you skip a large share of the trial and error that makes drug discovery cost billions and take fifteen years. Everything about the science says this should work. Nothing yet says it does, because as of August 2026 Isomorphic has not put a molecule into a person, and the timeline for doing so has already moved by a year.',
@@ -544,8 +572,8 @@ export const COMPANIES: Company[] = [
       },
       {
         label: 'Valuation',
-        value: 'Not disclosed',
-        read: 'Nobody outside the cap table knows what $2.7 billion bought a share of. That is unusual at this size and it bothers me more than it seems to bother anyone else.',
+        value: 'Reported $40B–$50B target in new talks, October 8, 2026',
+        read: 'SiliconANGLE cites Bloomberg on early discussions, with no deal size disclosed. The completed capital total stays at $2.7 billion. I cannot use a proposed mark as the price of a completed round.',
       },
     ],
     competition:
@@ -564,9 +592,9 @@ export const COMPANIES: Company[] = [
           'Seventeen programs mean the company is not dependent on a single molecule surviving, though the first readout will set sentiment for all of them.',
       },
       {
-        risk: 'No disclosed valuation makes it impossible to judge whether this is well priced.',
+        risk: 'A reported $40B–$50B target could price in clinical success before human data.',
         mitigant:
-          'Sophisticated crossover and sovereign investors did price it, even if the number is private.',
+          'These are talks, not terms of a completed financing. I need the actual price and the evidence offered to support it.',
       },
       {
         risk: 'Dependence on Alphabet for compute means a strategic decision elsewhere could change the cost base.',
@@ -589,7 +617,7 @@ export const COMPANIES: Company[] = [
       'Two or three additional INDs cleared, which would turn one anecdote into a platform.',
     ],
     view:
-      "My view as of October 2026 is that I still want to follow this through its first human data. The October 7 Virtual Biology Initiative is a useful commitment to shared biological data, not a patient-dosing milestone. I also corrected my own blind spot on the CMO appointment. I have not located a first-patient announcement in the material reviewed, which is narrower than knowing that nobody has been dosed. The end-2026 promise remains the thing to score.",
+      "My view as of October 2026 is that I still want to follow this through its first human data. The October 7 Virtual Biology Initiative is a useful commitment to shared biological data, not a patient-dosing milestone. I also corrected my own blind spot on the CMO appointment. I have not located a first-patient announcement in the material reviewed, which is narrower than knowing that nobody has been dosed. The end-2026 promise remains the thing to score. The reported $40B–$50B fundraising target makes the entry question harder; I am keeping it labelled as talks, with no addition to capital raised.",
 
     lastReviewed: "October 13, 2026",
     sources: [
@@ -610,6 +638,12 @@ export const COMPANIES: Company[] = [
         "publisher": "Isomorphic Labs",
         "url": "https://www.isomorphiclabs.com/articles/building-a-new-path-to-make-medicines-with-ai",
         "publishedAt": "September 29, 2026"
+      },
+      {
+        title: 'Isomorphic reportedly in early fundraising talks at a $40B–$50B valuation',
+        publisher: 'SiliconANGLE, citing Bloomberg',
+        url: 'https://siliconangle.com/2026/10/08/alphabet-spinoff-isomorphic-labs-reportedly-raising-funding-at-up-to-50b-valuation/',
+        publishedAt: 'October 8, 2026',
       }
     ],
   },
@@ -1476,13 +1510,18 @@ export const COMPANIES: Company[] = [
       },
       {
         "label": "Public filings",
-        "value": "Quarterly, audited",
+        "value": "Quarterly reports; annual audited financial statements",
         "read": "After Turn Bio this is worth something on its own. Cash, burn and trial status are disclosed on a schedule with legal consequences for getting them wrong."
       },
       {
         "label": "Indication expansion",
         "value": "Diabetic macular edema, announced January 2026",
         "read": "Adding a second indication before the first has Phase 2 data usually means a company wants more shots with the cash it has. Retinal trials are shorter and cheaper."
+      },
+      {
+        label: 'QUELL-DME design',
+        value: '~180 participants, three arms; visual acuity at week 12',
+        read: 'The October 2 filing describes oral BGE-102 alone and with anti-VEGF against anti-VEGF with oral placebo. Topline is expected in H2 2027. I want the visual benefit and safety comparison, beyond biomarker changes.',
       }
     ],
     competition:
@@ -1518,11 +1557,11 @@ export const COMPANIES: Company[] = [
     changeMyMind: [
       "QUELL-CV showing a reproducible dose response with acceptable safety, followed by a credible outcomes-trial plan.",
       "Any hepatic safety signal on BGE-102, which would raise questions about the platform rather than the molecule.",
-      "The DME proof-of-concept reading out positively, which would open a faster commercial path.",
+      "QUELL-DME showing a useful visual-acuity result at week 12 with acceptable safety, with topline expected in H2 2027.",
       "A competitor NLRP3 program failing on outcomes despite biomarker success."
     ],
     view:
-      "My view as of October 2026 is that I asked the wrong question of QUELL-CV. It is a roughly 160-person, twelve-week dose-ranging study with hsCRP as its primary endpoint. It cannot establish fewer heart attacks. I expect biomarker activity, but the useful questions are dose response, safety and whether the result justifies the next trial. The retinal study adds a separate path with a functional endpoint. I still like having a public company whose assumptions I can check against filings.",
+      "My view as of October 2026 is that I asked the wrong question of QUELL-CV. It is a roughly 160-person, twelve-week dose-ranging study with hsCRP as its primary endpoint. It cannot establish fewer heart attacks. I expect biomarker activity, but the useful questions are dose response, safety and whether the result justifies the next trial. The October 2 filing makes the retinal comparison clearer: QUELL-DME tests visual acuity at week 12, with BGE-102 alone and alongside anti-VEGF. That is a separate functional question, with topline expected in H2 2027. I still like having a public company whose assumptions I can check against filings.",
 
     lastReviewed: "October 13, 2026",
     sources: [
@@ -1543,6 +1582,12 @@ export const COMPANIES: Company[] = [
         "publisher": "BioAge Labs",
         "url": "https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-announces-first-participant-dosed-quell-dme-phase-2",
         "publishedAt": "September 8, 2026"
+      },
+      {
+        title: 'October 2 Form 8-K: QUELL-DME design and expected readout',
+        publisher: 'BioAge Labs / SEC filing',
+        url: 'https://ir.bioagelabs.com/node/8096/html',
+        publishedAt: 'October 2, 2026',
       }
     ],
   },
