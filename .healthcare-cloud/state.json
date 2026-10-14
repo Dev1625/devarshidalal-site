@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
-  "revision": 0,
-  "lock": null,
+  "revision": 1,
+  "lock": {
+    "owner": "migration-lock-verification-A",
+    "acquiredAt": "2026-10-14T02:33:21.948Z",
+    "kind": "setup-test"
+  },
   "production": {
     "branch": "main",
     "lastVerifiedSha": "f47ad390a31d1c82ce59f55f8d4dab92f8d2e0c1",
