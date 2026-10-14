@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "revision": 0,
+  "lock": null,
+  "production": {
+    "branch": "main",
+    "lastVerifiedSha": "f47ad390a31d1c82ce59f55f8d4dab92f8d2e0c1",
+    "vercelDeploymentId": "dpl_DigT1b1swGmdmyY4NhvYJWwUyk1z"
+  },
+  "reviews": {
+    "daily": {
+      "lastSuccessfulEasternDate": "2026-10-13",
+      "checkpointProvenance": "Owner confirmed the daily review finished on October 13, 2026 Eastern. Exact cutoff time is unknown; overlap October 13 in the next delta scan."
+    },
+    "saturday": {
+      "lastSuccessfulEasternDate": null
+    }
+  },
+  "pendingPublication": null,
+  "recentRuns": [],
+  "schedules": {
+    "daily": null,
+    "saturday": null
+  },
+  "coordination": "CAS update this entire file using its freshly fetched blob SHA. Increment revision on every write. Never force or overwrite a conflicting update. Only the verified lock owner may edit candidates, publish, checkpoint or release. Never expire an active lock based only on elapsed time."
+}
