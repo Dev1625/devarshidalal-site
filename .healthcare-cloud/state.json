@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 3,
+  "revision": 4,
   "lock": null,
   "production": {
     "branch": "main",
@@ -25,8 +25,34 @@
     }
   ],
   "schedules": {
-    "daily": null,
-    "saturday": null
+    "daily": {
+      "id": "6aceeb34dbfc81918d24449de49b58e3",
+      "team_id": null,
+      "title": "Daily Healthcare Research Update",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/New_York:20261014T220000\nRRULE:FREQ=DAILY;BYHOUR=22;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+      "timing_mode": "exact_schedule",
+      "display_schedule": null,
+      "is_enabled": true,
+      "conversation_id": "6acee8fd-cba0-83ea-8277-195530156147",
+      "default_timezone": "America/New_York",
+      "next_run_time": null,
+      "last_run_time": null,
+      "updated_at": "2026-10-14T02:39:06.102242+00:00"
+    },
+    "saturday": {
+      "id": "6aceeb3f91a08191981c13973ef092c5",
+      "team_id": null,
+      "title": "Saturday Healthcare Thesis Review",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/New_York:20261017T220000\nRRULE:FREQ=WEEKLY;BYDAY=SA;BYHOUR=22;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+      "timing_mode": "exact_schedule",
+      "display_schedule": null,
+      "is_enabled": true,
+      "conversation_id": "6acee8fd-cba0-83ea-8277-195530156147",
+      "default_timezone": "America/New_York",
+      "next_run_time": null,
+      "last_run_time": null,
+      "updated_at": "2026-10-14T02:39:16.711560+00:00"
+    }
   },
   "coordination": "CAS update this entire file using its freshly fetched blob SHA. Increment revision on every write. Never force or overwrite a conflicting update. Only the verified lock owner may edit candidates, publish, checkpoint or release. Never expire an active lock based only on elapsed time.",
   "setupVerification": {
@@ -40,6 +66,10 @@
     "build": "PASS",
     "lock": "PASS: stale competing write rejected with HTTP 409; release verified",
     "production": "READY, exact commit, existing domain",
-    "contentPublishedDuringSetup": false
+    "contentPublishedDuringSetup": false,
+    "sameCloudConversation": "6acee8fd-cba0-83ea-8277-195530156147",
+    "scheduleReadback": "PASS: exact timing, TZID/default America/New_York, enabled state, saved full prompts and no duplicates.",
+    "liveCheck": "PASS: thesis, 10 current company cards, 2 archived case cards, 198 Following entries and Financing filter (26 matching entries).",
+    "coordinationBranchDeployments": "Disabled only on healthcare-maintenance-state via its branch-local vercel.json; never merge into main."
   }
 }
