@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 2,
+  "revision": 3,
   "lock": null,
   "production": {
     "branch": "main",
@@ -28,5 +28,18 @@
     "daily": null,
     "saturday": null
   },
-  "coordination": "CAS update this entire file using its freshly fetched blob SHA. Increment revision on every write. Never force or overwrite a conflicting update. Only the verified lock owner may edit candidates, publish, checkpoint or release. Never expire an active lock based only on elapsed time."
+  "coordination": "CAS update this entire file using its freshly fetched blob SHA. Increment revision on every write. Never force or overwrite a conflicting update. Only the verified lock owner may edit candidates, publish, checkpoint or release. Never expire an active lock based only on elapsed time.",
+  "setupVerification": {
+    "at": "2026-10-14T02:38:16.905Z",
+    "runtime": "ChatGPT hosted automation + ephemeral cloud shell + connected GitHub/Vercel",
+    "repoAccess": "Dev1625 admin/push verified; isolated branch writes succeeded",
+    "validatedCommit": "f47ad390a31d1c82ce59f55f8d4dab92f8d2e0c1",
+    "node": "24.19.0",
+    "npmCi": "PASS",
+    "healthcareCheck": "PASS: 10 current, 2 archived, 198 notes, 1 prior thesis",
+    "build": "PASS",
+    "lock": "PASS: stale competing write rejected with HTTP 409; release verified",
+    "production": "READY, exact commit, existing domain",
+    "contentPublishedDuringSetup": false
+  }
 }
