@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 7,
+  "revision": 8,
   "lock": {
     "owner": "daily-2026-10-14-mv8wamxf",
     "acquiredAt": "2026-10-15T02:03:55.923Z",
@@ -9,128 +9,81 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "f47ad390a31d1c82ce59f55f8d4dab92f8d2e0c1",
-    "vercelDeploymentId": "dpl_DigT1b1swGmdmyY4NhvYJWwUyk1z"
+    "lastVerifiedSha": "53a2070f3489ab283aad287e85df8acfc773bc6f",
+    "vercelDeploymentId": "dpl_CyAjLrwc5ncDki2pPb3PTf382vp3",
+    "lastVerifiedAt": "2026-10-15T02:13:09.701Z",
+    "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-13",
-      "checkpointProvenance": "Owner confirmed the daily review finished on October 13, 2026 Eastern. Exact cutoff time is unknown; overlap October 13 in the next delta scan."
+      "lastSuccessfulEasternDate": "2026-10-14",
+      "checkpointProvenance": "Source review completed and exact-commit production/live verification passed October 14, 2026 Eastern.",
+      "sourceWindowStart": "2026-10-13T00:00:00-04:00",
+      "sourceWindowEnd": "2026-10-15T02:10:04.018Z",
+      "lastSuccessfulReviewAt": "2026-10-15T02:10:04.018Z",
+      "lastSuccessfulPublicationAt": "2026-10-15T02:13:09.701Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": null
     }
   },
-  "pendingPublication": {
-    "candidateSha": "53a2070f3489ab283aad287e85df8acfc773bc6f",
-    "candidateTree": "2c7fdcb7b7bab45db8eb4c275c23bd2b5b57332b",
-    "candidateBranch": "healthcare-daily-2026-10-14",
-    "baseSha": "f47ad390a31d1c82ce59f55f8d4dab92f8d2e0c1",
-    "kind": "daily",
-    "easternDate": "2026-10-14",
-    "stage": "main-advanced-production-deploying",
-    "checks": {
-      "npmCi": "PASS",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 203 notes, 1 prior thesis",
-      "build": "PASS",
-      "preservation": "PASS; all historical notes/companies/thesis retained",
-      "writingReview": "Bundled detector and preservation validator executed; added prose no flags; contextual review completed",
-      "remoteTreeAndFileReadback": "PASS"
-    },
-    "changedFiles": [
-      {
-        "path": "lib/fund.ts",
-        "blobSha": "3006c4a0a41dd783dd81fb84da508515704a41cd"
-      },
-      {
-        "path": "lib/coverage/entries-2026-q4.ts",
-        "blobSha": "0c7ad3ea917e63c441357f33465ec67cb9619afb"
-      }
-    ],
-    "newEntries": [
-      {
-        "id": "2026-10-openevidence-hopkins",
-        "eventDate": "October 13, 2026",
-        "sources": [
-          {
-            "title": "OpenEvidence and Johns Hopkins Medicine announce education and clinical AI collaboration",
-            "publisher": "Johns Hopkins Medicine",
-            "url": "https://www.hopkinsmedicine.org/news/newsroom/news-releases/2026/10/openevidence-and-johns-hopkins-medicine-announce-landmark-collaboration-to-design-the-future-of-medicine-and-medical-education-in-the-age-of-ai",
-            "publishedAt": "October 13, 2026"
-          }
-        ]
-      },
-      {
-        "id": "2026-10-bioage-deep-origin",
-        "eventDate": "October 14, 2026",
-        "sources": [
-          {
-            "title": "Deep Origin announces BioAge collaboration and first wet-lab-confirmed hits",
-            "publisher": "Deep Origin",
-            "url": "https://deeporigin.com/news/deep-origin-announces-multi-target-collaboration-with-bioage-labs/",
-            "publishedAt": "October 14, 2026"
-          }
-        ]
-      },
-      {
-        "id": "2026-10-suki-financing-ask",
-        "eventDate": "October 13, 2026 financing; October 8 product announcement",
-        "sources": [
-          {
-            "title": "Suki announces $90 million financing",
-            "publisher": "Suki",
-            "url": "https://www.suki.ai/press-releases/suki-secures-90-million-to-build-and-scale-ai-agents-for-health-systems-and-health-tech-companies/",
-            "publishedAt": "October 13, 2026"
-          },
-          {
-            "title": "Suki launches Ask with UpToDate Expert AI",
-            "publisher": "Suki",
-            "url": "https://www.suki.ai/press-releases/suki-launches-ask-accelerating-complex-clinical-decision-support-powered-by-wolters-kluwer-up-to-date-expert-ai/",
-            "publishedAt": "October 8, 2026"
-          }
-        ]
-      },
-      {
-        "id": "2026-10-generate-zealand",
-        "eventDate": "October 13, 2026",
-        "sources": [
-          {
-            "title": "Generate and Zealand announce collaboration and license agreement",
-            "publisher": "Generate Biomedicines",
-            "url": "https://generatebiomedicines.com/news-releases/generate-biomedicines-and-zealand-pharma-enter-collaboration-and-license-agreement-to-develop-protein-therapeutics-engineered-with-ai-for-metabolic-diseases/",
-            "publishedAt": "October 13, 2026"
-          }
-        ]
-      },
-      {
-        "id": "2026-10-agilent-proscia",
-        "eventDate": "October 13, 2026",
-        "sources": [
-          {
-            "title": "Agilent announces definitive agreement to acquire Proscia",
-            "publisher": "Agilent Technologies",
-            "url": "https://www.agilent.com/about/newsroom/presrel/2026/13oct-gp26020.html",
-            "publishedAt": "October 13, 2026"
-          }
-        ]
-      }
-    ],
-    "affectedMemos": [
-      "openevidence",
-      "abridge",
-      "ambience-healthcare",
-      "bioage-labs"
-    ],
-    "sourceWindowStart": "2026-10-13T00:00:00-04:00",
-    "researchCompletedAt": "2026-10-15T02:10:04.018Z",
-    "vercelDeploymentId": "dpl_CyAjLrwc5ncDki2pPb3PTf382vp3",
-    "mainAdvancedAt": "2026-10-15T02:11:29.127Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
       "at": "2026-10-14T02:34:37.811Z",
       "result": "PASS: acquisition/readback, stale contender rejected with HTTP 409, owner release."
+    },
+    {
+      "kind": "daily",
+      "easternDate": "2026-10-14",
+      "completedAt": "2026-10-15T02:13:09.701Z",
+      "result": "published-and-verified",
+      "commit": "53a2070f3489ab283aad287e85df8acfc773bc6f",
+      "deploymentId": "dpl_CyAjLrwc5ncDki2pPb3PTf382vp3",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 203
+      },
+      "newEntryIds": [
+        "2026-10-openevidence-hopkins",
+        "2026-10-bioage-deep-origin",
+        "2026-10-suki-financing-ask",
+        "2026-10-generate-zealand",
+        "2026-10-agilent-proscia"
+      ],
+      "affectedMemos": [
+        "openevidence",
+        "abridge",
+        "ambience-healthcare",
+        "bioage-labs"
+      ],
+      "checks": {
+        "npmCi": "PASS",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 203 notes, 1 prior thesis",
+        "build": "PASS",
+        "preservation": "PASS; all historical notes/companies/thesis retained",
+        "writingReview": "Bundled detector and preservation validator executed; added prose no flags; contextual review completed",
+        "remoteTreeAndFileReadback": "PASS"
+      },
+      "liveVerification": {
+        "following": "203 articles; five new October 14 notes; separate event dates and source links",
+        "filters": "Financing 27; Science/regulation 55; both new M&A/licensing notes visible",
+        "current": "10 stable memo links",
+        "archive": "2 stable links and both memo pages HTTP 200",
+        "affectedMemos": "4 pages HTTP 200 and new source-backed markers present",
+        "home": "10 current, 2 past cases, 203 entries"
+      },
+      "sourceCoverage": "Targeted searches across all current companies, competitors and relevant healthcare transactions; checked available official update streams. Overlap since October 13 applied.",
+      "sourceUrls": [
+        "https://www.hopkinsmedicine.org/news/newsroom/news-releases/2026/10/openevidence-and-johns-hopkins-medicine-announce-landmark-collaboration-to-design-the-future-of-medicine-and-medical-education-in-the-age-of-ai",
+        "https://deeporigin.com/news/deep-origin-announces-multi-target-collaboration-with-bioage-labs/",
+        "https://www.suki.ai/press-releases/suki-secures-90-million-to-build-and-scale-ai-agents-for-health-systems-and-health-tech-companies/",
+        "https://www.suki.ai/press-releases/suki-launches-ask-accelerating-complex-clinical-decision-support-powered-by-wolters-kluwer-up-to-date-expert-ai/",
+        "https://generatebiomedicines.com/news-releases/generate-biomedicines-and-zealand-pharma-enter-collaboration-and-license-agreement-to-develop-protein-therapeutics-engineered-with-ai-for-metabolic-diseases/",
+        "https://www.agilent.com/about/newsroom/presrel/2026/13oct-gp26020.html"
+      ]
     }
   ],
   "schedules": {
