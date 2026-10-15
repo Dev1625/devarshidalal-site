@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 6,
+  "revision": 7,
   "lock": {
     "owner": "daily-2026-10-14-mv8wamxf",
     "acquiredAt": "2026-10-15T02:03:55.923Z",
@@ -28,7 +28,7 @@
     "baseSha": "f47ad390a31d1c82ce59f55f8d4dab92f8d2e0c1",
     "kind": "daily",
     "easternDate": "2026-10-14",
-    "stage": "validated-candidate-saved",
+    "stage": "main-advanced-production-deploying",
     "checks": {
       "npmCi": "PASS",
       "checkHealthcare": "PASS: 10 current, 2 archived, 203 notes, 1 prior thesis",
@@ -122,7 +122,9 @@
       "bioage-labs"
     ],
     "sourceWindowStart": "2026-10-13T00:00:00-04:00",
-    "researchCompletedAt": "2026-10-15T02:10:04.018Z"
+    "researchCompletedAt": "2026-10-15T02:10:04.018Z",
+    "vercelDeploymentId": "dpl_CyAjLrwc5ncDki2pPb3PTf382vp3",
+    "mainAdvancedAt": "2026-10-15T02:11:29.127Z"
   },
   "recentRuns": [
     {
