@@ -3,6 +3,134 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-openevidence-hopkins",
+    "headline": "OpenEvidence and Hopkins set out what they want to build",
+    "entryDate": "October 14, 2026",
+    "sortKey": "2026-10-14",
+    "eventDate": "October 13, 2026",
+    "analysis": "Johns Hopkins Medicine and OpenEvidence announced a collaboration on medical education and clinical AI. The planned care tools would combine published evidence, a patient's medical history and Hopkins practices. The announcement describes work to be developed, without commercial terms or patient-outcome results.\n\nI want to see which tools emerge and how Hopkins evaluates them. Compared with Northwestern's existing Epic access, this is an earlier product-development commitment. It gives OpenEvidence another route into clinical work, while leaving the question of who pays unresolved.",
+    "entryType": "care-delivery",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "openevidence"
+    ],
+    "relatedEntryIds": [
+      "2026-10-openevidence-northwestern-epic"
+    ],
+    "sources": [
+      {
+        "title": "OpenEvidence and Johns Hopkins Medicine announce education and clinical AI collaboration",
+        "publisher": "Johns Hopkins Medicine",
+        "url": "https://www.hopkinsmedicine.org/news/newsroom/news-releases/2026/10/openevidence-and-johns-hopkins-medicine-announce-landmark-collaboration-to-design-the-future-of-medicine-and-medical-education-in-the-age-of-ai",
+        "publishedAt": "October 13, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-bioage-deep-origin",
+    "headline": "BioAge has new discovery hits to follow before they become drug candidates",
+    "entryDate": "October 14, 2026",
+    "sortKey": "2026-10-14",
+    "eventDate": "October 14, 2026",
+    "analysis": "Deep Origin announced a multi-target collaboration with BioAge and said BioAge's laboratory had confirmed small-molecule hits against the first target. It reports delivery in less than three months and progression into hit-to-lead optimization. BioAge handles subsequent development; Deep Origin is eligible for success-based milestones, with amounts undisclosed.\n\nThese are collaborator-reported early discovery results. I want the target, compound-level data and comparison with conventional screening before judging the time saved. This creates a separate question alongside BGE-102: can BioAge repeatedly turn targets from its human data into useful chemistry? It leaves the QUELL-CV and QUELL-DME clinical questions open.",
+    "entryType": "clinical",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "bioage-labs"
+    ],
+    "relatedEntryIds": [
+      "2026-10-bioage-dme-trial-design"
+    ],
+    "sources": [
+      {
+        "title": "Deep Origin announces BioAge collaboration and first wet-lab-confirmed hits",
+        "publisher": "Deep Origin",
+        "url": "https://deeporigin.com/news/deep-origin-announces-multi-target-collaboration-with-bioage-labs/",
+        "publishedAt": "October 14, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-suki-financing-ask",
+    "headline": "Suki's new financing comes with a closer overlap in clinical reasoning",
+    "entryDate": "October 14, 2026",
+    "sortKey": "2026-10-14",
+    "eventDate": "October 13, 2026 financing; October 8 product announcement",
+    "analysis": "Suki announced $90 million in financing as part of its Series E on October 13. It reports serving more than 450 healthcare organizations and over 30 technology partners, without disclosing valuation or absolute revenue. Those are company-reported adoption figures.\n\nThe product change matters to my comparisons as well. On October 8 Suki launched Ask using Wolters Kluwer's UpToDate Expert AI, combining access to patient information with clinical reasoning inside its app. I need to compare that workflow with OpenEvidence and Abridge, alongside the documentation and coding comparison with Ambience. More capital supports competition; it does not establish which product clinicians keep using.",
+    "entryType": "financing",
+    "scope": "industry",
+    "themes": [
+      "ambient-ai"
+    ],
+    "relatedCompanyIds": [
+      "openevidence",
+      "abridge",
+      "ambience-healthcare"
+    ],
+    "sources": [
+      {
+        "title": "Suki announces $90 million financing",
+        "publisher": "Suki",
+        "url": "https://www.suki.ai/press-releases/suki-secures-90-million-to-build-and-scale-ai-agents-for-health-systems-and-health-tech-companies/",
+        "publishedAt": "October 13, 2026"
+      },
+      {
+        "title": "Suki launches Ask with UpToDate Expert AI",
+        "publisher": "Suki",
+        "url": "https://www.suki.ai/press-releases/suki-launches-ask-accelerating-complex-clinical-decision-support-powered-by-wolters-kluwer-up-to-date-expert-ai/",
+        "publishedAt": "October 8, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-generate-zealand",
+    "headline": "Generate's Zealand agreement gives me cash terms and a division of the work",
+    "entryDate": "October 14, 2026",
+    "sortKey": "2026-10-14",
+    "eventDate": "October 13, 2026",
+    "analysis": "Generate and Zealand signed a collaboration for AI-designed protein medicines in obesity and metabolic disease. For two initial programs, Generate will receive $30 million upfront and can earn nearly $1.2 billion in total milestones, including up to $35 million in early preclinical milestones, plus royalties. A third program is optional. Generate leads research through candidate selection; Zealand takes subsequent clinical development and commercialization.\n\nI find the division of work more useful than the headline total. A partner has agreed to pay for the capability, while most of the possible consideration still depends on development. I want to follow candidate selection and what gets paid next before treating this as evidence of clinical success.",
+    "entryType": "ma-licensing",
+    "scope": "industry",
+    "themes": [
+      "ai-drug-discovery",
+      "obesity"
+    ],
+    "sources": [
+      {
+        "title": "Generate and Zealand announce collaboration and license agreement",
+        "publisher": "Generate Biomedicines",
+        "url": "https://generatebiomedicines.com/news-releases/generate-biomedicines-and-zealand-pharma-enter-collaboration-and-license-agreement-to-develop-protein-therapeutics-engineered-with-ai-for-metabolic-diseases/",
+        "publishedAt": "October 13, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-agilent-proscia",
+    "headline": "Agilent wants to own the pathology workflow it already distributes",
+    "entryDate": "October 14, 2026",
+    "sortKey": "2026-10-14",
+    "eventDate": "October 13, 2026",
+    "analysis": "Agilent signed an agreement to buy Proscia for $240 million in cash at closing, with up to $30 million more tied to performance milestones. Closing remains subject to conditions and is expected early in Agilent's fiscal 2027. Agilent reports Proscia's trailing twelve-month revenue exceeds $18 million; that figure is from the buyer's announcement. The companies have had a distribution agreement since September 2022.\n\nProscia connects scanners, lab systems and image-analysis tools. I read the proposed purchase as a reason to investigate who owns that workflow as pathology becomes digital. I still want margins, customer retention and the case for ownership over distribution. An agreed acquisition price alone cannot tell me the investors' returns.",
+    "entryType": "ma-licensing",
+    "scope": "industry",
+    "themes": [
+      "diagnostics"
+    ],
+    "sources": [
+      {
+        "title": "Agilent announces definitive agreement to acquire Proscia",
+        "publisher": "Agilent Technologies",
+        "url": "https://www.agilent.com/about/newsroom/presrel/2026/13oct-gp26020.html",
+        "publishedAt": "October 13, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     id: '2026-10-openevidence-northwestern-epic',
     headline: 'OpenEvidence moves into Northwestern’s Epic workflow',
     entryDate: 'October 13, 2026',

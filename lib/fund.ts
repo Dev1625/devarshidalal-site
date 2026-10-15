@@ -312,10 +312,15 @@ export const COMPANIES: Company[] = [
         label: 'Northwestern deployment',
         value: 'Epic access live October 8; announced October 12, 2026',
         read: 'Hospital credentials now open the tool to physicians, nurses, pharmacists and other clinical staff. I read this as distribution progress; the announcement gives no contract value or patient-outcome results.',
-      }
+      },
+      {
+        "label": "Johns Hopkins collaboration",
+        "value": "Education and clinical AI development announced October 13, 2026",
+        "read": "The partners describe planned work combining evidence and patient history. The release gives no commercial terms or patient-outcome results."
+      },
     ],
     competition:
-      'UpToDate is the incumbent, owned by Wolters Kluwer, subscription-based and editorially curated. General models are another alternative, though access to medical sources and clinical workflows varies. I can no longer put Abridge in a separate documentation category: it offers chart-connected clinical intelligence across its partner systems. Northwestern’s OpenEvidence deployment gives me a concrete example on the other side of that overlap. I want to compare source access, patient context and repeat use. The journal licences and the usage habit still matter, but I need to check their terms rather than assume exclusivity.',
+      "UpToDate is the incumbent, owned by Wolters Kluwer, subscription-based and editorially curated. General models are another alternative, though access to medical sources and clinical workflows varies. I can no longer put Abridge in a separate documentation category: it offers chart-connected clinical intelligence across its partner systems. Northwestern’s OpenEvidence deployment gives me a concrete example on the other side of that overlap. I want to compare source access, patient context and repeat use. The journal licences and the usage habit still matter, but I need to check their terms rather than assume exclusivity. Suki's October 8 Ask launch embeds UpToDate Expert AI in its clinical app, giving me another product to compare on source access and patient context.",
     team:
       'Co-founded in 2022 by Daniel Nadler and Zachary Ziegler. Nadler holds a PhD from Harvard and previously founded Kensho Technologies, which S&P Global acquired in 2018, so this is a second-time founder who has already built and sold a data business into a regulated industry. Ziegler is CTO, an ML researcher out of Alexander Rush\'s NLP lab at Harvard. Both cite personal medical experiences as motivation, which I mention because it is consistent with a company that chose to give the product away to clinicians rather than charge them.',
     risks: [
@@ -342,6 +347,7 @@ export const COMPANIES: Company[] = [
       'What are the actual terms and durations of the NEJM and JAMA agreements, and are they exclusive?',
       'What does weekly active use look like against the 757,000 registration figure? Registrations and habits are different assets.',
       'What are the commercial terms of enterprise deployments such as Northwestern: who pays, what is priced, and does the arrangement diversify revenue beyond advertising?',
+      "Which tools emerge from the Johns Hopkins collaboration, and how will their effects on clinical decisions and patient outcomes be evaluated?",
     ],
     changeMyMind: [
       'Any regulatory action or credible journalism on advertiser influence over clinical answers.',
@@ -352,7 +358,7 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion against Sacra’s estimated $300 million annualised revenue, the rough multiple is 50 times, before asking what revenue will actually be earned over a year. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic deployment strengthens the distribution case and extends access beyond physicians. It does not disclose a new revenue stream. I still want advertiser concentration, enterprise terms and retention data.",
 
-    lastReviewed: "October 13, 2026",
+    lastReviewed: "October 14, 2026",
     sources: [
       {
         "title": "OpenEvidence raises $250M at $15B valuation; CEO confirms to Becker’s",
@@ -376,7 +382,19 @@ export const COMPANIES: Company[] = [
         publisher: 'Abridge',
         url: 'https://www.abridge.com/press-release/context-aware-clinical-intelligence-extended-to-all-partners',
         publishedAt: 'August 17, 2026',
-      }
+      },
+      {
+        "title": "OpenEvidence and Johns Hopkins Medicine announce education and clinical AI collaboration",
+        "publisher": "Johns Hopkins Medicine",
+        "url": "https://www.hopkinsmedicine.org/news/newsroom/news-releases/2026/10/openevidence-and-johns-hopkins-medicine-announce-landmark-collaboration-to-design-the-future-of-medicine-and-medical-education-in-the-age-of-ai",
+        "publishedAt": "October 13, 2026"
+      },
+      {
+        "title": "Suki launches Ask with UpToDate Expert AI",
+        "publisher": "Suki",
+        "url": "https://www.suki.ai/press-releases/suki-launches-ask-accelerating-complex-clinical-decision-support-powered-by-wolters-kluwer-up-to-date-expert-ai/",
+        "publishedAt": "October 8, 2026"
+      },
     ],
   },
 
@@ -445,7 +463,7 @@ export const COMPANIES: Company[] = [
       }
     ],
     competition:
-      'Epic ships its own note-drafting tool and controls somewhere around 42 percent of US hospital EHR installs, which I treated as the central threat for most of a year. I have revised that. In August 2025 Epic admitted Ambience into its Toolbox program and distributes it through Haiku, which suggests Epic sees documentation as a category where needs vary too much to service directly. Microsoft Nuance DAX is the scaled incumbent, Ambience the closest direct competitor, Nabla the price disruptor. Defensibility rests on the coding layer, where switching costs are real because a coding error is a False Claims Act exposure and the software line is a rounding error next to it.',
+      "Epic ships its own note-drafting tool and controls somewhere around 42 percent of US hospital EHR installs, which I treated as the central threat for most of a year. I have revised that. In August 2025 Epic admitted Ambience into its Toolbox program and distributes it through Haiku, which suggests Epic sees documentation as a category where needs vary too much to service directly. Microsoft Nuance DAX is the scaled incumbent, Ambience the closest direct competitor, Nabla the price disruptor. Defensibility rests on the coding layer, where switching costs are real because a coding error is a False Claims Act exposure and the software line is a rounding error next to it. Suki announced $90 million in financing on October 13; its Ask product also adds clinical reasoning through UpToDate Expert AI. I want account-level retention and competitive outcomes before judging the effect on Abridge.",
     team:
       'Founded in 2018 by Shiv Rao, a cardiologist who still practises at UPMC and previously ran UPMC\'s innovation and venture arm. That combination is unusually well suited to this company: he understands the clinical workflow from inside it and knew how to get a health system to pilot and then invest. UPMC backed it early and expanded the partnership across its network. Founder credibility with physician buyers is a real asset in a category where clinicians decide adoption.',
     risks: [
@@ -487,7 +505,7 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is that pre-bill review makes the coding thesis more concrete. The VA enterprise contract is another distribution route, but its $775.72 million ceiling is shared across vendors and is not booked Abridge revenue. The October 8 UT System agreement creates another route to expansion while leaving local institutions in control. I want to know how many turn access into sustained use, and what the modules earn. More places to deploy a product and a better product are both useful; neither settles what I should pay for the company.",
 
-    lastReviewed: "October 13, 2026",
+    lastReviewed: "October 14, 2026",
     sources: [
       {
         "title": "Pre-bill review for CDI and coding teams",
@@ -518,7 +536,19 @@ export const COMPANIES: Company[] = [
         publisher: 'Abridge',
         url: 'https://www.abridge.com/press-release/ut-health-enterprise-wide',
         publishedAt: 'October 8, 2026',
-      }
+      },
+      {
+        "title": "Suki announces $90 million financing",
+        "publisher": "Suki",
+        "url": "https://www.suki.ai/press-releases/suki-secures-90-million-to-build-and-scale-ai-agents-for-health-systems-and-health-tech-companies/",
+        "publishedAt": "October 13, 2026"
+      },
+      {
+        "title": "Suki launches Ask with UpToDate Expert AI",
+        "publisher": "Suki",
+        "url": "https://www.suki.ai/press-releases/suki-launches-ask-accelerating-complex-clinical-decision-support-powered-by-wolters-kluwer-up-to-date-expert-ai/",
+        "publishedAt": "October 8, 2026"
+      },
     ],
   },
 
@@ -976,7 +1006,7 @@ export const COMPANIES: Company[] = [
       }
     ],
     competition:
-      'Abridge is the direct competitor with roughly three times the capital and better name recognition. Microsoft Nuance DAX is the scaled incumbent, Suki is growing, and Epic\'s own AI Charting is the free default. Ambience\'s differentiation is the combined coding and CDI product plus Epic distribution. My honest assessment is that I cannot articulate why Ambience wins a competitive account against Abridge other than price and channel, which is a real weakness in this memo.',
+      "Abridge is the direct competitor with roughly three times the capital and better name recognition. Microsoft Nuance DAX is the scaled incumbent, Suki is growing, and Epic's own AI Charting is the free default. Ambience's differentiation is the combined coding and CDI product plus Epic distribution. My honest assessment is that I cannot articulate why Ambience wins a competitive account against Abridge other than price and channel, which is a real weakness in this memo. Suki's October 13 announcement adds $90 million in financing to that competitor picture. Its UpToDate-powered Ask product also means I need to compare clinical reasoning alongside documentation and coding.",
     team:
       'Founded in 2020 by Mike Ng and Nikhil Buduma, who met at MIT in 2013. Buduma became CEO in September 2025, with Ng moving to President and Chairman. Buduma was previously chief scientist and wrote an early widely used deep learning textbook. A founder-to-founder CEO transition inside a company this size usually signals a shift from building the product to scaling the commercial organisation, and both founders remaining is a better sign than one leaving.',
     risks: [
@@ -1014,7 +1044,7 @@ export const COMPANIES: Company[] = [
     view:
       'My view as of September 2026 is that I had this filed as a cheaper Abridge and that was lazy. Ambience is trying to get paid out of revenue capture rather than out of the software budget, which is the specific move I argue elsewhere is the only durable one in clinical software, and it is the only company I follow actually attempting it contractually. Optum Ventures being on the cap table still makes an acquisition the likeliest ending. But the thing I want now is a signed performance contract with disclosed terms, because that would be the first hard evidence for the central claim I make on the thesis page, and its absence by mid-2027 would be evidence against it.',
 
-    lastReviewed: "October 13, 2026",
+    lastReviewed: "October 14, 2026",
     sources: [
       {
         "title": "The Ambience Standard and performance-based contracts",
@@ -1026,7 +1056,19 @@ export const COMPANIES: Company[] = [
         "title": "Current platform and specialty coverage",
         "publisher": "Ambience Healthcare",
         "url": "https://www.ambiencehealthcare.com/"
-      }
+      },
+      {
+        "title": "Suki announces $90 million financing",
+        "publisher": "Suki",
+        "url": "https://www.suki.ai/press-releases/suki-secures-90-million-to-build-and-scale-ai-agents-for-health-systems-and-health-tech-companies/",
+        "publishedAt": "October 13, 2026"
+      },
+      {
+        "title": "Suki launches Ask with UpToDate Expert AI",
+        "publisher": "Suki",
+        "url": "https://www.suki.ai/press-releases/suki-launches-ask-accelerating-complex-clinical-decision-support-powered-by-wolters-kluwer-up-to-date-expert-ai/",
+        "publishedAt": "October 8, 2026"
+      },
     ],
   },
 
@@ -1487,7 +1529,7 @@ export const COMPANIES: Company[] = [
     problem:
       'Two problems across the company\'s history. The original one: incretin therapy drives substantial lean mass loss, and in older adults muscle loss accelerates frailty and fall risk, which is what ends independent living. The current one: chronic inflammation drives cardiovascular events and a range of age-related disease, and existing anti-inflammatory approaches are either too broad or too weak.',
     product:
-      'BGE-102 is an oral, brain-penetrant small molecule inhibitor of the NLRP3 inflammasome, targeting cardiovascular risk and expanding into retinal disease. Phase 1 completed with the company reporting substantial reductions in hsCRP, an inflammation biomarker, across a 60mg once-daily cohort dosed for 21 days in participants with obesity and elevated inflammation. Underneath both programs is a human biobank of longitudinal samples used for target discovery.',
+      "BGE-102 is an oral, brain-penetrant small molecule inhibitor of the NLRP3 inflammasome, targeting cardiovascular risk and expanding into retinal disease. Phase 1 completed with the company reporting substantial reductions in hsCRP, an inflammation biomarker, across a 60mg once-daily cohort dosed for 21 days in participants with obesity and elevated inflammation. Underneath both programs is a human biobank of longitudinal samples used for target discovery.",
     whyNow:
       'The brain-penetrant property is the differentiating claim and the reason the company can pursue neuroinflammation alongside cardiovascular indications. NLRP3 has been a target of interest for a decade without a clean win, so the timing argument rests on this molecule specifically rather than on the target becoming newly tractable.',
     market:
@@ -1522,7 +1564,12 @@ export const COMPANIES: Company[] = [
         label: 'QUELL-DME design',
         value: '~180 participants, three arms; visual acuity at week 12',
         read: 'The October 2 filing describes oral BGE-102 alone and with anti-VEGF against anti-VEGF with oral placebo. Topline is expected in H2 2027. I want the visual benefit and safety comparison, beyond biomarker changes.',
-      }
+      },
+      {
+        "label": "Deep Origin discovery collaboration",
+        "value": "First-target hits reported October 14, 2026; hit-to-lead optimization",
+        "read": "These are collaborator-reported early discovery results, with success-based milestone amounts undisclosed. They do not establish a new clinical candidate."
+      },
     ],
     competition:
       'NLRP3 is crowded, with programs at Novartis, Roche and several biotechs, and a mixed clinical history. On the cardiovascular inflammation thesis the reference point is colchicine and canakinumab, both of which showed that reducing inflammation reduces events and neither of which became a commercial success. That is the cautionary structure here: being right about the biology has not historically been sufficient.',
@@ -1552,7 +1599,8 @@ export const COMPANIES: Company[] = [
       "What is cash on hand and runway through the DME readout?",
       "How does the hsCRP reduction compare quantitatively to canakinumab and to competing NLRP3 programs?",
       "What did the biobank actually contribute to identifying BGE-102, as opposed to the platform narrative?",
-      "Has the azelaprag mechanism been abandoned entirely, or is a backup being pursued?"
+      "Has the azelaprag mechanism been abandoned entirely, or is a backup being pursued?",
+      "What are the first Deep Origin target, compound-level results and screening controls, and what are the milestone obligations?",
     ],
     changeMyMind: [
       "QUELL-CV showing a reproducible dose response with acceptable safety, followed by a credible outcomes-trial plan.",
@@ -1563,7 +1611,7 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is that I asked the wrong question of QUELL-CV. It is a roughly 160-person, twelve-week dose-ranging study with hsCRP as its primary endpoint. It cannot establish fewer heart attacks. I expect biomarker activity, but the useful questions are dose response, safety and whether the result justifies the next trial. The October 2 filing makes the retinal comparison clearer: QUELL-DME tests visual acuity at week 12, with BGE-102 alone and alongside anti-VEGF. That is a separate functional question, with topline expected in H2 2027. I still like having a public company whose assumptions I can check against filings.",
 
-    lastReviewed: "October 13, 2026",
+    lastReviewed: "October 14, 2026",
     sources: [
       {
         "title": "QUELL-CV trial design and primary endpoint",
@@ -1588,7 +1636,13 @@ export const COMPANIES: Company[] = [
         publisher: 'BioAge Labs / SEC filing',
         url: 'https://ir.bioagelabs.com/node/8096/html',
         publishedAt: 'October 2, 2026',
-      }
+      },
+      {
+        "title": "Deep Origin announces BioAge collaboration and first wet-lab-confirmed hits",
+        "publisher": "Deep Origin",
+        "url": "https://deeporigin.com/news/deep-origin-announces-multi-target-collaboration-with-bioage-labs/",
+        "publishedAt": "October 14, 2026"
+      },
     ],
   },
 
