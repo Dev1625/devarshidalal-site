@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 11,
+  "revision": 12,
   "lock": {
     "owner": "daily-2026-10-15-mvabjeau",
     "acquiredAt": "2026-10-16T01:58:25.062Z",
@@ -30,7 +30,7 @@
   "pendingPublication": {
     "kind": "daily",
     "easternDate": "2026-10-15",
-    "stage": "validated-candidate-persisted",
+    "stage": "main-advanced-deployment-building",
     "baseSha": "53a2070f3489ab283aad287e85df8acfc773bc6f",
     "candidateSha": "879b2ecfeb6e3800de8c5d2e2b897b2ec480c2df",
     "candidateTreeSha": "97caa087018901a6d95c638be853dffaf53d2038",
@@ -70,7 +70,8 @@
       "remoteTreeAndFileReadback": "PASS: exact validated tree 97caa087018901a6d95c638be853dffaf53d2038 and both blobs match"
     },
     "verificationProgress": {
-      "mainAdvanced": false,
+      "mainAdvanced": true,
+      "vercelDeploymentId": "dpl_BuKY8nPshpkeJfrg3hbBAACTE7pF",
       "vercelReady": false,
       "liveVerified": false
     }
