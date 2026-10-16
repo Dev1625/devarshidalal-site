@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 12,
+  "revision": 13,
   "lock": {
     "owner": "daily-2026-10-15-mvabjeau",
     "acquiredAt": "2026-10-16T01:58:25.062Z",
@@ -9,73 +9,25 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "53a2070f3489ab283aad287e85df8acfc773bc6f",
-    "vercelDeploymentId": "dpl_CyAjLrwc5ncDki2pPb3PTf382vp3",
-    "lastVerifiedAt": "2026-10-15T02:13:09.701Z",
+    "lastVerifiedSha": "879b2ecfeb6e3800de8c5d2e2b897b2ec480c2df",
+    "vercelDeploymentId": "dpl_BuKY8nPshpkeJfrg3hbBAACTE7pF",
+    "lastVerifiedAt": "2026-10-16T02:11:55.775Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-14",
-      "checkpointProvenance": "Source review completed and exact-commit production/live verification passed October 14, 2026 Eastern.",
-      "sourceWindowStart": "2026-10-13T00:00:00-04:00",
-      "sourceWindowEnd": "2026-10-15T02:10:04.018Z",
-      "lastSuccessfulReviewAt": "2026-10-15T02:10:04.018Z",
-      "lastSuccessfulPublicationAt": "2026-10-15T02:13:09.701Z"
+      "lastSuccessfulEasternDate": "2026-10-15",
+      "checkpointProvenance": "Source review completed and exact-commit production/live verification passed October 15, 2026 Eastern.",
+      "sourceWindowStart": "2026-10-15T02:10:04.018Z",
+      "sourceWindowEnd": "2026-10-16T02:07:19.068Z",
+      "lastSuccessfulReviewAt": "2026-10-16T02:07:19.068Z",
+      "lastSuccessfulPublicationAt": "2026-10-16T02:11:55.775Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": null
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternDate": "2026-10-15",
-    "stage": "main-advanced-deployment-building",
-    "baseSha": "53a2070f3489ab283aad287e85df8acfc773bc6f",
-    "candidateSha": "879b2ecfeb6e3800de8c5d2e2b897b2ec480c2df",
-    "candidateTreeSha": "97caa087018901a6d95c638be853dffaf53d2038",
-    "candidateBranch": "healthcare-daily-2026-10-15",
-    "createdAt": "2026-10-16T02:08:28.506Z",
-    "sourceWindowStart": "2026-10-15T02:10:04.018Z",
-    "sourceWindowEnd": "2026-10-16T02:07:19.068Z",
-    "overlap": "Rechecked October 13 onward and deduplicated against prior notes; Abridge October 13 account supplies new September availability detail.",
-    "newEntryIds": [
-      "2026-10-openevidence-jama-usage",
-      "2026-10-nabla-openevidence",
-      "2026-10-precision-commercial-leadership",
-      "2026-10-insitro-astrazeneca",
-      "2026-10-abridge-assistant"
-    ],
-    "affectedMemos": [
-      "openevidence",
-      "abridge",
-      "ambience-healthcare",
-      "precision-neuroscience"
-    ],
-    "sourceUrls": [
-      "https://jamanetwork.com/journals/jama/fullarticle/2855491",
-      "https://hms.harvard.edu/news/first-large-scale-study-shows-how-doctors-use-ai-medicine",
-      "https://www.nabla.com/press-release/nabla-integrates-with-openevidence-to-deliver-clinical-evidence-at-the-point-of-care",
-      "https://www.globenewswire.com/news-release/2026/10/15/3381700/0/en/precision-neuroscience-appoints-nevro-founder-konstantinos-alataris-as-president-and-katherine-neuenfeldt-as-senior-vice-president-commercial-strategies.html",
-      "https://www.insitro.com/news/insitro-announces-a-strategic-collaboration-with-astrazeneca-for-ai-enabled-discovery-of-novel-therapeutics-for-mash-and-cardiomyopathies/",
-      "https://www.astrazeneca.com/media-centre/press-releases/2026/astrazeneca-announces-new-strategic-collaboration-with-insitro-for-difficult-to-treat-cardiometabolic-diseases.html",
-      "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare"
-    ],
-    "checks": {
-      "npmCi": "PASS",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 208 notes, 1 prior thesis",
-      "build": "PASS",
-      "preservation": "PASS; historical notes, prior thesis, all company IDs and sources retained. Explicit factual/recency corrections reviewed.",
-      "writingReview": "Bundled detector/preservation validator executed. One sentence-uniformity flag reviewed in context and retained; all other added prose no flags.",
-      "remoteTreeAndFileReadback": "PASS: exact validated tree 97caa087018901a6d95c638be853dffaf53d2038 and both blobs match"
-    },
-    "verificationProgress": {
-      "mainAdvanced": true,
-      "vercelDeploymentId": "dpl_BuKY8nPshpkeJfrg3hbBAACTE7pF",
-      "vercelReady": false,
-      "liveVerified": false
-    }
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -132,6 +84,61 @@
         "https://generatebiomedicines.com/news-releases/generate-biomedicines-and-zealand-pharma-enter-collaboration-and-license-agreement-to-develop-protein-therapeutics-engineered-with-ai-for-metabolic-diseases/",
         "https://www.agilent.com/about/newsroom/presrel/2026/13oct-gp26020.html"
       ]
+    },
+    {
+      "kind": "daily",
+      "easternDate": "2026-10-15",
+      "completedAt": "2026-10-16T02:11:55.775Z",
+      "result": "published-and-verified",
+      "commit": "879b2ecfeb6e3800de8c5d2e2b897b2ec480c2df",
+      "candidateBranch": "healthcare-daily-2026-10-15",
+      "deploymentId": "dpl_BuKY8nPshpkeJfrg3hbBAACTE7pF",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 208
+      },
+      "newEntryIds": [
+        "2026-10-openevidence-jama-usage",
+        "2026-10-nabla-openevidence",
+        "2026-10-precision-commercial-leadership",
+        "2026-10-insitro-astrazeneca",
+        "2026-10-abridge-assistant"
+      ],
+      "affectedMemos": [
+        "openevidence",
+        "abridge",
+        "ambience-healthcare",
+        "precision-neuroscience"
+      ],
+      "checks": {
+        "npmCi": "PASS",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 208 notes, 1 prior thesis",
+        "build": "PASS",
+        "preservation": "PASS; historical notes, prior thesis, all company IDs and sources retained. Explicit factual/recency corrections reviewed.",
+        "writingReview": "Bundled detector/preservation validator executed. One sentence-uniformity flag reviewed in context and retained; all other added prose no flags.",
+        "remoteTreeAndFileReadback": "PASS: exact validated tree 97caa087018901a6d95c638be853dffaf53d2038 and both blobs match"
+      },
+      "liveVerification": {
+        "following": "208 articles; five October 15 notes; study event/publication period and source links inspected",
+        "filters": "Science 56, People 7, M&A/licensing 27, Care delivery 29; new notes in intended filters",
+        "current": "10 stable company memo links",
+        "archive": "2 stable archive links; both memo pages HTTP 200",
+        "affectedMemos": "4 pages HTTP 200 with new source-backed markers",
+        "home": "10 current, 2 past cases, 208 entries",
+        "vercel": "READY for exact commit on production domain devarshidalal.com"
+      },
+      "sourceCoverage": "Targeted searches across all current companies and relevant competitors/healthcare transactions; checked available official company update streams. Overlap October 13 onward; deduplicated earlier published notes.",
+      "sourceUrls": [
+        "https://jamanetwork.com/journals/jama/fullarticle/2855491",
+        "https://hms.harvard.edu/news/first-large-scale-study-shows-how-doctors-use-ai-medicine",
+        "https://www.nabla.com/press-release/nabla-integrates-with-openevidence-to-deliver-clinical-evidence-at-the-point-of-care",
+        "https://www.globenewswire.com/news-release/2026/10/15/3381700/0/en/precision-neuroscience-appoints-nevro-founder-konstantinos-alataris-as-president-and-katherine-neuenfeldt-as-senior-vice-president-commercial-strategies.html",
+        "https://www.insitro.com/news/insitro-announces-a-strategic-collaboration-with-astrazeneca-for-ai-enabled-discovery-of-novel-therapeutics-for-mash-and-cardiomyopathies/",
+        "https://www.astrazeneca.com/media-centre/press-releases/2026/astrazeneca-announces-new-strategic-collaboration-with-insitro-for-difficult-to-treat-cardiometabolic-diseases.html",
+        "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare"
+      ],
+      "unpublishedFollowup": "Law360 settlement-in-principle headline was not used because the underlying article could not be read; no factual conclusion or note was published from it."
     }
   ],
   "schedules": {
