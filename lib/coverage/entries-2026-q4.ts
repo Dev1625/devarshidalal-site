@@ -3,6 +3,144 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "entryDate": "October 15, 2026",
+    "sortKey": "2026-10-15",
+    "status": "current-view",
+    "id": "2026-10-openevidence-jama-usage",
+    "headline": "OpenEvidence now has defined usage data, not just registration claims",
+    "eventDate": "October 15, 2026 publication; January 2024–June 2026 study period",
+    "analysis": "JAMA published an analysis of OpenEvidence logs covering 952,008 US clinicians and 271 million queries. June 2026 had 703,265 monthly active users, defined as at least one query that month. Month-to-month retention reached approximately 90% in 2026.\n\nThat is stronger evidence of repeat use than registrations alone. It does not tell me whether queries happened during visits or improved patient outcomes. OpenEvidence supplied the data and three coauthors are employees; this is not an independent commercial audit. I still need advertiser retention and revenue per active clinician.",
+    "entryType": "clinical",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "openevidence"
+    ],
+    "sources": [
+      {
+        "title": "Clinician Use of an Artificial Intelligence–Enabled Clinical Information Platform",
+        "publisher": "JAMA",
+        "url": "https://jamanetwork.com/journals/jama/fullarticle/2855491",
+        "publishedAt": "October 15, 2026"
+      },
+      {
+        "title": "First large-scale study shows how doctors use AI in medicine",
+        "publisher": "Harvard Medical School",
+        "url": "https://hms.harvard.edu/news/first-large-scale-study-shows-how-doctors-use-ai-medicine",
+        "publishedAt": "October 15, 2026"
+      }
+    ]
+  },
+  {
+    "entryDate": "October 15, 2026",
+    "sortKey": "2026-10-15",
+    "status": "current-view",
+    "id": "2026-10-nabla-openevidence",
+    "headline": "Nabla makes OpenEvidence a partner inside the ambient workflow",
+    "eventDate": "October 15, 2026",
+    "analysis": "Nabla says clinicians can now open OpenEvidence beside their note and ask patient-specific questions. The integration passes context including diagnoses, medications and the generated note. The announcement gives no commercial terms or measured patient outcomes.\n\nThis changes how I draw the competitive map. An ambient vendor can distribute OpenEvidence rather than replace it, while Suki has chosen UpToDate for Ask. For my Abridge and Ambience comparisons, I want to know who controls the clinical interface, permissions and economics when evidence comes from a partner.",
+    "entryType": "care-delivery",
+    "scope": "industry",
+    "themes": [
+      "ambient-ai"
+    ],
+    "relatedCompanyIds": [
+      "openevidence",
+      "abridge",
+      "ambience-healthcare"
+    ],
+    "relatedEntryIds": [
+      "2026-10-suki-financing-ask"
+    ],
+    "sources": [
+      {
+        "title": "Nabla integrates with OpenEvidence",
+        "publisher": "Nabla",
+        "url": "https://www.nabla.com/press-release/nabla-integrates-with-openevidence-to-deliver-clinical-evidence-at-the-point-of-care",
+        "publishedAt": "October 15, 2026"
+      }
+    ]
+  },
+  {
+    "entryDate": "October 15, 2026",
+    "sortKey": "2026-10-15",
+    "status": "current-view",
+    "id": "2026-10-precision-commercial-leadership",
+    "headline": "Precision hires for the reimbursement work ahead",
+    "eventDate": "October 15, 2026",
+    "analysis": "Precision appointed Nevro founder and former CEO Konstantinos Alataris as president, and Katherine Neuenfeldt as senior vice president, commercial strategies. She led the US launch and market access work for Nevro's Senza system; Alataris has been on Precision's board since May 2025.\n\nI like seeing implant commercialization and reimbursement experience added after the Series D. Hiring people who have done it gives me a more specific team to assess, not evidence that Precision has secured coverage. The appointments do not change the distinction between its short-term cleared array and the chronic BCI still in development.",
+    "entryType": "people",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "precision-neuroscience"
+    ],
+    "sources": [
+      {
+        "title": "Precision appoints Konstantinos Alataris and Katherine Neuenfeldt",
+        "publisher": "Precision Neuroscience / GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2026/10/15/3381700/0/en/precision-neuroscience-appoints-nevro-founder-konstantinos-alataris-as-president-and-katherine-neuenfeldt-as-senior-vice-president-commercial-strategies.html",
+        "publishedAt": "October 15, 2026"
+      }
+    ]
+  },
+  {
+    "entryDate": "October 15, 2026",
+    "sortKey": "2026-10-15",
+    "status": "current-view",
+    "id": "2026-10-insitro-astrazeneca",
+    "headline": "insitro's AstraZeneca agreement separates upfront cash from possible milestones",
+    "eventDate": "October 15, 2026",
+    "analysis": "insitro and AstraZeneca announced a discovery and licensing agreement for MASH and cardiomyopathies. insitro will receive $40 million upfront and is eligible for up to approximately $1.46 billion in potential milestones, plus royalties. Its work runs through development-candidate selection; AstraZeneca leads clinical development, regulatory work and commercialization, with exclusive worldwide rights to selected programs.\n\nAlongside Generate's Zealand agreement, this gives me another disclosed price for external AI discovery work. It is a commercial commitment, not clinical validation of insitro or of the different approaches at Isomorphic and Xaira. I want to follow candidate delivery and earned milestones, rather than count the possible total as revenue.",
+    "entryType": "ma-licensing",
+    "scope": "industry",
+    "themes": [
+      "ai-drug-discovery"
+    ],
+    "relatedCompanyIds": [
+      "isomorphic-labs",
+      "xaira"
+    ],
+    "relatedEntryIds": [
+      "2026-10-generate-zealand"
+    ],
+    "sources": [
+      {
+        "title": "insitro announces AstraZeneca discovery collaboration",
+        "publisher": "insitro",
+        "url": "https://www.insitro.com/news/insitro-announces-a-strategic-collaboration-with-astrazeneca-for-ai-enabled-discovery-of-novel-therapeutics-for-mash-and-cardiomyopathies/",
+        "publishedAt": "October 15, 2026"
+      },
+      {
+        "title": "AstraZeneca announces insitro collaboration and licensing agreement",
+        "publisher": "AstraZeneca",
+        "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/astrazeneca-announces-new-strategic-collaboration-with-insitro-for-difficult-to-treat-cardiometabolic-diseases.html",
+        "publishedAt": "October 15, 2026"
+      }
+    ]
+  },
+  {
+    "entryDate": "October 15, 2026",
+    "sortKey": "2026-10-15",
+    "status": "current-view",
+    "id": "2026-10-abridge-assistant",
+    "headline": "Abridge describes Assistant access beyond its documentation users",
+    "eventDate": "October 13, 2026 description of September 2026 release",
+    "analysis": "Abridge's October 13 product account says its September release made Assistant available to every clinician at its partner health systems, including those who do not use its documentation product. It describes chart-cited answers, clinical guidelines, calculators populated from chart values, and draft referrals and handoffs for clinician review. These are company descriptions of capabilities and access, not independently measured adoption or outcomes.\n\nThe broader access matters to my distribution comparison with OpenEvidence. I want active use and separate module economics before treating eligibility across a health system as a new paying customer base.",
+    "entryType": "care-delivery",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "abridge",
+      "openevidence"
+    ],
+    "sources": [
+      {
+        "title": "Meet the AI Assistant for Healthcare",
+        "publisher": "Abridge",
+        "url": "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare",
+        "publishedAt": "October 13, 2026"
+      }
+    ]
+  },
+  {
     "id": "2026-10-openevidence-hopkins",
     "headline": "OpenEvidence and Hopkins set out what they want to build",
     "entryDate": "October 14, 2026",

@@ -291,12 +291,12 @@ export const COMPANIES: Company[] = [
       {
         "label": "Consultations",
         "value": "~20M per month (Jan 2026), against ~3M a year earlier",
-        "read": "Better than registrations, because a physician has to choose to use it inside a live visit. On March 10 2026 it handled a million in twenty-four hours."
+        "read": "These are earlier reported volume figures, not evidence that every query happened inside a live visit. On March 10 2026 it reportedly handled a million in twenty-four hours. The new study cannot establish visit setting."
       },
       {
-        "label": "Physician adoption",
-        "value": "757,000+ verified clinicians, 40%+ of US physicians daily",
-        "read": "Distribution is the hardest problem in health tech and most companies never solve it. This one appears to have, though \"free\" does a lot of work in that sentence."
+        "label": "Earlier adoption claim, not a current metric",
+        "value": "Earlier claim: 757,000+ verified clinicians, 40%+ of US physicians daily",
+        "read": "I have not established a matched measurement date for this earlier figure. The daily-use claim should not be treated as verified by the monthly data below."
       },
       {
         "label": "New registrations",
@@ -318,9 +318,14 @@ export const COMPANIES: Company[] = [
         "value": "Education and clinical AI development announced October 13, 2026",
         "read": "The partners describe planned work combining evidence and patient history. The release gives no commercial terms or patient-outcome results."
       },
+      {
+        "label": "Defined usage and retention",
+        "value": "703,265 monthly active users in June 2026; ~90% monthly retention in 2026",
+        "read": "Active means at least one query in a month, not daily use. Retention means another query the next month, not an advertiser renewal."
+      },
     ],
     competition:
-      "UpToDate is the incumbent, owned by Wolters Kluwer, subscription-based and editorially curated. General models are another alternative, though access to medical sources and clinical workflows varies. I can no longer put Abridge in a separate documentation category: it offers chart-connected clinical intelligence across its partner systems. Northwestern’s OpenEvidence deployment gives me a concrete example on the other side of that overlap. I want to compare source access, patient context and repeat use. The journal licences and the usage habit still matter, but I need to check their terms rather than assume exclusivity. Suki's October 8 Ask launch embeds UpToDate Expert AI in its clinical app, giving me another product to compare on source access and patient context.",
+      "UpToDate is the incumbent, owned by Wolters Kluwer, subscription-based and editorially curated. General models are another alternative, though access to medical sources and clinical workflows varies. I can no longer put Abridge in a separate documentation category: it offers chart-connected clinical intelligence across its partner systems. Northwestern’s OpenEvidence deployment gives me a concrete example on the other side of that overlap. I want to compare source access, patient context and repeat use. The journal licences and the usage habit still matter, but I need to check their terms rather than assume exclusivity. Suki's October 8 Ask launch embeds UpToDate Expert AI in its clinical app, giving me another product to compare on source access and patient context. Nabla's October 15 integration distributes OpenEvidence inside its ambient workflow. A vendor can be a partner in one layer and a competitor in another.",
     team:
       'Co-founded in 2022 by Daniel Nadler and Zachary Ziegler. Nadler holds a PhD from Harvard and previously founded Kensho Technologies, which S&P Global acquired in 2018, so this is a second-time founder who has already built and sold a data business into a regulated industry. Ziegler is CTO, an ML researcher out of Alexander Rush\'s NLP lab at Harvard. Both cite personal medical experiences as motivation, which I mention because it is consistent with a company that chose to give the product away to clinicians rather than charge them.',
     risks: [
@@ -345,7 +350,7 @@ export const COMPANIES: Company[] = [
       'How is the advertising layer structurally separated from the answer layer? Not the policy, the architecture. Can a sponsor influence which evidence surfaces, and who audits that?',
       'What is revenue per active physician, and how concentrated is it across pharma advertisers? A handful of large sponsors would change the risk profile substantially.',
       'What are the actual terms and durations of the NEJM and JAMA agreements, and are they exclusive?',
-      'What does weekly active use look like against the 757,000 registration figure? Registrations and habits are different assets.',
+      "What does weekly active use look like against the 757,000 registration figure? Registrations and habits are different assets. The October 15 JAMA paper supplies monthly use and retention, but not weekly activity.",
       'What are the commercial terms of enterprise deployments such as Northwestern: who pays, what is priced, and does the arrangement diversify revenue beyond advertising?',
       "Which tools emerge from the Johns Hopkins collaboration, and how will their effects on clinical decisions and patient outcomes be evaluated?",
     ],
@@ -356,9 +361,9 @@ export const COMPANIES: Company[] = [
       'Disclosure that revenue depends on a small number of advertisers.',
     ],
     view:
-      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion against Sacra’s estimated $300 million annualised revenue, the rough multiple is 50 times, before asking what revenue will actually be earned over a year. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic deployment strengthens the distribution case and extends access beyond physicians. It does not disclose a new revenue stream. I still want advertiser concentration, enterprise terms and retention data.",
+      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion against Sacra’s estimated $300 million annualised revenue, the rough multiple is 50 times, before asking what revenue will actually be earned over a year. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic deployment strengthens the distribution case and extends access beyond physicians. It does not disclose a new revenue stream. JAMA now adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
 
-    lastReviewed: "October 14, 2026",
+    lastReviewed: "October 15, 2026",
     sources: [
       {
         "title": "OpenEvidence raises $250M at $15B valuation; CEO confirms to Becker’s",
@@ -395,6 +400,24 @@ export const COMPANIES: Company[] = [
         "url": "https://www.suki.ai/press-releases/suki-launches-ask-accelerating-complex-clinical-decision-support-powered-by-wolters-kluwer-up-to-date-expert-ai/",
         "publishedAt": "October 8, 2026"
       },
+      {
+        "title": "Clinician Use of an Artificial Intelligence–Enabled Clinical Information Platform",
+        "publisher": "JAMA",
+        "url": "https://jamanetwork.com/journals/jama/fullarticle/2855491",
+        "publishedAt": "October 15, 2026"
+      },
+      {
+        "title": "First large-scale study shows how doctors use AI in medicine",
+        "publisher": "Harvard Medical School",
+        "url": "https://hms.harvard.edu/news/first-large-scale-study-shows-how-doctors-use-ai-medicine",
+        "publishedAt": "October 15, 2026"
+      },
+      {
+        "title": "Nabla integrates with OpenEvidence",
+        "publisher": "Nabla",
+        "url": "https://www.nabla.com/press-release/nabla-integrates-with-openevidence-to-deliver-clinical-evidence-at-the-point-of-care",
+        "publishedAt": "October 15, 2026"
+      },
     ],
   },
 
@@ -420,7 +443,7 @@ export const COMPANIES: Company[] = [
     problem:
       'Electronic records digitised clinical work and moved an enormous documentation burden onto clinicians, who now spend a substantial share of every encounter typing rather than looking at the patient. That is the problem everyone talks about. The larger and less discussed one sits downstream: hospitals lose significant revenue to under-coding and claim denials because the documentation does not capture what justifies the billing, and they employ expensive human reviewers to chase physicians for the missing detail.',
     product:
-      'Ambient capture of the clinical conversation, generating a structured note inside the EHR workflow. On top of that, code generation that maps the conversation to ICD-10 and CPT codes intended to survive a payer audit. The newest layer, announced June 11 2026, is trial screening: identifying patients eligible for clinical studies from conversations already happening, sold to pharma rather than to hospitals. NVIDIA is separately co-developing a foundation model trained on clinical conversation.',
+      "Ambient capture of the clinical conversation, generating a structured note inside the EHR workflow. On top of that, code generation that maps the conversation to ICD-10 and CPT codes intended to survive a payer audit. Another layer, announced June 11 2026, is trial screening: identifying patients eligible for clinical studies from conversations already happening, sold to pharma rather than to hospitals. NVIDIA is separately co-developing a foundation model trained on clinical conversation. Its October 13 account describes Assistant, available since the September release even to non-documentation users at partner systems: chart-cited answers, guidelines and clinician-reviewed drafts.",
     whyNow:
       'Speech recognition on messy multi-speaker clinical audio became reliable around 2023, which opened the category. What makes 2026 the interesting moment is different: health system margins are thin enough that a documentation product has to justify itself financially rather than on physician satisfaction, which pushes every serious company toward the revenue cycle. Abridge got there with more scale than anyone else, and the accumulated denial data compounds.',
     market:
@@ -463,7 +486,7 @@ export const COMPANIES: Company[] = [
       }
     ],
     competition:
-      "Epic ships its own note-drafting tool and controls somewhere around 42 percent of US hospital EHR installs, which I treated as the central threat for most of a year. I have revised that. In August 2025 Epic admitted Ambience into its Toolbox program and distributes it through Haiku, which suggests Epic sees documentation as a category where needs vary too much to service directly. Microsoft Nuance DAX is the scaled incumbent, Ambience the closest direct competitor, Nabla the price disruptor. Defensibility rests on the coding layer, where switching costs are real because a coding error is a False Claims Act exposure and the software line is a rounding error next to it. Suki announced $90 million in financing on October 13; its Ask product also adds clinical reasoning through UpToDate Expert AI. I want account-level retention and competitive outcomes before judging the effect on Abridge.",
+      "Epic ships its own note-drafting tool and controls somewhere around 42 percent of US hospital EHR installs, which I treated as the central threat for most of a year. I have revised that. In August 2025 Epic admitted Ambience into its Toolbox program and distributes it through Haiku, which suggests Epic sees documentation as a category where needs vary too much to service directly. Microsoft Nuance DAX is the scaled incumbent, Ambience the closest direct competitor, Nabla the price disruptor. Defensibility rests on the coding layer, where switching costs are real because a coding error is a False Claims Act exposure and the software line is a rounding error next to it. Suki announced $90 million in financing on October 13; its Ask product also adds clinical reasoning through UpToDate Expert AI. I want account-level retention and competitive outcomes before judging the effect on Abridge. Nabla now embeds OpenEvidence, so I also need to compare an integrated assistant with an ambient product using an external evidence partner.",
     team:
       'Founded in 2018 by Shiv Rao, a cardiologist who still practises at UPMC and previously ran UPMC\'s innovation and venture arm. That combination is unusually well suited to this company: he understands the clinical workflow from inside it and knew how to get a health system to pilot and then invest. UPMC backed it early and expanded the partnership across its network. Founder credibility with physician buyers is a real asset in a category where clinicians decide adoption.',
     risks: [
@@ -495,6 +518,7 @@ export const COMPANIES: Company[] = [
       'What is the cost of deployment per health system, and is it falling with scale or fixed?',
       'Who owns the models and outputs from the NVIDIA collaboration?',
       'What is the consent architecture for trial screening, and has any health system legal team refused it?',
+      "What share of clinicians with Assistant access use it repeatedly, and what does it earn separately from documentation?",
     ],
     changeMyMind: [
       'A major health system publicly switching from Abridge to Epic\'s native tool.',
@@ -505,7 +529,7 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is that pre-bill review makes the coding thesis more concrete. The VA enterprise contract is another distribution route, but its $775.72 million ceiling is shared across vendors and is not booked Abridge revenue. The October 8 UT System agreement creates another route to expansion while leaving local institutions in control. I want to know how many turn access into sustained use, and what the modules earn. More places to deploy a product and a better product are both useful; neither settles what I should pay for the company.",
 
-    lastReviewed: "October 14, 2026",
+    lastReviewed: "October 15, 2026",
     sources: [
       {
         "title": "Pre-bill review for CDI and coding teams",
@@ -548,6 +572,18 @@ export const COMPANIES: Company[] = [
         "publisher": "Suki",
         "url": "https://www.suki.ai/press-releases/suki-launches-ask-accelerating-complex-clinical-decision-support-powered-by-wolters-kluwer-up-to-date-expert-ai/",
         "publishedAt": "October 8, 2026"
+      },
+      {
+        "title": "Meet the AI Assistant for Healthcare",
+        "publisher": "Abridge",
+        "url": "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare",
+        "publishedAt": "October 13, 2026"
+      },
+      {
+        "title": "Nabla integrates with OpenEvidence",
+        "publisher": "Nabla",
+        "url": "https://www.nabla.com/press-release/nabla-integrates-with-openevidence-to-deliver-clinical-evidence-at-the-point-of-care",
+        "publishedAt": "October 15, 2026"
       },
     ],
   },
@@ -896,7 +932,7 @@ export const COMPANIES: Company[] = [
     competition:
       'Neuralink is the high-bandwidth penetrating benchmark with far more capital and far more surgical risk. Synchron is the low-invasiveness endovascular alternative with far fewer channels and a pivotal trial already running. Precision sits between them and is arguably the technically best-positioned if surface arrays hold their signal chronically, which is precisely the unproven part. Blackrock Neurotech occupies the legacy research-array position. The competitive risk is timing: Synchron may define the reimbursement pathway first.',
     team:
-      'Co-founded in 2021 by Michael Mager, who is CEO and came from private equity, and Benjamin Rapoport, a neurosurgeon who was a founding member of Neuralink. Rapoport leaving Neuralink to build a non-penetrating alternative is itself an argument, and it is the single most informative fact about this company. A practising neurosurgeon who has seen the inside of both approaches chose this one.',
+      "Co-founded in 2021 by Michael Mager, who is CEO and came from private equity, and Benjamin Rapoport, a neurosurgeon who was a founding member of Neuralink. Rapoport leaving Neuralink to build a non-penetrating alternative is itself an argument, and it is the single most informative fact about this company. A practising neurosurgeon who has seen the inside of both approaches chose this one. On October 15, 2026, Nevro founder and former CEO Konstantinos Alataris joined as president and Katherine Neuenfeldt as senior vice president, commercial strategies, adding implant launch and market access experience.",
     risks: [
       {
         "risk": "Chronic signal stability for a thin film in cerebrospinal fluid is unproven and is the whole question.",
@@ -921,7 +957,8 @@ export const COMPANIES: Company[] = [
       "What is the current status of the chronic wireless system? IDE submitted, in review, or still preclinical?",
       "How does decoding performance compare to penetrating arrays on the same speech or motor task, measured independently?",
       "What is the burn rate and runway after the $250M Series D, and how much funds chronic-device development versus manufacturing?",
-      "How many neurosurgeons have been trained on micro-slit placement?"
+      "How many neurosurgeons have been trained on micro-slit placement?",
+      "How will the new commercial leadership turn clinical evidence into payer coverage for the chronic BCI, distinct from the short-term cleared array?",
     ],
     changeMyMind: [
       'First chronic wireless human implant, which is the event that determines this position.',
@@ -932,7 +969,7 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is that the financing and atlas improve the operating case. I am still waiting for verified chronic human-use data. Surface recordings across many procedures can teach the company a great deal without demonstrating durability in a permanent implant. The distinction is what I want to keep testing.",
 
-    lastReviewed: "October 13, 2026",
+    lastReviewed: "October 15, 2026",
     sources: [
       {
         "title": "Precision closes $250M Series D",
@@ -945,7 +982,13 @@ export const COMPANIES: Company[] = [
         "publisher": "Precision Neuroscience / GlobeNewswire",
         "url": "https://www.globenewswire.com/news-release/2026/10/08/3377330/0/en/precision-neuroscience-unveils-a-new-map-of-the-human-nervous-system.html",
         "publishedAt": "October 8, 2026"
-      }
+      },
+      {
+        "title": "Precision appoints Konstantinos Alataris and Katherine Neuenfeldt",
+        "publisher": "Precision Neuroscience / GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2026/10/15/3381700/0/en/precision-neuroscience-appoints-nevro-founder-konstantinos-alataris-as-president-and-katherine-neuenfeldt-as-senior-vice-president-commercial-strategies.html",
+        "publishedAt": "October 15, 2026"
+      },
     ],
   },
 
@@ -1006,7 +1049,7 @@ export const COMPANIES: Company[] = [
       }
     ],
     competition:
-      "Abridge is the direct competitor with roughly three times the capital and better name recognition. Microsoft Nuance DAX is the scaled incumbent, Suki is growing, and Epic's own AI Charting is the free default. Ambience's differentiation is the combined coding and CDI product plus Epic distribution. My honest assessment is that I cannot articulate why Ambience wins a competitive account against Abridge other than price and channel, which is a real weakness in this memo. Suki's October 13 announcement adds $90 million in financing to that competitor picture. Its UpToDate-powered Ask product also means I need to compare clinical reasoning alongside documentation and coding.",
+      "Abridge is the direct competitor with roughly three times the capital and better name recognition. Microsoft Nuance DAX is the scaled incumbent, Suki is growing, and Epic's own AI Charting is the free default. Ambience's differentiation is the combined coding and CDI product plus Epic distribution. My honest assessment is that I cannot articulate why Ambience wins a competitive account against Abridge other than price and channel, which is a real weakness in this memo. Suki's October 13 announcement adds $90 million in financing to that competitor picture. Its UpToDate-powered Ask product also means I need to compare clinical reasoning alongside documentation and coding. Nabla's October 15 OpenEvidence integration adds an evidence partner to its ambient workflow. I want to compare clinical support as well as documentation and coding.",
     team:
       'Founded in 2020 by Mike Ng and Nikhil Buduma, who met at MIT in 2013. Buduma became CEO in September 2025, with Ng moving to President and Chairman. Buduma was previously chief scientist and wrote an early widely used deep learning textbook. A founder-to-founder CEO transition inside a company this size usually signals a shift from building the product to scaling the commercial organisation, and both founders remaining is a better sign than one leaving.',
     risks: [
@@ -1044,7 +1087,7 @@ export const COMPANIES: Company[] = [
     view:
       'My view as of September 2026 is that I had this filed as a cheaper Abridge and that was lazy. Ambience is trying to get paid out of revenue capture rather than out of the software budget, which is the specific move I argue elsewhere is the only durable one in clinical software, and it is the only company I follow actually attempting it contractually. Optum Ventures being on the cap table still makes an acquisition the likeliest ending. But the thing I want now is a signed performance contract with disclosed terms, because that would be the first hard evidence for the central claim I make on the thesis page, and its absence by mid-2027 would be evidence against it.',
 
-    lastReviewed: "October 14, 2026",
+    lastReviewed: "October 15, 2026",
     sources: [
       {
         "title": "The Ambience Standard and performance-based contracts",
@@ -1068,6 +1111,12 @@ export const COMPANIES: Company[] = [
         "publisher": "Suki",
         "url": "https://www.suki.ai/press-releases/suki-launches-ask-accelerating-complex-clinical-decision-support-powered-by-wolters-kluwer-up-to-date-expert-ai/",
         "publishedAt": "October 8, 2026"
+      },
+      {
+        "title": "Nabla integrates with OpenEvidence",
+        "publisher": "Nabla",
+        "url": "https://www.nabla.com/press-release/nabla-integrates-with-openevidence-to-deliver-clinical-evidence-at-the-point-of-care",
+        "publishedAt": "October 15, 2026"
       },
     ],
   },
