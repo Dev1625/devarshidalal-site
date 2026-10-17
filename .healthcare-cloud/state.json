@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 17,
+  "revision": 18,
   "lock": {
     "owner": "daily-2026-10-16-mvbr3klz",
     "acquiredAt": "2026-10-17T02:01:46.774Z",
@@ -9,66 +9,25 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "879b2ecfeb6e3800de8c5d2e2b897b2ec480c2df",
-    "vercelDeploymentId": "dpl_BuKY8nPshpkeJfrg3hbBAACTE7pF",
-    "lastVerifiedAt": "2026-10-16T02:11:55.775Z",
+    "lastVerifiedSha": "b0a3a1bce39bdedad5b98876887a79acd9d653fc",
+    "vercelDeploymentId": "dpl_APcSYE6WtVyqGdjeiddJivPTcSzt",
+    "lastVerifiedAt": "2026-10-17T02:09:53.032Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-15",
-      "checkpointProvenance": "Source review completed and exact-commit production/live verification passed October 15, 2026 Eastern.",
-      "sourceWindowStart": "2026-10-15T02:10:04.018Z",
-      "sourceWindowEnd": "2026-10-16T02:07:19.068Z",
-      "lastSuccessfulReviewAt": "2026-10-16T02:07:19.068Z",
-      "lastSuccessfulPublicationAt": "2026-10-16T02:11:55.775Z"
+      "lastSuccessfulEasternDate": "2026-10-16",
+      "checkpointProvenance": "Source review completed and exact-commit production/live verification passed October 16, 2026 Eastern.",
+      "sourceWindowStart": "2026-10-16T02:07:19.068Z",
+      "sourceWindowEnd": "2026-10-17T02:05:40.064Z",
+      "lastSuccessfulReviewAt": "2026-10-17T02:05:40.064Z",
+      "lastSuccessfulPublicationAt": "2026-10-17T02:09:53.032Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": null
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternDate": "2026-10-16",
-    "stage": "main-advanced-waiting-production",
-    "baseSha": "879b2ecfeb6e3800de8c5d2e2b897b2ec480c2df",
-    "candidateSha": "b0a3a1bce39bdedad5b98876887a79acd9d653fc",
-    "candidateTreeSha": "9881c1a5e53d6c6ef73497ec138c61e594c5e8b7",
-    "candidateBranch": "healthcare-daily-2026-10-16",
-    "createdAt": "2026-10-17T02:07:26.837Z",
-    "sourceWindowStart": "2026-10-16T02:07:19.068Z",
-    "sourceWindowEnd": "2026-10-17T02:05:40.064Z",
-    "overlap": "Rechecked October 15 developments; Recursion's October 15 disclosures were not in existing notes and are backfilled with separate writing/event dates.",
-    "newEntryIds": [
-      "2026-10-recursion-sanofi-option",
-      "2026-10-recursion-clinical-denominators",
-      "2026-10-estuary-kidney-gene-therapy"
-    ],
-    "affectedMemos": [
-      "isomorphic-labs",
-      "xaira"
-    ],
-    "sourceUrls": [
-      "https://recursion.gcs-web.com/news-releases/news-release-details/recursion-announces-sanofi-options-potential-first-class",
-      "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000128/rxrx-20261015.htm",
-      "https://ir.recursion.com/news-releases/news-release-details/recursion-announces-200-million-oversubscribed-follow-offering",
-      "https://estuarybio.com/news/estuary-series-a"
-    ],
-    "checks": {
-      "npmCi": "PASS",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 211 notes, 1 prior thesis",
-      "build": "PASS",
-      "preservation": "PASS; all historical notes, company universe, archives, prior thesis and old sources retained",
-      "writingReview": "Executed bundled pattern scan and preservation validator; no added-prose flags; complete changed passages reviewed in context",
-      "remoteTreeAndFileReadback": "PASS: exact tree 9881c1a5e53d6c6ef73497ec138c61e594c5e8b7 and both blobs match"
-    },
-    "verificationProgress": {
-      "mainAdvanced": true,
-      "vercelDeploymentId": "dpl_APcSYE6WtVyqGdjeiddJivPTcSzt",
-      "vercelReady": false,
-      "liveVerified": false
-    }
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -180,6 +139,54 @@
         "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare"
       ],
       "unpublishedFollowup": "Law360 settlement-in-principle headline was not used because the underlying article could not be read; no factual conclusion or note was published from it."
+    },
+    {
+      "kind": "daily",
+      "easternDate": "2026-10-16",
+      "completedAt": "2026-10-17T02:09:53.032Z",
+      "result": "published-and-verified",
+      "commit": "b0a3a1bce39bdedad5b98876887a79acd9d653fc",
+      "candidateBranch": "healthcare-daily-2026-10-16",
+      "deploymentId": "dpl_APcSYE6WtVyqGdjeiddJivPTcSzt",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 211
+      },
+      "newEntryIds": [
+        "2026-10-recursion-sanofi-option",
+        "2026-10-recursion-clinical-denominators",
+        "2026-10-estuary-kidney-gene-therapy"
+      ],
+      "affectedMemos": [
+        "isomorphic-labs",
+        "xaira"
+      ],
+      "checks": {
+        "npmCi": "PASS",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 211 notes, 1 prior thesis",
+        "build": "PASS",
+        "preservation": "PASS; all historical notes, company universe, archives, prior thesis and old sources retained",
+        "writingReview": "Executed bundled pattern scan and preservation validator; no added-prose flags; complete changed passages reviewed in context",
+        "remoteTreeAndFileReadback": "PASS: exact tree 9881c1a5e53d6c6ef73497ec138c61e594c5e8b7 and both blobs match"
+      },
+      "liveVerification": {
+        "following": "211 articles; three new October 16 notes; separate underlying event dates and primary sources",
+        "filters": "Science/regulation 57, Financing 28, M&A/licensing 28; new notes visible in correct filters",
+        "current": "10 stable company memo links",
+        "archive": "2 stable archive links and both memo pages HTTP 200",
+        "affectedMemos": "Isomorphic and Xaira memo pages HTTP 200, new Sanofi milestone comparison markers present",
+        "home": "10 current, 2 past cases, 211 notes",
+        "vercel": "READY for exact commit on devarshidalal.com"
+      },
+      "sourceCoverage": "Targeted delta searches across all ten current companies, available official news streams and relevant healthcare/competitor financing, licensing and clinical disclosures. October 15 overlap deduplicated; Recursion disclosures backfilled with actual dates. No claim of exhaustive trial-registry coverage or proof of absent events.",
+      "sourceUrls": [
+        "https://recursion.gcs-web.com/news-releases/news-release-details/recursion-announces-sanofi-options-potential-first-class",
+        "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000128/rxrx-20261015.htm",
+        "https://ir.recursion.com/news-releases/news-release-details/recursion-announces-200-million-oversubscribed-follow-offering",
+        "https://estuarybio.com/news/estuary-series-a"
+      ],
+      "unpublishedFollowup": "OpenEvidence/Doximity settlement-in-principle reports and later docket index require original disposition verification. No legal outcome or settlement terms published from unread full reports."
     }
   ],
   "schedules": {
