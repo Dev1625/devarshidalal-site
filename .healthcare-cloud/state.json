@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 16,
+  "revision": 17,
   "lock": {
     "owner": "daily-2026-10-16-mvbr3klz",
     "acquiredAt": "2026-10-17T02:01:46.774Z",
@@ -30,7 +30,7 @@
   "pendingPublication": {
     "kind": "daily",
     "easternDate": "2026-10-16",
-    "stage": "validated-candidate-persisted",
+    "stage": "main-advanced-waiting-production",
     "baseSha": "879b2ecfeb6e3800de8c5d2e2b897b2ec480c2df",
     "candidateSha": "b0a3a1bce39bdedad5b98876887a79acd9d653fc",
     "candidateTreeSha": "9881c1a5e53d6c6ef73497ec138c61e594c5e8b7",
@@ -63,7 +63,8 @@
       "remoteTreeAndFileReadback": "PASS: exact tree 9881c1a5e53d6c6ef73497ec138c61e594c5e8b7 and both blobs match"
     },
     "verificationProgress": {
-      "mainAdvanced": false,
+      "mainAdvanced": true,
+      "vercelDeploymentId": "dpl_APcSYE6WtVyqGdjeiddJivPTcSzt",
       "vercelReady": false,
       "liveVerified": false
     }
