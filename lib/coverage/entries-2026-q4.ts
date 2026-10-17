@@ -3,6 +3,90 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-recursion-sanofi-option",
+    "headline": "Sanofi takes a Recursion candidate forward and triggers an earned milestone",
+    "entryDate": "October 16, 2026",
+    "sortKey": "2026-10-16",
+    "eventDate": "October 15, 2026",
+    "analysis": "Recursion says Sanofi optioned the first development candidate from their collaboration, triggering a $10 million milestone payment and bringing upfront and milestone payments received to $144 million. Sanofi takes further development and commercialization; Phase 1 is planned for 2027. More than $300 million in additional program milestones remains contingent, alongside potential royalties.\n\nCompared with a newly signed discovery agreement, this gives me a candidate selection and an earned payment to examine. It does not establish clinical efficacy. For my Isomorphic and Xaira comparisons, I want to track the time and cost from discovery to this handoff, then what happens in patients.",
+    "entryType": "ma-licensing",
+    "scope": "industry",
+    "themes": [
+      "ai-drug-discovery"
+    ],
+    "relatedCompanyIds": [
+      "isomorphic-labs",
+      "xaira"
+    ],
+    "relatedEntryIds": [
+      "2026-10-insitro-astrazeneca",
+      "2026-10-generate-zealand"
+    ],
+    "sources": [
+      {
+        "title": "Sanofi options first development candidate from Recursion collaboration",
+        "publisher": "Recursion",
+        "url": "https://recursion.gcs-web.com/news-releases/news-release-details/recursion-announces-sanofi-options-potential-first-class",
+        "publishedAt": "October 15, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-recursion-clinical-denominators",
+    "headline": "Recursion's clinical update needs its patient counts beside the percentages",
+    "entryDate": "October 16, 2026",
+    "sortKey": "2026-10-16",
+    "eventDate": "October 15, 2026 disclosure; September 10 TUPELO and August 21 DAHLIA data cutoffs",
+    "analysis": "In open-label TUPELO, Recursion reported a 47% median reduction in total polyp burden after 12 weeks of REC-4881 in 16 efficacy-evaluable adults with familial adenomatous polyposis. After 12 weeks off treatment, 11 of 13 remained below baseline. Among 26 safety-evaluable patients, four had Grade 3 treatment-related adverse events. The company also reports four discontinuations due to adverse events, none because of a Grade 3 treatment-related event.\n\nIn DAHLIA, two partial responses were confirmed and one remained unconfirmed among 12 efficacy-evaluable cancer patients starting REC-1245 at 45 mg or higher. Patients without a first efficacy assessment were excluded. These are small, uncontrolled, company-reported datasets. I want longer follow-up and controlled evidence: polyp reduction does not establish cancer prevention, and early tumor responses do not establish a survival benefit. Neither dataset isolates AI's contribution to discovery.",
+    "entryType": "clinical",
+    "scope": "industry",
+    "themes": [
+      "ai-drug-discovery"
+    ],
+    "relatedCompanyIds": [
+      "isomorphic-labs",
+      "xaira"
+    ],
+    "relatedEntryIds": [
+      "2026-10-recursion-sanofi-option"
+    ],
+    "sources": [
+      {
+        "title": "October 15 Form 8-K: REC-4881 and REC-1245 study designs and data",
+        "publisher": "Recursion / SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000128/rxrx-20261015.htm",
+        "publishedAt": "October 15, 2026"
+      },
+      {
+        "title": "Clinical data updates and financing announcement",
+        "publisher": "Recursion",
+        "url": "https://ir.recursion.com/news-releases/news-release-details/recursion-announces-200-million-oversubscribed-follow-offering",
+        "publishedAt": "October 15, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-estuary-kidney-gene-therapy",
+    "headline": "Estuary puts kidney delivery at the centre of its gene-therapy launch",
+    "entryDate": "October 16, 2026",
+    "sortKey": "2026-10-16",
+    "eventDate": "October 16, 2026",
+    "analysis": "Estuary launched with $103 million in total committed financing, including a $93 million Series A led by RA Capital and an earlier $10 million seed round. Its locally delivered AAV programs target autosomal dominant polycystic kidney disease: EST-201 delivers PKD2 and is expected to enter the clinic in 2027; EST-101 delivers a functional region derived from polycystin-1 and is planned for 2028. The reversal biology described in the release comes from mice.\n\nThis gives me a specific delivery problem to investigate beyond the AI companies. Can enough kidney cells receive the therapy safely, and does expression last long enough to preserve kidney function? The financing funds that investigation; safety and efficacy in patients remain unestablished. I would want the administration procedure, distribution data and durability evidence before treating a one-time treatment as an achieved result.",
+    "entryType": "financing",
+    "scope": "industry",
+    "sources": [
+      {
+        "title": "Estuary launches with $103 million in total committed financing",
+        "publisher": "Estuary Biotherapeutics",
+        "url": "https://estuarybio.com/news/estuary-series-a",
+        "publishedAt": "October 16, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     "entryDate": "October 15, 2026",
     "sortKey": "2026-10-15",
     "status": "current-view",
