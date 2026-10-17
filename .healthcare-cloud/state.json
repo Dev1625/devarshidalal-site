@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 15,
+  "revision": 16,
   "lock": {
     "owner": "daily-2026-10-16-mvbr3klz",
     "acquiredAt": "2026-10-17T02:01:46.774Z",
@@ -27,7 +27,47 @@
       "lastSuccessfulEasternDate": null
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternDate": "2026-10-16",
+    "stage": "validated-candidate-persisted",
+    "baseSha": "879b2ecfeb6e3800de8c5d2e2b897b2ec480c2df",
+    "candidateSha": "b0a3a1bce39bdedad5b98876887a79acd9d653fc",
+    "candidateTreeSha": "9881c1a5e53d6c6ef73497ec138c61e594c5e8b7",
+    "candidateBranch": "healthcare-daily-2026-10-16",
+    "createdAt": "2026-10-17T02:07:26.837Z",
+    "sourceWindowStart": "2026-10-16T02:07:19.068Z",
+    "sourceWindowEnd": "2026-10-17T02:05:40.064Z",
+    "overlap": "Rechecked October 15 developments; Recursion's October 15 disclosures were not in existing notes and are backfilled with separate writing/event dates.",
+    "newEntryIds": [
+      "2026-10-recursion-sanofi-option",
+      "2026-10-recursion-clinical-denominators",
+      "2026-10-estuary-kidney-gene-therapy"
+    ],
+    "affectedMemos": [
+      "isomorphic-labs",
+      "xaira"
+    ],
+    "sourceUrls": [
+      "https://recursion.gcs-web.com/news-releases/news-release-details/recursion-announces-sanofi-options-potential-first-class",
+      "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000128/rxrx-20261015.htm",
+      "https://ir.recursion.com/news-releases/news-release-details/recursion-announces-200-million-oversubscribed-follow-offering",
+      "https://estuarybio.com/news/estuary-series-a"
+    ],
+    "checks": {
+      "npmCi": "PASS",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 211 notes, 1 prior thesis",
+      "build": "PASS",
+      "preservation": "PASS; all historical notes, company universe, archives, prior thesis and old sources retained",
+      "writingReview": "Executed bundled pattern scan and preservation validator; no added-prose flags; complete changed passages reviewed in context",
+      "remoteTreeAndFileReadback": "PASS: exact tree 9881c1a5e53d6c6ef73497ec138c61e594c5e8b7 and both blobs match"
+    },
+    "verificationProgress": {
+      "mainAdvanced": false,
+      "vercelReady": false,
+      "liveVerified": false
+    }
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
