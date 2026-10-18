@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 20,
+  "revision": 21,
   "lock": {
     "owner": "saturday-2026-10-17-mvd6dt6r",
     "acquiredAt": "2026-10-18T01:57:24.867Z",
@@ -16,11 +16,11 @@
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-16",
-      "checkpointProvenance": "Source review completed and exact-commit production/live verification passed October 16, 2026 Eastern.",
-      "sourceWindowStart": "2026-10-16T02:07:19.068Z",
-      "sourceWindowEnd": "2026-10-17T02:05:40.064Z",
-      "lastSuccessfulReviewAt": "2026-10-17T02:05:40.064Z",
+      "lastSuccessfulEasternDate": "2026-10-17",
+      "checkpointProvenance": "Researched October 17 daily delta with overlap; no new material, sufficiently verified daily-stage change. Prior published reports deduplicated. Broad review follows under same owner.",
+      "sourceWindowStart": "2026-10-17T02:05:40.064Z",
+      "sourceWindowEnd": "2026-10-18T01:58:33.639Z",
+      "lastSuccessfulReviewAt": "2026-10-18T01:58:33.639Z",
       "lastSuccessfulPublicationAt": "2026-10-17T02:09:53.032Z"
     },
     "saturday": {
@@ -187,6 +187,14 @@
         "https://estuarybio.com/news/estuary-series-a"
       ],
       "unpublishedFollowup": "OpenEvidence/Doximity settlement-in-principle reports and later docket index require original disposition verification. No legal outcome or settlement terms published from unread full reports."
+    },
+    {
+      "kind": "daily",
+      "easternDate": "2026-10-17",
+      "completedAt": "2026-10-18T01:58:33.639Z",
+      "result": "researched-no-material-change",
+      "sourceCoverage": "Targeted searches across all current companies, competitor and wider healthcare news; checked official update streams. Same-week published developments deduplicated. Settlement reporting not promoted to a verified disposition; no cosmetic commit.",
+      "productionSha": "b0a3a1bce39bdedad5b98876887a79acd9d653fc"
     }
   ],
   "schedules": {
