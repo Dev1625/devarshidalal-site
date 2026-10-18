@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 23,
+  "revision": 24,
   "lock": {
     "owner": "saturday-2026-10-17-mvd6dt6r",
     "acquiredAt": "2026-10-18T01:57:24.867Z",
@@ -9,9 +9,9 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "b0a3a1bce39bdedad5b98876887a79acd9d653fc",
-    "vercelDeploymentId": "dpl_APcSYE6WtVyqGdjeiddJivPTcSzt",
-    "lastVerifiedAt": "2026-10-17T02:09:53.032Z",
+    "lastVerifiedSha": "dd9fc39198b5dd2e8e236e84d277034e1a41a56d",
+    "vercelDeploymentId": "dpl_64djZe4CY8uTNHpTZmjqerB1oZ9y",
+    "lastVerifiedAt": "2026-10-18T02:08:58.798Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
@@ -24,70 +24,15 @@
       "lastSuccessfulPublicationAt": "2026-10-17T02:09:53.032Z"
     },
     "saturday": {
-      "lastSuccessfulEasternDate": null
+      "lastSuccessfulEasternDate": "2026-10-17",
+      "lastSuccessfulReviewAt": "2026-10-18T02:08:58.798Z",
+      "lastSuccessfulPublicationAt": "2026-10-18T02:08:58.798Z",
+      "sourceWindowStart": "2026-10-11T04:00:00Z",
+      "sourceWindowEnd": "2026-10-18T02:08:58.798Z",
+      "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
     }
   },
-  "pendingPublication": {
-    "kind": "saturday",
-    "easternReviewDate": "2026-10-17",
-    "baseSha": "b0a3a1bce39bdedad5b98876887a79acd9d653fc",
-    "candidateSha": "dd9fc39198b5dd2e8e236e84d277034e1a41a56d",
-    "candidateTree": "9cc191bfd93f5dcbf9d5e26a24e9c8673afb77d3",
-    "candidateBranch": "healthcare-saturday-2026-10-17",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-18T02:06:39.229Z",
-    "checks": {
-      "npmCi": "PASS",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 215 notes, 1 prior thesis",
-      "build": "PASS exact tree 9cc191bfd93f5dcbf9d5e26a24e9c8673afb77d3",
-      "preservation": "PASS: historical notes, source URLs, IDs, archives, predictions, prior/current thesis preserved; factual corrections documented",
-      "writingReview": "Bundled detector and preservation validator executed; contextual review retained clinical term pivotal and existing voice. Validator no blocking errors; date/spelled-number warnings reviewed.",
-      "remoteTreeAndFileReadback": "PASS exact tree and both changed file contents"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 215
-    },
-    "newEntryIds": [
-      "2026-10-synchron-trial-stage-correction",
-      "2026-10-inceptive-animal-data",
-      "2026-10-beeline-treatment-context",
-      "2026-10-omass-series-c"
-    ],
-    "affectedMemos": [
-      "synchron",
-      "precision-neuroscience",
-      "inceptive",
-      "beeline-medicines"
-    ],
-    "sourceUrls": [
-      "https://clinicaltrials.gov/study/NCT07543367",
-      "https://inceptive.com/blog/from-better-models-to-better-in-vivo-car-t",
-      "https://beelinemedicines.com/press-releases/beeline-medicines-announces-positive-topline-results-from-global-phase-2-study-of-afimetoran-in-systemic-lupus-erythematosus/",
-      "https://beelinemedicines.com/",
-      "https://pubmed.ncbi.nlm.nih.gov/37827694/",
-      "https://www.omass.com/2026/10/15/omass-therapeutics-announces-310-million-series-c-financing-to-advance-portfolio-of-small-molecule-therapeutics-in-endocrinology-and-immunology/"
-    ],
-    "reviewEvidence": {
-      "wholeCollection": "Read 12 complete current/archived company records, all 211 Following notes, current macro thesis and full prior thesis.",
-      "week": "Reused October 14–16 source-backed publications and October 17 daily delta; new broad review includes OMass financing and overlooked earlier primary evidence.",
-      "universeDecision": "Retain 10 current companies and current macro thesis. No forced turnover; factual corrections and partly answered diligence warrant updates.",
-      "alternatives": {
-        "OMass": "October 15 $310M Series C, specific phase-2/early-clinical plans; valuation and present runway undisclosed. Add sourced comparison note, no full case yet.",
-        "Mendaera": "October 1 Butterfly-compatible Focalist commercially available; narrower cleared instrument guidance. Need comparative procedural outcomes and adoption/unit economics before full case.",
-        "Cellares": "September 23 SNUH HSPC collaboration is proof-of-concept, preclinical/IND-enabling; manufacturing fits thesis, but not all partnerships are commercial revenues.",
-        "Estuary": "Reuse October 16 published kidney-delivery launch note; preclinical patient benefit not established."
-      },
-      "priceRunwayValueCapture": "Retain private financing totals as capital raised, not present cash/runway. Undisclosed private entry prices remain diligence gaps. Isomorphic reported financing talks not completed pricing; OE estimates not audited revenue; BioAge biomarkers not outcomes; RNA platform milestones not earned drug economics. Reimbursement, durability, concentration and full clinical datasets remain gates."
-    },
-    "verification": {
-      "mainAdvanced": true,
-      "vercelReady": false,
-      "liveChecked": false,
-      "deploymentId": "dpl_64djZe4CY8uTNHpTZmjqerB1oZ9y"
-    }
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -255,6 +200,81 @@
       "result": "researched-no-material-change",
       "sourceCoverage": "Targeted searches across all current companies, competitor and wider healthcare news; checked official update streams. Same-week published developments deduplicated. Settlement reporting not promoted to a verified disposition; no cosmetic commit.",
       "productionSha": "b0a3a1bce39bdedad5b98876887a79acd9d653fc"
+    },
+    {
+      "kind": "saturday",
+      "easternReviewDate": "2026-10-17",
+      "baseSha": "b0a3a1bce39bdedad5b98876887a79acd9d653fc",
+      "candidateSha": "dd9fc39198b5dd2e8e236e84d277034e1a41a56d",
+      "candidateTree": "9cc191bfd93f5dcbf9d5e26a24e9c8673afb77d3",
+      "candidateBranch": "healthcare-saturday-2026-10-17",
+      "stage": "main-advanced-awaiting-vercel",
+      "createdAt": "2026-10-18T02:06:39.229Z",
+      "checks": {
+        "npmCi": "PASS",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 215 notes, 1 prior thesis",
+        "build": "PASS exact tree 9cc191bfd93f5dcbf9d5e26a24e9c8673afb77d3",
+        "preservation": "PASS: historical notes, source URLs, IDs, archives, predictions, prior/current thesis preserved; factual corrections documented",
+        "writingReview": "Bundled detector and preservation validator executed; contextual review retained clinical term pivotal and existing voice. Validator no blocking errors; date/spelled-number warnings reviewed.",
+        "remoteTreeAndFileReadback": "PASS exact tree and both changed file contents"
+      },
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 215
+      },
+      "newEntryIds": [
+        "2026-10-synchron-trial-stage-correction",
+        "2026-10-inceptive-animal-data",
+        "2026-10-beeline-treatment-context",
+        "2026-10-omass-series-c"
+      ],
+      "affectedMemos": [
+        "synchron",
+        "precision-neuroscience",
+        "inceptive",
+        "beeline-medicines"
+      ],
+      "sourceUrls": [
+        "https://clinicaltrials.gov/study/NCT07543367",
+        "https://inceptive.com/blog/from-better-models-to-better-in-vivo-car-t",
+        "https://beelinemedicines.com/press-releases/beeline-medicines-announces-positive-topline-results-from-global-phase-2-study-of-afimetoran-in-systemic-lupus-erythematosus/",
+        "https://beelinemedicines.com/",
+        "https://pubmed.ncbi.nlm.nih.gov/37827694/",
+        "https://www.omass.com/2026/10/15/omass-therapeutics-announces-310-million-series-c-financing-to-advance-portfolio-of-small-molecule-therapeutics-in-endocrinology-and-immunology/"
+      ],
+      "reviewEvidence": {
+        "wholeCollection": "Read 12 complete current/archived company records, all 211 Following notes, current macro thesis and full prior thesis.",
+        "week": "Reused October 14–16 source-backed publications and October 17 daily delta; new broad review includes OMass financing and overlooked earlier primary evidence.",
+        "universeDecision": "Retain 10 current companies and current macro thesis. No forced turnover; factual corrections and partly answered diligence warrant updates.",
+        "alternatives": {
+          "OMass": "October 15 $310M Series C, specific phase-2/early-clinical plans; valuation and present runway undisclosed. Add sourced comparison note, no full case yet.",
+          "Mendaera": "October 1 Butterfly-compatible Focalist commercially available; narrower cleared instrument guidance. Need comparative procedural outcomes and adoption/unit economics before full case.",
+          "Cellares": "September 23 SNUH HSPC collaboration is proof-of-concept, preclinical/IND-enabling; manufacturing fits thesis, but not all partnerships are commercial revenues.",
+          "Estuary": "Reuse October 16 published kidney-delivery launch note; preclinical patient benefit not established."
+        },
+        "priceRunwayValueCapture": "Retain private financing totals as capital raised, not present cash/runway. Undisclosed private entry prices remain diligence gaps. Isomorphic reported financing talks not completed pricing; OE estimates not audited revenue; BioAge biomarkers not outcomes; RNA platform milestones not earned drug economics. Reimbursement, durability, concentration and full clinical datasets remain gates."
+      },
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "easternDate": "2026-10-17",
+      "completedAt": "2026-10-18T02:08:58.798Z",
+      "result": "published-and-verified",
+      "commit": "dd9fc39198b5dd2e8e236e84d277034e1a41a56d",
+      "deploymentId": "dpl_64djZe4CY8uTNHpTZmjqerB1oZ9y",
+      "liveVerification": {
+        "following": "215 articles; all four October 17 notes expanded and checked, separate actual event dates/source links",
+        "filters": "Financing 29 with OMass; Science/regulation 60 with three corrections/evidence notes",
+        "current": "10 stable current memo links, HTTP 200 companies page",
+        "archives": "2 stable IDs and archived memo pages HTTP 200",
+        "affectedMemos": "Synchron, Precision, Inceptive and Beeline HTTP 200; new source-backed passages, review dates and links present",
+        "home": "HTTP 200; 10 current, 2 past cases, 215 entries",
+        "fund": "HTTP 200; current thesis retained"
+      }
     }
   ],
   "schedules": {
