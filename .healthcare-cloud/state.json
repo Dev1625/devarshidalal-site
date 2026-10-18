@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 22,
+  "revision": 23,
   "lock": {
     "owner": "saturday-2026-10-17-mvd6dt6r",
     "acquiredAt": "2026-10-18T01:57:24.867Z",
@@ -34,7 +34,7 @@
     "candidateSha": "dd9fc39198b5dd2e8e236e84d277034e1a41a56d",
     "candidateTree": "9cc191bfd93f5dcbf9d5e26a24e9c8673afb77d3",
     "candidateBranch": "healthcare-saturday-2026-10-17",
-    "stage": "validated-remote-candidate-before-main",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-10-18T02:06:39.229Z",
     "checks": {
       "npmCi": "PASS",
@@ -82,9 +82,10 @@
       "priceRunwayValueCapture": "Retain private financing totals as capital raised, not present cash/runway. Undisclosed private entry prices remain diligence gaps. Isomorphic reported financing talks not completed pricing; OE estimates not audited revenue; BioAge biomarkers not outcomes; RNA platform milestones not earned drug economics. Reimbursement, durability, concentration and full clinical datasets remain gates."
     },
     "verification": {
-      "mainAdvanced": false,
+      "mainAdvanced": true,
       "vercelReady": false,
-      "liveChecked": false
+      "liveChecked": false,
+      "deploymentId": "dpl_64djZe4CY8uTNHpTZmjqerB1oZ9y"
     }
   },
   "recentRuns": [
