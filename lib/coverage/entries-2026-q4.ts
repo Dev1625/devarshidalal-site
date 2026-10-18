@@ -3,6 +3,113 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-synchron-trial-stage-correction",
+    "headline": "I overstated Synchron's trial stage",
+    "eventDate": "May 11, 2026 registry update; checked October 17, 2026",
+    "analysis": "My August note said Synchron had a pivotal trial running. I have not verified that claim. The sponsor's INTENT record (NCT07543367) lists a recruiting early-feasibility study, estimated enrolment of ten, and device-related serious adverse events through six months as its primary endpoint. Estimated enrolment is not a count of implanted participants.\n\nI am keeping the earlier prediction visible, but correcting the present memo and Precision comparison. The endovascular procedure still interests me. I should not turn that preference into an assumed regulatory lead; I need a separately verified pivotal protocol and actual enrolment before making that argument.",
+    "entryType": "clinical",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "synchron",
+      "precision-neuroscience"
+    ],
+    "relatedEntryIds": [
+      "2026-08-bci-reimbursement",
+      "2026-08-what-i-am-looking-for-next"
+    ],
+    "sources": [
+      {
+        "title": "INTENT early-feasibility study, NCT07543367",
+        "publisher": "ClinicalTrials.gov / Synchron",
+        "url": "https://clinicaltrials.gov/study/NCT07543367",
+        "publishedAt": "Last update posted May 11, 2026"
+      }
+    ],
+    "entryDate": "October 17, 2026",
+    "sortKey": "2026-10-17",
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-inceptive-animal-data",
+    "headline": "Inceptive has animal data; the question now is durability",
+    "eventDate": "September 3, 2026",
+    "analysis": "Inceptive reports that three of five model-designed CAR mRNA sequences beat its Capstan-sequence benchmark for B-cell depletion in humanized mice. The displayed experiment used four animals per group and ended at 24 hours. All sequences used the same collaborator's targeted lipid nanoparticle.\n\nThat partly answers the animal-data question in my memo. It does not establish durable immune reset, human benefit or independent replication. I am more interested in the next experiment now: whether the advantage lasts, with acceptable safety, beyond that first day. The Alnylam agreement and this mRNA experiment are different evidence; I should not treat a CAR-T result as validation of partnered siRNA drugs.",
+    "entryType": "clinical",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "inceptive"
+    ],
+    "relatedEntryIds": [
+      "2026-06-alnylam-inceptive"
+    ],
+    "sources": [
+      {
+        "title": "From better models to better in vivo CAR-T",
+        "publisher": "Inceptive",
+        "url": "https://inceptive.com/blog/from-better-models-to-better-in-vivo-car-t",
+        "publishedAt": "September 3, 2026"
+      }
+    ],
+    "entryDate": "October 17, 2026",
+    "sortKey": "2026-10-17",
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-beeline-treatment-context",
+    "headline": "Beeline needs to improve existing lupus care, not invent oral treatment",
+    "eventDate": "September 9, 2026 topline release; current pipeline checked October 17, 2026",
+    "analysis": "I overstated the treatment gap when I wrote that lupus had no good oral option. Hydroxychloroquine is established care, and EULAR recommends it unless contraindicated. Afimetoran needs to add enough disease control and spare enough steroid exposure to justify another treatment.\n\nBeeline's positive Phase 2 topline still leaves me waiting for response rates by arm and detailed safety counts. I also called all five BMS programs clinical-stage. The current pipeline lists BLN-481 and BLN-498 as preclinical. I have corrected the memo; five assets are not five clinical shots on goal. Before getting more confident, I want the full dataset and a funded plan for what comes next.",
+    "entryType": "clinical",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "beeline-medicines"
+    ],
+    "sources": [
+      {
+        "title": "Afimetoran Phase 2 topline",
+        "publisher": "Beeline Medicines",
+        "url": "https://beelinemedicines.com/press-releases/beeline-medicines-announces-positive-topline-results-from-global-phase-2-study-of-afimetoran-in-systemic-lupus-erythematosus/",
+        "publishedAt": "September 9, 2026"
+      },
+      {
+        "title": "Current pipeline",
+        "publisher": "Beeline Medicines",
+        "url": "https://beelinemedicines.com/"
+      },
+      {
+        "title": "EULAR recommendations for SLE, 2023 update",
+        "publisher": "Annals of the Rheumatic Diseases",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37827694/",
+        "publishedAt": "January 2, 2024"
+      }
+    ],
+    "entryDate": "October 17, 2026",
+    "sortKey": "2026-10-17",
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-omass-series-c",
+    "headline": "OMass raises $310M with two clinical questions to fund",
+    "eventDate": "October 15, 2026",
+    "analysis": "OMass announced a $310 million Series C co-led by Bain Capital Life Sciences, Forbion and Novo Holdings. It plans to advance MC2 receptor antagonist OMS1620 through Phase 2 for congenital adrenal hyperplasia and ACTH-dependent Cushing's syndrome, and generate early clinical data for an SLC15A4 inhibitor targeting lupus and related disease. These are development plans, not reported patient results.\n\nThis is a useful comparison for Beeline and the discovery platforms I follow: which specific human readouts does the financing buy? OMass has not disclosed a valuation in this release, and I cannot infer runway from the round size. I want to understand clinical differentiation and the entry price before adding a full case. For Beeline, it is another reason to compare oral mechanisms as well as cell therapy.",
+    "entryType": "financing",
+    "scope": "industry",
+    "relatedCompanyIds": [
+      "beeline-medicines"
+    ],
+    "sources": [
+      {
+        "title": "OMass announces $310 million Series C",
+        "publisher": "OMass Therapeutics",
+        "url": "https://www.omass.com/2026/10/15/omass-therapeutics-announces-310-million-series-c-financing-to-advance-portfolio-of-small-molecule-therapeutics-in-endocrinology-and-immunology/",
+        "publishedAt": "October 15, 2026"
+      }
+    ],
+    "entryDate": "October 17, 2026",
+    "sortKey": "2026-10-17",
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-recursion-sanofi-option",
     "headline": "Sanofi takes a Recursion candidate forward and triggers an earned milestone",
     "entryDate": "October 16, 2026",

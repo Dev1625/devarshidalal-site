@@ -758,7 +758,7 @@ export const COMPANIES: Company[] = [
       },
       {
         "label": "Clinical status",
-        "value": "Investigational; 10 patients reported November 2025; current pivotal enrolment not confirmed"
+        "value": "Investigational; INTENT registry lists recruiting early feasibility, not a pivotal study"
       }
     ],
     summary:
@@ -768,7 +768,7 @@ export const COMPANIES: Company[] = [
     product:
       'The Stentrode is a nitinol stent with sixteen platinum-iridium electrodes, delivered through the jugular vein into the superior sagittal sinus, a large venous channel running along the top of the brain directly above motor cortex. It expands, endothelium grows over it, and it reads motor cortex activity through a few millimetres of tissue. Signals pass to an implanted transmitter and are decoded into digital commands. Since May 2025 it integrates natively with Apple\'s BCI Human Interface Device profile, so users control iPhone, iPad and Vision Pro directly.',
     whyNow:
-      "The COMMAND study reported in September 2024 that all six US participants met the twelve-month primary safety endpoint with no device-related serious adverse events and no serious vascular or brain events. That answered the question that had to be answered first, which was whether putting hardware inside a cerebral vein causes clotting or vessel damage. With safety established, the pivotal trial supporting a premarket approval submission is the next step, but I have not verified current pivotal enrolment.",
+      "The COMMAND study reported in September 2024 that all six US participants met the twelve-month primary safety endpoint with no device-related serious adverse events and no serious vascular or brain events. That is encouraging small-cohort safety evidence, not established safety for a wider population. The INTENT record I checked on October 17 labels it early feasibility, with estimated enrolment of ten and a six-month device-related serious-adverse-event primary endpoint. I have not verified a separate pivotal study enrolling.",
     market:
       'Roughly 30,000 people in the US live with ALS at any time, with several hundred thousand more affected by severe paralysis from stroke and spinal cord injury. This is a device market with a procedure attached, so revenue depends on a reimbursement code covering both the implant and the placement. No implantable motor BCI has full FDA premarket approval yet, and analysts do not expect one before 2027 or 2028, so the commercial market currently does not exist. That cuts both ways: nothing to capture, and nothing to defend against.',
     traction: [
@@ -814,7 +814,7 @@ export const COMPANIES: Company[] = [
           'The Chiral decoder work is aimed exactly at this, and next-generation higher-density transcatheter arrays are in development.',
       },
       {
-        risk: 'Ten patients is a small safety base going into a pivotal trial.',
+        risk: 'Ten patients reported in November 2025 is a small, dated safety base; later trial stages still need verification.',
         mitigant:
           'Twelve-month data is clean across all six US participants, and the mechanism avoids the parenchymal injury that drives most implant failures.',
       },
@@ -826,7 +826,7 @@ export const COMPANIES: Company[] = [
     ],
     diligence: [
       'What is the reimbursement strategy, specifically? Which CPT pathway, what timeline, and has CMS been engaged? This is the largest unpriced risk and I cannot answer it.',
-      'What is pivotal trial enrolment to date against plan, and what is the primary endpoint?',
+      'What is actual INTENT enrolment against its estimate, and what separate pivotal protocol and timetable has the FDA agreed?',
       'What does the decoder achieve today in bits per minute, and how does that compare to Neuralink and Precision on the same task?',
       'What is the durability data past 24 months, and has any device shown signal degradation?',
       'How much of the Apple integration is contractual versus a public accessibility framework anyone can build against?',
@@ -839,10 +839,16 @@ export const COMPANIES: Company[] = [
       'A serious adverse event in the pivotal cohort, particularly anything vascular.',
     ],
     view:
-      'My view as of August 2026 is that Synchron is the most likely BCI to reach patients first and the one whose ceiling I am least sure about. I also notice I find the mechanism unusually elegant, and I try to discount my own enthusiasm accordingly.',
+      "My view as of August 2026 is that Synchron is the most likely BCI to reach patients first and the one whose ceiling I am least sure about. I also notice I find the mechanism unusually elegant, and I try to discount my own enthusiasm accordingly. On October 17 I am less comfortable with the timing argument: my August note treated a pivotal trial as running without sufficient support. I am retaining the case for its procedure, but I need a verified regulatory timetable before giving it a lead on reimbursement. The pivotal milestones remain future tests, not claims that such a cohort is enrolling.",
 
-    lastReviewed: "October 13, 2026",
+    lastReviewed: "October 17, 2026",
     sources: [
+      {
+        title: 'INTENT early-feasibility study, NCT07543367',
+        publisher: 'ClinicalTrials.gov / Synchron',
+        url: 'https://clinicaltrials.gov/study/NCT07543367',
+        publishedAt: 'Registry last update posted May 11, 2026; checked October 17, 2026'
+      },
       {
         "title": "Synchron Series D and clinical footprint",
         "publisher": "Synchron / Business Wire",
@@ -936,7 +942,7 @@ export const COMPANIES: Company[] = [
       }
     ],
     competition:
-      'Neuralink is the high-bandwidth penetrating benchmark with far more capital and far more surgical risk. Synchron is the low-invasiveness endovascular alternative with far fewer channels and a pivotal trial already running. Precision sits between them and is arguably the technically best-positioned if surface arrays hold their signal chronically, which is precisely the unproven part. Blackrock Neurotech occupies the legacy research-array position. The competitive risk is timing: Synchron may define the reimbursement pathway first.',
+      'Neuralink is the high-bandwidth penetrating benchmark with far more capital and far more surgical risk. Synchron is the low-invasiveness endovascular alternative with far fewer channels; its verified INTENT registry record is early feasibility, so I should not describe a pivotal trial as already running. Precision sits between them and is arguably the technically best-positioned if surface arrays hold their signal chronically, which is precisely the unproven part. Blackrock Neurotech occupies the legacy research-array position. The competitive risk is timing: Synchron may define the reimbursement pathway first, but I have not established that lead.',
     team:
       "Co-founded in 2021 by Michael Mager, who is CEO and came from private equity, and Benjamin Rapoport, a neurosurgeon who was a founding member of Neuralink. Rapoport leaving Neuralink to build a non-penetrating alternative is itself an argument, and it is the single most informative fact about this company. A practising neurosurgeon who has seen the inside of both approaches chose this one. On October 15, 2026, Nevro founder and former CEO Konstantinos Alataris joined as president and Katherine Neuenfeldt as senior vice president, commercial strategies, adding implant launch and market access experience.",
     risks: [
@@ -975,8 +981,14 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is that the financing and atlas improve the operating case. I am still waiting for verified chronic human-use data. Surface recordings across many procedures can teach the company a great deal without demonstrating durability in a permanent implant. The distinction is what I want to keep testing.",
 
-    lastReviewed: "October 15, 2026",
+    lastReviewed: "October 17, 2026",
     sources: [
+      {
+        title: 'INTENT early-feasibility study, NCT07543367',
+        publisher: 'ClinicalTrials.gov / Synchron',
+        url: 'https://clinicaltrials.gov/study/NCT07543367',
+        publishedAt: 'Registry last update posted May 11, 2026; checked October 17, 2026'
+      },
       {
         "title": "Precision closes $250M Series D",
         "publisher": "Precision Neuroscience / GlobeNewswire",
@@ -1206,6 +1218,7 @@ export const COMPANIES: Company[] = [
       'What are the first milestone triggers under the Alnylam agreement, and what has been earned to date?',
       'How large is the internal dataset, and what does it cost to generate an additional million measurements?',
       'Has any designed sequence gone into an animal, and what were the results relative to a conventionally designed control?',
+      'That animal-data question is partly answered by the September 3 company report. Can the result replicate independently and persist beyond its 24-hour endpoint?',
       'Is the Alnylam arrangement exclusive within siRNA, and does it restrict other partnerships?',
       'How much equity did Alnylam take and at what valuation?',
       'What is the path to owning assets rather than licensing capability?',
@@ -1217,10 +1230,16 @@ export const COMPANIES: Company[] = [
       'The Alnylam collaboration lapsing quietly at term.',
     ],
     view:
-      "My view as of October 2026 is that Inceptive is the cleanest test I follow of whether counterparty quality works as a signal when I cannot judge the science myself. I cannot evaluate these RNA models. Alnylam can, has done almost nothing else for twenty years, and committed $30 million of upfront consideration, including cash and an equity purchase, for access to them. That satisfies the second of the three tests I set for this field, a serious domain partner paying real money. The third, a molecule surviving Phase 1, is still a milestone I need to evaluate program by program. So I hold this as evidence that the capability is worth something to people qualified to price it, and not as evidence that it produces drugs.",
+      "My view as of October 2026 is that Inceptive is the cleanest test I follow of whether counterparty quality works as a signal when I cannot judge the science myself. I cannot evaluate these RNA models. Alnylam can, has done almost nothing else for twenty years, and committed $30 million of upfront consideration, including cash and an equity purchase, for access to them. That satisfies the second of the three tests I set for this field, a serious domain partner paying real money. The third, a molecule surviving Phase 1, is still a milestone I need to evaluate program by program. So I hold this as evidence that the capability is worth something to people qualified to price it, and not as evidence that it produces drugs. The September 3 CAR-T report partly answers my animal-data question: Inceptive reports greater B-cell depletion with three of five designs than its benchmark in humanized mice. This was company-run work with a 24-hour endpoint, not human remission or proof of durable effect. I want independent replication and longer follow-up before moving that judgment further.",
 
-    lastReviewed: "October 13, 2026",
+    lastReviewed: "October 17, 2026",
     sources: [
+      {
+        title: 'From better models to better in vivo CAR-T',
+        publisher: 'Inceptive',
+        url: 'https://inceptive.com/blog/from-better-models-to-better-in-vivo-car-t',
+        publishedAt: 'September 3, 2026'
+      },
       {
         "title": "Alnylam and Inceptive collaboration terms",
         "publisher": "Alnylam",
@@ -1373,28 +1392,28 @@ export const COMPANIES: Company[] = [
     id: 'beeline-medicines',
     name: 'Beeline Medicines',
     what:
-      'A company built in 2025 out of five clinical programs Bristol Myers Squibb handed over, developing an oral drug for lupus.',
+      'A company built in 2025 around five BMS programs, spanning clinical and preclinical development, with an oral lupus drug in the lead.',
     followingSince: 'Following since spring 2026',
     snapshot: [
       { label: 'Sector', value: 'Immunology and inflammation' },
       { label: 'Stage', value: 'Series A, clinical stage' },
       { label: 'Founded', value: 'July 2025, emerged from stealth April 15 2026' },
-      { label: 'Headquarters', value: 'Cambridge, MA' },
+      { label: 'Headquarters', value: 'Stamford, CT; additional location in Cambridge, MA' },
       { label: 'Total raised', value: '$426.3M Series A' },
       { label: 'Investors', value: 'Bain Capital, Bristol Myers Squibb, CPPIB' },
       { label: 'Lead asset', value: 'Afimetoran, oral TLR7/8 inhibitor, lupus' },
       { label: 'Phase 2 SLE', value: 'Met primary endpoint, September 9 2026' },
     ],
     summary:
-      'I started following this because I was writing constantly about a market where autoimmune and inflammation take more than 40 percent of biotech venture dollars while covering nothing in it. That is a coverage gap rather than a considered thesis, and this memo is shorter on original scientific insight than the others as a result. What makes it worth holding is structural: five clinical programs from BMS, a CEO who just sold his last company to Merck KGaA, and a Phase 2 readout close enough that I would find out quickly whether the interest was warranted. It read out on 9 September 2026 and it worked. So I now have to separate two things that feel the same from the inside, which is whether I understood this going in or simply got a good result.',
+      'I started following this because I was writing constantly about a market where autoimmune and inflammation take more than 40 percent of biotech venture dollars while covering nothing in it. That is a coverage gap rather than a considered thesis, and this memo is shorter on original scientific insight than the others as a result. What makes it worth holding is structural: five BMS programs at different stages, a CEO who just sold his last company to Merck KGaA, and a Phase 2 readout close enough that I would find out quickly whether the interest was warranted. The company reported a positive Phase 2 topline on 9 September 2026. So I now have to separate two things that feel the same from the inside, which is whether I understood this going in or simply got a good result.',
     problem:
-      'Lupus is treated with a combination of old immunosuppressants that people tolerate badly and newer biologics that must be infused. There is no good oral option. The disease disproportionately affects young women, it flares unpredictably, and the existing regimens carry cumulative toxicity that matters enormously over a lifetime of treatment.',
+      'Lupus already has oral treatment, including hydroxychloroquine, alongside immunosuppressants and biologics. EULAR recommends hydroxychloroquine unless contraindicated and tries to minimise long-term glucocorticoid exposure. The unmet need is better disease control with less treatment burden and toxicity. Calling this a market with no good oral option overstated the gap.',
     product:
-      'Afimetoran is an oral, once-daily, equipotent inhibitor of toll-like receptors 7 and 8. Those receptors sit upstream of the type I interferon signalling that drives a large part of lupus pathology, so blocking them targets a mechanism rather than suppressing immunity broadly. Four additional clinical programs came across from BMS alongside it.',
+      'Afimetoran is an oral, once-daily, equipotent inhibitor of toll-like receptors 7 and 8. Those receptors sit upstream of the type I interferon signalling that drives a large part of lupus pathology. The other BMS programs are BLN-326 (early clinical), lomedeucitinib (late clinical), and BLN-481 and BLN-498 (preclinical), according to the current company pipeline. These are not five clinical-stage assets.',
     whyNow:
-      'The immunology market repriced sharply in 2025 and 2026 as cell therapy crossed over from oncology into autoimmune disease. AbbVie paid up to $2.1 billion for Capstan and Lilly agreed to pay up to $7 billion for Kelonia, both in vivo CAR-T. That drew capital into the whole category. Separately, large pharma under patent-cliff pressure is triaging portfolios aggressively, which is why five viable clinical programs became available from BMS at all.',
+      'The immunology market repriced sharply in 2025 and 2026 as cell therapy crossed over from oncology into autoimmune disease. AbbVie paid up to $2.1 billion for Capstan and Lilly agreed to pay up to $7 billion for Kelonia, both in vivo CAR-T. That drew capital into the whole category. Separately, large pharma under patent-cliff pressure is triaging portfolios aggressively, which is why five programs became available from BMS at all.',
     market:
-      'Roughly 200,000 to 300,000 people in the US have systemic lupus erythematosus, with a larger population across other autoimmune indications the platform could reach. An oral therapy displacing infused biologics would command meaningful pricing, and the commercial argument is straightforward: patients prefer pills, and payers prefer avoiding infusion centre costs. The competitive dynamic is that everyone else is chasing the same disease with cell therapy.',
+      "Roughly 200,000 to 300,000 people in the US have systemic lupus erythematosus, with a larger population across other autoimmune indications the platform could reach. I would price afimetoran against the benefit it adds to existing treatment and the steroid exposure it can spare, rather than assume oral dosing earns a premium. Cell therapy is one competitor; other oral mechanisms also need comparing.",
     traction: [
       {
         label: 'Series A',
@@ -1403,13 +1422,13 @@ export const COMPANIES: Company[] = [
       },
       {
         label: 'Programs in-licensed',
-        value: 'Five clinical-stage assets from BMS',
+        value: 'Five BMS programs; three clinical and two preclinical on the company pipeline',
         read: 'Cuts both ways and I cannot resolve it. Large pharma deprioritises for portfolio reasons constantly, and also because the data is mediocre.',
       },
       {
         label: 'Phase 2 readout',
         value: 'SRI-4 at week 48, all three doses beat placebo, p below 0.001',
-        read: 'A clean result. All three dose groups separated on the endpoint regulators have accepted in lupus before, safety matched the Phase 1 experience, and the company is going into pivotal studies for both systemic and cutaneous disease. I did not have a scientific view going in, so this is a result I received rather than one I called.',
+        read: 'The company reports separation across all three doses and no new safety signal, with pivotal studies planned. Its September release does not give arm-level response rates or adverse-event counts. I need those details before judging the size and cost of the benefit. A positive topline is not a result I predicted.',
       },
       {
         label: 'BMS retained stake',
@@ -1444,7 +1463,7 @@ export const COMPANIES: Company[] = [
       'What does the pivotal program look like, how large, and does the FDA agree on the endpoint for cutaneous disease?',
       'What safety data exists on TLR7/8 inhibition to date, including anything from the BMS-run studies?',
       'What are the terms of the BMS arrangement? Royalties, milestones, equity, and does BMS retain any option to reacquire?',
-      'What are the other four programs and their stages?',
+      'The company now identifies all five programs and their stages. Which deserve funding alongside afimetoran, and what would make it stop one?',
       'How much of the $426M is allocated to afimetoran versus the rest of the portfolio?',
     ],
     changeMyMind: [
@@ -1454,10 +1473,21 @@ export const COMPANIES: Company[] = [
       'A safety signal on TLR7/8 inhibition in any program.',
     ],
     view:
-      "My view as of September 2026 is that the readout landed and I still do not have a differentiated scientific view, which is an uncomfortable pair of things to hold at once. I added the company for category exposure, and the readout was positive. I am keeping it because Phase 3 is a real question I can now do work on, not because Phase 2 vindicated anything I actually said.",
+      "My view as of September 2026 is that the readout landed and I still do not have a differentiated scientific view, which is an uncomfortable pair of things to hold at once. I added the company for category exposure, and the readout was positive. I am keeping it because Phase 3 is a real question I can now do work on, not because Phase 2 vindicated anything I actually said. On October 17, my next gate is the full dose-level dataset and the confirmatory protocol. I also need cash and burn by program: the $426.3 million financing total does not tell me present runway or the cost of taking several assets forward.",
 
-    lastReviewed: "October 13, 2026",
+    lastReviewed: "October 17, 2026",
     sources: [
+      {
+        title: 'Current clinical and preclinical pipeline',
+        publisher: 'Beeline Medicines',
+        url: 'https://beelinemedicines.com/'
+      },
+      {
+        title: 'EULAR recommendations for SLE, 2023 update',
+        publisher: 'Annals of the Rheumatic Diseases',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/37827694/',
+        publishedAt: 'January 2, 2024'
+      },
       {
         "title": "Afimetoran Phase 2 topline results",
         "publisher": "Beeline Medicines",
