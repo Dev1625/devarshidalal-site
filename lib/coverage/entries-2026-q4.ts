@@ -3,6 +3,63 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-iambic-ipo",
+    "headline": "Iambic's IPO adds a public financing comparison for AI drug discovery",
+    "eventDate": "October 14, 2026 pricing; October 16 IPO completion",
+    "analysis": "Iambic priced 9,375,000 shares at $16, giving the base offering $150 million in gross proceeds before fees and expenses. Its October 16 SEC filing records completion of the IPO. The company says it advanced IAM1363 from discovery into the clinic in approximately two years; that is its account of a development timeline, not a controlled measure of AI's contribution.\n\nFor my Isomorphic and Xaira comparisons, I now have another clinical-stage developer with public financing terms and a prospectus to examine. I want to compare candidate quality, development spending and clinical progress. The amount raised is not the company's valuation, and a successful financing does not establish better patient outcomes.",
+    "entryType": "financing",
+    "scope": "industry",
+    "themes": [
+      "ai-drug-discovery"
+    ],
+    "relatedCompanyIds": [
+      "isomorphic-labs",
+      "xaira"
+    ],
+    "sources": [
+      {
+        "title": "Iambic announces IPO pricing",
+        "publisher": "Iambic Therapeutics",
+        "url": "https://ir.iambic.ai/news-releases/news-release-details/iambic-announces-pricing-initial-public-offering",
+        "publishedAt": "October 14, 2026"
+      },
+      {
+        "title": "Form 8-K records completion of Iambic IPO",
+        "publisher": "Iambic Therapeutics / SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1997038/000119312526424242/iam-20261016.htm",
+        "publishedAt": "October 16, 2026"
+      }
+    ],
+    "entryDate": "October 18, 2026",
+    "sortKey": "2026-10-18",
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-city-rnai-ipo",
+    "headline": "City prices an RNAi IPO, with closing still ahead",
+    "eventDate": "October 15, 2026 pricing; closing expected October 19",
+    "analysis": "City Therapeutics priced an upsized IPO of 11,111,111 shares at $18, approximately $200 million gross before fees and expenses. The October 15 announcement expected closing on October 19, subject to customary conditions. I am recording the priced offering; completion still needs checking. City describes itself as a clinical-stage RNAi developer, with programs including CITY-FXI for thromboembolic disease and CITY-RBP4 for retinal disease.\n\nFor Inceptive, this is a useful business-model comparison. City is financing development of its own RNAi assets; Inceptive's Alnylam arrangement sells design capability with contingent milestones. I want to compare capital required through human readouts with the rights and economics each company keeps. Raising public capital alone cannot settle which model captures more value.",
+    "entryType": "financing",
+    "scope": "industry",
+    "relatedCompanyIds": [
+      "inceptive"
+    ],
+    "relatedEntryIds": [
+      "2026-06-alnylam-inceptive"
+    ],
+    "sources": [
+      {
+        "title": "City Therapeutics announces pricing of upsized IPO",
+        "publisher": "City Therapeutics",
+        "url": "https://investors.citytx.com/news-releases/news-release-details/city-therapeutics-announces-pricing-upsized-initial-public",
+        "publishedAt": "October 15, 2026"
+      }
+    ],
+    "entryDate": "October 18, 2026",
+    "sortKey": "2026-10-18",
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-synchron-trial-stage-correction",
     "headline": "I overstated Synchron's trial stage",
     "eventDate": "May 11, 2026 registry update; checked October 17, 2026",
