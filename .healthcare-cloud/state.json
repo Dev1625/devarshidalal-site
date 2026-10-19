@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 26,
+  "revision": 27,
   "lock": {
     "owner": "daily-2026-10-18-2m192vr2",
     "acquiredAt": "2026-10-19T02:01:26.685Z",
@@ -32,7 +32,52 @@
       "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternReviewDate": "2026-10-18",
+    "baseSha": "dd9fc39198b5dd2e8e236e84d277034e1a41a56d",
+    "candidateSha": "fbcdf2f5045d939492e848efb5a2d6a09623879a",
+    "candidateTree": "9608417554fb3df8202770be29153090125ddbfa",
+    "candidateBranch": "healthcare-daily-2026-10-18",
+    "stage": "validated-remote-candidate-before-main",
+    "createdAt": "2026-10-19T02:05:10.888Z",
+    "checks": {
+      "npmCi": "PASS remote lockfile",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 217 notes, 1 prior thesis",
+      "build": "PASS exact tree 9608417554fb3df8202770be29153090125ddbfa",
+      "preservation": "PASS: all historical notes, existing memo prose, sources, IDs, forecasts, archives and thesis retained; only comparison additions and review dates changed",
+      "writingReview": "Bundled detector and preservation validator executed. New prose had no pattern flags. No blocking preservation errors; review-date numeral warning checked. Complete changed passages read in context.",
+      "remoteTreeAndFileReadback": "PASS both files and exact tree"
+    },
+    "counts": {
+      "current": 10,
+      "archived": 2,
+      "notes": 217
+    },
+    "newEntryIds": [
+      "2026-10-iambic-ipo",
+      "2026-10-city-rnai-ipo"
+    ],
+    "affectedMemos": [
+      "isomorphic-labs",
+      "inceptive",
+      "xaira"
+    ],
+    "sourceUrls": [
+      "https://ir.iambic.ai/news-releases/news-release-details/iambic-announces-pricing-initial-public-offering",
+      "https://www.sec.gov/Archives/edgar/data/1997038/000119312526424242/iam-20261016.htm",
+      "https://investors.citytx.com/news-releases/news-release-details/city-therapeutics-announces-pricing-upsized-initial-public"
+    ],
+    "sourceWindowStart": "2026-10-18T01:58:33.639Z",
+    "sourceWindowEnd": "2026-10-19T02:05:10.888Z",
+    "sourceCoverage": "Targeted searches across all 10 current companies and competitors, financing, clinical/regulatory/device/manufacturing developments; available official update streams checked. October 18 Precision coverage deduplicated against October 15 appointment note; OMass redistributions deduplicated. Iambic and City original IPO disclosures from October 14–16 were missing from Following and included as explicit catch-up with actual event dates. Iambic completion supported by 8-K; City expected October 19 close remains unconfirmed.",
+    "deferred": "OpenEvidence/Behind the Knife October 14 collaboration read, but no additional note for an incremental education partnership. Generic aggregator clinical/regulatory headlines not promoted to verified developments. No universe/thesis changes.",
+    "verification": {
+      "mainAdvanced": false,
+      "vercelReady": false,
+      "liveChecked": false
+    }
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
