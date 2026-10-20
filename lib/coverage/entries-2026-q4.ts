@@ -3,6 +3,53 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-city-ipo-closing",
+    "headline": "City closes its IPO at $230M gross",
+    "entryDate": "October 19, 2026",
+    "sortKey": "2026-10-19",
+    "eventDate": "October 19, 2026",
+    "analysis": "City confirmed that its IPO closed with 12,777,777 shares sold at $18, including the underwriters' full exercise of their 1,666,666-share option. Gross proceeds were approximately $230 million before fees and expenses, compared with the roughly $200 million base offering I recorded yesterday.\n\nThat answers the closing question in my earlier note. In the Inceptive comparison, I can now treat this as completed financing for an RNAi asset developer. I still want to see how far the proceeds take City's programs and what clinical evidence emerges; the gross raise alone gives me neither a runway estimate nor proof of patient benefit.",
+    "entryType": "financing",
+    "scope": "industry",
+    "relatedCompanyIds": [
+      "inceptive"
+    ],
+    "relatedEntryIds": [
+      "2026-10-city-rnai-ipo"
+    ],
+    "sources": [
+      {
+        "title": "City Therapeutics closes upsized IPO including full underwriters' option",
+        "publisher": "City Therapeutics / GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2026/10/19/3383856/0/en/city-therapeutics-announces-closing-of-230-0-million-upsized-initial-public-offering-including-full-exercise-of-underwriters-option-to-purchase-additional-shares.html",
+        "publishedAt": "October 19, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-openevidence-doximity-settlement",
+    "headline": "OpenEvidence and Doximity reportedly end their legal fight",
+    "entryDate": "October 19, 2026",
+    "sortKey": "2026-10-19",
+    "eventDate": "October 15, 2026 settlement in principle; October 16 dismissal, reported October 19",
+    "analysis": "Fierce Healthcare reports that OpenEvidence and Doximity reached a settlement in principle on October 15, followed by dismissal of all claims and counterclaims with prejudice on October 16. Each party bears its own costs and attorneys' fees. The report says the joint notice disclosed no settlement terms.\n\nI read this as a change in the litigation status. It gives me no basis to call either side's allegations proven or infer a payment. My competitive questions remain: which tool clinicians return to, what source access costs, and how much advertisers pay for that attention.",
+    "entryType": "regulation-policy",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "openevidence"
+    ],
+    "sources": [
+      {
+        "title": "OpenEvidence, Doximity reach settlement in contentious AI legal battle",
+        "publisher": "Fierce Healthcare",
+        "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-doximity-reach-settlement-contentious-ai-lawsuit",
+        "publishedAt": "October 19, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-iambic-ipo",
     "headline": "Iambic's IPO adds a public financing comparison for AI drug discovery",
     "eventDate": "October 14, 2026 pricing; October 16 IPO completion",

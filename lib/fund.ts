@@ -325,7 +325,7 @@ export const COMPANIES: Company[] = [
       },
     ],
     competition:
-      "UpToDate is the incumbent, owned by Wolters Kluwer, subscription-based and editorially curated. General models are another alternative, though access to medical sources and clinical workflows varies. I can no longer put Abridge in a separate documentation category: it offers chart-connected clinical intelligence across its partner systems. Northwestern’s OpenEvidence deployment gives me a concrete example on the other side of that overlap. I want to compare source access, patient context and repeat use. The journal licences and the usage habit still matter, but I need to check their terms rather than assume exclusivity. Suki's October 8 Ask launch embeds UpToDate Expert AI in its clinical app, giving me another product to compare on source access and patient context. Nabla's October 15 integration distributes OpenEvidence inside its ambient workflow. A vendor can be a partner in one layer and a competitor in another.",
+      "UpToDate is the incumbent, owned by Wolters Kluwer, subscription-based and editorially curated. General models are another alternative, though access to medical sources and clinical workflows varies. I can no longer put Abridge in a separate documentation category: it offers chart-connected clinical intelligence across its partner systems. Northwestern’s OpenEvidence deployment gives me a concrete example on the other side of that overlap. I want to compare source access, patient context and repeat use. The journal licences and the usage habit still matter, but I need to check their terms rather than assume exclusivity. Suki's October 8 Ask launch embeds UpToDate Expert AI in its clinical app, giving me another product to compare on source access and patient context. Nabla's October 15 integration distributes OpenEvidence inside its ambient workflow. A vendor can be a partner in one layer and a competitor in another. Fierce Healthcare reports that the Doximity litigation ended in an October 16 dismissal of all claims and counterclaims with prejudice after a settlement in principle. The reported notice disclosed no settlement terms. I am treating that as a litigation update, with the commercial competition still open.",
     team:
       'Co-founded in 2022 by Daniel Nadler and Zachary Ziegler. Nadler holds a PhD from Harvard and previously founded Kensho Technologies, which S&P Global acquired in 2018, so this is a second-time founder who has already built and sold a data business into a regulated industry. Ziegler is CTO, an ML researcher out of Alexander Rush\'s NLP lab at Harvard. Both cite personal medical experiences as motivation, which I mention because it is consistent with a company that chose to give the product away to clinicians rather than charge them.',
     risks: [
@@ -363,8 +363,14 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion against Sacra’s estimated $300 million annualised revenue, the rough multiple is 50 times, before asking what revenue will actually be earned over a year. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic deployment strengthens the distribution case and extends access beyond physicians. It does not disclose a new revenue stream. JAMA now adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
 
-    lastReviewed: "October 15, 2026",
+    lastReviewed: "October 19, 2026",
     sources: [
+      {
+        "title": "OpenEvidence, Doximity reach settlement in contentious AI legal battle",
+        "publisher": "Fierce Healthcare",
+        "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-doximity-reach-settlement-contentious-ai-lawsuit",
+        "publishedAt": "October 19, 2026"
+      },
       {
         "title": "OpenEvidence raises $250M at $15B valuation; CEO confirms to Becker’s",
         "publisher": "Becker's Hospital Review",
@@ -1201,7 +1207,7 @@ export const COMPANIES: Company[] = [
       },
     ],
     competition:
-      "Internal RNA groups at every large pharma with an RNA franchise, plus specialised RNA AI startups. The broader competitive threat is the one running through this whole archive: NVIDIA's BioNeMo and general model companies making the modelling layer free. Inceptive's answer is that its advantage is the measurement loop rather than the architecture, which I find credible. The narrower risk is concentration, since one deep partnership is validation and single-point exposure at the same time. City Therapeutics priced an approximately $200 million gross IPO on October 15, with closing expected October 19. As an RNAi asset developer, it is a useful comparison for the capital and economics of owning programs rather than providing design capability; the announcement does not establish completed proceeds or clinical success.",
+      "Internal RNA groups at every large pharma with an RNA franchise, plus specialised RNA AI startups. The broader competitive threat is the one running through this whole archive: NVIDIA's BioNeMo and general model companies making the modelling layer free. Inceptive's answer is that its advantage is the measurement loop rather than the architecture, which I find credible. The narrower risk is concentration, since one deep partnership is validation and single-point exposure at the same time. City Therapeutics priced an approximately $200 million gross base IPO on October 15 and confirmed closing on October 19 at approximately $230 million gross, including the full underwriters' option. As an RNAi asset developer, it is a useful comparison for the capital and economics of owning programs rather than providing design capability. The completed financing leaves clinical success and runway to be evaluated separately.",
     team:
       'Co-founded by Jakob Uszkoreit, one of the authors of the Transformer paper, and Rhiju Das, a Stanford biochemist who has spent his career on RNA structure. That pairing is unusually well matched to this specific problem: one person who helped invent the architecture and one who has spent twenty years on the biology it is being pointed at. Most AI-for-biology companies have one of those two and hire the other.',
     risks: [
@@ -1244,8 +1250,14 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is that Inceptive is the cleanest test I follow of whether counterparty quality works as a signal when I cannot judge the science myself. I cannot evaluate these RNA models. Alnylam can, has done almost nothing else for twenty years, and committed $30 million of upfront consideration, including cash and an equity purchase, for access to them. That satisfies the second of the three tests I set for this field, a serious domain partner paying real money. The third, a molecule surviving Phase 1, is still a milestone I need to evaluate program by program. So I hold this as evidence that the capability is worth something to people qualified to price it, and not as evidence that it produces drugs. The September 3 CAR-T report partly answers my animal-data question: Inceptive reports greater B-cell depletion with three of five designs than its benchmark in humanized mice. This was company-run work with a 24-hour endpoint, not human remission or proof of durable effect. I want independent replication and longer follow-up before moving that judgment further.",
 
-    lastReviewed: "October 18, 2026",
+    lastReviewed: "October 19, 2026",
     sources: [
+      {
+        "title": "City Therapeutics closes upsized IPO including full underwriters' option",
+        "publisher": "City Therapeutics / GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2026/10/19/3383856/0/en/city-therapeutics-announces-closing-of-230-0-million-upsized-initial-public-offering-including-full-exercise-of-underwriters-option-to-purchase-additional-shares.html",
+        "publishedAt": "October 19, 2026"
+      },
       {
         "title": "City Therapeutics announces pricing of upsized IPO",
         "publisher": "City Therapeutics",
