@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 32,
+  "revision": 33,
   "lock": {
     "owner": "daily-2026-10-19-1w4u3hn0",
     "acquiredAt": "2026-10-20T01:59:22.303Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "fbcdf2f5045d939492e848efb5a2d6a09623879a",
-    "vercelDeploymentId": "dpl_523WzP5nr7tkBMGqq21CnCyuvCfG",
-    "lastVerifiedAt": "2026-10-19T02:07:51.240Z",
+    "lastVerifiedSha": "762828f4e61399dbe1b366695d52df3a8bed2078",
+    "vercelDeploymentId": "dpl_CarpKb9QyfeuVZPG8ENjBcrvDzqA",
+    "lastVerifiedAt": "2026-10-20T02:07:15.798Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-18",
-      "checkpointProvenance": "Daily delta researched with overlap and deduplication. Two earlier-week primary IPO disclosures backfilled with separate actual dates; three comparison additions published, exact build/content checks and live verification complete.",
-      "sourceWindowStart": "2026-10-18T01:58:33.639Z",
-      "sourceWindowEnd": "2026-10-19T02:05:10.888Z",
-      "lastSuccessfulReviewAt": "2026-10-19T02:05:10.888Z",
-      "lastSuccessfulPublicationAt": "2026-10-19T02:07:51.240Z"
+      "lastSuccessfulEasternDate": "2026-10-19",
+      "checkpointProvenance": "Daily delta researched with overlap and deduplication. City issuer confirms $230M gross IPO closing including option; legal disposition explicitly attributed to Fierce reporting because direct filing access unavailable. Two notes and two memo updates validated and verified live.",
+      "sourceWindowStart": "2026-10-19T02:05:10.888Z",
+      "sourceWindowEnd": "2026-10-20T02:04:58.545Z",
+      "lastSuccessfulReviewAt": "2026-10-20T02:04:58.545Z",
+      "lastSuccessfulPublicationAt": "2026-10-20T02:07:15.798Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-17",
@@ -32,51 +32,7 @@
       "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-10-19",
-    "baseSha": "fbcdf2f5045d939492e848efb5a2d6a09623879a",
-    "candidateSha": "762828f4e61399dbe1b366695d52df3a8bed2078",
-    "candidateTree": "75c530aa157d2e9821a56769a197e953509cb66e",
-    "candidateBranch": "healthcare-daily-2026-10-19",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-20T02:04:58.545Z",
-    "checks": {
-      "npmCi": "PASS remote lockfile, Node 24.19.0",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 219 notes, 1 prior thesis",
-      "build": "PASS exact tree 75c530aa157d2e9821a56769a197e953509cb66e",
-      "preservation": "PASS all 217 previous notes, macro/prior thesis, archive IDs, historical predictions, old sources and all other memo fields retained",
-      "writingReview": "Bundled detector and preservation validator executed on changed prose; no issues or blocking preservation errors. Full passages reviewed in context; no authorship conclusion.",
-      "remoteTreeAndFileReadback": "PASS exact tree and both blobs"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 219
-    },
-    "newEntryIds": [
-      "2026-10-city-ipo-closing",
-      "2026-10-openevidence-doximity-settlement"
-    ],
-    "affectedMemos": [
-      "openevidence",
-      "inceptive"
-    ],
-    "sourceUrls": [
-      "https://www.globenewswire.com/news-release/2026/10/19/3383856/0/en/city-therapeutics-announces-closing-of-230-0-million-upsized-initial-public-offering-including-full-exercise-of-underwriters-option-to-purchase-additional-shares.html",
-      "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-doximity-reach-settlement-contentious-ai-lawsuit"
-    ],
-    "sourceWindowStart": "2026-10-19T02:05:10.888Z",
-    "sourceWindowEnd": "2026-10-20T02:04:58.545Z",
-    "sourceCoverage": "Targeted searches across all ten current companies and competitors, financing, clinical/trial/device/regulatory and leadership developments. Most results were prior coverage or stale republications and deduplicated. October 19 City original issuer closing release read. October 19 Fierce Healthcare full report read; attribution retained for October 15–16 settlement/dismissal. Earlier JAMA usage coverage deduplicated; no universe or macro change.",
-    "limitations": "Direct court filing could not be retrieved (CourtListener fetch failed/403, PACERMonitor 429); legal status explicitly attributed to reputable reporting, no undisclosed settlement terms or merits outcome inferred. No exhaustive registry coverage claimed.",
-    "verification": {
-      "mainAdvanced": true,
-      "vercelReady": false,
-      "liveChecked": false
-    },
-    "deploymentId": "dpl_CarpKb9QyfeuVZPG8ENjBcrvDzqA"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -380,6 +336,66 @@
         "home": "HTTP 200; 10 current, 2 past cases, 217 entries",
         "fund": "HTTP 200; current thesis retained",
         "vercel": "READY exact commit fbcdf2f5045d939492e848efb5a2d6a09623879a, production project and existing domain devarshidalal.com"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-10-19",
+      "baseSha": "fbcdf2f5045d939492e848efb5a2d6a09623879a",
+      "candidateSha": "762828f4e61399dbe1b366695d52df3a8bed2078",
+      "candidateTree": "75c530aa157d2e9821a56769a197e953509cb66e",
+      "candidateBranch": "healthcare-daily-2026-10-19",
+      "stage": "published-and-verified",
+      "createdAt": "2026-10-20T02:04:58.545Z",
+      "checks": {
+        "npmCi": "PASS remote lockfile, Node 24.19.0",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 219 notes, 1 prior thesis",
+        "build": "PASS exact tree 75c530aa157d2e9821a56769a197e953509cb66e",
+        "preservation": "PASS all 217 previous notes, macro/prior thesis, archive IDs, historical predictions, old sources and all other memo fields retained",
+        "writingReview": "Bundled detector and preservation validator executed on changed prose; no issues or blocking preservation errors. Full passages reviewed in context; no authorship conclusion.",
+        "remoteTreeAndFileReadback": "PASS exact tree and both blobs"
+      },
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 219
+      },
+      "newEntryIds": [
+        "2026-10-city-ipo-closing",
+        "2026-10-openevidence-doximity-settlement"
+      ],
+      "affectedMemos": [
+        "openevidence",
+        "inceptive"
+      ],
+      "sourceUrls": [
+        "https://www.globenewswire.com/news-release/2026/10/19/3383856/0/en/city-therapeutics-announces-closing-of-230-0-million-upsized-initial-public-offering-including-full-exercise-of-underwriters-option-to-purchase-additional-shares.html",
+        "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-doximity-reach-settlement-contentious-ai-lawsuit"
+      ],
+      "sourceWindowStart": "2026-10-19T02:05:10.888Z",
+      "sourceWindowEnd": "2026-10-20T02:04:58.545Z",
+      "sourceCoverage": "Targeted searches across all ten current companies and competitors, financing, clinical/trial/device/regulatory and leadership developments. Most results were prior coverage or stale republications and deduplicated. October 19 City original issuer closing release read. October 19 Fierce Healthcare full report read; attribution retained for October 15–16 settlement/dismissal. Earlier JAMA usage coverage deduplicated; no universe or macro change.",
+      "limitations": "Direct court filing could not be retrieved (CourtListener fetch failed/403, PACERMonitor 429); legal status explicitly attributed to reputable reporting, no undisclosed settlement terms or merits outcome inferred. No exhaustive registry coverage claimed.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "deploymentId": "dpl_CarpKb9QyfeuVZPG8ENjBcrvDzqA",
+      "easternDate": "2026-10-19",
+      "completedAt": "2026-10-20T02:07:15.798Z",
+      "result": "published-and-verified",
+      "commit": "762828f4e61399dbe1b366695d52df3a8bed2078",
+      "liveVerification": {
+        "following": "219 articles; two new October 19 notes expanded and checked with separate actual event dates and source links",
+        "filters": "Financing 32 with City closing; Science/regulation 61 with reported legal disposition",
+        "current": "10 stable current memo links; companies HTTP 200",
+        "archives": "2 stable archive links; both archived memo pages HTTP 200",
+        "affectedMemos": "OpenEvidence and Inceptive HTTP 200; updated source-backed competition passages, source links and October 19 review dates",
+        "home": "HTTP 200; 10 current, 2 past cases, 219 notes",
+        "fund": "HTTP 200; thesis preserved",
+        "vercel": "READY exact tested SHA on production domain devarshidalal.com"
       }
     }
   ],
