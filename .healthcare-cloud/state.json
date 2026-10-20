@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 30,
+  "revision": 31,
   "lock": {
     "owner": "daily-2026-10-19-1w4u3hn0",
     "acquiredAt": "2026-10-20T01:59:22.303Z",
@@ -32,7 +32,50 @@
       "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternReviewDate": "2026-10-19",
+    "baseSha": "fbcdf2f5045d939492e848efb5a2d6a09623879a",
+    "candidateSha": "762828f4e61399dbe1b366695d52df3a8bed2078",
+    "candidateTree": "75c530aa157d2e9821a56769a197e953509cb66e",
+    "candidateBranch": "healthcare-daily-2026-10-19",
+    "stage": "validated-remote-candidate-before-main",
+    "createdAt": "2026-10-20T02:04:58.545Z",
+    "checks": {
+      "npmCi": "PASS remote lockfile, Node 24.19.0",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 219 notes, 1 prior thesis",
+      "build": "PASS exact tree 75c530aa157d2e9821a56769a197e953509cb66e",
+      "preservation": "PASS all 217 previous notes, macro/prior thesis, archive IDs, historical predictions, old sources and all other memo fields retained",
+      "writingReview": "Bundled detector and preservation validator executed on changed prose; no issues or blocking preservation errors. Full passages reviewed in context; no authorship conclusion.",
+      "remoteTreeAndFileReadback": "PASS exact tree and both blobs"
+    },
+    "counts": {
+      "current": 10,
+      "archived": 2,
+      "notes": 219
+    },
+    "newEntryIds": [
+      "2026-10-city-ipo-closing",
+      "2026-10-openevidence-doximity-settlement"
+    ],
+    "affectedMemos": [
+      "openevidence",
+      "inceptive"
+    ],
+    "sourceUrls": [
+      "https://www.globenewswire.com/news-release/2026/10/19/3383856/0/en/city-therapeutics-announces-closing-of-230-0-million-upsized-initial-public-offering-including-full-exercise-of-underwriters-option-to-purchase-additional-shares.html",
+      "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-doximity-reach-settlement-contentious-ai-lawsuit"
+    ],
+    "sourceWindowStart": "2026-10-19T02:05:10.888Z",
+    "sourceWindowEnd": "2026-10-20T02:04:58.545Z",
+    "sourceCoverage": "Targeted searches across all ten current companies and competitors, financing, clinical/trial/device/regulatory and leadership developments. Most results were prior coverage or stale republications and deduplicated. October 19 City original issuer closing release read. October 19 Fierce Healthcare full report read; attribution retained for October 15–16 settlement/dismissal. Earlier JAMA usage coverage deduplicated; no universe or macro change.",
+    "limitations": "Direct court filing could not be retrieved (CourtListener fetch failed/403, PACERMonitor 429); legal status explicitly attributed to reputable reporting, no undisclosed settlement terms or merits outcome inferred. No exhaustive registry coverage claimed.",
+    "verification": {
+      "mainAdvanced": false,
+      "vercelReady": false,
+      "liveChecked": false
+    }
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
