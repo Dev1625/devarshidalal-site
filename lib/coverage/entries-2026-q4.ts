@@ -3,6 +3,60 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-openai-orchestra-bio",
+    "headline": "OpenAI buys Orchestra Bio to extend Rosalind into drug-development workflows",
+    "entryDate": "October 20, 2026",
+    "sortKey": "2026-10-20",
+    "eventDate": "October 20, 2026",
+    "analysis": "OpenAI says it acquired Orchestra Bio and is combining the team and technology with Rosalind, its life-sciences models and tools. Orchestra's platform coordinates studies, campaigns and dependencies across drug programs; OpenAI describes GPT-Rosalind as a biology and chemistry reasoning model and Rosalind Workbench as the layer connecting models with scientific tools and data. The announcement disclosed no purchase price.\n\nFor my Isomorphic and Xaira comparisons, this is an adjacent move rather than evidence of a better molecule. A general AI company is extending from research questions and experiment planning into development workflow. That could commoditise more of the software layer around AI drug discovery, but the announcement gives me no clinical result, drug-asset economics or independent measure of whether these agents shorten development.",
+    "entryType": "ma-licensing",
+    "scope": "industry",
+    "themes": [
+      "ai-drug-discovery"
+    ],
+    "relatedCompanyIds": [
+      "isomorphic-labs",
+      "xaira"
+    ],
+    "sources": [
+      {
+        "title": "OpenAI acquires Orchestra Bio",
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
+        "publishedAt": "October 20, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-merck-silence",
+    "headline": "Merck KGaA agrees to buy Silence at a $1.3B equity value",
+    "entryDate": "October 20, 2026",
+    "sortKey": "2026-10-20",
+    "eventDate": "October 18, 2026 agreement; announced October 19",
+    "analysis": "Merck KGaA signed a definitive agreement to acquire Silence Therapeutics for $20 per ADS in cash, implying a $1.1 billion enterprise value and approximately $1.3 billion equity value. This is an agreed transaction, not a completed acquisition: it still needs shareholder, regulatory and court approvals and is expected to close in the first quarter of 2027.\n\nThe main asset is divesiran, a Phase 3-ready siRNA candidate for phlebotomy-dependent polycythemia vera. Merck reports an 88% responder rate versus 19% on placebo and 0.2 versus 2.1 mean phlebotomies per patient over weeks 0–36 in Phase 2. Those results support the asset's value, but they are not evidence that an RNA-design platform alone commands the purchase price. For Inceptive, this sharpens the difference between licensing design capability and owning a clinically de-risked program.",
+    "entryType": "ma-licensing",
+    "scope": "industry",
+    "relatedCompanyIds": [
+      "inceptive"
+    ],
+    "sources": [
+      {
+        "title": "Merck KGaA to acquire Silence Therapeutics",
+        "publisher": "Merck KGaA, Darmstadt, Germany",
+        "url": "https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html",
+        "publishedAt": "October 19, 2026"
+      },
+      {
+        "title": "Silence Therapeutics Form 8-K on definitive transaction agreement",
+        "publisher": "Silence Therapeutics / SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1479615/000119312526424695/d172259d8k.htm",
+        "publishedAt": "October 19, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-city-ipo-closing",
     "headline": "City closes its IPO at $230M gross",
     "entryDate": "October 19, 2026",

@@ -649,7 +649,7 @@ export const COMPANIES: Company[] = [
       },
     ],
     competition:
-      "Insilico Medicine is the most instructive comparison, because it raises far less, attracts far less attention, and got an AI-designed molecule into a human in June 2026 before Isomorphic did. Recursion and Schrodinger occupy adjacent positions with more disclosure. The larger competitive question is whether large pharma simply builds this internally, and the January 2026 NVIDIA and Lilly co-innovation lab, worth up to $1 billion, is evidence that at least one of them intends to try. Isomorphic's durable advantage is Alphabet compute and DeepMind talent density, which is real and which also means the moat partly belongs to the parent. Recursion's October 15 Sanofi option triggered a $10 million milestone payment, with Phase 1 planned for 2027. I can compare that paid candidate handoff with Isomorphic's progress without assuming the platforms or molecules are equivalent. Iambic priced a $150 million gross IPO on October 14 and recorded completion on October 16. It gives me a clinical-stage public comparison to examine through its disclosures, without equating the amount raised with a valuation or the two platforms with one another.",
+      "Insilico Medicine is the most instructive comparison, because it raises far less, attracts far less attention, and got an AI-designed molecule into a human in June 2026 before Isomorphic did. Recursion and Schrodinger occupy adjacent positions with more disclosure. The larger competitive question is whether large pharma simply builds this internally, and the January 2026 NVIDIA and Lilly co-innovation lab, worth up to $1 billion, is evidence that at least one of them intends to try. Isomorphic's durable advantage is Alphabet compute and DeepMind talent density, which is real and which also means the moat partly belongs to the parent. Recursion's October 15 Sanofi option triggered a $10 million milestone payment, with Phase 1 planned for 2027. I can compare that paid candidate handoff with Isomorphic's progress without assuming the platforms or molecules are equivalent. Iambic priced a $150 million gross IPO on October 14 and recorded completion on October 16. It gives me a clinical-stage public comparison to examine through its disclosures, without equating the amount raised with a valuation or the two platforms with one another. OpenAI's October 20 acquisition of Orchestra Bio extends Rosalind from research tools into drug-development workflow. That is adjacent competition for the software layer, not evidence that OpenAI has designed a better candidate or shortened a clinical program.",
     team:
       "Founded and led by Demis Hassabis, who also runs Google DeepMind and shared the 2024 Nobel Prize in Chemistry for AlphaFold. Colin Murdoch was an early business leader. Max Jaderberg moved from Chief AI Officer to President effective January 1 2026. Ben Wolf was appointed Chief Medical Officer in June 2025. I missed that when I described the clinical bench as invisible. The question is now how that team translates the computational work, not whether the company has hired a CMO.",
     risks: [
@@ -691,8 +691,14 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is that I still want to follow this through its first human data. The October 7 Virtual Biology Initiative is a useful commitment to shared biological data, not a patient-dosing milestone. I also corrected my own blind spot on the CMO appointment. I have not located a first-patient announcement in the material reviewed, which is narrower than knowing that nobody has been dosed. The end-2026 promise remains the thing to score. The reported $40B–$50B fundraising target makes the entry question harder; I am keeping it labelled as talks, with no addition to capital raised.",
 
-    lastReviewed: "October 18, 2026",
+    lastReviewed: "October 20, 2026",
     sources: [
+      {
+        "title": "OpenAI acquires Orchestra Bio",
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
+        "publishedAt": "October 20, 2026"
+      },
       {
         "title": "Iambic announces IPO pricing",
         "publisher": "Iambic Therapeutics",
@@ -1207,7 +1213,7 @@ export const COMPANIES: Company[] = [
       },
     ],
     competition:
-      "Internal RNA groups at every large pharma with an RNA franchise, plus specialised RNA AI startups. The broader competitive threat is the one running through this whole archive: NVIDIA's BioNeMo and general model companies making the modelling layer free. Inceptive's answer is that its advantage is the measurement loop rather than the architecture, which I find credible. The narrower risk is concentration, since one deep partnership is validation and single-point exposure at the same time. City Therapeutics priced an approximately $200 million gross base IPO on October 15 and confirmed closing on October 19 at approximately $230 million gross, including the full underwriters' option. As an RNAi asset developer, it is a useful comparison for the capital and economics of owning programs rather than providing design capability. The completed financing leaves clinical success and runway to be evaluated separately.",
+      "Internal RNA groups at every large pharma with an RNA franchise, plus specialised RNA AI startups. The broader competitive threat is the one running through this whole archive: NVIDIA's BioNeMo and general model companies making the modelling layer free. Inceptive's answer is that its advantage is the measurement loop rather than the architecture, which I find credible. The narrower risk is concentration, since one deep partnership is validation and single-point exposure at the same time. City Therapeutics priced an approximately $200 million gross base IPO on October 15 and confirmed closing on October 19 at approximately $230 million gross, including the full underwriters' option. As an RNAi asset developer, it is a useful comparison for the capital and economics of owning programs rather than providing design capability. The completed financing leaves clinical success and runway to be evaluated separately. Merck KGaA's agreed acquisition of Silence Therapeutics implies a $1.1 billion enterprise value and approximately $1.3 billion equity value, subject to closing conditions. Silence owns a Phase 3-ready siRNA program with Phase 2 data, so I read the proposed price as evidence about a clinically de-risked asset company rather than a valuation for design software alone.",
     team:
       'Co-founded by Jakob Uszkoreit, one of the authors of the Transformer paper, and Rhiju Das, a Stanford biochemist who has spent his career on RNA structure. That pairing is unusually well matched to this specific problem: one person who helped invent the architecture and one who has spent twenty years on the biology it is being pointed at. Most AI-for-biology companies have one of those two and hire the other.',
     risks: [
@@ -1250,8 +1256,20 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is that Inceptive is the cleanest test I follow of whether counterparty quality works as a signal when I cannot judge the science myself. I cannot evaluate these RNA models. Alnylam can, has done almost nothing else for twenty years, and committed $30 million of upfront consideration, including cash and an equity purchase, for access to them. That satisfies the second of the three tests I set for this field, a serious domain partner paying real money. The third, a molecule surviving Phase 1, is still a milestone I need to evaluate program by program. So I hold this as evidence that the capability is worth something to people qualified to price it, and not as evidence that it produces drugs. The September 3 CAR-T report partly answers my animal-data question: Inceptive reports greater B-cell depletion with three of five designs than its benchmark in humanized mice. This was company-run work with a 24-hour endpoint, not human remission or proof of durable effect. I want independent replication and longer follow-up before moving that judgment further.",
 
-    lastReviewed: "October 19, 2026",
+    lastReviewed: "October 20, 2026",
     sources: [
+      {
+        "title": "Merck KGaA to acquire Silence Therapeutics",
+        "publisher": "Merck KGaA, Darmstadt, Germany",
+        "url": "https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html",
+        "publishedAt": "October 19, 2026"
+      },
+      {
+        "title": "Silence Therapeutics Form 8-K on definitive transaction agreement",
+        "publisher": "Silence Therapeutics / SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1479615/000119312526424695/d172259d8k.htm",
+        "publishedAt": "October 19, 2026"
+      },
       {
         "title": "City Therapeutics closes upsized IPO including full underwriters' option",
         "publisher": "City Therapeutics / GlobeNewswire",
@@ -1353,7 +1371,7 @@ export const COMPANIES: Company[] = [
       }
     ],
     competition:
-      "Isomorphic Labs on the structural side, Recursion on phenotypic screening, and the internal AI groups at every large pharma. The more interesting competitive dynamic is with the platform layer: as BioNeMo improves and general models get better at biological reasoning, the modelling advantage narrows and the data asset becomes the defensible part. That is a smaller position than the company pitched at launch, and it is a real one. Recursion's October 15 Sanofi candidate option triggered a $10 million milestone payment. It gives me a disclosed partner handoff to compare with Xaira's preclinical work, while leaving clinical translation open. Iambic's October IPO also adds a clinical-stage public comparator. I want to compare its disclosed spending and progress with Xaira's internal pipeline, without assuming the technologies or candidates are interchangeable.",
+      "Isomorphic Labs on the structural side, Recursion on phenotypic screening, and the internal AI groups at every large pharma. The more interesting competitive dynamic is with the platform layer: as BioNeMo improves and general models get better at biological reasoning, the modelling advantage narrows and the data asset becomes the defensible part. That is a smaller position than the company pitched at launch, and it is a real one. Recursion's October 15 Sanofi candidate option triggered a $10 million milestone payment. It gives me a disclosed partner handoff to compare with Xaira's preclinical work, while leaving clinical translation open. Iambic's October IPO also adds a clinical-stage public comparator. I want to compare its disclosed spending and progress with Xaira's internal pipeline, without assuming the technologies or candidates are interchangeable. OpenAI's acquisition of Orchestra Bio adds a different kind of pressure: Rosalind is moving from scientific reasoning and experiment planning into development coordination. It could make workflow software less differentiated, but the announcement offers no clinical result or independent evidence of faster development.",
     team:
       'Co-founded and led by Marc Tessier-Lavigne as Chairman and CEO, previously Executive Vice President for Research and Chief Scientific Officer at Genentech and later president of Rockefeller and Stanford. Co-founder Hetu Kamisetty is CTO. David Baker, the 2024 Nobel laureate in Chemistry for computational protein design, is a co-founder. Paulo Fontoura joined as Chief Medical Officer from Roche. The board includes Carolyn Bertozzi and Scott Gottlieb. On paper this is close to the strongest team in the sector; the open question is whether an organisation assembled this way can move quickly.',
     risks: [
@@ -1395,8 +1413,14 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is more specific: I now have experimental claims to investigate alongside the data asset. X-Design’s antibody examples strengthen the case for doing that work without settling platform generality or clinical translation. I still want a partner who can independently assess the work, and I would like to see the promised systematic evaluation rather than only selected campaigns.",
 
-    lastReviewed: "October 18, 2026",
+    lastReviewed: "October 20, 2026",
     sources: [
+      {
+        "title": "OpenAI acquires Orchestra Bio",
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
+        "publishedAt": "October 20, 2026"
+      },
       {
         "title": "Iambic announces IPO pricing",
         "publisher": "Iambic Therapeutics",
