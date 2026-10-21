@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 36,
+  "revision": 37,
   "lock": {
     "owner": "daily-2026-10-20-1792548123498-5ie0f9ib",
     "acquiredAt": "2026-10-21T02:02:03.498Z",
@@ -39,7 +39,7 @@
     "candidateSha": "48a12f8cfaa868a0237a6f04d25475130e9810b6",
     "candidateTree": "d709dda0adf285bf3be9e3d440dda02f022d0559",
     "candidateBranch": "healthcare-daily-2026-10-20",
-    "stage": "validated-candidate",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-10-21T02:09:47.792Z",
     "sourceWindowStart": "2026-10-20T02:04:58.545Z",
     "sourceWindowEnd": "2026-10-21T02:09:47.792Z",
@@ -69,7 +69,8 @@
       "isomorphic-labs",
       "xaira",
       "inceptive"
-    ]
+    ],
+    "mainAdvancedAt": "2026-10-21T02:10:12.564Z"
   },
   "recentRuns": [
     {
