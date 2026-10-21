@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 35,
+  "revision": 36,
   "lock": {
     "owner": "daily-2026-10-20-1792548123498-5ie0f9ib",
     "acquiredAt": "2026-10-21T02:02:03.498Z",
@@ -32,7 +32,45 @@
       "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternReviewDate": "2026-10-20",
+    "baseSha": "762828f4e61399dbe1b366695d52df3a8bed2078",
+    "candidateSha": "48a12f8cfaa868a0237a6f04d25475130e9810b6",
+    "candidateTree": "d709dda0adf285bf3be9e3d440dda02f022d0559",
+    "candidateBranch": "healthcare-daily-2026-10-20",
+    "stage": "validated-candidate",
+    "createdAt": "2026-10-21T02:09:47.792Z",
+    "sourceWindowStart": "2026-10-20T02:04:58.545Z",
+    "sourceWindowEnd": "2026-10-21T02:09:47.792Z",
+    "sourceUrls": [
+      "https://openai.com/index/openai-to-acquire-orchestra-bio/",
+      "https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html",
+      "https://www.sec.gov/Archives/edgar/data/1479615/000119312526424695/d172259d8k.htm"
+    ],
+    "checks": {
+      "npmCi": "PASS remote lockfile, Node 24.19.0",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 221 notes, 1 prior thesis",
+      "build": "PASS exact tree d709dda0adf285bf3be9e3d440dda02f022d0559",
+      "preservation": "PASS all 219 previous notes, macro/prior thesis, archive IDs, predictions, old sources and all other memo fields retained",
+      "writingReview": "Bundled detector and preservation validator executed on two notes and three memo additions; no issues, errors or warnings. Full changed passages reviewed in context; no authorship conclusion.",
+      "remoteTreeAndFileReadback": "PASS exact validated tree and both blob SHAs"
+    },
+    "counts": {
+      "current": 10,
+      "archived": 2,
+      "notes": 221
+    },
+    "newEntryIds": [
+      "2026-10-openai-orchestra-bio",
+      "2026-10-merck-silence"
+    ],
+    "affectedMemos": [
+      "isomorphic-labs",
+      "xaira",
+      "inceptive"
+    ]
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
