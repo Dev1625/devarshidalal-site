@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 37,
+  "revision": 38,
   "lock": {
     "owner": "daily-2026-10-20-1792548123498-5ie0f9ib",
     "acquiredAt": "2026-10-21T02:02:03.498Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "762828f4e61399dbe1b366695d52df3a8bed2078",
-    "vercelDeploymentId": "dpl_CarpKb9QyfeuVZPG8ENjBcrvDzqA",
-    "lastVerifiedAt": "2026-10-20T02:07:15.798Z",
+    "lastVerifiedSha": "48a12f8cfaa868a0237a6f04d25475130e9810b6",
+    "vercelDeploymentId": "dpl_78WHjEdCCe5ZxxfC2fzymp6MwrMv",
+    "lastVerifiedAt": "2026-10-21T02:14:21.675Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-19",
-      "checkpointProvenance": "Daily delta researched with overlap and deduplication. City issuer confirms $230M gross IPO closing including option; legal disposition explicitly attributed to Fierce reporting because direct filing access unavailable. Two notes and two memo updates validated and verified live.",
-      "sourceWindowStart": "2026-10-19T02:05:10.888Z",
-      "sourceWindowEnd": "2026-10-20T02:04:58.545Z",
-      "lastSuccessfulReviewAt": "2026-10-20T02:04:58.545Z",
-      "lastSuccessfulPublicationAt": "2026-10-20T02:07:15.798Z"
+      "lastSuccessfulEasternDate": "2026-10-20",
+      "checkpointProvenance": "Daily delta researched with overlap and deduplication. OpenAI's completed Orchestra Bio acquisition and Merck KGaA's proposed Silence Therapeutics acquisition were added as two sourced notes, with completed versus agreed status, disclosed values and clinical-evidence limits kept separate. Three related comparison passages were updated and verified live.",
+      "sourceWindowStart": "2026-10-20T02:04:58.545Z",
+      "sourceWindowEnd": "2026-10-21T02:09:47.792Z",
+      "lastSuccessfulReviewAt": "2026-10-21T02:09:47.792Z",
+      "lastSuccessfulPublicationAt": "2026-10-21T02:14:21.675Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-17",
@@ -32,46 +32,7 @@
       "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-10-20",
-    "baseSha": "762828f4e61399dbe1b366695d52df3a8bed2078",
-    "candidateSha": "48a12f8cfaa868a0237a6f04d25475130e9810b6",
-    "candidateTree": "d709dda0adf285bf3be9e3d440dda02f022d0559",
-    "candidateBranch": "healthcare-daily-2026-10-20",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-21T02:09:47.792Z",
-    "sourceWindowStart": "2026-10-20T02:04:58.545Z",
-    "sourceWindowEnd": "2026-10-21T02:09:47.792Z",
-    "sourceUrls": [
-      "https://openai.com/index/openai-to-acquire-orchestra-bio/",
-      "https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html",
-      "https://www.sec.gov/Archives/edgar/data/1479615/000119312526424695/d172259d8k.htm"
-    ],
-    "checks": {
-      "npmCi": "PASS remote lockfile, Node 24.19.0",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 221 notes, 1 prior thesis",
-      "build": "PASS exact tree d709dda0adf285bf3be9e3d440dda02f022d0559",
-      "preservation": "PASS all 219 previous notes, macro/prior thesis, archive IDs, predictions, old sources and all other memo fields retained",
-      "writingReview": "Bundled detector and preservation validator executed on two notes and three memo additions; no issues, errors or warnings. Full changed passages reviewed in context; no authorship conclusion.",
-      "remoteTreeAndFileReadback": "PASS exact validated tree and both blob SHAs"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 221
-    },
-    "newEntryIds": [
-      "2026-10-openai-orchestra-bio",
-      "2026-10-merck-silence"
-    ],
-    "affectedMemos": [
-      "isomorphic-labs",
-      "xaira",
-      "inceptive"
-    ],
-    "mainAdvancedAt": "2026-10-21T02:10:12.564Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -435,6 +396,68 @@
         "home": "HTTP 200; 10 current, 2 past cases, 219 notes",
         "fund": "HTTP 200; thesis preserved",
         "vercel": "READY exact tested SHA on production domain devarshidalal.com"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-10-20",
+      "easternDate": "2026-10-20",
+      "baseSha": "762828f4e61399dbe1b366695d52df3a8bed2078",
+      "candidateSha": "48a12f8cfaa868a0237a6f04d25475130e9810b6",
+      "candidateTree": "d709dda0adf285bf3be9e3d440dda02f022d0559",
+      "candidateBranch": "healthcare-daily-2026-10-20",
+      "stage": "published-and-verified",
+      "createdAt": "2026-10-21T02:09:47.792Z",
+      "completedAt": "2026-10-21T02:14:21.675Z",
+      "result": "published-and-verified",
+      "commit": "48a12f8cfaa868a0237a6f04d25475130e9810b6",
+      "deploymentId": "dpl_78WHjEdCCe5ZxxfC2fzymp6MwrMv",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 221
+      },
+      "newEntryIds": [
+        "2026-10-openai-orchestra-bio",
+        "2026-10-merck-silence"
+      ],
+      "affectedMemos": [
+        "isomorphic-labs",
+        "xaira",
+        "inceptive"
+      ],
+      "sourceUrls": [
+        "https://openai.com/index/openai-to-acquire-orchestra-bio/",
+        "https://www.emdgroup.com/en/news/silence-therapeutics-19-10-2026.html",
+        "https://www.sec.gov/Archives/edgar/data/1479615/000119312526424695/d172259d8k.htm"
+      ],
+      "sourceWindowStart": "2026-10-20T02:04:58.545Z",
+      "sourceWindowEnd": "2026-10-21T02:09:47.792Z",
+      "checks": {
+        "npmCi": "PASS remote lockfile, Node 24.19.0",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 221 notes, 1 prior thesis",
+        "build": "PASS exact tree d709dda0adf285bf3be9e3d440dda02f022d0559",
+        "preservation": "PASS all 219 previous notes, macro/prior thesis, archive IDs, historical predictions, old sources and all other memo fields retained",
+        "writingReview": "Bundled detector and preservation validator executed on two notes and three memo additions; no issues, errors or warnings. Full changed passages reviewed in context; no authorship conclusion.",
+        "remoteTreeAndFileReadback": "PASS exact validated tree and both blob SHAs"
+      },
+      "sourceCoverage": "Targeted delta searches across all ten current companies, relevant competitors, financing, licensing/M&A, clinical, regulatory, manufacturing and leadership developments; official company, investor and SEC sources prioritized. Prior publications were deduplicated. No company-universe or macro-thesis change.",
+      "limitations": "No exhaustive registry coverage claimed. Merck/Silence Phase 2 efficacy figures are issuer-reported and explicitly treated as asset evidence rather than proof of an RNA-design software valuation; the transaction remains subject to closing conditions.",
+      "liveVerification": {
+        "following": "221 entries; both October 20 notes expanded and checked with separate actual event dates, status distinctions and primary source links",
+        "filters": "M&A and licensing 30 entries; both new notes present",
+        "current": "10 stable current memo links",
+        "archives": "2 stable IDs; turn-bio and evolutionaryscale memo pages live",
+        "affectedMemos": "Isomorphic, Xaira and Inceptive live with new source-backed comparison passages and links; October 20 review dates present",
+        "home": "10 current, 2 past cases, 221 entries",
+        "fund": "Current thesis retained",
+        "vercel": "READY exact tested SHA on production project and existing domain devarshidalal.com"
+      },
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
       }
     }
   ],
