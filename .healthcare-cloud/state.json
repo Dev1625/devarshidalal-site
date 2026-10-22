@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 40,
+  "revision": 41,
   "lock": {
     "owner": "daily-2026-10-21-1792634241861-rj61l0ua",
     "acquiredAt": "2026-10-22T01:57:21.861Z",
@@ -32,7 +32,54 @@
       "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternReviewDate": "2026-10-21",
+    "baseSha": "48a12f8cfaa868a0237a6f04d25475130e9810b6",
+    "candidateSha": "441eb3b116623f4f09cb14aaf8487749221c30e8",
+    "candidateTree": "f45d79f633915ea47d1095c42ad425d638fbb3b3",
+    "candidateBranch": "healthcare/daily-2026-10-21",
+    "stage": "candidate-validated",
+    "createdAt": "2026-10-22T02:06:39.217Z",
+    "checks": {
+      "npmCi": "PASS remote lockfile, Node 24.19.0",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 224 notes, 1 prior thesis",
+      "build": "PASS exact tree f45d79f633915ea47d1095c42ad425d638fbb3b3",
+      "preservation": "PASS all 221 previous notes, macro/prior thesis, archive IDs, historical predictions and unrelated memo content retained; deterministic validator reported no blocking errors",
+      "writingReview": "Bundled detector executed on changed prose: score 1, minimal signals; one low-severity vocabulary-repetition signal reviewed in context. Preservation validator passed both changed files; its fund numeral warning reflected deliberate source-updated figures and was manually checked. No authorship conclusion.",
+      "remoteTreeAndFileReadback": "PASS exact tree and both blob SHAs"
+    },
+    "counts": {
+      "current": 10,
+      "archived": 2,
+      "notes": 224
+    },
+    "newEntryIds": [
+      "2026-10-openevidence-ft-ad-revenue",
+      "2026-10-isomorphic-still-preclinical",
+      "2026-10-xaira-x-scientist"
+    ],
+    "affectedMemos": [
+      "openevidence",
+      "isomorphic-labs",
+      "xaira"
+    ],
+    "sourceUrls": [
+      "https://www.ft.com/content/0ed17b79-47dd-4ad8-8dca-44eb35617edc",
+      "https://www.bostonglobe.com/2026/10/21/business/isomorphic-labs-drugmaking/",
+      "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform"
+    ],
+    "sourceWindowStart": "2026-10-21T02:09:47.792Z",
+    "sourceWindowEnd": "2026-10-22T02:06:39.217Z",
+    "sourceCoverage": "Targeted delta searches across all ten current companies and relevant competitors, financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company sources and reputable reporting were prioritized; prior notes and stale republications were deduplicated. No company-universe or macro-thesis change.",
+    "limitations": "OpenEvidence volume is company-reported and its revenue range is a source projection cited by the Financial Times, not audited or recognized revenue. Isomorphic's report supports continued preclinical status and a refusal to reaffirm the deadline, not an announced delay. Xaira's wet-lab comparison is company-run in one cellular context, not an animal or patient result.",
+    "verification": {
+      "mainAdvanced": false,
+      "vercelReady": false,
+      "domain": "devarshidalal.com",
+      "liveChecked": false
+    }
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
