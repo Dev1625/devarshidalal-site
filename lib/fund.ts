@@ -269,11 +269,11 @@ export const COMPANIES: Company[] = [
       },
       {
         "label": "Revenue",
-        "value": "~$300M annualised, July 2026 estimate from Sacra; reported ~90% gross margin"
+        "value": "~$300M annualised in July (Sacra estimate); FT source projects $400M–$500M of 2026 ad revenue"
       }
     ],
     summary:
-      "The strongest adoption story in this collection, and still a business whose economics I want to understand better. Verified clinicians receive literature-backed answers without paying for access. Sacra estimates a roughly $300 million annualised revenue run rate in July 2026; it is not audited revenue. September’s completed financing puts the reported valuation at $15 billion. I like the habit being built, but advertising concentration and entry price remain open questions.",
+      "The strongest adoption story in this collection, and still a business whose economics I want to understand better. Verified clinicians receive literature-backed answers without paying for access. Sacra estimated a roughly $300 million annualised revenue run rate in July. An October Financial Times report cites a source close to the company projecting $400 million to $500 million of 2026 advertising revenue. Neither figure is audited revenue. September’s completed financing puts the reported valuation at $15 billion. I like the habit being built, but advertising concentration and entry price remain open questions.",
     problem:
       'Medical knowledge doubles faster than any clinician can read, and the moment of need is not a moment with time in it. A physician sees a patient with an unusual drug interaction or an atypical presentation, and needs an answer during the visit. The realistic alternatives are recalling something from training, asking whoever is nearby, or using a general search engine that surfaces content optimised for consumers rather than clinicians. UpToDate exists and is good, but it is a subscription product with editorial lag, and it answers the question someone anticipated rather than the one being asked.',
     product:
@@ -287,6 +287,11 @@ export const COMPANIES: Company[] = [
         "label": "Revenue",
         "value": "~$300M annualised in July 2026, estimated by Sacra",
         "read": "The growth matters, but this is an estimate of a run rate, not audited annual revenue. I should not have treated the margin as impossible to fake."
+      },
+      {
+        "label": "Reported 2026 ad revenue projection",
+        "value": "$400M–$500M, from a source close to the company cited by the Financial Times",
+        "read": "This is a projection, not audited or recognised revenue. The same report says the company recorded more than 42 million physician prompts last month; that volume is also company-reported."
       },
       {
         "label": "Consultations",
@@ -330,7 +335,7 @@ export const COMPANIES: Company[] = [
       'Co-founded in 2022 by Daniel Nadler and Zachary Ziegler. Nadler holds a PhD from Harvard and previously founded Kensho Technologies, which S&P Global acquired in 2018, so this is a second-time founder who has already built and sold a data business into a regulated industry. Ziegler is CTO, an ML researcher out of Alexander Rush\'s NLP lab at Harvard. Both cite personal medical experiences as motivation, which I mention because it is consistent with a company that chose to give the product away to clinicians rather than charge them.',
     risks: [
       {
-        "risk": "A $15B entry price on an estimated $300M annualised run rate is roughly 50x. Estimates, ad-budget exposure and entry price all matter.",
+        "risk": "A $15B entry price is roughly 50x Sacra’s estimated July annualised run rate and 30–38x the Financial Times source’s projected 2026 ad revenue. Estimates, ad-budget exposure and entry price all matter.",
         "mitigant": "Rapid adoption is encouraging, but it is not a substitute for audited revenue and retention."
       },
       {
@@ -361,10 +366,16 @@ export const COMPANIES: Company[] = [
       'Disclosure that revenue depends on a small number of advertisers.',
     ],
     view:
-      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion against Sacra’s estimated $300 million annualised revenue, the rough multiple is 50 times, before asking what revenue will actually be earned over a year. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic deployment strengthens the distribution case and extends access beyond physicians. It does not disclose a new revenue stream. JAMA now adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
+      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion, the valuation is roughly 50 times Sacra’s estimated July annualised run rate and 30 to 38 times the Financial Times source’s projected 2026 advertising revenue. Both are estimates, not audited revenue. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic deployment strengthens the distribution case and extends access beyond physicians. It does not disclose a new revenue stream. JAMA now adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
 
-    lastReviewed: "October 19, 2026",
+    lastReviewed: "October 21, 2026",
     sources: [
+      {
+        "title": "The $15bn 'viral' AI start-up changing how American doctors treat patients",
+        "publisher": "Financial Times",
+        "url": "https://www.ft.com/content/0ed17b79-47dd-4ad8-8dca-44eb35617edc",
+        "publishedAt": "October 21, 2026"
+      },
       {
         "title": "OpenEvidence, Doximity reach settlement in contentious AI legal battle",
         "publisher": "Fierce Healthcare",
@@ -612,7 +623,7 @@ export const COMPANIES: Company[] = [
       { label: 'Valuation', value: 'Completed rounds undisclosed; Oct 8 talks reportedly target $40B–$50B' },
     ],
     summary:
-      'The company whose outcome I care most about and where I have the least ability to check anything independently. The bet is that predicting how a molecule and a protein fit together accurately enough lets you skip a large share of the trial and error that makes drug discovery cost billions and take fifteen years. Everything about the science says this should work. Nothing yet says it does, because as of August 2026 Isomorphic has not put a molecule into a person, and the timeline for doing so has already moved by a year.',
+      'The company whose outcome I care most about and where I have the least ability to check anything independently. The bet is that predicting how a molecule and a protein fit together accurately enough lets you skip a large share of the trial and error that makes drug discovery cost billions and take fifteen years. Everything about the science says this should work. Nothing yet says it does. In an October 21 report, executives confirmed that the company remains preclinical and would not say whether it still expects to begin human testing by year-end.',
     problem:
       'A new drug takes roughly a decade and costs on the order of two billion dollars, and around nine in ten candidates that clear animal safety still fail in humans. A large share of that cost is spent finding and optimising molecules that bind a target well, which is done through medicinal chemistry cycles that are slow, expensive and substantially trial and error. If binding could be predicted rather than discovered, the front half of that pipeline compresses dramatically.',
     product:
@@ -624,8 +635,8 @@ export const COMPANIES: Company[] = [
     traction: [
       {
         label: 'Molecules in humans',
-        value: "No dosing announcement located",
-        read: "I have not located a patient-dosing announcement in the material reviewed. First trials are now targeted for the end of 2026, revised at Davos in January from an end-2025 target.",
+        value: "Still preclinical, reported October 21, 2026",
+        read: "STAT reports that executives confirmed the company remains preclinical and declined to reaffirm the end-2026 trial target. Ben Wolf suggested one or two candidates are in late preclinical development without naming them or giving a trial date. This is not an announced delay or proof that regulatory work has not begun.",
       },
       {
         label: 'Capital raised',
@@ -689,10 +700,16 @@ export const COMPANIES: Company[] = [
       'Two or three additional INDs cleared, which would turn one anecdote into a platform.',
     ],
     view:
-      "My view as of October 2026 is that I still want to follow this through its first human data. The October 7 Virtual Biology Initiative is a useful commitment to shared biological data, not a patient-dosing milestone. I also corrected my own blind spot on the CMO appointment. I have not located a first-patient announcement in the material reviewed, which is narrower than knowing that nobody has been dosed. The end-2026 promise remains the thing to score. The reported $40B–$50B fundraising target makes the entry question harder; I am keeping it labelled as talks, with no addition to capital raised.",
+      "My view as of October 2026 is that I still want to follow this through its first human data. The October 7 Virtual Biology Initiative is a useful commitment to shared biological data, not a patient-dosing milestone. On October 21, executives confirmed the company remains preclinical but would not reaffirm the end-2026 trial target. That is not an announced delay. It makes the first-patient milestone, rather than another platform description, the thing to score. The reported $40B–$50B fundraising target makes the entry question harder; I am keeping it labelled as talks, with no addition to capital raised.",
 
-    lastReviewed: "October 20, 2026",
+    lastReviewed: "October 21, 2026",
     sources: [
+      {
+        "title": "Does Isomorphic Labs have what it takes to revolutionize drugmaking?",
+        "publisher": "STAT, republished by The Boston Globe",
+        "url": "https://www.bostonglobe.com/2026/10/21/business/isomorphic-labs-drugmaking/",
+        "publishedAt": "October 21, 2026"
+      },
       {
         "title": "OpenAI acquires Orchestra Bio",
         "publisher": "OpenAI",
@@ -1343,7 +1360,7 @@ export const COMPANIES: Company[] = [
     problem:
       'Most drug candidates fail because a molecule that binds its target beautifully does something unexpected to the cell or the organism. Structure prediction addresses binding. It does not address what happens to the thousands of other things in the cell when the target is inhibited, which is where most of the surprise lives. Predicting cellular response to perturbation would let you screen for those surprises before spending years in the lab.',
     product:
-      'X-Cell, released March 2026, a virtual cell model predicting transcriptional response to genetic perturbation, trained on X-Atlas/Pisces, which the company describes as the largest genome-wide perturbation dataset built. Alongside it, protein design capability descending from David Baker\'s work at the Institute for Protein Design. The company generates its own training data through automated high-throughput Perturb-seq.',
+      'X-Cell, released March 2026, is a virtual cell model predicting transcriptional response to genetic perturbation, trained on X-Atlas/Pisces, which the company describes as the largest genome-wide perturbation dataset built. Alongside it sits protein design capability descending from David Baker\'s work at the Institute for Protein Design. X-Scientist now connects language models with X-Cell, X-Design, X-Patient and internal research tools to propose and test hypotheses. The company generates its own training data through automated high-throughput Perturb-seq.',
     whyNow:
       'Single-cell sequencing costs fell far enough that genome-scale perturbation screens became affordable around 2022, which is what makes the dataset possible. Before that you could not generate enough data to train a model of this kind at any price. The talent condition was David Baker winning the 2024 Nobel and the surrounding field maturing into something a company could hire out of.',
     market:
@@ -1368,6 +1385,11 @@ export const COMPANIES: Company[] = [
         "label": "Disclosed pipeline work",
         "value": "XA-1 and XA-4, October 2, 2026",
         "read": "Company-reported preclinical examples are a more useful starting point than my old “none announced” shorthand. They are not human evidence."
+      },
+      {
+        "label": "X-Scientist wet-lab test",
+        "value": "7.1% hit rate against 6.9% for human curation in one TGF-beta assay",
+        "read": "Xaira reports 381 agent nominations, 321 human-curated selections and 433 random controls. This company-run liver-cell experiment tests target nomination in one context, not a drug, animal result or patient outcome."
       }
     ],
     competition:
@@ -1411,10 +1433,16 @@ export const COMPANIES: Company[] = [
       'Senior scientific departures, which in a company assembled around specific people would matter more than usual.',
     ],
     view:
-      "My view as of October 2026 is more specific: I now have experimental claims to investigate alongside the data asset. X-Design’s antibody examples strengthen the case for doing that work without settling platform generality or clinical translation. I still want a partner who can independently assess the work, and I would like to see the promised systematic evaluation rather than only selected campaigns.",
+      "My view as of October 2026 is more specific: I now have experimental claims to investigate alongside the data asset. X-Design’s antibody examples and X-Scientist’s wet-lab target screen make the case more testable without settling platform generality or clinical translation. In the reported liver-cell assay, the agent matched human curation on hit rate and was faster, but Xaira designed and reported the experiment. I still want independent assessment and evidence that nominated targets progress into useful molecules.",
 
-    lastReviewed: "October 20, 2026",
+    lastReviewed: "October 21, 2026",
     sources: [
+      {
+        "title": "X-Scientist: A Recursive Self-Improving Agentic AI Platform for Drug Discovery",
+        "publisher": "Xaira Therapeutics",
+        "url": "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform",
+        "publishedAt": "October 21, 2026"
+      },
       {
         "title": "OpenAI acquires Orchestra Bio",
         "publisher": "OpenAI",

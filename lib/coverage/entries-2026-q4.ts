@@ -3,6 +3,78 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-openevidence-ft-ad-revenue",
+    "headline": "OpenEvidence's revenue estimate is getting large enough to test the ad model",
+    "entryDate": "October 21, 2026",
+    "sortKey": "2026-10-21",
+    "eventDate": "October 21, 2026 report",
+    "analysis": "The Financial Times reports that OpenEvidence says US physicians sent more than 42 million prompts to the platform last month. A person close to the company projects $400 million to $500 million of advertising revenue in 2026. Neither figure is audited: the query count is company-reported, and the revenue range is a source's projection rather than recognised revenue.\n\nAt the $15 billion September valuation, that range would imply roughly 30 to 38 times projected 2026 advertising revenue. The growth makes the scale harder to dismiss, but it also makes the conflict question more important. I still need advertiser concentration, renewal behaviour and evidence that the answers remain independent of who pays for the surrounding ad inventory.",
+    "entryType": "industry-observation",
+    "scope": "company",
+    "relatedCompanyIds": [
+      "openevidence"
+    ],
+    "sources": [
+      {
+        "title": "The $15bn 'viral' AI start-up changing how American doctors treat patients",
+        "publisher": "Financial Times",
+        "url": "https://www.ft.com/content/0ed17b79-47dd-4ad8-8dca-44eb35617edc",
+        "publishedAt": "October 21, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-isomorphic-still-preclinical",
+    "headline": "Isomorphic stays preclinical as its year-end trial deadline approaches",
+    "entryDate": "October 21, 2026",
+    "sortKey": "2026-10-21",
+    "eventDate": "October 21, 2026 report",
+    "analysis": "STAT reports that Isomorphic executives confirmed the company remains in preclinical development and declined to say whether it still expects to begin human testing by the end of 2026. Chief Medical Officer Ben Wolf suggested that one or two candidates are in late preclinical development, without naming them or giving a trial date.\n\nThis is not an announced delay, and it does not tell me what regulatory work may be under way. It is a narrower update: ten weeks before the public deadline, the company would not reaffirm it and still has not disclosed a named clinical candidate. The first-patient milestone remains the useful test; another platform description would not answer it.",
+    "entryType": "clinical",
+    "scope": "company",
+    "themes": [
+      "ai-drug-discovery"
+    ],
+    "relatedCompanyIds": [
+      "isomorphic-labs"
+    ],
+    "sources": [
+      {
+        "title": "Does Isomorphic Labs have what it takes to revolutionize drugmaking?",
+        "publisher": "STAT, republished by The Boston Globe",
+        "url": "https://www.bostonglobe.com/2026/10/21/business/isomorphic-labs-drugmaking/",
+        "publishedAt": "October 21, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
+    "id": "2026-10-xaira-x-scientist",
+    "headline": "Xaira's agent finds wet-lab hits about as often as human curation",
+    "entryDate": "October 21, 2026",
+    "sortKey": "2026-10-21",
+    "eventDate": "October 21, 2026",
+    "analysis": "Xaira introduced X-Scientist, an agentic research system connecting language models with its internal data and X-Cell, X-Design and X-Patient models. In a company-run liver-cell experiment, 381 agent-nominated genetic perturbations produced a 7.1% hit rate for reversing a TGF-beta response, compared with 6.9% for 321 human-curated perturbations and 0.9% for 433 random selections. Xaira says the nominations took about 20 minutes, versus more than three hours for human curation.\n\nThis is a wet-lab result, which is more useful to me than another software benchmark. It is still target nomination in one defined cellular context, not a drug candidate, an animal result or a patient outcome. Xaira designed and reported the test, so independent replication and evidence that the nominated targets progress into useful molecules remain open.",
+    "entryType": "platform",
+    "scope": "company",
+    "themes": [
+      "ai-drug-discovery"
+    ],
+    "relatedCompanyIds": [
+      "xaira"
+    ],
+    "sources": [
+      {
+        "title": "X-Scientist: A Recursive Self-Improving Agentic AI Platform for Drug Discovery",
+        "publisher": "Xaira Therapeutics",
+        "url": "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform",
+        "publishedAt": "October 21, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-openai-orchestra-bio",
     "headline": "OpenAI buys Orchestra Bio to extend Rosalind into drug-development workflows",
     "entryDate": "October 20, 2026",
