@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 46,
+  "revision": 47,
   "lock": {
     "owner": "daily-2026-10-22-1792720799204-9g1osbul",
     "acquiredAt": "2026-10-23T01:59:59.204Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "441eb3b116623f4f09cb14aaf8487749221c30e8",
-    "vercelDeploymentId": "dpl_4J8iVwiXasPdma8HLiM2bWQxpC8k",
-    "lastVerifiedAt": "2026-10-22T02:10:11.608Z",
+    "lastVerifiedSha": "0504903b551deedc9c31706a3fc39176acf49070",
+    "vercelDeploymentId": "dpl_F381i8GvPY6UWXfaxQT6DbYg7YLP",
+    "lastVerifiedAt": "2026-10-23T02:11:31.324Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-21",
-      "checkpointProvenance": "Daily delta researched with overlap and deduplication. Added source-qualified notes for OpenEvidence's reported scale and projected advertising revenue, Isomorphic's continued preclinical status and un-reaffirmed year-end target, and Xaira's company-run X-Scientist wet-lab comparison. Updated the three related memos consistently; no company-universe or macro-thesis change.",
-      "sourceWindowStart": "2026-10-21T02:09:47.792Z",
-      "sourceWindowEnd": "2026-10-22T02:06:39.217Z",
-      "lastSuccessfulReviewAt": "2026-10-22T02:06:39.217Z",
-      "lastSuccessfulPublicationAt": "2026-10-22T02:10:11.608Z"
+      "lastSuccessfulEasternDate": "2026-10-22",
+      "checkpointProvenance": "Daily delta researched across all ten current companies and wider healthcare with overlap and deduplication. Published one source-qualified Gilead/PepStar transaction note and updated the related Beeline memo. The agreement remains pending, cash is payable at closing, and Phase 1 evidence limits are explicit. No company-universe or macro-thesis change.",
+      "sourceWindowStart": "2026-10-22T02:06:39.217Z",
+      "sourceWindowEnd": "2026-10-23T02:07:50.125Z",
+      "lastSuccessfulReviewAt": "2026-10-23T02:07:50.125Z",
+      "lastSuccessfulPublicationAt": "2026-10-23T02:11:31.324Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-17",
@@ -32,49 +32,7 @@
       "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-10-22",
-    "baseSha": "441eb3b116623f4f09cb14aaf8487749221c30e8",
-    "candidateSha": "0504903b551deedc9c31706a3fc39176acf49070",
-    "candidateTree": "da682998578bd3b8ca32718b872fd41e64618ae5",
-    "candidateBranch": "healthcare/daily-2026-10-22-9g1osbul",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-23T02:07:50.125Z",
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 225 notes, 1 prior thesis",
-      "build": "PASS exact tree da682998578bd3b8ca32718b872fd41e64618ae5",
-      "preservation": "PASS all 224 previous notes, current/prior thesis, archive IDs, historical predictions and unrelated memo content retained; deterministic validator passed both changed files",
-      "writingReview": "Bundled detector executed on changed prose: score 0, no issues; full changed passages reviewed in context. Preservation validator passed; fund review-date numeral warning checked and non-blocking. No authorship conclusion.",
-      "remoteTreeAndFileReadback": "PASS exact tree and both blob SHAs"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 225
-    },
-    "newEntryIds": [
-      "2026-10-gilead-pepstar"
-    ],
-    "affectedMemos": [
-      "beeline-medicines"
-    ],
-    "sourceUrls": [
-      "https://investors.gilead.com/news/news-details/2026/Gilead-to-Acquire-Investigational-Oral-IL-23R-Inhibitor-HCXT-2001-Strengthening-Its-Inflammation-Pipeline-in-IBD/default.aspx",
-      "https://www.reuters.com/legal/litigation/gilead-buy-pepstars-inflammation-drug-program-128-billion-deal-2026-10-22/"
-    ],
-    "sourceWindowStart": "2026-10-22T02:06:39.217Z",
-    "sourceWindowEnd": "2026-10-23T02:07:50.125Z",
-    "sourceCoverage": "Targeted delta searches across all ten current companies and relevant competitors, financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company sources and reputable reporting prioritized; October 21 publications and stale republications deduplicated. One material October 22 oral-immunology transaction recorded; no company-universe or macro-thesis change.",
-    "limitations": "The definitive agreement is not closed. The $1.275 billion is upfront cash consideration payable at closing, subject to customary adjustments. HCXT-2001 is in Phase 1; safety and efficacy are not established, and Reuters reports no published clinical data.",
-    "verification": {
-      "mainAdvanced": true,
-      "vercelReady": false,
-      "domain": "devarshidalal.com",
-      "liveChecked": false
-    }
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -562,6 +520,64 @@
         "home": "10 current, 2 past cases, 224 entries",
         "fund": "Current October thesis retained",
         "vercel": "READY exact tested SHA 441eb3b116623f4f09cb14aaf8487749221c30e8 on production project and existing domain devarshidalal.com"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-10-22",
+      "baseSha": "441eb3b116623f4f09cb14aaf8487749221c30e8",
+      "candidateSha": "0504903b551deedc9c31706a3fc39176acf49070",
+      "candidateTree": "da682998578bd3b8ca32718b872fd41e64618ae5",
+      "candidateBranch": "healthcare/daily-2026-10-22-9g1osbul",
+      "stage": "published-and-verified",
+      "createdAt": "2026-10-23T02:07:50.125Z",
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 225 notes, 1 prior thesis",
+        "build": "PASS exact tree da682998578bd3b8ca32718b872fd41e64618ae5",
+        "preservation": "PASS all 224 previous notes, current/prior thesis, archive IDs, historical predictions and unrelated memo content retained; deterministic validator passed both changed files",
+        "writingReview": "Bundled detector executed on changed prose: score 0, no issues; full changed passages reviewed in context. Preservation validator passed; fund review-date numeral warning checked and non-blocking. No authorship conclusion.",
+        "remoteTreeAndFileReadback": "PASS exact tree and both blob SHAs"
+      },
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 225
+      },
+      "newEntryIds": [
+        "2026-10-gilead-pepstar"
+      ],
+      "affectedMemos": [
+        "beeline-medicines"
+      ],
+      "sourceUrls": [
+        "https://investors.gilead.com/news/news-details/2026/Gilead-to-Acquire-Investigational-Oral-IL-23R-Inhibitor-HCXT-2001-Strengthening-Its-Inflammation-Pipeline-in-IBD/default.aspx",
+        "https://www.reuters.com/legal/litigation/gilead-buy-pepstars-inflammation-drug-program-128-billion-deal-2026-10-22/"
+      ],
+      "sourceWindowStart": "2026-10-22T02:06:39.217Z",
+      "sourceWindowEnd": "2026-10-23T02:07:50.125Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies and relevant competitors, financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company sources and reputable reporting prioritized; October 21 publications and stale republications deduplicated. One material October 22 oral-immunology transaction recorded; no company-universe or macro-thesis change.",
+      "limitations": "The definitive agreement is not closed. The $1.275 billion is upfront cash consideration payable at closing, subject to customary adjustments. HCXT-2001 is in Phase 1; safety and efficacy are not established, and Reuters reports no published clinical data.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "easternDate": "2026-10-22",
+      "completedAt": "2026-10-23T02:11:31.324Z",
+      "result": "published-and-verified",
+      "commit": "0504903b551deedc9c31706a3fc39176acf49070",
+      "deploymentId": "dpl_F381i8GvPY6UWXfaxQT6DbYg7YLP",
+      "liveVerification": {
+        "following": "225 entries; October 22 note expanded with separate writing/event dates, agreement status, evidence limits and both source links",
+        "filters": "M&A and licensing 31 entries; new Gilead/PepStar note visible",
+        "current": "10 stable current company memo links",
+        "archives": "2 stable IDs and routes: turn-bio and evolutionaryscale",
+        "affectedMemos": "Beeline Medicines live with October 22 review date, source link and transaction comparison",
+        "home": "10 current, 2 past cases, 225 entries",
+        "fund": "Current October thesis retained",
+        "vercel": "READY exact tested SHA on production project and existing domain devarshidalal.com"
       }
     }
   ],
