@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 45,
+  "revision": 46,
   "lock": {
     "owner": "daily-2026-10-22-1792720799204-9g1osbul",
     "acquiredAt": "2026-10-23T01:59:59.204Z",
@@ -39,7 +39,7 @@
     "candidateSha": "0504903b551deedc9c31706a3fc39176acf49070",
     "candidateTree": "da682998578bd3b8ca32718b872fd41e64618ae5",
     "candidateBranch": "healthcare/daily-2026-10-22-9g1osbul",
-    "stage": "validated-candidate",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-10-23T02:07:50.125Z",
     "checks": {
       "npmCi": "PASS remote lockfile",
@@ -67,7 +67,13 @@
     "sourceWindowStart": "2026-10-22T02:06:39.217Z",
     "sourceWindowEnd": "2026-10-23T02:07:50.125Z",
     "sourceCoverage": "Targeted delta searches across all ten current companies and relevant competitors, financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company sources and reputable reporting prioritized; October 21 publications and stale republications deduplicated. One material October 22 oral-immunology transaction recorded; no company-universe or macro-thesis change.",
-    "limitations": "The definitive agreement is not closed. The $1.275 billion is upfront cash consideration payable at closing, subject to customary adjustments. HCXT-2001 is in Phase 1; safety and efficacy are not established, and Reuters reports no published clinical data."
+    "limitations": "The definitive agreement is not closed. The $1.275 billion is upfront cash consideration payable at closing, subject to customary adjustments. HCXT-2001 is in Phase 1; safety and efficacy are not established, and Reuters reports no published clinical data.",
+    "verification": {
+      "mainAdvanced": true,
+      "vercelReady": false,
+      "domain": "devarshidalal.com",
+      "liveChecked": false
+    }
   },
   "recentRuns": [
     {
