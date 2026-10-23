@@ -3,6 +3,34 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-gilead-pepstar",
+    "headline": "Gilead puts $1.275B upfront on an early oral immunology program",
+    "entryDate": "October 22, 2026",
+    "sortKey": "2026-10-22",
+    "eventDate": "October 22, 2026 agreement announcement",
+    "analysis": "Gilead signed a definitive agreement to acquire PepStar's oral IL-23R inhibitor program, including HCXT-2001, for $1.275 billion of upfront cash payable at closing, subject to customary adjustments. The transaction has not closed; Gilead expects it to close in the fourth quarter of 2026. HCXT-2001 is an oral macrocyclic peptide in Phase 1. Gilead says it has an extended half-life and could be used alone or with other programs, but its safety and efficacy have not been established. Reuters notes that no clinical data have been published.\n\nThe price stands out for a program this early. It tells me nothing about whether the drug works. For Beeline, it suggests that buyer appetite for owned oral immunology assets can appear before late-stage proof. It is not a direct lupus comparison: the mechanism and disease differ, and afimetoran has a company-reported Phase 2 topline. I care more about the full human data and the rights Beeline retained than about treating this transaction as category validation.",
+    "entryType": "ma-licensing",
+    "scope": "industry",
+    "relatedCompanyIds": [
+      "beeline-medicines"
+    ],
+    "sources": [
+      {
+        "title": "Gilead to acquire investigational oral IL-23R inhibitor HCXT-2001",
+        "publisher": "Gilead Sciences",
+        "url": "https://investors.gilead.com/news/news-details/2026/Gilead-to-Acquire-Investigational-Oral-IL-23R-Inhibitor-HCXT-2001-Strengthening-Its-Inflammation-Pipeline-in-IBD/default.aspx",
+        "publishedAt": "October 22, 2026"
+      },
+      {
+        "title": "Gilead to buy PepStar's inflammation drug program in $1.28 billion deal",
+        "publisher": "Reuters",
+        "url": "https://www.reuters.com/legal/litigation/gilead-buy-pepstars-inflammation-drug-program-128-billion-deal-2026-10-22/",
+        "publishedAt": "October 22, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-openevidence-ft-ad-revenue",
     "headline": "OpenEvidence's revenue estimate is getting large enough to test the ad model",
     "entryDate": "October 21, 2026",

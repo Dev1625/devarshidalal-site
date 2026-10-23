@@ -1531,7 +1531,7 @@ export const COMPANIES: Company[] = [
       },
     ],
     competition:
-      'The immediate competition is the existing standard of care and the biologics already approved in lupus. The strategically more important competition is autoimmune cell therapy, where Kyverna is preparing what would be the first CAR-T regulatory filing in autoimmune disease and Cabaletta is heading toward a myositis submission. If cell therapy delivers durable drug-free remission, a chronic oral therapy competes on convenience and cost rather than on outcome, which is a weaker position. If cell therapy proves too toxic or too expensive for a disease people live with for decades, an oral option wins by default.',
+      "The immediate competition is the existing standard of care and the biologics already approved in lupus. The strategically more important competition is autoimmune cell therapy, where Kyverna is preparing what would be the first CAR-T regulatory filing in autoimmune disease and Cabaletta is heading toward a myositis submission. If cell therapy delivers durable drug-free remission, a chronic oral therapy competes on convenience and cost rather than on outcome, which is a weaker position. If cell therapy proves too toxic or too expensive for a disease people live with for decades, an oral option wins by default. Gilead's October 22 agreement to pay $1.275 billion upfront for PepStar's Phase 1 oral IL-23R program is not a direct lupus comparison, but it is another buyer-appetite datapoint for owned oral immunology assets. Without published clinical data, it says more about price and strategy than efficacy.",
     team:
       'Saqib Islam is CEO, having previously led SpringWorks Therapeutics through its acquisition by Merck KGaA in 2025. That is the fact I weight most in this memo. A CEO who has just completed a sale to large pharma knows exactly what a buyer diligences and builds the company backwards from that. The board is chaired by Daniel S. Lynch, with Robert Plenge, Nicholas Downing, Adam Koppel and Andrew Kaplan since the July 2025 Series A close.',
     risks: [
@@ -1569,7 +1569,7 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of September 2026 is that the readout landed and I still do not have a differentiated scientific view, which is an uncomfortable pair of things to hold at once. I added the company for category exposure, and the readout was positive. I am keeping it because Phase 3 is a real question I can now do work on, not because Phase 2 vindicated anything I actually said. On October 17, my next gate is the full dose-level dataset and the confirmatory protocol. I also need cash and burn by program: the $426.3 million financing total does not tell me present runway or the cost of taking several assets forward.",
 
-    lastReviewed: "October 17, 2026",
+    lastReviewed: "October 22, 2026",
     sources: [
       {
         title: 'Current clinical and preclinical pipeline',
@@ -1587,6 +1587,12 @@ export const COMPANIES: Company[] = [
         "publisher": "Beeline Medicines",
         "url": "https://beelinemedicines.com/press-releases/beeline-medicines-announces-positive-topline-results-from-global-phase-2-study-of-afimetoran-in-systemic-lupus-erythematosus/",
         "publishedAt": "September 9, 2026"
+      },
+      {
+        "title": "Gilead to acquire investigational oral IL-23R inhibitor HCXT-2001",
+        "publisher": "Gilead Sciences",
+        "url": "https://investors.gilead.com/news/news-details/2026/Gilead-to-Acquire-Investigational-Oral-IL-23R-Inhibitor-HCXT-2001-Strengthening-Its-Inflammation-Pipeline-in-IBD/default.aspx",
+        "publishedAt": "October 22, 2026"
       }
     ],
   },
