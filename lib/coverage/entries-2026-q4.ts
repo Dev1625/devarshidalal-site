@@ -3,6 +3,31 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-xaira-x-automate",
+    "headline": "Xaira connects its agent to the lab and keeps the HPLC running",
+    "entryDate": "October 23, 2026",
+    "sortKey": "2026-10-23",
+    "eventDate": "October 23, 2026",
+    "analysis": "Xaira introduced X-Automate, a lab-automation system linking X-Scientist to an in-house vision-guided robot and existing lab instruments. In a company-run seven-day HPLC deployment, the system moved and analyzed 18 96-well plates. Xaira reports 97.2% instrument utilization versus 53.6% in a modeled weekday 9-to-5 loading schedule, or 80% more plates.\n\nThat baseline is modeled rather than measured against a human-operated week. The run also needed human intervention: four interruptions in upstream plate storage required manual recovery, although Xaira says it observed no X-Bot or X-Scientist errors during the week. I care because faster experimental feedback could strengthen the proprietary data loop behind Xaira's models. It still tells me nothing about whether the resulting targets or antibodies become useful medicines.",
+    "entryType": "platform",
+    "scope": "company",
+    "themes": [
+      "ai-drug-discovery"
+    ],
+    "relatedCompanyIds": [
+      "xaira"
+    ],
+    "sources": [
+      {
+        "title": "X-Automate brings physical and agentic AI to the lab",
+        "publisher": "Xaira Therapeutics",
+        "url": "https://www.xaira.com/news/x-automate-brings-physical-and-agentic-ai-to-labs",
+        "publishedAt": "October 23, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-gilead-pepstar",
     "headline": "Gilead puts $1.275B upfront on an early oral immunology program",
     "entryDate": "October 22, 2026",
