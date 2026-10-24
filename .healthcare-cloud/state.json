@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 50,
+  "revision": 51,
   "lock": {
     "owner": "daily-2026-10-23-1792806992479-5qcs95g4",
     "acquiredAt": "2026-10-24T01:56:32.479Z",
@@ -39,7 +39,7 @@
     "candidateSha": "9403ad47fddc8f91b7bcdaa2bd7e7596a2a42e22",
     "candidateTree": "acabd3a5e1889015d8b83c5cadad7f84a34b5a8f",
     "candidateBranch": "healthcare/daily-2026-10-23-5qcs95g4",
-    "stage": "validated-candidate",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-10-24T02:01:13.795Z",
     "checks": {
       "npmCi": "PASS remote lockfile",
@@ -66,7 +66,8 @@
     "sourceWindowStart": "2026-10-23T02:07:50.125Z",
     "sourceWindowEnd": "2026-10-24T02:01:13.795Z",
     "sourceCoverage": "Targeted delta searches across all ten current companies and relevant competitors, financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company sources and reputable reporting prioritized; prior publications and stale results deduplicated. One material October 23 current-company automation update recorded; no company-universe or macro-thesis change.",
-    "limitations": "Xaira's seven-day HPLC result is company-run. The 53.6% human-loading comparison is modeled, not a measured human-operated week. Four upstream plate-storage interruptions required manual recovery. This is operational throughput evidence, not evidence of molecule quality or patient benefit."
+    "limitations": "Xaira's seven-day HPLC result is company-run. The 53.6% human-loading comparison is modeled, not a measured human-operated week. Four upstream plate-storage interruptions required manual recovery. This is operational throughput evidence, not evidence of molecule quality or patient benefit.",
+    "mainAdvancedAt": "2026-10-24T02:01:37.230Z"
   },
   "recentRuns": [
     {
