@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 49,
+  "revision": 50,
   "lock": {
     "owner": "daily-2026-10-23-1792806992479-5qcs95g4",
     "acquiredAt": "2026-10-24T01:56:32.479Z",
@@ -32,7 +32,42 @@
       "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternReviewDate": "2026-10-23",
+    "baseSha": "0504903b551deedc9c31706a3fc39176acf49070",
+    "candidateSha": "9403ad47fddc8f91b7bcdaa2bd7e7596a2a42e22",
+    "candidateTree": "acabd3a5e1889015d8b83c5cadad7f84a34b5a8f",
+    "candidateBranch": "healthcare/daily-2026-10-23-5qcs95g4",
+    "stage": "validated-candidate",
+    "createdAt": "2026-10-24T02:01:13.795Z",
+    "checks": {
+      "npmCi": "PASS remote lockfile",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 226 notes, 1 prior thesis",
+      "build": "PASS exact tree acabd3a5e1889015d8b83c5cadad7f84a34b5a8f",
+      "preservation": "PASS: both changed files; all prior notes, thesis, IDs, archives, predictions and unrelated memo content retained. Fund numeral warning reflected a changed review date and was reviewed.",
+      "writingReview": "Bundled detector executed on all added prose: score 0, no issues. Complete changed passages reviewed in context; no authorship conclusion.",
+      "remoteTreeAndFileReadback": "PASS exact tree and both blob SHAs"
+    },
+    "counts": {
+      "current": 10,
+      "archived": 2,
+      "notes": 226
+    },
+    "newEntryIds": [
+      "2026-10-xaira-x-automate"
+    ],
+    "affectedMemos": [
+      "xaira"
+    ],
+    "sourceUrls": [
+      "https://www.xaira.com/news/x-automate-brings-physical-and-agentic-ai-to-labs"
+    ],
+    "sourceWindowStart": "2026-10-23T02:07:50.125Z",
+    "sourceWindowEnd": "2026-10-24T02:01:13.795Z",
+    "sourceCoverage": "Targeted delta searches across all ten current companies and relevant competitors, financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company sources and reputable reporting prioritized; prior publications and stale results deduplicated. One material October 23 current-company automation update recorded; no company-universe or macro-thesis change.",
+    "limitations": "Xaira's seven-day HPLC result is company-run. The 53.6% human-loading comparison is modeled, not a measured human-operated week. Four upstream plate-storage interruptions required manual recovery. This is operational throughput evidence, not evidence of molecule quality or patient benefit."
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
