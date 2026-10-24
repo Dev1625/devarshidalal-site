@@ -1360,7 +1360,7 @@ export const COMPANIES: Company[] = [
     problem:
       'Most drug candidates fail because a molecule that binds its target beautifully does something unexpected to the cell or the organism. Structure prediction addresses binding. It does not address what happens to the thousands of other things in the cell when the target is inhibited, which is where most of the surprise lives. Predicting cellular response to perturbation would let you screen for those surprises before spending years in the lab.',
     product:
-      'X-Cell, released March 2026, is a virtual cell model predicting transcriptional response to genetic perturbation, trained on X-Atlas/Pisces, which the company describes as the largest genome-wide perturbation dataset built. Alongside it sits protein design capability descending from David Baker\'s work at the Institute for Protein Design. X-Scientist now connects language models with X-Cell, X-Design, X-Patient and internal research tools to propose and test hypotheses. The company generates its own training data through automated high-throughput Perturb-seq.',
+      'X-Cell, released March 2026, is a virtual cell model predicting transcriptional response to genetic perturbation, trained on X-Atlas/Pisces, which the company describes as the largest genome-wide perturbation dataset built. Alongside it sits protein design capability descending from David Baker\'s work at the Institute for Protein Design. X-Scientist connects language models with X-Cell, X-Design, X-Patient and internal research tools to propose and test hypotheses. X-Automate now connects that agent to lab workcells, existing instruments and an in-house vision-guided robot called X-Bot. The company generates its own training data through automated high-throughput Perturb-seq.',
     whyNow:
       'Single-cell sequencing costs fell far enough that genome-scale perturbation screens became affordable around 2022, which is what makes the dataset possible. Before that you could not generate enough data to train a model of this kind at any price. The talent condition was David Baker winning the 2024 Nobel and the surrounding field maturing into something a company could hire out of.',
     market:
@@ -1390,6 +1390,11 @@ export const COMPANIES: Company[] = [
         "label": "X-Scientist wet-lab test",
         "value": "7.1% hit rate against 6.9% for human curation in one TGF-beta assay",
         "read": "Xaira reports 381 agent nominations, 321 human-curated selections and 433 random controls. This company-run liver-cell experiment tests target nomination in one context, not a drug, animal result or patient outcome."
+      },
+      {
+        "label": "X-Automate HPLC deployment",
+        "value": "18 plates over seven days; 97.2% utilization against a 53.6% modeled weekday schedule",
+        "read": "Xaira reports 80% more plates than the modeled 9-to-5 baseline. Four upstream storage interruptions still needed manual recovery, so this is a useful production test rather than evidence of a fully autonomous lab."
       }
     ],
     competition:
@@ -1424,6 +1429,7 @@ export const COMPANIES: Company[] = [
       'What is the annual burn against $1.3B, and what is the expected runway?',
       'What target classes are the internal programs against, and what stage is the most advanced?',
       'What specifically is the company seeking from data partners, and what is it offering in return?',
+      'How often does X-Automate need manual recovery outside the selected HPLC workflow, and does it materially shorten the design-test cycle?',
       'What is the retention picture on senior scientific staff two years post-launch?',
     ],
     changeMyMind: [
@@ -1433,10 +1439,16 @@ export const COMPANIES: Company[] = [
       'Senior scientific departures, which in a company assembled around specific people would matter more than usual.',
     ],
     view:
-      "My view as of October 2026 is more specific: I now have experimental claims to investigate alongside the data asset. X-Design’s antibody examples and X-Scientist’s wet-lab target screen make the case more testable without settling platform generality or clinical translation. In the reported liver-cell assay, the agent matched human curation on hit rate and was faster, but Xaira designed and reported the experiment. I still want independent assessment and evidence that nominated targets progress into useful molecules.",
+      "My view as of October 23 is more specific: I now have experimental and operational claims to investigate alongside the data asset. X-Design’s antibody examples and X-Scientist’s wet-lab target screen make the biology more testable. X-Automate adds evidence that Xaira is building the physical feedback loop as well as the models. Its week-long HPLC test kept the instrument busy, but the comparison was modeled and four upstream interruptions needed human recovery. I still want independent assessment and evidence that this faster loop produces useful medicines.",
 
-    lastReviewed: "October 21, 2026",
+    lastReviewed: "October 23, 2026",
     sources: [
+      {
+        "title": "X-Automate brings physical and agentic AI to the lab",
+        "publisher": "Xaira Therapeutics",
+        "url": "https://www.xaira.com/news/x-automate-brings-physical-and-agentic-ai-to-labs",
+        "publishedAt": "October 23, 2026"
+      },
       {
         "title": "X-Scientist: A Recursive Self-Improving Agentic AI Platform for Drug Discovery",
         "publisher": "Xaira Therapeutics",
