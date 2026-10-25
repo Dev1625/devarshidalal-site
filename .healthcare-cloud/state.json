@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 55,
+  "revision": 56,
   "lock": {
     "owner": "daily-saturday-2026-10-24-1792893393897-jc8guxz1",
     "acquiredAt": "2026-10-25T01:56:33.897Z",
@@ -35,7 +35,7 @@
   "pendingPublication": {
     "kind": "daily-saturday",
     "easternReviewDate": "2026-10-24",
-    "stage": "validated-candidate",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-10-25T02:01:16.790Z",
     "baseSha": "9403ad47fddc8f91b7bcdaa2bd7e7596a2a42e22",
     "candidateSha": "4e17b3614f104f38c8eefa43c6407ca56e6c26af",
@@ -83,7 +83,8 @@
       "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
       "https://www.coherenceneuro.com/article/coherence-neuro-has-started-its-first-clinical-study",
       "https://www.wired.com/story/three-people-have-gotten-cancer-detecting-brain-implants/"
-    ]
+    ],
+    "mainAdvancedAt": "2026-10-25T02:01:57.677Z"
   },
   "recentRuns": [
     {
