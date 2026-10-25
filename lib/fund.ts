@@ -840,7 +840,7 @@ export const COMPANIES: Company[] = [
       }
     ],
     competition:
-      'Neuralink has over a thousand electrodes and roughly 21 participants implanted by early 2026, and requires a craniotomy. Precision Neuroscience puts 1,024 electrodes on a surface film through a sub-millimetre slit and holds a 510(k) clearance for thirty-day use. Paradromics and Science Corporation occupy adjacent positions. Synchron has by far the lowest surgical barrier and by far the lowest bandwidth. The bet is that the first device approved and reimbursed defines the clinical pathway, the CPT codes and the surgical training, and that this is worth more than being technically better in 2030. I hold that at roughly 65 percent.',
+      'Neuralink has over a thousand electrodes and roughly 21 participants implanted by early 2026, and requires a craniotomy. Precision Neuroscience puts 1,024 electrodes on a surface film through a sub-millimetre slit and holds a 510(k) clearance for thirty-day use. Paradromics and Science Corporation occupy adjacent positions. Coherence Neuro is pursuing a different indication: it places a cortical device during brain-tumor surgery and is working toward a long-term glioblastoma implant for monitoring and stimulation. Its first three human procedures lasted roughly thirty minutes and do not yet answer chronic durability or efficacy. Synchron has by far the lowest surgical barrier and by far the lowest bandwidth. The bet is that the first device approved and reimbursed defines the clinical pathway, the CPT codes and the surgical training, and that this is worth more than being technically better in 2030. I hold that at roughly 65 percent.',
     team:
       'Founded in 2016 by Tom Oxley, an interventional neurologist who is CEO, with Nick Opie as founding director. The endovascular approach comes directly from Oxley\'s clinical background: the insight that you could reach the motor cortex through the venous system is the kind of thing a catheter specialist thinks of and a neurosurgeon does not. Founder-market fit here is about as tight as it gets.',
     risks: [
@@ -882,7 +882,7 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of August 2026 is that Synchron is the most likely BCI to reach patients first and the one whose ceiling I am least sure about. I also notice I find the mechanism unusually elegant, and I try to discount my own enthusiasm accordingly. On October 17 I am less comfortable with the timing argument: my August note treated a pivotal trial as running without sufficient support. I am retaining the case for its procedure, but I need a verified regulatory timetable before giving it a lead on reimbursement. The pivotal milestones remain future tests, not claims that such a cohort is enrolling.",
 
-    lastReviewed: "October 17, 2026",
+    lastReviewed: "October 24, 2026",
     sources: [
       {
         title: 'INTENT early-feasibility study, NCT07543367',
@@ -900,6 +900,12 @@ export const COMPANIES: Company[] = [
         "title": "Synchron technology and investigational status",
         "publisher": "Synchron",
         "url": "https://synchron.com/"
+      },
+      {
+        "title": "OpenAI invests in startup that uses brain implants to detect cancer",
+        "publisher": "Wired",
+        "url": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
+        "publishedAt": "October 21, 2026"
       }
     ],
   },
@@ -983,7 +989,7 @@ export const COMPANIES: Company[] = [
       }
     ],
     competition:
-      'Neuralink is the high-bandwidth penetrating benchmark with far more capital and far more surgical risk. Synchron is the low-invasiveness endovascular alternative with far fewer channels; its verified INTENT registry record is early feasibility, so I should not describe a pivotal trial as already running. Precision sits between them and is arguably the technically best-positioned if surface arrays hold their signal chronically, which is precisely the unproven part. Blackrock Neurotech occupies the legacy research-array position. The competitive risk is timing: Synchron may define the reimbursement pathway first, but I have not established that lead.',
+      'Neuralink is the high-bandwidth penetrating benchmark with far more capital and far more surgical risk. Synchron is the low-invasiveness endovascular alternative with far fewer channels; its verified INTENT registry record is early feasibility, so I should not describe a pivotal trial as already running. Coherence Neuro is an adjacent surface-interface comparison in brain-tumor surgery. Its three reported human procedures were temporary, roughly thirty-minute placements, while a chronic glioblastoma implant remains planned. Precision sits between the established assistive-BCI approaches and is arguably the technically best-positioned if surface arrays hold their signal chronically, which is precisely the unproven part. Blackrock Neurotech occupies the legacy research-array position. The competitive risk is timing: Synchron may define the reimbursement pathway first, but I have not established that lead.',
     team:
       "Co-founded in 2021 by Michael Mager, who is CEO and came from private equity, and Benjamin Rapoport, a neurosurgeon who was a founding member of Neuralink. Rapoport leaving Neuralink to build a non-penetrating alternative is itself an argument, and it is the single most informative fact about this company. A practising neurosurgeon who has seen the inside of both approaches chose this one. On October 15, 2026, Nevro founder and former CEO Konstantinos Alataris joined as president and Katherine Neuenfeldt as senior vice president, commercial strategies, adding implant launch and market access experience.",
     risks: [
@@ -1022,7 +1028,7 @@ export const COMPANIES: Company[] = [
     view:
       "My view as of October 2026 is that the financing and atlas improve the operating case. I am still waiting for verified chronic human-use data. Surface recordings across many procedures can teach the company a great deal without demonstrating durability in a permanent implant. The distinction is what I want to keep testing.",
 
-    lastReviewed: "October 17, 2026",
+    lastReviewed: "October 24, 2026",
     sources: [
       {
         title: 'INTENT early-feasibility study, NCT07543367',
@@ -1047,6 +1053,12 @@ export const COMPANIES: Company[] = [
         "publisher": "Precision Neuroscience / GlobeNewswire",
         "url": "https://www.globenewswire.com/news-release/2026/10/15/3381700/0/en/precision-neuroscience-appoints-nevro-founder-konstantinos-alataris-as-president-and-katherine-neuenfeldt-as-senior-vice-president-commercial-strategies.html",
         "publishedAt": "October 15, 2026"
+      },
+      {
+        "title": "Coherence Neuro has started its first clinical study",
+        "publisher": "Coherence Neuro",
+        "url": "https://www.coherenceneuro.com/article/coherence-neuro-has-started-its-first-clinical-study",
+        "publishedAt": "June 23, 2026"
       },
     ],
   },

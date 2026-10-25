@@ -3,6 +3,38 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-coherence-neuro-seed",
+    "headline": "Coherence Neuro's first human step lasted thirty minutes",
+    "entryDate": "October 24, 2026",
+    "sortKey": "2026-10-24",
+    "eventDate": "October 21, 2026 financing report; June 23, 2026 first-in-human study announcement",
+    "analysis": "Wired reports that Coherence Neuro raised a $45 million seed round involving the OpenAI Startup Fund and Founders Fund. The company is building an implant intended to record electrical activity around brain tumors and eventually use stimulation as treatment. Coherence says animal signals can distinguish whether cancer is growing, shrinking or recurring. I have not found an independent human result showing that the device can detect tumor change or improve an outcome.\n\nThe human work so far is narrower. Three people undergoing tumor-removal surgery had the investigational device placed for roughly thirty minutes and then removed. The company describes the study as a test of safety, basic performance and handling during short intraoperative use. It plans to add recording and stimulation in seven more patients, then study a long-term implant in glioblastoma. This is an interesting therapeutic use of a brain interface, but it is not chronic-implant evidence. The financing gives Coherence time to test the idea; it does not establish tumor control, survival benefit or durable signal quality.",
+    "entryType": "financing",
+    "scope": "industry",
+    "themes": [
+      "bci"
+    ],
+    "relatedCompanyIds": [
+      "synchron",
+      "precision-neuroscience"
+    ],
+    "sources": [
+      {
+        "title": "OpenAI invests in startup that uses brain implants to detect cancer",
+        "publisher": "Wired",
+        "url": "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
+        "publishedAt": "October 21, 2026"
+      },
+      {
+        "title": "Coherence Neuro has started its first clinical study",
+        "publisher": "Coherence Neuro",
+        "url": "https://www.coherenceneuro.com/article/coherence-neuro-has-started-its-first-clinical-study",
+        "publishedAt": "June 23, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-xaira-x-automate",
     "headline": "Xaira connects its agent to the lab and keeps the HPLC running",
     "entryDate": "October 23, 2026",
