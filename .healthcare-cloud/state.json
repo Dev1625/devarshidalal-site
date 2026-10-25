@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 56,
+  "revision": 57,
   "lock": {
     "owner": "daily-saturday-2026-10-24-1792893393897-jc8guxz1",
     "acquiredAt": "2026-10-25T01:56:33.897Z",
@@ -9,83 +9,30 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "9403ad47fddc8f91b7bcdaa2bd7e7596a2a42e22",
-    "vercelDeploymentId": "dpl_ChYL7CX8rGNzvsRJeDRVxCR39QLJ",
-    "lastVerifiedAt": "2026-10-24T02:04:23.037Z",
+    "lastVerifiedSha": "4e17b3614f104f38c8eefa43c6407ca56e6c26af",
+    "vercelDeploymentId": "dpl_6PH1aCuAHVz8D8bsSShYvyFfe9Gs",
+    "lastVerifiedAt": "2026-10-25T02:03:03.116Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-23",
-      "checkpointProvenance": "Daily delta researched across all ten current companies and wider healthcare with overlap and deduplication. Published one source-qualified Xaira lab-automation note and updated the Xaira memo. Company-run throughput, modeled human baseline, four manual recoveries and the lack of molecule/patient evidence are explicit. No company-universe or macro-thesis change.",
-      "sourceWindowStart": "2026-10-23T02:07:50.125Z",
-      "sourceWindowEnd": "2026-10-24T02:01:13.795Z",
-      "lastSuccessfulReviewAt": "2026-10-24T02:01:13.795Z",
+      "lastSuccessfulEasternDate": "2026-10-24",
+      "checkpointProvenance": "Daily delta researched across all ten current companies, competitors and wider healthcare after the October 23 cutoff, with overlap and deduplication. No material current-company change found. Saturday stage then published one source-qualified Coherence Neuro comparator.",
+      "sourceWindowStart": "2026-10-24T02:01:13.795Z",
+      "sourceWindowEnd": "2026-10-25T02:03:03.116Z",
+      "lastSuccessfulReviewAt": "2026-10-25T02:03:03.116Z",
       "lastSuccessfulPublicationAt": "2026-10-24T02:04:23.037Z"
     },
     "saturday": {
-      "lastSuccessfulEasternDate": "2026-10-17",
-      "lastSuccessfulReviewAt": "2026-10-18T02:08:58.798Z",
-      "lastSuccessfulPublicationAt": "2026-10-18T02:08:58.798Z",
-      "sourceWindowStart": "2026-10-11T04:00:00Z",
-      "sourceWindowEnd": "2026-10-18T02:08:58.798Z",
-      "checkpointProvenance": "Daily stage completed first. Whole collection, current/prior thesis and week evidence reviewed; four sourced notes and four memo updates published/verified. Universe and thesis retained on evidence, no forced turnover."
+      "lastSuccessfulEasternDate": "2026-10-24",
+      "lastSuccessfulReviewAt": "2026-10-25T02:03:03.116Z",
+      "lastSuccessfulPublicationAt": "2026-10-25T02:03:03.116Z",
+      "sourceWindowStart": "2026-10-18T02:08:58.798Z",
+      "sourceWindowEnd": "2026-10-25T02:03:03.116Z",
+      "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": {
-    "kind": "daily-saturday",
-    "easternReviewDate": "2026-10-24",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-25T02:01:16.790Z",
-    "baseSha": "9403ad47fddc8f91b7bcdaa2bd7e7596a2a42e22",
-    "candidateSha": "4e17b3614f104f38c8eefa43c6407ca56e6c26af",
-    "candidateTree": "ab97dfb0e04d26cd39dc53cda9a4a8a50595c47d",
-    "candidateBranch": "healthcare-candidate-2026-10-24-coherence",
-    "owner": "daily-saturday-2026-10-24-1792893393897-jc8guxz1",
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 227
-    },
-    "newEntryIds": [
-      "2026-10-coherence-neuro-seed"
-    ],
-    "affectedMemos": [
-      "synchron",
-      "precision-neuroscience"
-    ],
-    "dailyStage": {
-      "result": "researched-no-material-current-company-change",
-      "sourceWindowStart": "2026-10-24T02:01:13.795Z",
-      "sourceWindowEnd": "2026-10-25T02:01:16.790Z",
-      "evidence": "Targeted delta scan across all ten current companies, competitors and wider healthcare with overlap and deduplication; no material current-company item after the prior cutoff."
-    },
-    "saturdayStage": {
-      "result": "candidate-ready",
-      "sourceWindowStart": "2026-10-18T02:08:58.798Z",
-      "sourceWindowEnd": "2026-10-25T02:01:16.790Z",
-      "reviewEvidence": {
-        "wholeCollection": "Read the current macro thesis, prior thesis, ten current company records, two archived cases and the latest week's Following evidence.",
-        "universeDecision": "Retain ten current companies, two archives and the current macro thesis. No forced turnover; Coherence Neuro is an adjacent comparator, not yet a full case.",
-        "priceRunwayValueCapture": "Reassessed entry price, runway, value capture, risks, diligence and change-my-mind gates. Undisclosed private pricing and present cash remain gaps; financing is not efficacy.",
-        "coherence": "$45M seed reported October 21. Three reported human procedures were temporary, roughly thirty-minute intraoperative placements; chronic glioblastoma implantation remains planned. No tumor-control, survival or durable-signal evidence established."
-      }
-    },
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 227 notes, 1 prior thesis",
-      "build": "PASS exact tree ab97dfb0e04d26cd39dc53cda9a4a8a50595c47d",
-      "preservation": "PASS deterministic validator on both changed files; historical notes, thesis, IDs, archives, predictions and unrelated memo content retained",
-      "writingReview": "Bundled detector executed. New note score 0/no flags; one existing clinical-term flag in surrounding memo context retained. No authorship conclusion.",
-      "remoteTreeAndFileReadback": "PASS exact tree and both blob SHAs"
-    },
-    "sourceUrls": [
-      "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
-      "https://www.coherenceneuro.com/article/coherence-neuro-has-started-its-first-clinical-study",
-      "https://www.wired.com/story/three-people-have-gotten-cancer-detecting-brain-implants/"
-    ],
-    "mainAdvancedAt": "2026-10-25T02:01:57.677Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -689,6 +636,72 @@
         "home": "10 current, 2 past cases, 226 entries",
         "fund": "Current October thesis retained",
         "vercel": "READY exact tested SHA on production project and existing domain devarshidalal.com"
+      }
+    },
+    {
+      "kind": "daily-saturday",
+      "easternReviewDate": "2026-10-24",
+      "baseSha": "9403ad47fddc8f91b7bcdaa2bd7e7596a2a42e22",
+      "candidateSha": "4e17b3614f104f38c8eefa43c6407ca56e6c26af",
+      "candidateTree": "ab97dfb0e04d26cd39dc53cda9a4a8a50595c47d",
+      "candidateBranch": "healthcare-candidate-2026-10-24-coherence",
+      "completedAt": "2026-10-25T02:03:03.116Z",
+      "result": "published-and-verified",
+      "commit": "4e17b3614f104f38c8eefa43c6407ca56e6c26af",
+      "deploymentId": "dpl_6PH1aCuAHVz8D8bsSShYvyFfe9Gs",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 227
+      },
+      "dailyStage": {
+        "result": "researched-no-material-current-company-change",
+        "completedBeforeSaturday": true
+      },
+      "saturdayStage": {
+        "result": "published-and-verified",
+        "universeDecision": "Retain 10 current companies, 2 archives and current macro thesis; no forced turnover."
+      },
+      "newEntryIds": [
+        "2026-10-coherence-neuro-seed"
+      ],
+      "affectedMemos": [
+        "synchron",
+        "precision-neuroscience"
+      ],
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 227 notes, 1 prior thesis",
+        "build": "PASS exact tree ab97dfb0e04d26cd39dc53cda9a4a8a50595c47d",
+        "preservation": "PASS deterministic validator; all prior notes, thesis, IDs, archives, predictions, links and unrelated memo content retained",
+        "writingReview": "Bundled detector executed; new note score 0/no flags. Existing technical term reviewed in context; no authorship conclusion.",
+        "remoteTreeAndFileReadback": "PASS exact tree and both blob SHAs"
+      },
+      "reviewEvidence": {
+        "wholeCollection": "Read current macro thesis, prior thesis, ten current company records, two archived cases and the latest week's published evidence.",
+        "coherence": "$45M seed is financing. The three human procedures were temporary, roughly 30-minute intraoperative uses; the chronic glioblastoma trial remains planned. No tumor-control, survival or durable-signal result established.",
+        "priceRunwayValueCapture": "Private valuation and present runway remain undisclosed. Financing is not efficacy. Existing entry-price, reimbursement, durability, concentration and clinical-data gates remain open."
+      },
+      "sourceUrls": [
+        "https://www.wired.com/story/openai-startup-brain-implants-detect-cancer/",
+        "https://www.coherenceneuro.com/article/coherence-neuro-has-started-its-first-clinical-study",
+        "https://www.wired.com/story/three-people-have-gotten-cancer-detecting-brain-implants/"
+      ],
+      "liveVerification": {
+        "following": "227 entries; October 24 note expanded with separate event date, evidence limits and two source links",
+        "filters": "Financing filter includes the Coherence note",
+        "current": "10 stable current company memo links",
+        "archives": "2 stable IDs/routes: turn-bio and evolutionaryscale",
+        "affectedMemos": "Synchron and Precision pages live with Coherence comparisons and October 24 review dates",
+        "home": "10 current, 2 past cases, 227 entries",
+        "fund": "Current October thesis headline retained",
+        "vercel": "READY exact tested SHA on existing production domain"
+      },
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
       }
     }
   ],
