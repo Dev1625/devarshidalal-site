@@ -3,6 +3,37 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-intismeran-phase-3",
+    "headline": "The personalised melanoma vaccine has its Phase 3 result",
+    "entryDate": "October 25, 2026",
+    "sortKey": "2026-10-25",
+    "eventDate": "October 24, 2026 presentation; October 22, 2026 results announcement",
+    "analysis": "Merck and Moderna's INTerpath-001 trial enrolled 1,137 people whose stage IIB-IV melanoma had been completely removed. Intismeran, a vaccine designed from each person's tumor mutations, plus Keytruda reduced the risk of recurrence or death by 42% versus placebo plus Keytruda after 24.6 months of median follow-up. At two years, 82.2% of the combination group and 70.0% of the control group were alive without recurrence. The risk of distant metastasis or death fell by 38%.\n\nThis is the first positive Phase 3 result for an individualized mRNA neoantigen therapy, and it strengthens the five-year Phase 2b signal I was already following. It is still an adjuvant melanoma result, not evidence that the vaccine treats visible metastatic disease or works across tumors. Overall-survival data are immature. Treatment-related grade 3-5 adverse events were similar at 14.2% versus 13.4%, while fever and injection-site pain were common with the vaccine.\n\nThe timing is useful. Outcomes were comparable during the first six months, when the nine-dose vaccine regimen was being delivered, then separated afterward in a pre-specified analysis. I read that as support for a biological effect, not a manufacturing answer. Every treatment still has to be designed from one patient's tumor and produced on time. The clinical question has moved forward; the industrial one has not.",
+    "entryType": "clinical",
+    "scope": "industry",
+    "themes": [
+      "cancer-vaccines"
+    ],
+    "relatedEntryIds": [
+      "2026-01-mrna-vaccine-5yr"
+    ],
+    "sources": [
+      {
+        "title": "Merck and Moderna Will Present Results From Landmark Phase 3 INTerpath-001 Trial",
+        "publisher": "Merck",
+        "url": "https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/",
+        "publishedAt": "October 22, 2026"
+      },
+      {
+        "title": "First positive phase III data for personalised mRNA neoantigen therapy",
+        "publisher": "ESMO",
+        "url": "https://www.esmo.org/insights-by-esmo/all-news/first-positive-phase-iii-trial-data-for-an-individualised-mrna-based-neoantigen-therapy",
+        "publishedAt": "October 24, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-coherence-neuro-seed",
     "headline": "Coherence Neuro's first human step lasted thirty minutes",
     "entryDate": "October 24, 2026",
