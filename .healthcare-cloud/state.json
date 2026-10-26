@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 61,
+  "revision": 62,
   "lock": {
     "owner": "daily-2026-10-25-1792980011865-57qdq5ie",
     "acquiredAt": "2026-10-26T02:00:11.865Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "4e17b3614f104f38c8eefa43c6407ca56e6c26af",
-    "vercelDeploymentId": "dpl_6PH1aCuAHVz8D8bsSShYvyFfe9Gs",
-    "lastVerifiedAt": "2026-10-25T02:03:03.116Z",
+    "lastVerifiedSha": "9367b6fb53348d7b3825d344fab280972fbe5ddf",
+    "vercelDeploymentId": "dpl_3zyEyae8G6MMPtZsFaR9N7cPauxu",
+    "lastVerifiedAt": "2026-10-26T02:07:40.288Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-24",
-      "checkpointProvenance": "Daily delta researched across all ten current companies, competitors and wider healthcare after the October 23 cutoff, with overlap and deduplication. No material current-company change found. Saturday stage then published one source-qualified Coherence Neuro comparator.",
-      "sourceWindowStart": "2026-10-24T02:01:13.795Z",
-      "sourceWindowEnd": "2026-10-25T02:03:03.116Z",
-      "lastSuccessfulReviewAt": "2026-10-25T02:03:03.116Z",
-      "lastSuccessfulPublicationAt": "2026-10-24T02:04:23.037Z"
+      "lastSuccessfulEasternDate": "2026-10-25",
+      "checkpointProvenance": "Targeted daily delta across all ten current companies, relevant competitors and wider healthcare, with overlap from the prior cutoff and deduplication. Published one missed Phase 3 individualized melanoma-vaccine update in the existing cancer-vaccine thread; company universe and macro thesis unchanged.",
+      "sourceWindowStart": "2026-10-25T02:03:03.116Z",
+      "sourceWindowEnd": "2026-10-26T02:07:40.288Z",
+      "lastSuccessfulReviewAt": "2026-10-26T02:07:40.288Z",
+      "lastSuccessfulPublicationAt": "2026-10-26T02:07:40.288Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-24",
@@ -32,42 +32,7 @@
       "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-10-25",
-    "baseSha": "4e17b3614f104f38c8eefa43c6407ca56e6c26af",
-    "candidateSha": "9367b6fb53348d7b3825d344fab280972fbe5ddf",
-    "candidateTree": "8d99237efc114dc5991c4557b5e133750328205e",
-    "candidateBranch": "healthcare-candidate-2026-10-24-coherence",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-26T02:05:27.030Z",
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 228 notes, 1 prior thesis",
-      "build": "PASS exact tree 8d99237efc114dc5991c4557b5e133750328205e",
-      "preservation": "PASS: additive one-file diff; all 227 prior notes, company universe, archives, current/prior thesis, predictions, links and unrelated content retained; git diff check clean",
-      "writingReview": "Contextual Avoid AI Writing review completed: no stock-pattern or structural issues; deterministic detector executable was not locally exposed, so no score claimed",
-      "remoteTreeAndFileReadback": "PASS exact tree 8d99237efc114dc5991c4557b5e133750328205e and blob 262424414b85a38d33a487c870c48e8737f363af"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 228
-    },
-    "newEntryIds": [
-      "2026-10-intismeran-phase-3"
-    ],
-    "affectedMemos": [],
-    "sourceUrls": [
-      "https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/",
-      "https://www.esmo.org/insights-by-esmo/all-news/first-positive-phase-iii-trial-data-for-an-individualised-mrna-based-neoantigen-therapy"
-    ],
-    "sourceWindowStart": "2026-10-25T02:03:03.116Z",
-    "sourceWindowEnd": "2026-10-26T02:05:27.030Z",
-    "sourceCoverage": "Targeted delta searches across all ten current companies and relevant competitors, financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources were prioritized; earlier published notes and stale republications were deduplicated. One missed material Phase 3 cancer-vaccine result was added to an existing research thread. No company-universe or macro-thesis change.",
-    "limitations": "INTerpath-001 tested adjuvant therapy after complete melanoma resection. The primary result is recurrence-free survival, with distant-metastasis-free survival secondary; overall-survival data are immature. The result does not establish efficacy in visible metastatic disease or other tumors. Manufacturing remains individualized.",
-    "mainAdvancedAt": "2026-10-26T02:06:05.486Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -737,6 +702,59 @@
         "vercelReady": true,
         "domain": "devarshidalal.com",
         "liveChecked": true
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-10-25",
+      "baseSha": "4e17b3614f104f38c8eefa43c6407ca56e6c26af",
+      "candidateSha": "9367b6fb53348d7b3825d344fab280972fbe5ddf",
+      "candidateTree": "8d99237efc114dc5991c4557b5e133750328205e",
+      "candidateBranch": "healthcare-candidate-2026-10-24-coherence",
+      "completedAt": "2026-10-26T02:07:40.288Z",
+      "result": "published-and-verified",
+      "commit": "9367b6fb53348d7b3825d344fab280972fbe5ddf",
+      "deploymentId": "dpl_3zyEyae8G6MMPtZsFaR9N7cPauxu",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 228
+      },
+      "newEntryIds": [
+        "2026-10-intismeran-phase-3"
+      ],
+      "affectedMemos": [],
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 228 notes, 1 prior thesis",
+        "build": "PASS exact tree 8d99237efc114dc5991c4557b5e133750328205e",
+        "preservation": "PASS additive one-file diff; all previous notes, thesis, IDs, archives, predictions, links and unrelated content retained; git diff check clean",
+        "writingReview": "Contextual Avoid AI Writing review completed with no stock-pattern or structural issue; deterministic detector executable was not locally exposed, so no score claimed",
+        "remoteTreeAndFileReadback": "PASS exact tree and file blob"
+      },
+      "sourceUrls": [
+        "https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/",
+        "https://www.esmo.org/insights-by-esmo/all-news/first-positive-phase-iii-trial-data-for-an-individualised-mrna-based-neoantigen-therapy"
+      ],
+      "sourceWindowStart": "2026-10-25T02:03:03.116Z",
+      "sourceWindowEnd": "2026-10-26T02:07:40.288Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies and relevant competitors, financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources prioritized and prior notes deduplicated.",
+      "limitations": "Adjuvant resected melanoma only. Recurrence-free survival is primary; distant-metastasis-free survival is secondary; overall-survival data are immature. No efficacy claim for visible metastatic disease or other tumors.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "liveVerification": {
+        "following": "228 entries; October 25 melanoma-vaccine note expanded with separate writing/event dates, endpoints, safety caveats and two primary sources",
+        "filters": "Science and regulation includes the new note",
+        "current": "10 stable current company cards",
+        "archives": "2 stable IDs/routes; turn-bio and evolutionaryscale pages live",
+        "affectedMemos": "None; industry note linked to the prior cancer-vaccine entry",
+        "home": "10 current, 2 past cases, 228 entries",
+        "fund": "Current October thesis retained",
+        "vercel": "READY exact tested SHA on existing production domain"
       }
     }
   ],
