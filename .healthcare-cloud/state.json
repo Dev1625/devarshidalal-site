@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 69,
+  "revision": 70,
   "lock": {
     "owner": "daily-state-correction-2026-10-26-1793066777000",
     "acquiredAt": "2026-10-27T02:05:29.283Z",
@@ -762,14 +762,14 @@
       "easternReviewDate": "2026-10-26",
       "baseSha": "9367b6fb53348d7b3825d344fab280972fbe5ddf",
       "candidateSha": "c4eb19298da319402decde827c3b958088d40ec1",
-      "candidateTree": "From https://github.com/Dev1625/devarshidalal-site\n * branch            healthcare-candidate-2026-10-24-coherence -> FETCH_HEAD\nb96d28c462f60d00b52e940862567d2c61862f30",
+      "candidateTree": "b96d28c462f60d00b52e940862567d2c61862f30",
       "candidateBranch": "healthcare-candidate-2026-10-24-coherence",
       "stage": "published-and-verified",
       "createdAt": "2026-10-27T02:02:39.261Z",
       "checks": {
         "npmCi": "PASS remote lockfile",
         "checkHealthcare": "PASS: 10 current, 2 archived, 229 notes, 1 prior thesis",
-        "build": "PASS exact candidate content",
+        "build": "PASS exact tree b96d28c462f60d00b52e940862567d2c61862f30",
         "preservation": "PASS additive one-file diff; all prior notes, thesis, IDs, archives, predictions, links and unrelated content retained; git diff check clean",
         "writingReview": "Contextual Avoid AI Writing and preservation review completed; no stock-pattern or structural issue. Packaged deterministic detector was not executable in this host, so no score claimed.",
         "remoteTreeAndFileReadback": "PASS exact blob SHA and one-file candidate commit directly descends from current main"
