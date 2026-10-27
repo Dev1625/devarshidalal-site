@@ -3,6 +3,44 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    "id": "2026-10-treasury-biotech-outbound-rule",
+    "headline": "China-biotech political risk now has a proposed investment rule",
+    "entryDate": "October 26, 2026",
+    "sortKey": "2026-10-26",
+    "eventDate": "October 26, 2026 Federal Register publication; October 22, 2026 proposal",
+    "analysis": "Treasury proposed adding biotechnology to the US outbound-investment restrictions for countries of concern. The rule would prohibit or require notice for some equity investments, debt with equity-like rights, joint ventures, greenfield projects and fund interests involving covered foreign companies. It is a proposal, not a final rule, and comments are due December 7.\n\nThe draft is broad. It reaches the bioengineering and manufacture of pharmaceuticals and delivery systems, brain-computer interfaces, sequencing, mass spectrometry, lab automation and cloud-lab infrastructure. Treasury is asking whether the pharmaceutical and equipment definitions should be narrowed to advanced technologies. That question matters because the current wording extends well beyond a short list of military applications.\n\nThe proposal does not list an ordinary asset licence as a covered transaction, and The Wall Street Journal reports that licensing would remain allowed. I would not read that as a blanket safe harbour. A licence paired with equity, a joint venture or another covered investment could still fall within the rule, and the text withholds one transaction exception from contracts that transfer technology or technical knowledge. My April view that tariffs alone would not stop China licensing still holds. The political-risk caveat from July is now concrete enough that I would check structure, information rights and technology transfer in every deal rather than treating the headline licence as the whole transaction.",
+    "entryType": "regulation-policy",
+    "scope": "industry",
+    "themes": [
+      "china-licensing"
+    ],
+    "relatedEntryIds": [
+      "2026-04-tariff-china-licensing",
+      "2026-07-china-geopolitical-risk"
+    ],
+    "sources": [
+      {
+        "title": "Treasury Issues Proposed Rule to Implement Comprehensive Outbound Investment National Security Act",
+        "publisher": "US Department of the Treasury",
+        "url": "https://home.treasury.gov/news/press-releases/sb0667",
+        "publishedAt": "October 22, 2026"
+      },
+      {
+        "title": "Outbound Investment Security Program Regulations",
+        "publisher": "Federal Register",
+        "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21786/outbound-investment-security-program-regulations",
+        "publishedAt": "October 26, 2026"
+      },
+      {
+        "title": "Treasury to Limit Chinese Biotech Deals but Still Allow Licensing",
+        "publisher": "The Wall Street Journal",
+        "url": "https://www.wsj.com/pro/venture-capital/treasury-to-limit-chinese-biotech-deals-but-still-allow-licensing-36a38e48",
+        "publishedAt": "October 26, 2026"
+      }
+    ],
+    "status": "current-view"
+  },
+  {
     "id": "2026-10-intismeran-phase-3",
     "headline": "The personalised melanoma vaccine has its Phase 3 result",
     "entryDate": "October 25, 2026",
