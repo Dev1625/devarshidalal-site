@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 66,
+  "revision": 67,
   "lock": {
     "owner": "daily-2026-10-26-1793066217766-fdlb8oxo",
     "acquiredAt": "2026-10-27T01:56:59.152Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "9367b6fb53348d7b3825d344fab280972fbe5ddf",
-    "vercelDeploymentId": "dpl_3zyEyae8G6MMPtZsFaR9N7cPauxu",
-    "lastVerifiedAt": "2026-10-26T02:07:40.288Z",
+    "lastVerifiedSha": "c4eb19298da319402decde827c3b958088d40ec1",
+    "vercelDeploymentId": "dpl_8cK5KTZXDnxp1kBq7xsEPcvUPZQK",
+    "lastVerifiedAt": "2026-10-27T02:05:08.184Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-25",
-      "checkpointProvenance": "Targeted daily delta across all ten current companies, relevant competitors and wider healthcare, with overlap from the prior cutoff and deduplication. Published one missed Phase 3 individualized melanoma-vaccine update in the existing cancer-vaccine thread; company universe and macro thesis unchanged.",
-      "sourceWindowStart": "2026-10-25T02:03:03.116Z",
-      "sourceWindowEnd": "2026-10-26T02:07:40.288Z",
-      "lastSuccessfulReviewAt": "2026-10-26T02:07:40.288Z",
-      "lastSuccessfulPublicationAt": "2026-10-26T02:07:40.288Z"
+      "lastSuccessfulEasternDate": "2026-10-26",
+      "checkpointProvenance": "Targeted daily delta across all ten current companies, competitors and wider healthcare. Published one proposed-rule update in the existing China-licensing thread; company universe and macro thesis unchanged.",
+      "sourceWindowStart": "2026-10-26T02:07:40.288Z",
+      "sourceWindowEnd": "2026-10-27T02:02:39.261Z",
+      "lastSuccessfulReviewAt": "2026-10-27T02:05:08.184Z",
+      "lastSuccessfulPublicationAt": "2026-10-27T02:05:08.184Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-24",
@@ -32,43 +32,7 @@
       "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-10-26",
-    "baseSha": "9367b6fb53348d7b3825d344fab280972fbe5ddf",
-    "candidateSha": "c4eb19298da319402decde827c3b958088d40ec1",
-    "candidateTree": "From https://github.com/Dev1625/devarshidalal-site\n * branch            healthcare-candidate-2026-10-24-coherence -> FETCH_HEAD\nb96d28c462f60d00b52e940862567d2c61862f30",
-    "candidateBranch": "healthcare-candidate-2026-10-24-coherence",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-27T02:02:39.261Z",
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 229 notes, 1 prior thesis",
-      "build": "PASS exact candidate content",
-      "preservation": "PASS additive one-file diff; all prior notes, thesis, IDs, archives, predictions, links and unrelated content retained; git diff check clean",
-      "writingReview": "Contextual Avoid AI Writing and preservation review completed; no stock-pattern or structural issue. Packaged deterministic detector was not executable in this host, so no score claimed.",
-      "remoteTreeAndFileReadback": "PASS exact blob SHA and one-file candidate commit directly descends from current main"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 229
-    },
-    "newEntryIds": [
-      "2026-10-treasury-biotech-outbound-rule"
-    ],
-    "affectedMemos": [],
-    "sourceUrls": [
-      "https://home.treasury.gov/news/press-releases/sb0667",
-      "https://www.federalregister.gov/documents/2026/10/26/2026-21786/outbound-investment-security-program-regulations",
-      "https://www.wsj.com/pro/venture-capital/treasury-to-limit-chinese-biotech-deals-but-still-allow-licensing-36a38e48"
-    ],
-    "sourceWindowStart": "2026-10-26T02:07:40.288Z",
-    "sourceWindowEnd": "2026-10-27T02:02:39.261Z",
-    "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources prioritized and prior notes deduplicated.",
-    "limitations": "Treasury published a proposed rule, not a final rule. Ordinary asset licensing is not listed as a covered transaction, but deal structure and linked technology-transfer arrangements can change the analysis. No company-universe or macro-thesis change.",
-    "mainAdvancedAt": "2026-10-27T02:02:57.342Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -789,6 +753,63 @@
         "archives": "2 stable IDs/routes; turn-bio and evolutionaryscale pages live",
         "affectedMemos": "None; industry note linked to the prior cancer-vaccine entry",
         "home": "10 current, 2 past cases, 228 entries",
+        "fund": "Current October thesis retained",
+        "vercel": "READY exact tested SHA on existing production domain"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-10-26",
+      "baseSha": "9367b6fb53348d7b3825d344fab280972fbe5ddf",
+      "candidateSha": "c4eb19298da319402decde827c3b958088d40ec1",
+      "candidateTree": "From https://github.com/Dev1625/devarshidalal-site\n * branch            healthcare-candidate-2026-10-24-coherence -> FETCH_HEAD\nb96d28c462f60d00b52e940862567d2c61862f30",
+      "candidateBranch": "healthcare-candidate-2026-10-24-coherence",
+      "stage": "published-and-verified",
+      "createdAt": "2026-10-27T02:02:39.261Z",
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 229 notes, 1 prior thesis",
+        "build": "PASS exact candidate content",
+        "preservation": "PASS additive one-file diff; all prior notes, thesis, IDs, archives, predictions, links and unrelated content retained; git diff check clean",
+        "writingReview": "Contextual Avoid AI Writing and preservation review completed; no stock-pattern or structural issue. Packaged deterministic detector was not executable in this host, so no score claimed.",
+        "remoteTreeAndFileReadback": "PASS exact blob SHA and one-file candidate commit directly descends from current main"
+      },
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 229
+      },
+      "newEntryIds": [
+        "2026-10-treasury-biotech-outbound-rule"
+      ],
+      "affectedMemos": [],
+      "sourceUrls": [
+        "https://home.treasury.gov/news/press-releases/sb0667",
+        "https://www.federalregister.gov/documents/2026/10/26/2026-21786/outbound-investment-security-program-regulations",
+        "https://www.wsj.com/pro/venture-capital/treasury-to-limit-chinese-biotech-deals-but-still-allow-licensing-36a38e48"
+      ],
+      "sourceWindowStart": "2026-10-26T02:07:40.288Z",
+      "sourceWindowEnd": "2026-10-27T02:02:39.261Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources prioritized and prior notes deduplicated.",
+      "limitations": "Treasury published a proposed rule, not a final rule. Ordinary asset licensing is not listed as a covered transaction, but deal structure and linked technology-transfer arrangements can change the analysis. No company-universe or macro-thesis change.",
+      "mainAdvancedAt": "2026-10-27T02:02:57.342Z",
+      "completedAt": "2026-10-27T02:05:08.184Z",
+      "result": "published-and-verified",
+      "commit": "c4eb19298da319402decde827c3b958088d40ec1",
+      "deploymentId": "dpl_8cK5KTZXDnxp1kBq7xsEPcvUPZQK",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "liveVerification": {
+        "following": "229 entries; October 26 policy note expanded with separate writing/event dates, proposal status, scope caveats and three sources",
+        "filters": "Science and regulation includes the new policy note",
+        "current": "10 stable current company cards",
+        "archives": "2 stable archived cases: turn-bio and evolutionaryscale",
+        "affectedMemos": "None; industry note cross-links April and July China-licensing entries",
+        "home": "10 current, 2 past cases, 229 entries",
         "fund": "Current October thesis retained",
         "vercel": "READY exact tested SHA on existing production domain"
       }
