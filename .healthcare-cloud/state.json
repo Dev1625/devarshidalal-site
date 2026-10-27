@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 65,
+  "revision": 66,
   "lock": {
     "owner": "daily-2026-10-26-1793066217766-fdlb8oxo",
     "acquiredAt": "2026-10-27T01:56:59.152Z",
@@ -39,7 +39,7 @@
     "candidateSha": "c4eb19298da319402decde827c3b958088d40ec1",
     "candidateTree": "From https://github.com/Dev1625/devarshidalal-site\n * branch            healthcare-candidate-2026-10-24-coherence -> FETCH_HEAD\nb96d28c462f60d00b52e940862567d2c61862f30",
     "candidateBranch": "healthcare-candidate-2026-10-24-coherence",
-    "stage": "validated-candidate-before-main",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-10-27T02:02:39.261Z",
     "checks": {
       "npmCi": "PASS remote lockfile",
@@ -66,7 +66,8 @@
     "sourceWindowStart": "2026-10-26T02:07:40.288Z",
     "sourceWindowEnd": "2026-10-27T02:02:39.261Z",
     "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources prioritized and prior notes deduplicated.",
-    "limitations": "Treasury published a proposed rule, not a final rule. Ordinary asset licensing is not listed as a covered transaction, but deal structure and linked technology-transfer arrangements can change the analysis. No company-universe or macro-thesis change."
+    "limitations": "Treasury published a proposed rule, not a final rule. Ordinary asset licensing is not listed as a covered transaction, but deal structure and linked technology-transfer arrangements can change the analysis. No company-universe or macro-thesis change.",
+    "mainAdvancedAt": "2026-10-27T02:02:57.342Z"
   },
   "recentRuns": [
     {
