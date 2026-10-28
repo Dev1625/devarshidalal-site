@@ -3,6 +3,55 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    id: '2026-10-beam-301-initial-data',
+    headline: 'Beam gets an early human signal from base editing beyond one patient',
+    entryDate: 'October 27, 2026',
+    sortKey: '2026-10-27',
+    eventDate: 'October 27, 2026 report; August 17, 2026 data cutoff',
+    analysis:
+      'Beam reported the first data from its open-label Phase 1/2 trial of BEAM-301, a liver-targeted base editor for people with the R83C variant of glycogen storage disease type Ia. Six patients received one infusion: three at 20 mg and three at 40 mg. At Day 36, median time to fasting hypoglycemia rose from 2.5 hours to the protocol maximum of 15 hours in the 40 mg group. Two of those three patients no longer needed daily starch supplementation at their latest assessments. The third did not improve at the first post-dose test.\n\nThe safety result needs equal weight. All six patients had a treatment-related adverse event, and four had a related serious adverse event. Three had Grade 3 infusion reactions. Diarrhea and rhabdomyolysis occurred in two patients and resolved, as did the reported liver-enzyme elevations. Beam reported no dose-limiting toxicity, Grade 4 or 5 event, or treatment discontinuation. Enrollment at 60 mg is underway.\n\nI have been following the one-patient KJ treatment because a reusable editing process could make rare-disease development look very different. BEAM-301 is not the same model: it targets one recurrent mutation with a sponsor-run product rather than a guide designed for one child. Still, this is the first small sign in my notes that base editing can move from a bespoke case into a repeatable clinical program. Six company-reported patients in dose exploration, with short follow-up and meaningful safety events, cannot establish durable correction or an approval path.',
+    entryType: 'clinical',
+    scope: 'industry',
+    themes: ['gene-editing'],
+    relatedEntryIds: ['2025-11-kj-muldoon', '2026-03-kj-one-year'],
+    sources: [
+      {
+        title: 'Beam reports initial Phase 1/2 data from the BEAM-301 trial',
+        publisher: 'Beam Therapeutics',
+        url: 'https://beamtherapeutics.gcs-web.com/news-releases/news-release-details/beam-therapeutics-reports-initial-clinical-data-phase-12-trial',
+        publishedAt: 'October 27, 2026',
+      },
+      {
+        title: 'A Study of BEAM-301 in Patients With Glycogen Storage Disease Type Ia (GSDIa)',
+        publisher: 'ClinicalTrials.gov',
+        url: 'https://clinicaltrials.gov/study/NCT06735755',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
+    id: '2026-10-abridge-october-release',
+    headline: 'Abridge moves from drafting the note into orders and diagnoses',
+    entryDate: 'October 27, 2026',
+    sortKey: '2026-10-27',
+    eventDate: 'October 27, 2026 product release',
+    analysis:
+      'Abridge released a set of workflow and revenue-cycle additions. It now stages orders discussed during outpatient visits in Epic for clinician review and signature. Its Query Engine extends to outpatient notes, and accepted inpatient diagnosis suggestions write back to the chart. Inpatient drafts can also draw on new labs, vital signs and radiology results, with the chart sources shown inline.\n\nThe company also added an Evaluation Dashboard for health-system governance teams. It shows results by product and quality measure, with the method, refresh schedule and stated limitations, and separates recurring metrics from fixed peer-reviewed studies. Abridge describes the capabilities; this release does not provide customer-level adoption, independent accuracy results or patient outcomes.\n\nI care because this is the direction behind my Abridge thesis. Note drafting is getting crowded. Orders, documentation queries and diagnosis write-back sit closer to the workflow and the claim. The release makes that expansion tangible, but I still need evidence that hospitals use the modules repeatedly and pay more for them.',
+    entryType: 'platform',
+    scope: 'company',
+    themes: ['ambient-ai'],
+    relatedCompanyIds: ['abridge'],
+    sources: [
+      {
+        title: 'Now in Practice: October 2026',
+        publisher: 'Abridge',
+        url: 'https://www.abridge.com/blog/now-in-practice-october-2026',
+        publishedAt: 'October 27, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
     "id": "2026-10-treasury-biotech-outbound-rule",
     "headline": "China-biotech political risk now has a proposed investment rule",
     "entryDate": "October 26, 2026",
