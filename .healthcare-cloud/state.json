@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 74,
+  "revision": 75,
   "lock": {
     "owner": "daily-2026-10-27-1793152882373-7foknurf",
     "acquiredAt": "2026-10-28T02:01:22.373Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "c4eb19298da319402decde827c3b958088d40ec1",
-    "vercelDeploymentId": "dpl_8cK5KTZXDnxp1kBq7xsEPcvUPZQK",
-    "lastVerifiedAt": "2026-10-27T02:05:08.184Z",
+    "lastVerifiedSha": "f6b8550717caf6e522048f4a08fa14de676d9e2d",
+    "vercelDeploymentId": "dpl_496Ur9AebWa6c25nusZ3m3c5VSSY",
+    "lastVerifiedAt": "2026-10-28T02:09:36.887Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-26",
-      "checkpointProvenance": "Targeted daily delta across all ten current companies, competitors and wider healthcare. Published one proposed-rule update in the existing China-licensing thread; company universe and macro thesis unchanged.",
-      "sourceWindowStart": "2026-10-26T02:07:40.288Z",
-      "sourceWindowEnd": "2026-10-27T02:02:39.261Z",
-      "lastSuccessfulReviewAt": "2026-10-27T02:05:08.184Z",
-      "lastSuccessfulPublicationAt": "2026-10-27T02:05:08.184Z"
+      "lastSuccessfulEasternDate": "2026-10-27",
+      "checkpointProvenance": "Targeted daily delta across all ten current companies, competitors and wider healthcare. Published early BEAM-301 Phase 1/2 evidence and Abridge workflow/revenue-cycle additions; company universe and macro thesis unchanged.",
+      "sourceWindowStart": "2026-10-27T02:02:39.261Z",
+      "sourceWindowEnd": "2026-10-28T02:06:35.328Z",
+      "lastSuccessfulReviewAt": "2026-10-28T02:09:36.887Z",
+      "lastSuccessfulPublicationAt": "2026-10-28T02:09:36.887Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-24",
@@ -32,46 +32,7 @@
       "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-10-27",
-    "baseSha": "c4eb19298da319402decde827c3b958088d40ec1",
-    "candidateSha": "f6b8550717caf6e522048f4a08fa14de676d9e2d",
-    "candidateTree": "a3178a2e6167447953dae23ad6ee0d39e3196dd6",
-    "candidateBranch": "healthcare-candidate-2026-10-27-7foknurf",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-28T02:06:35.328Z",
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 231 notes, 1 prior thesis",
-      "build": "PASS exact tree a3178a2e6167447953dae23ad6ee0d39e3196dd6",
-      "preservation": "PASS model-only semantic and structural review; all prior notes, thesis, IDs, archives, predictions, links and unrelated memo content retained; git diff check clean",
-      "writingReview": "Contextual Avoid AI Writing review completed with no high-priority stock pattern. Packaged deterministic detector/validator was not executable in this host, so no score claimed.",
-      "remoteTreeAndFileReadback": "PASS exact validated tree and both changed files"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 231
-    },
-    "newEntryIds": [
-      "2026-10-beam-301-initial-data",
-      "2026-10-abridge-october-release"
-    ],
-    "affectedMemos": [
-      "abridge"
-    ],
-    "sourceUrls": [
-      "https://beamtherapeutics.gcs-web.com/news-releases/news-release-details/beam-therapeutics-reports-initial-clinical-data-phase-12-trial",
-      "https://clinicaltrials.gov/study/NCT06735755",
-      "https://www.abridge.com/blog/now-in-practice-october-2026"
-    ],
-    "sourceWindowStart": "2026-10-27T02:02:39.261Z",
-    "sourceWindowEnd": "2026-10-28T02:06:35.328Z",
-    "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources prioritized and prior notes deduplicated. Two material October 27 developments recorded; no company-universe or macro-thesis change.",
-    "limitations": "BEAM-301 data are company-reported, open-label and limited to six patients in dose exploration; four had related serious adverse events and follow-up is short. The Abridge release describes capabilities, not customer-level adoption, independent accuracy or patient outcomes.",
-    "mainAdvancedAt": "2026-10-28T02:07:36.195Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -849,6 +810,66 @@
         "archives": "2 stable archived cases: turn-bio and evolutionaryscale",
         "affectedMemos": "None; industry note cross-links April and July China-licensing entries",
         "home": "10 current, 2 past cases, 229 entries",
+        "fund": "Current October thesis retained",
+        "vercel": "READY exact tested SHA on existing production domain"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-10-27",
+      "baseSha": "c4eb19298da319402decde827c3b958088d40ec1",
+      "candidateSha": "f6b8550717caf6e522048f4a08fa14de676d9e2d",
+      "candidateTree": "a3178a2e6167447953dae23ad6ee0d39e3196dd6",
+      "candidateBranch": "healthcare-candidate-2026-10-27-7foknurf",
+      "stage": "published-and-verified",
+      "createdAt": "2026-10-28T02:06:35.328Z",
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 231 notes, 1 prior thesis",
+        "build": "PASS exact tree a3178a2e6167447953dae23ad6ee0d39e3196dd6",
+        "preservation": "PASS model-only semantic and structural review; all prior notes, thesis, IDs, archives, predictions, links and unrelated memo content retained; git diff check clean",
+        "writingReview": "Contextual Avoid AI Writing review completed with no high-priority stock pattern. Packaged deterministic detector/validator was not executable in this host, so no score claimed.",
+        "remoteTreeAndFileReadback": "PASS exact validated tree and both changed files"
+      },
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 231
+      },
+      "newEntryIds": [
+        "2026-10-beam-301-initial-data",
+        "2026-10-abridge-october-release"
+      ],
+      "affectedMemos": [
+        "abridge"
+      ],
+      "sourceUrls": [
+        "https://beamtherapeutics.gcs-web.com/news-releases/news-release-details/beam-therapeutics-reports-initial-clinical-data-phase-12-trial",
+        "https://clinicaltrials.gov/study/NCT06735755",
+        "https://www.abridge.com/blog/now-in-practice-october-2026"
+      ],
+      "sourceWindowStart": "2026-10-27T02:02:39.261Z",
+      "sourceWindowEnd": "2026-10-28T02:06:35.328Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources prioritized and prior notes deduplicated. Two material October 27 developments recorded; no company-universe or macro-thesis change.",
+      "limitations": "BEAM-301 data are company-reported, open-label and limited to six patients in dose exploration; four had related serious adverse events and follow-up is short. The Abridge release describes capabilities, not customer-level adoption, independent accuracy or patient outcomes.",
+      "mainAdvancedAt": "2026-10-28T02:07:36.195Z",
+      "completedAt": "2026-10-28T02:09:36.887Z",
+      "result": "published-and-verified",
+      "commit": "f6b8550717caf6e522048f4a08fa14de676d9e2d",
+      "deploymentId": "dpl_496Ur9AebWa6c25nusZ3m3c5VSSY",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "liveVerification": {
+        "following": "231 entries; both October 27 notes expanded with separate writing/event dates, evidence limits and primary-source links",
+        "filters": "Science and regulation includes BEAM-301; Platforms includes the Abridge release",
+        "current": "10 stable current company memo links",
+        "archives": "2 stable archived cases: turn-bio and evolutionaryscale",
+        "affectedMemos": "Abridge live with October 27 review date, workflow/revenue-cycle update and new source link",
+        "home": "10 current, 2 past cases, 231 entries",
         "fund": "Current October thesis retained",
         "vercel": "READY exact tested SHA on existing production domain"
       }
