@@ -460,7 +460,7 @@ export const COMPANIES: Company[] = [
     problem:
       'Electronic records digitised clinical work and moved an enormous documentation burden onto clinicians, who now spend a substantial share of every encounter typing rather than looking at the patient. That is the problem everyone talks about. The larger and less discussed one sits downstream: hospitals lose significant revenue to under-coding and claim denials because the documentation does not capture what justifies the billing, and they employ expensive human reviewers to chase physicians for the missing detail.',
     product:
-      "Ambient capture of the clinical conversation, generating a structured note inside the EHR workflow. On top of that, code generation that maps the conversation to ICD-10 and CPT codes intended to survive a payer audit. Another layer, announced June 11 2026, is trial screening: identifying patients eligible for clinical studies from conversations already happening, sold to pharma rather than to hospitals. NVIDIA is separately co-developing a foundation model trained on clinical conversation. Its October 13 account describes Assistant, available since the September release even to non-documentation users at partner systems: chart-cited answers, guidelines and clinician-reviewed drafts.",
+      "Ambient capture of the clinical conversation, generating a structured note inside the EHR workflow. On top of that, code generation that maps the conversation to ICD-10 and CPT codes intended to survive a payer audit. Another layer, announced June 11 2026, is trial screening: identifying patients eligible for clinical studies from conversations already happening, sold to pharma rather than to hospitals. NVIDIA is separately co-developing a foundation model trained on clinical conversation. Its October 13 account describes Assistant, available since the September release even to non-documentation users at partner systems: chart-cited answers, guidelines and clinician-reviewed drafts. The October 27 release stages orders in Epic for clinician review, extends CDI queries to outpatient notes, writes accepted inpatient diagnoses into the chart, and gives governance teams an evaluation dashboard. Those are company-described capabilities, not evidence of adoption or improved outcomes.",
     whyNow:
       'Speech recognition on messy multi-speaker clinical audio became reliable around 2023, which opened the category. What makes 2026 the interesting moment is different: health system margins are thin enough that a documentation product has to justify itself financially rather than on physician satisfaction, which pushes every serious company toward the revenue cycle. Abridge got there with more scale than anyone else, and the accumulated denial data compounds.',
     market:
@@ -544,9 +544,9 @@ export const COMPANIES: Company[] = [
       'An S-1 revealing that coding revenue is a much smaller share than I have assumed.',
     ],
     view:
-      "My view as of October 2026 is that pre-bill review makes the coding thesis more concrete. The VA enterprise contract is another distribution route, but its $775.72 million ceiling is shared across vendors and is not booked Abridge revenue. The October 8 UT System agreement creates another route to expansion while leaving local institutions in control. I want to know how many turn access into sustained use, and what the modules earn. More places to deploy a product and a better product are both useful; neither settles what I should pay for the company.",
+      "My view as of October 2026 is that pre-bill review makes the coding thesis more concrete. The VA enterprise contract is another distribution route, but its $775.72 million ceiling is shared across vendors and is not booked Abridge revenue. The October 8 UT System agreement creates another route to expansion while leaving local institutions in control. The October 27 release reaches orders, outpatient queries and diagnosis write-back, making the move from note drafting into workflow and revenue cycle more tangible. I want to know how many clinicians use these modules repeatedly and what health systems pay for them. More places to deploy a product and a broader product are both useful; neither settles what I should pay for the company.",
 
-    lastReviewed: "October 15, 2026",
+    lastReviewed: "October 27, 2026",
     sources: [
       {
         "title": "Pre-bill review for CDI and coding teams",
@@ -601,6 +601,12 @@ export const COMPANIES: Company[] = [
         "publisher": "Nabla",
         "url": "https://www.nabla.com/press-release/nabla-integrates-with-openevidence-to-deliver-clinical-evidence-at-the-point-of-care",
         "publishedAt": "October 15, 2026"
+      },
+      {
+        title: 'Now in Practice: October 2026',
+        publisher: 'Abridge',
+        url: 'https://www.abridge.com/blog/now-in-practice-october-2026',
+        publishedAt: 'October 27, 2026',
       },
     ],
   },
