@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 72,
+  "revision": 73,
   "lock": {
     "owner": "daily-2026-10-27-1793152882373-7foknurf",
     "acquiredAt": "2026-10-28T02:01:22.373Z",
@@ -32,7 +32,45 @@
       "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternReviewDate": "2026-10-27",
+    "baseSha": "c4eb19298da319402decde827c3b958088d40ec1",
+    "candidateSha": "f6b8550717caf6e522048f4a08fa14de676d9e2d",
+    "candidateTree": "a3178a2e6167447953dae23ad6ee0d39e3196dd6",
+    "candidateBranch": "healthcare-candidate-2026-10-27-7foknurf",
+    "stage": "validated-candidate",
+    "createdAt": "2026-10-28T02:06:35.328Z",
+    "checks": {
+      "npmCi": "PASS remote lockfile",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 231 notes, 1 prior thesis",
+      "build": "PASS exact tree a3178a2e6167447953dae23ad6ee0d39e3196dd6",
+      "preservation": "PASS model-only semantic and structural review; all prior notes, thesis, IDs, archives, predictions, links and unrelated memo content retained; git diff check clean",
+      "writingReview": "Contextual Avoid AI Writing review completed with no high-priority stock pattern. Packaged deterministic detector/validator was not executable in this host, so no score claimed.",
+      "remoteTreeAndFileReadback": "PASS exact validated tree and both changed files"
+    },
+    "counts": {
+      "current": 10,
+      "archived": 2,
+      "notes": 231
+    },
+    "newEntryIds": [
+      "2026-10-beam-301-initial-data",
+      "2026-10-abridge-october-release"
+    ],
+    "affectedMemos": [
+      "abridge"
+    ],
+    "sourceUrls": [
+      "https://beamtherapeutics.gcs-web.com/news-releases/news-release-details/beam-therapeutics-reports-initial-clinical-data-phase-12-trial",
+      "https://clinicaltrials.gov/study/NCT06735755",
+      "https://www.abridge.com/blog/now-in-practice-october-2026"
+    ],
+    "sourceWindowStart": "2026-10-27T02:02:39.261Z",
+    "sourceWindowEnd": "2026-10-28T02:06:35.328Z",
+    "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources prioritized and prior notes deduplicated. Two material October 27 developments recorded; no company-universe or macro-thesis change.",
+    "limitations": "BEAM-301 data are company-reported, open-label and limited to six patients in dose exploration; four had related serious adverse events and follow-up is short. The Abridge release describes capabilities, not customer-level adoption, independent accuracy or patient outcomes."
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
