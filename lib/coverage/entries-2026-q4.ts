@@ -3,6 +3,38 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    id: '2026-10-fda-individualized-ge-bla-draft',
+    headline: 'FDA sketches a license for one editing platform and many patient-specific variants',
+    entryDate: 'October 28, 2026',
+    sortKey: '2026-10-28',
+    eventDate: 'October 27, 2026 announcement; October 28, 2026 Federal Register publication',
+    analysis:
+      'FDA issued draft guidance describing how an individualized genome-editing product with multiple patient-specific variants could sit under one biologics license. The applicant would define an Individualized Feature Space, or IFS, that sets the allowed variation in components such as a guide RNA sequence. Once the original BLA is approved, FDA says a new variant inside that space could generally be added as a manufacturing change through a supplement, using in vitro activity and safety data rather than another clinical trial.\n\nThe boundary matters. The draft is limited to monogenic diseases, variants in the same gene and the same editing outcome. The delivery vehicle, formulation, strength and other parts of the product stay fixed. The original license still needs supporting clinical data, and each new guide and editor combination needs its own in vitro off-target assessment. This is draft, nonbinding guidance under comment until November 27, not an approval or a blanket path for every one-patient therapy.\n\nIn my first KJ Muldoon note, I did not know how a regulator could approve an n-of-one therapy as a category. FDA has now described part of an answer. The category would be the platform and its defined limits, with a patient-specific guide added inside them. It does not solve who pays or how one-off doses get manufactured quickly, but it moves the regulatory question from an open-ended hope to a proposed process I can follow.',
+    entryType: 'regulation-policy',
+    scope: 'industry',
+    themes: ['gene-editing'],
+    relatedEntryIds: [
+      '2025-11-kj-muldoon',
+      '2026-03-kj-one-year',
+      '2026-10-beam-301-initial-data',
+    ],
+    sources: [
+      {
+        title: 'Individualized Human Genome Editing Products: Considerations for BLA Submission and Postapproval Management',
+        publisher: 'FDA',
+        url: 'https://www.fda.gov/regulatory-information/search-fda-guidance-documents/individualized-human-genome-editing-products-considerations-bla-submission-and-postapproval',
+        publishedAt: 'October 2026 draft guidance',
+      },
+      {
+        title: 'Individualized Human Genome Editing Products: Draft Guidance for Industry; Availability',
+        publisher: 'Federal Register',
+        url: 'https://www.federalregister.gov/documents/2026/10/28/2026-21954/individualized-human-genome-editing-products-considerations-for-bla-submission-and-postapproval',
+        publishedAt: 'October 28, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
     id: '2026-10-beam-301-initial-data',
     headline: 'Beam gets an early human signal from base editing beyond one patient',
     entryDate: 'October 27, 2026',
