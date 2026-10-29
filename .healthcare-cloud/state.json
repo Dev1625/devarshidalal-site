@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 77,
+  "revision": 78,
   "lock": {
     "owner": "daily-2026-10-28-1793239515255-yitobc27",
     "acquiredAt": "2026-10-29T02:05:15.255Z",
@@ -32,7 +32,43 @@
       "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternReviewDate": "2026-10-28",
+    "baseSha": "f6b8550717caf6e522048f4a08fa14de676d9e2d",
+    "candidateSha": "de8fdb8af47864f7240a796bddeed3476ac0ab7c",
+    "candidateTree": "8a736f74508a77465097fc56a35c801751069c48",
+    "candidateBranch": "healthcare-candidate-2026-10-28-fda-individualized-ge",
+    "stage": "candidate-validated",
+    "createdAt": "2026-10-29T02:09:16.098Z",
+    "checks": {
+      "npmCi": "PASS remote lockfile",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 232 notes, 1 prior thesis",
+      "build": "PASS exact tree 8a736f74508a77465097fc56a35c801751069c48",
+      "preservation": "PASS model-only structural and semantic review; additive one-file diff retained all prior notes, thesis, IDs, archives, forecasts, sources and unrelated content; git diff check clean",
+      "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern or unsupported first-person claim. Packaged deterministic detector/validator was not executable in this host, so no score claimed.",
+      "remoteTreeAndFileReadback": "PASS exact validated cloud tree matches isolated remote candidate tree"
+    },
+    "counts": {
+      "current": 10,
+      "archived": 2,
+      "notes": 232
+    },
+    "newEntryIds": [
+      "2026-10-fda-individualized-ge-bla-draft"
+    ],
+    "affectedMemos": [],
+    "sourceUrls": [
+      "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/individualized-human-genome-editing-products-considerations-bla-submission-and-postapproval",
+      "https://www.fda.gov/media/195887/download",
+      "https://www.federalregister.gov/documents/2026/10/28/2026-21954/individualized-human-genome-editing-products-considerations-for-bla-submission-and-postapproval",
+      "https://www.hhs.gov/press-room/fda-cms-advance-gene-therapies-rare-diseases-patient-access.html"
+    ],
+    "sourceWindowStart": "2026-10-28T02:06:35.328Z",
+    "sourceWindowEnd": "2026-10-29T02:09:16.098Z",
+    "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources prioritized, old Synchron material rejected as stale and prior notes deduplicated. One material personalized-gene-editing policy development recorded; company universe and macro thesis unchanged.",
+    "limitations": "FDA issued draft, nonbinding guidance, not a final rule or product approval. The proposed single-BLA framework is limited to defined individualized genome-editing variants for monogenic disease, with an original clinically supported license, fixed core product features and variant-specific in vitro safety and activity testing."
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
