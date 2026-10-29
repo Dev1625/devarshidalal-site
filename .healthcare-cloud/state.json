@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 78,
+  "revision": 79,
   "lock": {
     "owner": "daily-2026-10-28-1793239515255-yitobc27",
     "acquiredAt": "2026-10-29T02:05:15.255Z",
@@ -39,7 +39,7 @@
     "candidateSha": "de8fdb8af47864f7240a796bddeed3476ac0ab7c",
     "candidateTree": "8a736f74508a77465097fc56a35c801751069c48",
     "candidateBranch": "healthcare-candidate-2026-10-28-fda-individualized-ge",
-    "stage": "candidate-validated",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-10-29T02:09:16.098Z",
     "checks": {
       "npmCi": "PASS remote lockfile",
@@ -67,7 +67,8 @@
     "sourceWindowStart": "2026-10-28T02:06:35.328Z",
     "sourceWindowEnd": "2026-10-29T02:09:16.098Z",
     "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original sources prioritized, old Synchron material rejected as stale and prior notes deduplicated. One material personalized-gene-editing policy development recorded; company universe and macro thesis unchanged.",
-    "limitations": "FDA issued draft, nonbinding guidance, not a final rule or product approval. The proposed single-BLA framework is limited to defined individualized genome-editing variants for monogenic disease, with an original clinically supported license, fixed core product features and variant-specific in vitro safety and activity testing."
+    "limitations": "FDA issued draft, nonbinding guidance, not a final rule or product approval. The proposed single-BLA framework is limited to defined individualized genome-editing variants for monogenic disease, with an original clinically supported license, fixed core product features and variant-specific in vitro safety and activity testing.",
+    "mainAdvancedAt": "2026-10-29T02:09:56.786Z"
   },
   "recentRuns": [
     {
