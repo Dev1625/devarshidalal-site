@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 84,
+  "revision": 85,
   "lock": {
     "owner": "daily-2026-10-29-1793325680756-e70lkee2",
     "acquiredAt": "2026-10-30T02:01:20.756Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "de8fdb8af47864f7240a796bddeed3476ac0ab7c",
-    "vercelDeploymentId": "dpl_DhEav69nF7Kfc6tiEbkM251QPsnp",
-    "lastVerifiedAt": "2026-10-29T02:11:48.335Z",
+    "lastVerifiedSha": "1ff51780a81f10ccdce063b33006e966bcb985d0",
+    "vercelDeploymentId": "dpl_6XGufPMHqPzrxKNbCzLJ8vBLXkem",
+    "lastVerifiedAt": "2026-10-30T02:08:27.069Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-28",
-      "checkpointProvenance": "Targeted daily delta across all ten current companies, competitors and wider healthcare. Published FDA's draft individualized genome-editing BLA framework; company universe and macro thesis unchanged.",
-      "sourceWindowStart": "2026-10-28T02:06:35.328Z",
-      "sourceWindowEnd": "2026-10-29T02:09:16.098Z",
-      "lastSuccessfulReviewAt": "2026-10-29T02:11:48.335Z",
-      "lastSuccessfulPublicationAt": "2026-10-29T02:11:48.335Z"
+      "lastSuccessfulEasternDate": "2026-10-29",
+      "checkpointProvenance": "Targeted daily delta across all ten current companies, competitors and wider healthcare. Published OpenEvidence's NYU Langone patient-aware Epic integration; company universe and macro thesis unchanged.",
+      "sourceWindowStart": "2026-10-29T02:09:16.098Z",
+      "sourceWindowEnd": "2026-10-30T02:05:29.872Z",
+      "lastSuccessfulReviewAt": "2026-10-30T02:08:27.069Z",
+      "lastSuccessfulPublicationAt": "2026-10-30T02:08:27.069Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-24",
@@ -32,43 +32,7 @@
       "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-10-29",
-    "baseSha": "de8fdb8af47864f7240a796bddeed3476ac0ab7c",
-    "candidateSha": "1ff51780a81f10ccdce063b33006e966bcb985d0",
-    "candidateTree": "617418479957cf6edf41542aebb808afb075301d",
-    "candidateBranch": "healthcare-daily-2026-10-29-openevidence-nyu-e70l",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-30T02:05:29.872Z",
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 233 notes, 1 prior thesis",
-      "build": "PASS exact tree 617418479957cf6edf41542aebb808afb075301d",
-      "preservation": "PASS model-only semantic and structural review; prior notes, thesis, IDs, archives, predictions, links and unrelated content retained; git diff check clean",
-      "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported first-person claim. Packaged deterministic detector/validator was not executable from this host, so no score claimed.",
-      "remoteTreeAndFileReadback": "PASS exact validated cloud tree matches isolated remote candidate tree"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 233
-    },
-    "newEntryIds": [
-      "2026-10-openevidence-nyu-langone"
-    ],
-    "affectedMemos": [
-      "openevidence"
-    ],
-    "sourceUrls": [
-      "https://nyulangone.org/news/openevidence-and-nyu-langone-health-partner-bring-patient-aware-intelligence-12-million-visits-new-york-city"
-    ],
-    "sourceWindowStart": "2026-10-29T02:09:16.098Z",
-    "sourceWindowEnd": "2026-10-30T02:05:29.872Z",
-    "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company, health-system and regulatory sources prioritized; earlier Abridge and Xaira items deduplicated. One material OpenEvidence deployment recorded; company universe and macro thesis unchanged.",
-    "limitations": "NYU Langone's visit and workforce figures describe deployment scope, not OpenEvidence utilization. The announcement discloses no contract value, rollout usage, independent accuracy results or patient outcomes.",
-    "mainAdvancedAt": "2026-10-30T02:06:06.919Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -961,6 +925,60 @@
         "archives": "2 stable archived cases and routes: turn-bio and evolutionaryscale",
         "affectedMemos": "None; industry note cross-links KJ Muldoon, the one-year follow-up and BEAM-301",
         "home": "10 current, 2 past cases, 232 entries",
+        "fund": "Current October thesis retained",
+        "vercel": "READY exact tested SHA on existing production domain"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-10-29",
+      "baseSha": "de8fdb8af47864f7240a796bddeed3476ac0ab7c",
+      "candidateSha": "1ff51780a81f10ccdce063b33006e966bcb985d0",
+      "candidateTree": "617418479957cf6edf41542aebb808afb075301d",
+      "candidateBranch": "healthcare-daily-2026-10-29-openevidence-nyu-e70l",
+      "completedAt": "2026-10-30T02:08:27.069Z",
+      "result": "published-and-verified",
+      "commit": "1ff51780a81f10ccdce063b33006e966bcb985d0",
+      "deploymentId": "dpl_6XGufPMHqPzrxKNbCzLJ8vBLXkem",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 233
+      },
+      "newEntryIds": [
+        "2026-10-openevidence-nyu-langone"
+      ],
+      "affectedMemos": [
+        "openevidence"
+      ],
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 233 notes, 1 prior thesis",
+        "build": "PASS exact tree 617418479957cf6edf41542aebb808afb075301d",
+        "preservation": "PASS model-only semantic and structural review; prior notes, thesis, IDs, archives, predictions, links and unrelated content retained; git diff check clean",
+        "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported first-person claim. Packaged deterministic detector/validator was not executable from this host, so no score claimed.",
+        "remoteTreeAndFileReadback": "PASS exact validated cloud tree matches isolated remote candidate tree"
+      },
+      "sourceUrls": [
+        "https://nyulangone.org/news/openevidence-and-nyu-langone-health-partner-bring-patient-aware-intelligence-12-million-visits-new-york-city"
+      ],
+      "sourceWindowStart": "2026-10-29T02:09:16.098Z",
+      "sourceWindowEnd": "2026-10-30T02:05:29.872Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company, health-system and regulatory sources prioritized; earlier Abridge and Xaira items deduplicated. One material OpenEvidence deployment recorded; company universe and macro thesis unchanged.",
+      "limitations": "NYU Langone's visit and workforce figures describe deployment scope, not OpenEvidence utilization. The announcement discloses no contract value, rollout usage, independent accuracy results or patient outcomes.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "liveVerification": {
+        "following": "233 entries; October 29 OpenEvidence/NYU Langone note expanded with separate writing/event dates, deployment-scope caveats and official source link",
+        "filters": "Platforms filter includes the new OpenEvidence note",
+        "current": "10 stable current company memo links",
+        "archives": "2 stable archived cases and routes: turn-bio and evolutionaryscale",
+        "affectedMemos": "OpenEvidence live with NYU Langone integration, scope figures, October 29 review date and official source",
+        "home": "10 current, 2 past cases, 233 entries",
         "fund": "Current October thesis retained",
         "vercel": "READY exact tested SHA on existing production domain"
       }
