@@ -1,7 +1,12 @@
 {
   "schemaVersion": 1,
-  "revision": 81,
-  "lock": null,
+  "revision": 82,
+  "lock": {
+    "owner": "daily-2026-10-29-1793325680756-e70lkee2",
+    "acquiredAt": "2026-10-30T02:01:20.756Z",
+    "easternReviewDate": "2026-10-29",
+    "runKind": "daily"
+  },
   "production": {
     "branch": "main",
     "lastVerifiedSha": "de8fdb8af47864f7240a796bddeed3476ac0ab7c",
