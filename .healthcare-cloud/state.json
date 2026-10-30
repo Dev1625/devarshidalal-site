@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 82,
+  "revision": 83,
   "lock": {
     "owner": "daily-2026-10-29-1793325680756-e70lkee2",
     "acquiredAt": "2026-10-30T02:01:20.756Z",
@@ -32,7 +32,42 @@
       "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternReviewDate": "2026-10-29",
+    "baseSha": "de8fdb8af47864f7240a796bddeed3476ac0ab7c",
+    "candidateSha": "1ff51780a81f10ccdce063b33006e966bcb985d0",
+    "candidateTree": "617418479957cf6edf41542aebb808afb075301d",
+    "candidateBranch": "healthcare-daily-2026-10-29-openevidence-nyu-e70l",
+    "stage": "candidate-validated",
+    "createdAt": "2026-10-30T02:05:29.872Z",
+    "checks": {
+      "npmCi": "PASS remote lockfile",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 233 notes, 1 prior thesis",
+      "build": "PASS exact tree 617418479957cf6edf41542aebb808afb075301d",
+      "preservation": "PASS model-only semantic and structural review; prior notes, thesis, IDs, archives, predictions, links and unrelated content retained; git diff check clean",
+      "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported first-person claim. Packaged deterministic detector/validator was not executable from this host, so no score claimed.",
+      "remoteTreeAndFileReadback": "PASS exact validated cloud tree matches isolated remote candidate tree"
+    },
+    "counts": {
+      "current": 10,
+      "archived": 2,
+      "notes": 233
+    },
+    "newEntryIds": [
+      "2026-10-openevidence-nyu-langone"
+    ],
+    "affectedMemos": [
+      "openevidence"
+    ],
+    "sourceUrls": [
+      "https://nyulangone.org/news/openevidence-and-nyu-langone-health-partner-bring-patient-aware-intelligence-12-million-visits-new-york-city"
+    ],
+    "sourceWindowStart": "2026-10-29T02:09:16.098Z",
+    "sourceWindowEnd": "2026-10-30T02:05:29.872Z",
+    "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company, health-system and regulatory sources prioritized; earlier Abridge and Xaira items deduplicated. One material OpenEvidence deployment recorded; company universe and macro thesis unchanged.",
+    "limitations": "NYU Langone's visit and workforce figures describe deployment scope, not OpenEvidence utilization. The announcement discloses no contract value, rollout usage, independent accuracy results or patient outcomes."
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
