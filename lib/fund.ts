@@ -319,6 +319,11 @@ export const COMPANIES: Company[] = [
         read: 'Hospital credentials now open the tool to physicians, nurses, pharmacists and other clinical staff. I read this as distribution progress; the announcement gives no contract value or patient-outcome results.',
       },
       {
+        label: 'NYU Langone deployment',
+        value: 'Patient-aware Epic integration announced October 29, 2026',
+        read: 'The health system reports 12.4 million outpatient visits a year, but that is deployment scope rather than OpenEvidence usage. The announcement gives no contract value, rollout metrics, independent accuracy results or patient outcomes.',
+      },
+      {
         "label": "Johns Hopkins collaboration",
         "value": "Education and clinical AI development announced October 13, 2026",
         "read": "The partners describe planned work combining evidence and patient history. The release gives no commercial terms or patient-outcome results."
@@ -356,7 +361,8 @@ export const COMPANIES: Company[] = [
       'What is revenue per active physician, and how concentrated is it across pharma advertisers? A handful of large sponsors would change the risk profile substantially.',
       'What are the actual terms and durations of the NEJM and JAMA agreements, and are they exclusive?',
       "What does weekly active use look like against the 757,000 registration figure? Registrations and habits are different assets. The October 15 JAMA paper supplies monthly use and retention, but not weekly activity.",
-      'What are the commercial terms of enterprise deployments such as Northwestern: who pays, what is priced, and does the arrangement diversify revenue beyond advertising?',
+      'What are the commercial terms of enterprise deployments such as Northwestern and NYU Langone: who pays, what is priced, and do the arrangements diversify revenue beyond advertising?',
+      'For patient-aware deployments, which chart fields can OpenEvidence use, how are permissions enforced and how does a clinician audit the patient context behind an answer?',
       "Which tools emerge from the Johns Hopkins collaboration, and how will their effects on clinical decisions and patient outcomes be evaluated?",
     ],
     changeMyMind: [
@@ -366,9 +372,9 @@ export const COMPANIES: Company[] = [
       'Disclosure that revenue depends on a small number of advertisers.',
     ],
     view:
-      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion, the valuation is roughly 50 times Sacra’s estimated July annualised run rate and 30 to 38 times the Financial Times source’s projected 2026 advertising revenue. Both are estimates, not audited revenue. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic deployment strengthens the distribution case and extends access beyond physicians. It does not disclose a new revenue stream. JAMA now adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
+      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion, the valuation is roughly 50 times Sacra’s estimated July annualised run rate and 30 to 38 times the Financial Times source’s projected 2026 advertising revenue. Both are estimates, not audited revenue. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic access and NYU Langone’s patient-aware integration strengthen the distribution case. Neither announcement discloses contract value, usage or a new revenue stream. JAMA now adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
 
-    lastReviewed: "October 21, 2026",
+    lastReviewed: "October 29, 2026",
     sources: [
       {
         "title": "The $15bn 'viral' AI start-up changing how American doctors treat patients",
@@ -398,6 +404,12 @@ export const COMPANIES: Company[] = [
         publisher: 'Northwestern Medicine',
         url: 'https://news.nm.org/openevidence-and-northwestern-medicine-launch-collaboration-to-integrate-clinical-evidence-into-the-ehr/',
         publishedAt: 'October 12, 2026',
+      },
+      {
+        title: 'OpenEvidence and NYU Langone Health partner on patient-aware clinical intelligence',
+        publisher: 'NYU Langone Health',
+        url: 'https://nyulangone.org/news/openevidence-and-nyu-langone-health-partner-bring-patient-aware-intelligence-12-million-visits-new-york-city',
+        publishedAt: 'October 29, 2026',
       },
       {
         title: 'Abridge extends chart-connected clinical intelligence to partner systems',
