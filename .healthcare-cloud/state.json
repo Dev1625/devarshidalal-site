@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 83,
+  "revision": 84,
   "lock": {
     "owner": "daily-2026-10-29-1793325680756-e70lkee2",
     "acquiredAt": "2026-10-30T02:01:20.756Z",
@@ -39,7 +39,7 @@
     "candidateSha": "1ff51780a81f10ccdce063b33006e966bcb985d0",
     "candidateTree": "617418479957cf6edf41542aebb808afb075301d",
     "candidateBranch": "healthcare-daily-2026-10-29-openevidence-nyu-e70l",
-    "stage": "candidate-validated",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-10-30T02:05:29.872Z",
     "checks": {
       "npmCi": "PASS remote lockfile",
@@ -66,7 +66,8 @@
     "sourceWindowStart": "2026-10-29T02:09:16.098Z",
     "sourceWindowEnd": "2026-10-30T02:05:29.872Z",
     "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company, health-system and regulatory sources prioritized; earlier Abridge and Xaira items deduplicated. One material OpenEvidence deployment recorded; company universe and macro thesis unchanged.",
-    "limitations": "NYU Langone's visit and workforce figures describe deployment scope, not OpenEvidence utilization. The announcement discloses no contract value, rollout usage, independent accuracy results or patient outcomes."
+    "limitations": "NYU Langone's visit and workforce figures describe deployment scope, not OpenEvidence utilization. The announcement discloses no contract value, rollout usage, independent accuracy results or patient outcomes.",
+    "mainAdvancedAt": "2026-10-30T02:06:06.919Z"
   },
   "recentRuns": [
     {
