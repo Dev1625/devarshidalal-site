@@ -3,6 +3,29 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    id: '2026-10-openevidence-nyu-langone',
+    headline: 'OpenEvidence goes deeper into Epic at NYU Langone',
+    entryDate: 'October 29, 2026',
+    sortKey: '2026-10-29',
+    eventDate: 'October 29, 2026 announcement',
+    analysis:
+      'NYU Langone and OpenEvidence announced that OpenEvidence will sit inside the health system\'s Epic workflow and use patient record context when answering clinicians\' questions with medical literature. NYU Langone says the deployment extends across its hospitals, ambulatory network and Family Health Centers. The system reports 12.4 million outpatient visits and more than 421,000 emergency visits a year, with over 6,000 physicians and faculty. Those numbers describe the health system, not measured use of OpenEvidence.\n\nThis sounds deeper than the Northwestern access I noted earlier this month. Opening a tool with hospital credentials removes a login step; bringing the patient record into the answer moves OpenEvidence into the clinical workflow. The announcement still gives no contract terms, rollout usage, independent accuracy results or patient outcomes. I want to know which chart fields the product can use, how clinicians audit the context behind an answer and whether the deployment creates enterprise revenue beyond advertising.',
+    entryType: 'platform',
+    scope: 'company',
+    themes: ['ambient-ai'],
+    relatedCompanyIds: ['openevidence'],
+    relatedEntryIds: ['2026-10-openevidence-northwestern-epic'],
+    sources: [
+      {
+        title: 'OpenEvidence and NYU Langone Health partner on patient-aware clinical intelligence',
+        publisher: 'NYU Langone Health',
+        url: 'https://nyulangone.org/news/openevidence-and-nyu-langone-health-partner-bring-patient-aware-intelligence-12-million-visits-new-york-city',
+        publishedAt: 'October 29, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
     id: '2026-10-fda-individualized-ge-bla-draft',
     headline: 'FDA sketches a license for one editing platform and many patient-specific variants',
     entryDate: 'October 28, 2026',
