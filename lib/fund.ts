@@ -1004,6 +1004,11 @@ export const COMPANIES: Company[] = [
         "label": "Neural atlas",
         "value": "70-patient dataset; total program surpassed 100 patients, October 8, 2026",
         "read": "Company-reported recordings, with a manuscript on bioRxiv. These are not 100 permanent home-use implants."
+      },
+      {
+        "label": "International research network",
+        "value": "Two-year Cleveland Clinic Abu Dhabi MOU, announced October 29, 2026",
+        "read": "Precision's first site outside the US broadens its research network. The agreement does not announce enrollment, a completed Abu Dhabi procedure or chronic-device evidence."
       }
     ],
     competition:
@@ -1036,6 +1041,7 @@ export const COMPANIES: Company[] = [
       "What is the burn rate and runway after the $250M Series D, and how much funds chronic-device development versus manufacturing?",
       "How many neurosurgeons have been trained on micro-slit placement?",
       "How will the new commercial leadership turn clinical evidence into payer coverage for the chronic BCI, distinct from the short-term cleared array?",
+      "What protocol, approvals and patient work will come from the Cleveland Clinic Abu Dhabi MOU?",
     ],
     changeMyMind: [
       'First chronic wireless human implant, which is the event that determines this position.',
@@ -1044,9 +1050,9 @@ export const COMPANIES: Company[] = [
       'Synchron securing a reimbursement pathway first, which would matter more than any technical comparison.',
     ],
     view:
-      "My view as of October 2026 is that the financing and atlas improve the operating case. I am still waiting for verified chronic human-use data. Surface recordings across many procedures can teach the company a great deal without demonstrating durability in a permanent implant. The distinction is what I want to keep testing.",
+      "My view as of October 2026 is that the financing, atlas and first international research agreement improve the operating case. I am still waiting for verified chronic human-use data. Surface recordings across many procedures can teach the company a great deal without demonstrating durability in a permanent implant. The distinction is what I want to keep testing.",
 
-    lastReviewed: "October 24, 2026",
+    lastReviewed: "October 30, 2026",
     sources: [
       {
         title: 'INTENT early-feasibility study, NCT07543367',
@@ -1071,6 +1077,12 @@ export const COMPANIES: Company[] = [
         "publisher": "Precision Neuroscience / GlobeNewswire",
         "url": "https://www.globenewswire.com/news-release/2026/10/15/3381700/0/en/precision-neuroscience-appoints-nevro-founder-konstantinos-alataris-as-president-and-katherine-neuenfeldt-as-senior-vice-president-commercial-strategies.html",
         "publishedAt": "October 15, 2026"
+      },
+      {
+        "title": "Precision expands clinical network to Cleveland Clinic Abu Dhabi",
+        "publisher": "Precision Neuroscience / GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2026/10/29/3391322/0/en/precision-neuroscience-expands-clinical-network-beyond-the-u-s-with-first-international-site-in-abu-dhabi.html",
+        "publishedAt": "October 29, 2026"
       },
       {
         "title": "Coherence Neuro has started its first clinical study",

@@ -3,6 +3,80 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    id: '2026-10-precision-abu-dhabi-mou',
+    headline: 'Precision adds an international research site, but not a chronic implant result',
+    entryDate: 'October 30, 2026',
+    sortKey: '2026-10-30',
+    eventDate: 'October 21, 2026 agreement; October 29, 2026 announcement',
+    analysis:
+      'Precision announced a two-year memorandum of understanding with Cleveland Clinic Abu Dhabi, its first clinical research site outside the United States. The groups plan to evaluate Layer 7 for neural mapping and monitoring and explore joint technology development, training and knowledge exchange. Precision says its broader program has now passed 110 patient procedures across 18 institutions. Those are procedures with the temporary cleared interface, not 110 chronic implants.\n\nThe new site can widen the patient and surgeon base behind Precision\'s short-term product. The agreement does not announce a protocol, regulatory approval, enrollment or a completed procedure in Abu Dhabi. It also leaves the milestone I care about unchanged: verified chronic wireless use in a person. I want to see what study the MOU produces and whether it generates evidence that the existing US network could not.',
+    entryType: 'clinical',
+    scope: 'company',
+    themes: ['bci'],
+    relatedCompanyIds: ['precision-neuroscience'],
+    relatedEntryIds: [
+      '2026-10-precision-atlas',
+      '2026-10-precision-series-d',
+      '2026-08-precision-still-waiting',
+    ],
+    sources: [
+      {
+        title: 'Precision expands clinical network beyond the US with first international site in Abu Dhabi',
+        publisher: 'Precision Neuroscience / GlobeNewswire',
+        url: 'https://www.globenewswire.com/news-release/2026/10/29/3391322/0/en/precision-neuroscience-expands-clinical-network-beyond-the-u-s-with-first-international-site-in-abu-dhabi.html',
+        publishedAt: 'October 29, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
+    id: '2026-10-voceryq-accelerated-approval',
+    headline: 'FDA approves a DNA immunotherapy on fewer surgeries, with confirmation still due',
+    entryDate: 'October 30, 2026',
+    sortKey: '2026-10-30',
+    eventDate: 'October 30, 2026 accelerated approval',
+    analysis:
+      'FDA granted accelerated approval to Inovio\'s Voceryq for adults with recurrent respiratory papillomatosis, making it the first plasmid DNA-based immunotherapy approved in the US. The therapy delivers DNA encoding HPV proteins and IL-12 by intramuscular injection with electroporation. Approval rests on reducing the frequency of surgeries to remove airway papillomas, an intermediate endpoint FDA says is reasonably likely to predict clinical benefit.\n\nThe supporting study was open-label and enrolled 32 adults. Among 26 patients who had needed at least three surgeries before treatment, seven, or 27%, needed none during the first year after treatment. That is a patient-relevant change, but the small single-arm result does not establish how durable the effect is or how symptoms compare with an appropriate control. FDA requires a confirmatory study of at least 50 adults and children followed for at least three years; the approval letter sets study completion for December 2031.\n\nThis is useful evidence that a plasmid platform plus an electroporation device can get through a biologics review. It is not a broad validation of DNA immunotherapy. The next test is whether the therapy durably removes surgeries and improves symptoms in the required post-approval study.',
+    entryType: 'clinical',
+    scope: 'industry',
+    sources: [
+      {
+        title: 'FDA approves first plasmid DNA-based immunotherapy for adults with recurrent respiratory papillomatosis',
+        publisher: 'FDA',
+        url: 'https://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis',
+        publishedAt: 'October 30, 2026',
+      },
+      {
+        title: 'Voceryq accelerated approval letter',
+        publisher: 'FDA',
+        url: 'https://www.fda.gov/media/196199/download?attachment=',
+        publishedAt: 'October 30, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
+    id: '2026-10-dren-bio-financing',
+    headline: 'Dren Bio raises $350M to carry its own antibody toward market',
+    entryDate: 'October 30, 2026',
+    sortKey: '2026-10-30',
+    eventDate: 'October 29, 2026 financing close and announcement',
+    analysis:
+      'Dren Bio closed a $350 million private financing led by Juvia Group and Lightspeed. The company says the money will fund late-stage development, regulatory submission and a planned commercial launch for dibotatug, its CD94 antibody for cytotoxic T-cell lymphoma and large granular lymphocytic leukemia, as well as additional programs. Dren did not disclose a round label or valuation.\n\nMore than 300 patients have received dibotatug in an ongoing Phase 1/2 study. The financing release says the drug produced high overall and complete response rates in relapsed or refractory disease, but it does not give the rates, response duration or safety table. I would not use the size of the round as a substitute for those data. The more specific signal is that Dren is funding a regulatory and commercial path itself rather than licensing the lead asset. I want the full clinical denominators and a sense of how much runway remains after building that launch infrastructure.',
+    entryType: 'financing',
+    scope: 'industry',
+    themes: ['capital-concentration'],
+    sources: [
+      {
+        title: 'Dren Bio announces $350 million financing to advance dibotatug',
+        publisher: 'Dren Bio',
+        url: 'https://drenbio.com/news.html',
+        publishedAt: 'October 29, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
     id: '2026-10-openevidence-nyu-langone',
     headline: 'OpenEvidence goes deeper into Epic at NYU Langone',
     entryDate: 'October 29, 2026',
