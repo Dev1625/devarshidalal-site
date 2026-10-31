@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 89,
+  "revision": 90,
   "lock": {
     "owner": "daily-2026-10-30-1793412328055-b78pcg6d",
     "acquiredAt": "2026-10-31T02:05:28.055Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "1ff51780a81f10ccdce063b33006e966bcb985d0",
-    "vercelDeploymentId": "dpl_6XGufPMHqPzrxKNbCzLJ8vBLXkem",
-    "lastVerifiedAt": "2026-10-30T02:08:27.069Z",
+    "lastVerifiedSha": "fa2ddd6d3f11c75badfd87b738128b18b2f06c56",
+    "vercelDeploymentId": "dpl_FaGjfNbkxTdgTC7pvEf9EZo9nD5b",
+    "lastVerifiedAt": "2026-10-31T02:13:12.793Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-10-29",
-      "checkpointProvenance": "Targeted daily delta across all ten current companies, competitors and wider healthcare. Published OpenEvidence's NYU Langone patient-aware Epic integration; company universe and macro thesis unchanged.",
-      "sourceWindowStart": "2026-10-29T02:09:16.098Z",
-      "sourceWindowEnd": "2026-10-30T02:05:29.872Z",
-      "lastSuccessfulReviewAt": "2026-10-30T02:08:27.069Z",
-      "lastSuccessfulPublicationAt": "2026-10-30T02:08:27.069Z"
+      "lastSuccessfulEasternDate": "2026-10-30",
+      "checkpointProvenance": "Targeted daily delta across all ten current companies, competitors and wider healthcare. Published Precision's Abu Dhabi MOU, FDA's Voceryq accelerated approval and Dren Bio's $350M financing; company universe and macro thesis unchanged.",
+      "sourceWindowStart": "2026-10-30T02:05:29.872Z",
+      "sourceWindowEnd": "2026-10-31T02:10:02.694Z",
+      "lastSuccessfulReviewAt": "2026-10-31T02:13:12.793Z",
+      "lastSuccessfulPublicationAt": "2026-10-31T02:13:12.793Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-24",
@@ -32,48 +32,7 @@
       "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-10-30",
-    "baseSha": "1ff51780a81f10ccdce063b33006e966bcb985d0",
-    "candidateSha": "fa2ddd6d3f11c75badfd87b738128b18b2f06c56",
-    "candidateTree": "248281f03597d23086628f6cc30e38219ff466e8",
-    "candidateBranch": "healthcare-daily-2026-10-30-voceryq-precision-eqjc",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-10-31T02:10:02.694Z",
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 236 notes, 1 prior thesis",
-      "build": "PASS exact tree 248281f03597d23086628f6cc30e38219ff466e8",
-      "preservation": "PASS model-only semantic and structural review; prior notes, thesis, IDs, archives, predictions, links and unrelated content retained; git diff check clean",
-      "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported first-person claim. The packaged deterministic detector/validator was not executable from this host, so no score is claimed.",
-      "remoteTreeAndFileReadback": "PASS exact validated cloud tree matches isolated remote candidate tree"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 236
-    },
-    "newEntryIds": [
-      "2026-10-precision-abu-dhabi-mou",
-      "2026-10-voceryq-accelerated-approval",
-      "2026-10-dren-bio-financing"
-    ],
-    "affectedMemos": [
-      "precision-neuroscience"
-    ],
-    "sourceUrls": [
-      "https://www.globenewswire.com/news-release/2026/10/29/3391322/0/en/precision-neuroscience-expands-clinical-network-beyond-the-u-s-with-first-international-site-in-abu-dhabi.html",
-      "https://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis",
-      "https://www.fda.gov/media/196199/download?attachment=",
-      "https://drenbio.com/news.html"
-    ],
-    "sourceWindowStart": "2026-10-30T02:05:29.872Z",
-    "sourceWindowEnd": "2026-10-31T02:10:02.694Z",
-    "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company and FDA sources were read; earlier material was deduplicated. Three material items were recorded, including two missed October 29 announcements. Company universe and macro thesis are unchanged.",
-    "limitations": "Precision's Abu Dhabi agreement is a two-year MOU, not enrollment, a completed procedure or chronic-implant evidence. Voceryq received accelerated approval from a 32-adult open-label study; the no-surgery result was 7 of 26 in the higher-baseline-surgery subgroup and confirmatory work remains due. Dren's financing release does not disclose valuation, round label, response rates, response duration or a safety table.",
-    "mainAdvancedAt": "2026-10-31T02:10:21.567Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -1022,6 +981,65 @@
         "home": "10 current, 2 past cases, 233 entries",
         "fund": "Current October thesis retained",
         "vercel": "READY exact tested SHA on existing production domain"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-10-30",
+      "baseSha": "1ff51780a81f10ccdce063b33006e966bcb985d0",
+      "candidateSha": "fa2ddd6d3f11c75badfd87b738128b18b2f06c56",
+      "candidateTree": "248281f03597d23086628f6cc30e38219ff466e8",
+      "candidateBranch": "healthcare-daily-2026-10-30-voceryq-precision-eqjc",
+      "completedAt": "2026-10-31T02:13:12.793Z",
+      "result": "published-and-verified",
+      "commit": "fa2ddd6d3f11c75badfd87b738128b18b2f06c56",
+      "deploymentId": "dpl_FaGjfNbkxTdgTC7pvEf9EZo9nD5b",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 236
+      },
+      "newEntryIds": [
+        "2026-10-precision-abu-dhabi-mou",
+        "2026-10-voceryq-accelerated-approval",
+        "2026-10-dren-bio-financing"
+      ],
+      "affectedMemos": [
+        "precision-neuroscience"
+      ],
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 236 notes, 1 prior thesis",
+        "build": "PASS exact tree 248281f03597d23086628f6cc30e38219ff466e8",
+        "preservation": "PASS model-only semantic and structural review; prior notes, thesis, IDs, archives, predictions, links and unrelated content retained; git diff check clean",
+        "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported first-person claim. The packaged deterministic detector/validator was not executable from this host, so no score is claimed.",
+        "remoteTreeAndFileReadback": "PASS exact validated cloud tree matches isolated remote candidate tree"
+      },
+      "sourceUrls": [
+        "https://www.globenewswire.com/news-release/2026/10/29/3391322/0/en/precision-neuroscience-expands-clinical-network-beyond-the-u-s-with-first-international-site-in-abu-dhabi.html",
+        "https://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis",
+        "https://www.fda.gov/media/196199/download?attachment=",
+        "https://drenbio.com/news.html"
+      ],
+      "sourceWindowStart": "2026-10-30T02:05:29.872Z",
+      "sourceWindowEnd": "2026-10-31T02:10:02.694Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company and FDA sources were read; earlier material was deduplicated. Three material items were recorded, including two missed October 29 announcements. Company universe and macro thesis are unchanged.",
+      "limitations": "Precision's Abu Dhabi agreement is a two-year MOU, not enrollment, a completed procedure or chronic-implant evidence. Voceryq received accelerated approval from a 32-adult open-label study; the no-surgery result was 7 of 26 in the higher-baseline-surgery subgroup and confirmatory work remains due. Dren's financing release does not disclose valuation, round label, response rates, response duration or a safety table.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "liveVerification": {
+        "following": "236 entries; all three October 30 notes expanded with separate writing/event dates, evidence limits and primary-source links",
+        "filters": "Company notes includes Precision; Science and regulation includes Voceryq; Financing includes Dren Bio",
+        "current": "10 stable current company memo links",
+        "archives": "2 stable archived cases and routes: turn-bio and evolutionaryscale",
+        "affectedMemos": "Precision Neuroscience live with the Abu Dhabi MOU, explicit no-enrollment/no-chronic-evidence caveat, October 30 review date and official source",
+        "home": "10 current, 2 past cases, 236 entries",
+        "fund": "Current October thesis retained",
+        "vercel": "READY for the exact tested SHA on the existing production domain"
       }
     }
   ],
