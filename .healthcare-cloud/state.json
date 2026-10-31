@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 88,
+  "revision": 89,
   "lock": {
     "owner": "daily-2026-10-30-1793412328055-b78pcg6d",
     "acquiredAt": "2026-10-31T02:05:28.055Z",
@@ -39,7 +39,7 @@
     "candidateSha": "fa2ddd6d3f11c75badfd87b738128b18b2f06c56",
     "candidateTree": "248281f03597d23086628f6cc30e38219ff466e8",
     "candidateBranch": "healthcare-daily-2026-10-30-voceryq-precision-eqjc",
-    "stage": "candidate-validated",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-10-31T02:10:02.694Z",
     "checks": {
       "npmCi": "PASS remote lockfile",
@@ -71,7 +71,8 @@
     "sourceWindowStart": "2026-10-30T02:05:29.872Z",
     "sourceWindowEnd": "2026-10-31T02:10:02.694Z",
     "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare, including financing, licensing/M&A, clinical, trial, device, regulatory, manufacturing and leadership developments. Original company and FDA sources were read; earlier material was deduplicated. Three material items were recorded, including two missed October 29 announcements. Company universe and macro thesis are unchanged.",
-    "limitations": "Precision's Abu Dhabi agreement is a two-year MOU, not enrollment, a completed procedure or chronic-implant evidence. Voceryq received accelerated approval from a 32-adult open-label study; the no-surgery result was 7 of 26 in the higher-baseline-surgery subgroup and confirmatory work remains due. Dren's financing release does not disclose valuation, round label, response rates, response duration or a safety table."
+    "limitations": "Precision's Abu Dhabi agreement is a two-year MOU, not enrollment, a completed procedure or chronic-implant evidence. Voceryq received accelerated approval from a 32-adult open-label study; the no-surgery result was 7 of 26 in the higher-baseline-surgery subgroup and confirmatory work remains due. Dren's financing release does not disclose valuation, round label, response rates, response duration or a safety table.",
+    "mainAdvancedAt": "2026-10-31T02:10:21.567Z"
   },
   "recentRuns": [
     {
