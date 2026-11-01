@@ -3,6 +3,33 @@ import type { CoverageEntry } from './types';
 // Notes written in October. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    id: '2026-10-acumen-altitude-ad',
+    headline: 'Acumen lowered amyloid plaque without slowing Alzheimer’s decline',
+    entryDate: 'October 31, 2026',
+    sortKey: '2026-10-31',
+    eventDate: 'October 30, 2026 topline results',
+    analysis:
+      'Acumen reported that its 542-person Phase 2 ALTITUDE-AD trial missed its primary endpoint at both tested doses. Sabirnetug reduced amyloid plaque on PET at weeks 36 and 76, but neither dose produced a meaningful difference from placebo in cognition and function on iADRS after 18 months. The key CDR-SB secondary endpoint also was not statistically significant.\n\nThe company reported amyloid-related imaging abnormalities with edema in about 10% of treated participants and described the drug as generally well tolerated. It is stopping sabirnetug development, ending the open-label extension, conserving cash and considering strategic options. Additional biomarker and imaging analyses are still due, but Acumen says it does not expect them to change the efficacy conclusion.\n\nThis is the distinction I want the thesis to keep forcing. A biomarker can show that a drug reached and changed its intended target while the patient outcome remains unchanged. The result does not prove that amyloid is irrelevant or that every amyloid therapy fails; it shows that plaque reduction from this antibody, at these doses and in this trial, did not translate into measurable clinical benefit.',
+    entryType: 'clinical',
+    scope: 'industry',
+    themes: ['aging'],
+    sources: [
+      {
+        title: 'Acumen announces topline results from Phase 2 ALTITUDE-AD',
+        publisher: 'Acumen Pharmaceuticals',
+        url: 'https://investors.acumenpharm.com/news-releases/news-release-details/acumen-pharmaceuticals-announces-topline-results-phase-2',
+        publishedAt: 'October 30, 2026',
+      },
+      {
+        title: 'Acumen Form 8-K on ALTITUDE-AD results',
+        publisher: 'Acumen Pharmaceuticals / SEC',
+        url: 'https://www.sec.gov/Archives/edgar/data/1576885/000162828026068425/abos-20261030.htm',
+        publishedAt: 'October 30, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
     id: '2026-10-precision-abu-dhabi-mou',
     headline: 'Precision adds an international research site, but not a chronic implant result',
     entryDate: 'October 30, 2026',

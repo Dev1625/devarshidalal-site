@@ -181,7 +181,7 @@ export const MACRO_THESIS: MacroThesis = {
     },
     {
       "label": "Read the endpoint before interpreting the result",
-      "body": "BioAge exposed a mistake in my own work. I described a biomarker study as if it could answer a cardiovascular outcomes question. A positive result is only useful relative to the trial that produced it. I need to carry that discipline into lupus, RNA design and neural interfaces as well.",
+      "body": "BioAge exposed a mistake in my own work. I described a biomarker study as if it could answer a cardiovascular outcomes question. Acumen's Phase 2 Alzheimer’s trial makes the distinction harder to miss: sabirnetug reduced amyloid plaque on PET, while cognition and function did not improve against placebo. A positive result is only useful relative to the trial that produced it. I need to carry that discipline into lupus, RNA design and neural interfaces as well.",
       "test": "A surrogate reliably predicting patient benefit across independent trials would justify more confidence in it. Until then I will keep the two claims separate."
     },
     {
@@ -192,7 +192,7 @@ export const MACRO_THESIS: MacroThesis = {
   ],
   whereIAmUnsure:
     "I am still more comfortable reading an experiment than pricing its commercial value. The preference for biotech and devices could be partly taste: I find the mechanisms interesting, which is not a reason they are good investments. The next useful step is to compare the cases against alternatives and entry price, including businesses I find less exciting.",
-  lastUpdated: "October 13, 2026",
+  lastUpdated: "October 31, 2026",
 
   sources: [
     {
@@ -224,6 +224,12 @@ export const MACRO_THESIS: MacroThesis = {
       "publisher": "Alnylam",
       "url": "https://investors.alnylam.com/press-release?id=12c82628-531a-443b-b21b-26cc5b51230b",
       "publishedAt": "June 3, 2026"
+    },
+    {
+      "title": "Acumen announces topline results from Phase 2 ALTITUDE-AD",
+      "publisher": "Acumen Pharmaceuticals",
+      "url": "https://investors.acumenpharm.com/news-releases/news-release-details/acumen-pharmaceuticals-announces-topline-results-phase-2",
+      "publishedAt": "October 30, 2026"
     }
   ],
 };
