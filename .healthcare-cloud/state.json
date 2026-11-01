@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 92,
+  "revision": 93,
   "lock": {
     "owner": "daily-saturday-2026-10-31-1793498614276-9fs92hfg",
     "acquiredAt": "2026-11-01T02:03:34.276Z",
@@ -32,7 +32,39 @@
       "checkpointProvenance": "Daily stage completed first. Whole current collection, two archived cases, current/prior thesis and latest-week evidence reviewed. Ten-company universe and macro thesis retained on evidence. Published one Coherence Neuro comparison note and updated Synchron/Precision competition passages."
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "easternReviewDate": "2026-10-31",
+    "runKind": "daily-saturday",
+    "baseSha": "fa2ddd6d3f11c75badfd87b738128b18b2f06c56",
+    "candidateSha": "a1a2a39c66498e6c5ce5f493c41ebca2d967dafa",
+    "candidateTree": "aa964757a904c282f35a6006aad809b07a7a377d",
+    "candidateBranch": "healthcare-candidate-2026-10-31-a1a2a39c",
+    "stage": "validated-candidate",
+    "createdAt": "2026-11-01T02:06:56.941Z",
+    "newEntryIds": [
+      "2026-10-acumen-altitude-ad"
+    ],
+    "affectedMemos": [],
+    "affectedThesis": true,
+    "checks": {
+      "npmCi": "PASS remote lockfile",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 237 notes, 1 prior thesis",
+      "build": "PASS exact tree aa964757a904c282f35a6006aad809b07a7a377d",
+      "preservation": "PASS model-only semantic and structural review; all prior notes, current/prior thesis, company IDs, archives, forecasts, sources and unrelated content retained; git diff check clean",
+      "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported first-person claim. Packaged deterministic detector/validator was not executable in this host, so no score claimed.",
+      "remoteTreeAndFileReadback": "PASS exact validated blobs on isolated candidate branch"
+    },
+    "sourceUrls": [
+      "https://investors.acumenpharm.com/news-releases/news-release-details/acumen-pharmaceuticals-announces-topline-results-phase-2",
+      "https://www.sec.gov/Archives/edgar/data/1576885/000162828026068425/abos-20261030.htm"
+    ],
+    "researchEvidence": {
+      "daily": "Targeted delta searches across all ten current companies, competitors and wider healthcare, overlapping October 30. The Acumen Phase 2 result was a missed material development and was deduplicated against all 236 existing notes.",
+      "saturday": "Read the full current collection, both archived cases, current/prior thesis and October 24-30 evidence. Reassessed risk, runway, value capture, entry price, open diligence and observable thesis tests. The ten-company universe remains the strongest supported set; no forced addition or retirement.",
+      "alternatives": "Setara's $90M spinout financing, Instylla's expanded embolic-device approval and CereVasc's Alzheimer’s IDE were reviewed. They remain evidence to watch, but do not yet displace a current memo or justify quota-driven notes.",
+      "decision": "Publish the Acumen clinical result and sharpen the existing endpoint pillar. Retain all ten current companies and two archives."
+    }
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
