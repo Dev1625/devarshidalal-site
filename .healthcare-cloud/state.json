@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 101,
+  "revision": 102,
   "lock": {
     "owner": "daily-2026-11-02-1793674666337-4gznlq5b",
     "acquiredAt": "2026-11-03T02:57:46.337Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "a1a2a39c66498e6c5ce5f493c41ebca2d967dafa",
-    "vercelDeploymentId": "dpl_PzxWzzRT1XjdgF4cuzv84qXUYAsV",
-    "lastVerifiedAt": "2026-11-01T02:09:46.071Z",
+    "lastVerifiedSha": "95760d9fb473bc6fcb93cf4b44153949f61f8a70",
+    "vercelDeploymentId": "dpl_9fKDreUDGCahDJQ4yrr8UZcRgxBP",
+    "lastVerifiedAt": "2026-11-03T03:04:32.548Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-11-01",
-      "checkpointProvenance": "Targeted Sunday delta review across all 10 current companies, relevant competitors and wider healthcare found no material new evidence after the October 31 checkpoint. Recaps, stale items and pre-cutoff disclosures were deduplicated; no cosmetic website commit.",
-      "sourceWindowStart": "2026-11-01T02:09:46.071Z",
-      "sourceWindowEnd": "2026-11-02T03:04:59.944Z",
-      "lastSuccessfulReviewAt": "2026-11-02T03:04:59.944Z",
-      "lastSuccessfulPublicationAt": "2026-11-01T02:09:46.071Z"
+      "lastSuccessfulEasternDate": "2026-11-02",
+      "checkpointProvenance": "Published FDA's November 2 final cell-and-gene-therapy potency guidance, separating lifecycle manufacturing and lot-function assurance from proof of patient benefit.",
+      "sourceWindowStart": "2026-11-02T03:04:59.944Z",
+      "sourceWindowEnd": "2026-11-03T03:04:32.548Z",
+      "lastSuccessfulReviewAt": "2026-11-03T03:04:32.548Z",
+      "lastSuccessfulPublicationAt": "2026-11-03T03:04:32.548Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-31",
@@ -32,39 +32,7 @@
       "lastSuccessfulPublicationAt": "2026-11-01T02:09:46.071Z"
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-11-02",
-    "baseSha": "a1a2a39c66498e6c5ce5f493c41ebca2d967dafa",
-    "candidateSha": "95760d9fb473bc6fcb93cf4b44153949f61f8a70",
-    "candidateTree": "891c4371f9dae5fd94bd968ade5cae0aaedf015a",
-    "candidateBranch": "healthcare-daily-2026-11-02-fda-potency",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-11-03T03:01:21.011Z",
-    "newEntryIds": [
-      "2026-11-fda-cgt-potency-guidance"
-    ],
-    "affectedMemos": [],
-    "sourceUrls": [
-      "https://www.fda.gov/news-events/press-announcements/fda-provides-clarity-support-cell-and-gene-therapy-development-and-quality",
-      "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products",
-      "https://www.fda.gov/media/196183/download"
-    ],
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 238 notes, 1 prior thesis",
-      "build": "PASS exact tree 891c4371f9dae5fd94bd968ade5cae0aaedf015a",
-      "preservation": "PASS model-only semantic and structural review; additive one-file healthcare diff preserves all prior notes, company IDs, archives, thesis, forecasts, source links and unrelated content",
-      "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported personal claim. No packaged detector executable was present in the checkout, so no score is claimed.",
-      "remoteTreeAndFileReadback": "PASS exact validated tree and file blob on isolated candidate branch"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 238
-    },
-    "mainAdvancedAt": "2026-11-03T03:01:36.707Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -1145,6 +1113,59 @@
       "checks": {
         "candidateRequired": false,
         "reason": "No material content change; npm/build gates apply to exact publication candidates and no candidate was created."
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-11-02",
+      "baseSha": "a1a2a39c66498e6c5ce5f493c41ebca2d967dafa",
+      "candidateSha": "95760d9fb473bc6fcb93cf4b44153949f61f8a70",
+      "candidateTree": "891c4371f9dae5fd94bd968ade5cae0aaedf015a",
+      "candidateBranch": "healthcare-daily-2026-11-02-fda-potency",
+      "completedAt": "2026-11-03T03:04:32.548Z",
+      "result": "published-and-verified",
+      "commit": "95760d9fb473bc6fcb93cf4b44153949f61f8a70",
+      "deploymentId": "dpl_9fKDreUDGCahDJQ4yrr8UZcRgxBP",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 238
+      },
+      "newEntryIds": [
+        "2026-11-fda-cgt-potency-guidance"
+      ],
+      "affectedMemos": [],
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 238 notes, 1 prior thesis",
+        "build": "PASS exact tree 891c4371f9dae5fd94bd968ade5cae0aaedf015a",
+        "preservation": "PASS model-only semantic and structural review; additive one-file healthcare diff preserves all prior notes, company IDs, archives, thesis, forecasts, source links and unrelated content",
+        "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported personal claim. No packaged detector executable was present in the checkout, so no score is claimed.",
+        "remoteTreeAndFileReadback": "PASS exact validated tree and file blob on isolated candidate branch"
+      },
+      "sourceUrls": [
+        "https://www.fda.gov/news-events/press-announcements/fda-provides-clarity-support-cell-and-gene-therapy-development-and-quality",
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products",
+        "https://www.fda.gov/media/196183/download"
+      ],
+      "sourceWindowStart": "2026-11-02T03:04:59.944Z",
+      "sourceWindowEnd": "2026-11-03T03:04:32.548Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies, official company and regulatory streams, competitors and wider healthcare financing, licensing/M&A, clinical, trial, device, manufacturing and leadership developments. FDA's November 2 final guidance was the one material post-cutoff item; stale and pre-cutoff items were deduplicated.",
+      "limitations": "The FDA document is final but nonbinding guidance. Potency assurance addresses whether a batch can perform its intended biological function; it is not independent proof of clinical efficacy or a product approval.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "liveVerification": {
+        "following": "238 entries; November 2 FDA potency note expanded on the live domain with separate writing/event date and both original FDA source links",
+        "filters": "Science and regulation view includes the new guidance note",
+        "current": "10 stable current company cards",
+        "archives": "2 stable archived cases: turn-bio and evolutionaryscale",
+        "affectedMemos": "None; industry policy/manufacturing note only",
+        "home": "10 current, 2 past cases, 238 entries",
+        "vercel": "READY exact tested SHA on existing production domain"
       }
     }
   ],
