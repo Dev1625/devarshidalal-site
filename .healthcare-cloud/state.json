@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 100,
+  "revision": 101,
   "lock": {
     "owner": "daily-2026-11-02-1793674666337-4gznlq5b",
     "acquiredAt": "2026-11-03T02:57:46.337Z",
@@ -39,7 +39,7 @@
     "candidateSha": "95760d9fb473bc6fcb93cf4b44153949f61f8a70",
     "candidateTree": "891c4371f9dae5fd94bd968ade5cae0aaedf015a",
     "candidateBranch": "healthcare-daily-2026-11-02-fda-potency",
-    "stage": "validated-candidate-persisted",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-11-03T03:01:21.011Z",
     "newEntryIds": [
       "2026-11-fda-cgt-potency-guidance"
@@ -62,7 +62,8 @@
       "current": 10,
       "archived": 2,
       "notes": 238
-    }
+    },
+    "mainAdvancedAt": "2026-11-03T03:01:36.707Z"
   },
   "recentRuns": [
     {
