@@ -1,7 +1,38 @@
 import type { CoverageEntry } from './types';
 
-// Notes written in October. Underlying event dates are kept separate.
+// Notes written in Q4. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
+  {
+    id: '2026-11-fda-cgt-potency-guidance',
+    headline: 'FDA makes potency a manufacturing system, not just a final test',
+    entryDate: 'November 2, 2026',
+    sortKey: '2026-11-02',
+    eventDate: 'November 2, 2026 final guidance',
+    analysis:
+      'FDA finalized guidance on potency assurance for cell and gene therapies, replacing its 2011 potency-testing document. The recommended strategy starts before the final lot-release assay: manufacturers should connect material controls, process design, in-process testing and release criteria to the product attributes that matter for its intended biological effect. For most products, FDA recommends at least one phase-appropriate bioassay tied to that effect.\n\nThe timing of the work can scale with development, but the standard tightens as a program moves forward. An IND should describe its potency strategy, later-stage lots need enough control to support an interpretable efficacy trial, and approved products require lot testing unless FDA accepts an equally protective alternative. The guidance also addresses short shelf lives and patient-specific products, where waiting for a slow assay can collide with getting a dose to one person.\n\nI keep writing that manufacturing is part of the product in advanced therapies. This makes the claim more specific. A clever editor, vector or cell design still needs a repeatable chain between what was made and what that batch can biologically do. Potency here is not independent evidence that patients improve, and the guidance is nonbinding rather than a new product approval. It is the quality framework a clinical result has to survive if the therapy is going to become a reproducible medicine.',
+    entryType: 'regulation-policy',
+    scope: 'industry',
+    themes: ['gene-editing'],
+    relatedEntryIds: [
+      '2026-10-fda-individualized-ge-bla-draft',
+      '2026-07-manufacturing-is-the-bottleneck',
+    ],
+    sources: [
+      {
+        title: 'FDA provides clarity to support cell and gene therapy development and quality',
+        publisher: 'FDA',
+        url: 'https://www.fda.gov/news-events/press-announcements/fda-provides-clarity-support-cell-and-gene-therapy-development-and-quality',
+        publishedAt: 'November 2, 2026',
+      },
+      {
+        title: 'Potency Assurance for Cellular and Gene Therapy Products',
+        publisher: 'FDA',
+        url: 'https://www.fda.gov/media/196183/download',
+        publishedAt: 'November 2026 final guidance',
+      },
+    ],
+    status: 'current-view',
+  },
   {
     id: '2026-10-acumen-altitude-ad',
     headline: 'Acumen lowered amyloid plaque without slowing Alzheimer’s decline',
