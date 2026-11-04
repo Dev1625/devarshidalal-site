@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 104,
+  "revision": 105,
   "lock": {
     "owner": "daily-2026-11-03-1793760993732-gpjb18",
     "acquiredAt": "2026-11-04T02:56:34.251Z",
@@ -32,7 +32,44 @@
       "lastSuccessfulPublicationAt": "2026-11-01T02:09:46.071Z"
     }
   },
-  "pendingPublication": null,
+  "pendingPublication": {
+    "kind": "daily",
+    "easternReviewDate": "2026-11-03",
+    "baseSha": "95760d9fb473bc6fcb93cf4b44153949f61f8a70",
+    "candidateSha": "4f932c8e245451d180e8381f0fa47a53cad451cb",
+    "candidateTree": "cf97e978b879b52b0c523f525f63b1234089bef1",
+    "candidateBranch": "healthcare-daily-2026-11-03-ambience-beeline",
+    "stage": "validated-candidate-persisted",
+    "createdAt": "2026-11-04T03:01:33.291Z",
+    "counts": {
+      "current": 10,
+      "archived": 2,
+      "notes": 240
+    },
+    "newEntryIds": [
+      "2026-11-ambience-memorial-hermann-klas",
+      "2026-11-beeline-discovery-cle"
+    ],
+    "affectedMemos": [
+      "ambience-healthcare",
+      "beeline-medicines"
+    ],
+    "checks": {
+      "npmCi": "PASS remote lockfile",
+      "checkHealthcare": "PASS: 10 current, 2 archived, 240 notes, 1 prior thesis",
+      "build": "PASS exact tree cf97e978b879b52b0c523f525f63b1234089bef1",
+      "preservation": "PASS model-only semantic and structural review; all prior notes, current/prior thesis, company IDs, archives, forecasts, links and unrelated content retained; git diff check clean",
+      "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported personal claim. The packaged deterministic detector/validator was not executable from this host, so no score is claimed.",
+      "remoteTreeAndFileReadback": "PASS exact validated tree and both file blobs on isolated candidate branch"
+    },
+    "sourceUrls": [
+      "https://klasresearch.com/report/ambience-healthcare-roi-validations-2026-reducing-documentation-burden-to-improve-clinician-experience-and-performance/3948",
+      "https://www.ambiencehealthcare.com/blog/new-klas-research-report-shows-clinical-and-financial-impact-of-ambience-healthcare-at-memorial-hermann",
+      "https://beelinemedicines.com/press-releases/beeline-medicines-initiates-first-trial-in-lupus-pivotal-development-program-with-global-phase-2-3-discovery-trial-of-afimetoran-in-cutaneous-lupus-erythematosus-cle/",
+      "https://clinicaltrials.gov/study/NCT07881120"
+    ],
+    "limitations": "Ambience's numerical ROI details are publicly disclosed in the vendor release; KLAS confirms the report and overall conclusion but keeps the full dataset behind login. Beeline's DISCOVERY trial is recruiting, but Stage 1 remains dose selection and the full Phase 2 SLE arm-level efficacy and safety tables are still pending."
+  },
   "recentRuns": [
     {
       "kind": "setup-lock-test",
