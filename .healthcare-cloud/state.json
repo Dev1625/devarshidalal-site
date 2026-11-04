@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 106,
+  "revision": 107,
   "lock": {
     "owner": "daily-2026-11-03-1793760993732-gpjb18",
     "acquiredAt": "2026-11-04T02:56:34.251Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "95760d9fb473bc6fcb93cf4b44153949f61f8a70",
-    "vercelDeploymentId": "dpl_9fKDreUDGCahDJQ4yrr8UZcRgxBP",
-    "lastVerifiedAt": "2026-11-03T03:04:32.548Z",
+    "lastVerifiedSha": "4f932c8e245451d180e8381f0fa47a53cad451cb",
+    "vercelDeploymentId": "dpl_A25vmTH3bfRU9C5Pz23thWap67ib",
+    "lastVerifiedAt": "2026-11-04T03:04:57.622Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-11-02",
-      "checkpointProvenance": "Published FDA's November 2 final cell-and-gene-therapy potency guidance, separating lifecycle manufacturing and lot-function assurance from proof of patient benefit.",
-      "sourceWindowStart": "2026-11-02T03:04:59.944Z",
-      "sourceWindowEnd": "2026-11-03T03:04:32.548Z",
-      "lastSuccessfulReviewAt": "2026-11-03T03:04:32.548Z",
-      "lastSuccessfulPublicationAt": "2026-11-03T03:04:32.548Z"
+      "lastSuccessfulEasternDate": "2026-11-03",
+      "checkpointProvenance": "Published Ambience's Memorial Hermann ROI validation and Beeline's DISCOVERY recruiting protocol, with the vendor/public-dataset and Stage 1 dose-selection limits kept explicit.",
+      "sourceWindowStart": "2026-11-03T03:04:32.548Z",
+      "sourceWindowEnd": "2026-11-04T03:04:57.622Z",
+      "lastSuccessfulReviewAt": "2026-11-04T03:04:57.622Z",
+      "lastSuccessfulPublicationAt": "2026-11-04T03:04:57.622Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-31",
@@ -32,44 +32,7 @@
       "lastSuccessfulPublicationAt": "2026-11-01T02:09:46.071Z"
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-11-03",
-    "baseSha": "95760d9fb473bc6fcb93cf4b44153949f61f8a70",
-    "candidateSha": "4f932c8e245451d180e8381f0fa47a53cad451cb",
-    "candidateTree": "cf97e978b879b52b0c523f525f63b1234089bef1",
-    "candidateBranch": "healthcare-daily-2026-11-03-ambience-beeline",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-11-04T03:01:33.291Z",
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 240
-    },
-    "newEntryIds": [
-      "2026-11-ambience-memorial-hermann-klas",
-      "2026-11-beeline-discovery-cle"
-    ],
-    "affectedMemos": [
-      "ambience-healthcare",
-      "beeline-medicines"
-    ],
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 240 notes, 1 prior thesis",
-      "build": "PASS exact tree cf97e978b879b52b0c523f525f63b1234089bef1",
-      "preservation": "PASS model-only semantic and structural review; all prior notes, current/prior thesis, company IDs, archives, forecasts, links and unrelated content retained; git diff check clean",
-      "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported personal claim. The packaged deterministic detector/validator was not executable from this host, so no score is claimed.",
-      "remoteTreeAndFileReadback": "PASS exact validated tree and both file blobs on isolated candidate branch"
-    },
-    "sourceUrls": [
-      "https://klasresearch.com/report/ambience-healthcare-roi-validations-2026-reducing-documentation-burden-to-improve-clinician-experience-and-performance/3948",
-      "https://www.ambiencehealthcare.com/blog/new-klas-research-report-shows-clinical-and-financial-impact-of-ambience-healthcare-at-memorial-hermann",
-      "https://beelinemedicines.com/press-releases/beeline-medicines-initiates-first-trial-in-lupus-pivotal-development-program-with-global-phase-2-3-discovery-trial-of-afimetoran-in-cutaneous-lupus-erythematosus-cle/",
-      "https://clinicaltrials.gov/study/NCT07881120"
-    ],
-    "limitations": "Ambience's numerical ROI details are publicly disclosed in the vendor release; KLAS confirms the report and overall conclusion but keeps the full dataset behind login. Beeline's DISCOVERY trial is recruiting, but Stage 1 remains dose selection and the full Phase 2 SLE arm-level efficacy and safety tables are still pending."
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -1202,6 +1165,64 @@
         "archives": "2 stable archived cases: turn-bio and evolutionaryscale",
         "affectedMemos": "None; industry policy/manufacturing note only",
         "home": "10 current, 2 past cases, 238 entries",
+        "vercel": "READY exact tested SHA on existing production domain"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-11-03",
+      "baseSha": "95760d9fb473bc6fcb93cf4b44153949f61f8a70",
+      "candidateSha": "4f932c8e245451d180e8381f0fa47a53cad451cb",
+      "candidateTree": "cf97e978b879b52b0c523f525f63b1234089bef1",
+      "candidateBranch": "healthcare-daily-2026-11-03-ambience-beeline",
+      "completedAt": "2026-11-04T03:04:57.622Z",
+      "result": "published-and-verified",
+      "commit": "4f932c8e245451d180e8381f0fa47a53cad451cb",
+      "deploymentId": "dpl_A25vmTH3bfRU9C5Pz23thWap67ib",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 240
+      },
+      "newEntryIds": [
+        "2026-11-ambience-memorial-hermann-klas",
+        "2026-11-beeline-discovery-cle"
+      ],
+      "affectedMemos": [
+        "ambience-healthcare",
+        "beeline-medicines"
+      ],
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 240 notes, 1 prior thesis",
+        "build": "PASS exact tree cf97e978b879b52b0c523f525f63b1234089bef1",
+        "preservation": "PASS model-only semantic and structural review; all prior notes, current/prior thesis, company IDs, archives, forecasts, links and unrelated content retained; git diff check clean",
+        "writingReview": "Contextual Avoid AI Writing review completed; no high-priority stock pattern, promotional inflation or unsupported personal claim. The packaged deterministic detector/validator was not executable from this host, so no score is claimed.",
+        "remoteTreeAndFileReadback": "PASS exact validated tree and both file blobs on isolated candidate branch"
+      },
+      "sourceUrls": [
+        "https://klasresearch.com/report/ambience-healthcare-roi-validations-2026-reducing-documentation-burden-to-improve-clinician-experience-and-performance/3948",
+        "https://www.ambiencehealthcare.com/blog/new-klas-research-report-shows-clinical-and-financial-impact-of-ambience-healthcare-at-memorial-hermann",
+        "https://beelinemedicines.com/press-releases/beeline-medicines-initiates-first-trial-in-lupus-pivotal-development-program-with-global-phase-2-3-discovery-trial-of-afimetoran-in-cutaneous-lupus-erythematosus-cle/",
+        "https://clinicaltrials.gov/study/NCT07881120"
+      ],
+      "sourceWindowStart": "2026-11-03T03:04:32.548Z",
+      "sourceWindowEnd": "2026-11-04T03:04:57.622Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare financing, licensing/M&A, clinical, trial, device, regulation, manufacturing and leadership developments. Ambience and Beeline produced material updates; Isomorphic's status was deduplicated and no quota-driven notes were added.",
+      "limitations": "Ambience's numerical ROI details are publicly disclosed in the vendor release; KLAS confirms the report and overall conclusion but keeps the full dataset behind login. Beeline's DISCOVERY trial is recruiting, but Stage 1 remains dose selection and the full Phase 2 SLE arm-level efficacy and safety tables are still pending.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "liveVerification": {
+        "following": "Both November 3 notes live with separate event dates, evidence limits and original source links",
+        "filters": "Platform filter includes Ambience; science filter includes Beeline",
+        "current": "10 current company cards retained",
+        "archives": "2 stable archived routes, turn-bio and evolutionaryscale, both HTTP 200",
+        "affectedMemos": "Ambience and Beeline memo routes HTTP 200 with updated evidence, diligence and source markers",
+        "home": "10 current, 2 past cases, 240 entries",
         "vercel": "READY exact tested SHA on existing production domain"
       }
     }
