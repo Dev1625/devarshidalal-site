@@ -3,6 +3,63 @@ import type { CoverageEntry } from './types';
 // Notes written in Q4. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    id: '2026-11-ambience-memorial-hermann-klas',
+    headline: 'Ambience gets a named ROI result, with the denominator still visible',
+    entryDate: 'November 3, 2026',
+    sortKey: '2026-11-03',
+    eventDate: 'November 3, 2026 report',
+    analysis:
+      'KLAS published an ROI validation of Ambience at Memorial Hermann after a 15-month pilot with about 100 emergency-department physicians. Ambience says Memorial Hermann compared users with non-users and physicians using human scribes, using operational data, clinician surveys and independent billing data. The reported differences were 1.7 more patient visits per physician during a ten-hour shift, a 1.3% increase in work RVUs per encounter and about $37,500 in additional annual productivity per emergency physician.\n\nMemorial Hermann expanded the product to more than 560 clinicians across ambulatory care and emergency medicine. That is stronger evidence than another deployment announcement because it attaches a named system, comparison groups and measured operating outcomes. But the numerical detail is disclosed in Ambience\'s release about the KLAS work; the public KLAS page confirms the report and its overall conclusion while keeping the full dataset behind login. The clinician Net Promoter Score of 78 also comes from only 40 survey responses.\n\nThis partly answers the question in my Ambience memo about whether documentation software can create measurable financial value at a named health system. It still does not disclose contract economics, denial-rate improvement, net revenue retained after fees or patient outcomes. I would now ask whether the productivity and coding gains persist outside the pilot and whether a performance-based contract lets Ambience capture enough of them to support the business.',
+    entryType: 'platform',
+    scope: 'company',
+    themes: ['ambient-ai'],
+    relatedCompanyIds: ['ambience-healthcare'],
+    relatedEntryIds: ['2026-10-suki-financing-ask', '2026-10-nabla-openevidence'],
+    sources: [
+      {
+        title: 'Ambience Healthcare ROI Validations 2026',
+        publisher: 'KLAS Research',
+        url: 'https://klasresearch.com/report/ambience-healthcare-roi-validations-2026-reducing-documentation-burden-to-improve-clinician-experience-and-performance/3948',
+        publishedAt: 'November 3, 2026',
+      },
+      {
+        title: 'New KLAS Research Report Shows Value of Ambience at Memorial Hermann',
+        publisher: 'Ambience Healthcare',
+        url: 'https://www.ambiencehealthcare.com/blog/new-klas-research-report-shows-clinical-and-financial-impact-of-ambience-healthcare-at-memorial-hermann',
+        publishedAt: 'November 3, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
+    id: '2026-11-beeline-discovery-cle',
+    headline: 'Beeline starts a seamless Phase 2/3 trial instead of skipping dose selection',
+    entryDate: 'November 3, 2026',
+    sortKey: '2026-11-03',
+    eventDate: 'October 29, 2026 recruiting registry update; November 2 announcement',
+    analysis:
+      'Beeline says the DISCOVERY trial of afimetoran is now enrolling adults with active cutaneous lupus, with or without systemic disease. The randomized, double-blind, placebo-controlled study plans to enroll about 390 participants under one Phase 2/3 protocol. Stage 1 compares two doses with placebo for 24 weeks and uses change in CLASI-A skin activity to select a dose. Stage 2 then tests the selected dose against placebo, with a 70% improvement in CLASI-A at week 24 as the primary endpoint.\n\nCalling the program pivotal does not mean Beeline has already reached confirmatory evidence. The first stage is still dose selection, and the prior cutaneous evidence comes from an exploratory Phase 1b study plus the skin subgroup of the Phase 2 systemic-lupus trial. The company has not yet published the full arm-level Phase 2 SLE response and safety tables; those data are due at ACR on November 11.\n\nThis is a useful answer to one open question in my memo: the cutaneous protocol and endpoints are now public, and recruiting has started. It also makes the next decision clearer. I want to see whether the selected dose produces a durable, patient-relevant skin benefit with acceptable safety, and whether the later SLE Phase 3 program can reproduce the September topline rather than borrowing confidence from it.',
+    entryType: 'clinical',
+    scope: 'company',
+    relatedCompanyIds: ['beeline-medicines'],
+    relatedEntryIds: ['2026-10-beeline-treatment-context'],
+    sources: [
+      {
+        title: 'Beeline initiates the Phase 2/3 DISCOVERY trial of afimetoran in cutaneous lupus',
+        publisher: 'Beeline Medicines',
+        url: 'https://beelinemedicines.com/press-releases/beeline-medicines-initiates-first-trial-in-lupus-pivotal-development-program-with-global-phase-2-3-discovery-trial-of-afimetoran-in-cutaneous-lupus-erythematosus-cle/',
+        publishedAt: 'November 2, 2026',
+      },
+      {
+        title: 'Study of Afimetoran in Adults With Cutaneous Lupus Erythematosus (NCT07881120)',
+        publisher: 'ClinicalTrials.gov',
+        url: 'https://clinicaltrials.gov/study/NCT07881120',
+        publishedAt: 'Recruiting status posted October 29, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
     id: '2026-11-fda-cgt-potency-guidance',
     headline: 'FDA makes potency a manufacturing system, not just a final test',
     entryDate: 'November 2, 2026',

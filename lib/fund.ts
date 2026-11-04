@@ -1130,6 +1130,11 @@ export const COMPANIES: Company[] = [
       'The same roughly $90 billion US revenue cycle market Abridge is pursuing, approached from the documentation integrity side rather than the ambient side. CDI specifically is a well-defined budget line inside hospitals with existing headcount attached, which makes it the easiest part of this market to sell into and the easiest to quantify.',
     traction: [
       {
+        label: 'Named ROI validation',
+        value: 'Memorial Hermann ED, KLAS report, November 2026',
+        read: 'After a 15-month pilot with about 100 ED physicians, the reported comparison showed 1.7 more visits per ten-hour shift, 1.3% higher work RVUs per encounter and about $37,500 in additional annual productivity per physician. The full KLAS dataset and contract economics are not public.',
+      },
+      {
         "label": "Performance-based contracts",
         "value": "The Ambience Standard, August 19, 2026",
         "read": "The company describes fees at risk against customer outcome targets. I still want contract-level economics, not just a description of the model."
@@ -1182,7 +1187,7 @@ export const COMPANIES: Company[] = [
       'What share of new customers arrive through Epic Toolbox versus direct sales?',
       'What are the terms of the Toolbox arrangement, including exclusivity, revenue share and termination rights?',
       'In head-to-head evaluations against Abridge, what is the win rate and on what basis do hospitals decide?',
-      'What documented denial-rate reduction exists at named health systems, ideally audited rather than case-study?',
+      'Do the Memorial Hermann productivity and work-RVU gains persist outside the pilot, and what denial-rate or net-revenue improvement exists after Ambience fees?',
       'What was the reason for the September 2025 CEO transition, and how is the commercial organisation being built out?',
     ],
     changeMyMind: [
@@ -1192,10 +1197,22 @@ export const COMPANIES: Company[] = [
       'An Optum acquisition, which would resolve this position one way or the other.',
     ],
     view:
-      'My view as of September 2026 is that I had this filed as a cheaper Abridge and that was lazy. Ambience is trying to get paid out of revenue capture rather than out of the software budget, which is the specific move I argue elsewhere is the only durable one in clinical software, and it is the only company I follow actually attempting it contractually. Optum Ventures being on the cap table still makes an acquisition the likeliest ending. But the thing I want now is a signed performance contract with disclosed terms, because that would be the first hard evidence for the central claim I make on the thesis page, and its absence by mid-2027 would be evidence against it.',
+      'My view as of November 2026 is that I had this filed as a cheaper Abridge and that was lazy. Ambience is trying to get paid out of revenue capture rather than out of the software budget, which is the specific move I argue elsewhere is the only durable one in clinical software. The Memorial Hermann comparison is the first named result in this memo that connects the product to measured productivity and coding outcomes, but it does not disclose the contract, net revenue after fees or denial-rate change. Optum Ventures being on the cap table still makes an acquisition the likeliest ending. The next hard evidence is whether the gains persist and whether Ambience can capture enough of them under a performance contract.',
 
-    lastReviewed: "October 15, 2026",
+    lastReviewed: "November 3, 2026",
     sources: [
+      {
+        title: 'Ambience Healthcare ROI Validations 2026',
+        publisher: 'KLAS Research',
+        url: 'https://klasresearch.com/report/ambience-healthcare-roi-validations-2026-reducing-documentation-burden-to-improve-clinician-experience-and-performance/3948',
+        publishedAt: 'November 3, 2026',
+      },
+      {
+        title: 'KLAS report results at Memorial Hermann',
+        publisher: 'Ambience Healthcare',
+        url: 'https://www.ambiencehealthcare.com/blog/new-klas-research-report-shows-clinical-and-financial-impact-of-ambience-healthcare-at-memorial-hermann',
+        publishedAt: 'November 3, 2026',
+      },
       {
         "title": "The Ambience Standard and performance-based contracts",
         "publisher": "Ambience Healthcare",
@@ -1557,6 +1574,7 @@ export const COMPANIES: Company[] = [
       { label: 'Investors', value: 'Bain Capital, Bristol Myers Squibb, CPPIB' },
       { label: 'Lead asset', value: 'Afimetoran, oral TLR7/8 inhibitor, lupus' },
       { label: 'Phase 2 SLE', value: 'Met primary endpoint, September 9 2026' },
+      { label: 'Phase 2/3 CLE', value: 'DISCOVERY recruiting, about 390 participants' },
     ],
     summary:
       'I started following this because I was writing constantly about a market where autoimmune and inflammation take more than 40 percent of biotech venture dollars while covering nothing in it. That is a coverage gap rather than a considered thesis, and this memo is shorter on original scientific insight than the others as a result. What makes it worth holding is structural: five BMS programs at different stages, a CEO who just sold his last company to Merck KGaA, and a Phase 2 readout close enough that I would find out quickly whether the interest was warranted. The company reported a positive Phase 2 topline on 9 September 2026. So I now have to separate two things that feel the same from the inside, which is whether I understood this going in or simply got a good result.',
@@ -1583,6 +1601,11 @@ export const COMPANIES: Company[] = [
         label: 'Phase 2 readout',
         value: 'SRI-4 at week 48, all three doses beat placebo, p below 0.001',
         read: 'The company reports separation across all three doses and no new safety signal, with pivotal studies planned. Its September release does not give arm-level response rates or adverse-event counts. I need those details before judging the size and cost of the benefit. A positive topline is not a result I predicted.',
+      },
+      {
+        label: 'Cutaneous lupus program',
+        value: 'DISCOVERY Phase 2/3 recruiting, November 2026',
+        read: 'The roughly 390-person seamless protocol starts with two-dose selection on change in CLASI-A, then tests the selected dose on CLASI-70. Calling the program pivotal does not turn Stage 1 into confirmatory evidence.',
       },
       {
         label: 'BMS retained stake',
@@ -1614,7 +1637,7 @@ export const COMPANIES: Company[] = [
     ],
     diligence: [
       'Why did BMS deprioritise these five programs specifically? This is the central question and I do not have an answer.',
-      'What does the pivotal program look like, how large, and does the FDA agree on the endpoint for cutaneous disease?',
+      'How will the Stage 1 dose-selection evidence govern the transition into confirmatory Stage 2, and what FDA agreement supports the CLE endpoints?',
       'What safety data exists on TLR7/8 inhibition to date, including anything from the BMS-run studies?',
       'What are the terms of the BMS arrangement? Royalties, milestones, equity, and does BMS retain any option to reacquire?',
       'The company now identifies all five programs and their stages. Which deserve funding alongside afimetoran, and what would make it stop one?',
@@ -1627,10 +1650,22 @@ export const COMPANIES: Company[] = [
       'A safety signal on TLR7/8 inhibition in any program.',
     ],
     view:
-      "My view as of September 2026 is that the readout landed and I still do not have a differentiated scientific view, which is an uncomfortable pair of things to hold at once. I added the company for category exposure, and the readout was positive. I am keeping it because Phase 3 is a real question I can now do work on, not because Phase 2 vindicated anything I actually said. On October 17, my next gate is the full dose-level dataset and the confirmatory protocol. I also need cash and burn by program: the $426.3 million financing total does not tell me present runway or the cost of taking several assets forward.",
+      "My view as of November 2026 is that the readout landed and I still do not have a differentiated scientific view, which is an uncomfortable pair of things to hold at once. DISCOVERY answers the protocol question more concretely: about 390 participants, dose selection first, then confirmation under one CLE study. It does not answer the missing full SLE dataset, safety detail or present cash burn. I am keeping Beeline because the next gates are now observable, not because a positive topline or a pivotal label validates the thesis.",
 
-    lastReviewed: "October 22, 2026",
+    lastReviewed: "November 3, 2026",
     sources: [
+      {
+        title: 'Phase 2/3 DISCOVERY trial of afimetoran in cutaneous lupus',
+        publisher: 'Beeline Medicines',
+        url: 'https://beelinemedicines.com/press-releases/beeline-medicines-initiates-first-trial-in-lupus-pivotal-development-program-with-global-phase-2-3-discovery-trial-of-afimetoran-in-cutaneous-lupus-erythematosus-cle/',
+        publishedAt: 'November 2, 2026',
+      },
+      {
+        title: 'Study of Afimetoran in Adults With Cutaneous Lupus Erythematosus (NCT07881120)',
+        publisher: 'ClinicalTrials.gov',
+        url: 'https://clinicaltrials.gov/study/NCT07881120',
+        publishedAt: 'Recruiting status posted October 29, 2026',
+      },
       {
         title: 'Current clinical and preclinical pipeline',
         publisher: 'Beeline Medicines',
