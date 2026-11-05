@@ -3,6 +3,57 @@ import type { CoverageEntry } from './types';
 // Notes written in Q4. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    id: '2026-11-openevidence-learn',
+    headline: 'OpenEvidence turns its answer habit into a free education product',
+    entryDate: 'November 4, 2026',
+    sortKey: '2026-11-04',
+    eventDate: 'November 4, 2026 launch',
+    analysis:
+      'OpenEvidence launched Learn, a free education layer for its verified users. The first release includes more than 50,000 board-style questions, an AI preceptor that works through simulated cases, generated flashcards and CME credit tied to clinical questions. Johns Hopkins and Penn are inviting trainees and attending physicians to test it and provide feedback.\n\nThis is more concrete than the education collaboration I noted in October. OpenEvidence is using the same evidence corpus and existing clinician account to reach people during training, not only when they need an answer at the point of care. If the product becomes part of board preparation or residency, the habit can start before a physician chooses a reference tool at work.\n\nThe announcement gives no active-user data for Learn, learning outcomes, partner payments or a separate revenue model. Free access may strengthen retention and the advertising audience, but that is my inference rather than a disclosed business result. I want cohort retention and evidence that the practice questions and AI cases improve performance before treating education as a second moat.',
+    entryType: 'platform',
+    scope: 'company',
+    themes: ['clinical-ai'],
+    relatedCompanyIds: ['openevidence'],
+    relatedEntryIds: ['2026-10-openevidence-hopkins'],
+    sources: [
+      {
+        title: 'Announcing Learn: OpenEvidence\'s Personalized Medical Education Platform',
+        publisher: 'OpenEvidence',
+        url: 'https://www.openevidence.foundation/announcements/announcing-learn',
+        publishedAt: 'November 4, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
+    id: '2026-11-boehringer-sbp-options',
+    headline: 'Boehringer pays for six preclinical options, not six licensed drugs',
+    entryDate: 'November 4, 2026',
+    sortKey: '2026-11-04',
+    eventDate: 'November 4, 2026 agreement announcement',
+    analysis:
+      'Boehringer Ingelheim and Sino Biopharmaceutical announced an option-and-license agreement covering six preclinical oncology programs: five from LaNova Medicines and one from Beijing Tide. SBP will run early development. After agreed clinical milestones, Boehringer can choose whether to take exclusive development, manufacturing and commercialization rights—outside mainland China, Hong Kong and Macau for four programs, and worldwide for two.\n\nSBP will receive $358 million in upfront and near-term payments. The larger number is contingent: up to $7 billion across option-exercise, development, regulatory and commercial milestones, plus tiered royalties. Dividing the headline total by six would therefore overstate what Boehringer has bought today. It has paid for a portfolio of shots and the right to wait for early clinical evidence before taking each one forward.\n\nThe structure is a useful companion to the proposed US outbound-investment rule I wrote about in October. A cross-border licensing market is still active, but the economic value sits in the details: which programs reach the option point, what rights are exercised, and how much of the milestone stack is realistically earnable. I would also separate the $358 million of upfront and near-term payments from cash received at signing; the companies do not break that amount out further.',
+    entryType: 'ma-licensing',
+    scope: 'industry',
+    themes: ['china-licensing'],
+    relatedEntryIds: ['2026-10-treasury-biotech-outbound-rule'],
+    sources: [
+      {
+        title: 'Boehringer Ingelheim and SBP Group enter partnership to advance next-generation cancer therapies',
+        publisher: 'Boehringer Ingelheim',
+        url: 'https://www.boehringer-ingelheim.com/human-health/boehringer-announces-new-oncology-partnership-sbp-group',
+        publishedAt: 'November 4, 2026',
+      },
+      {
+        title: 'SBP Group and Boehringer Ingelheim enter partnership to advance next-generation cancer therapies',
+        publisher: 'Sino Biopharmaceutical',
+        url: 'https://www.en.sbpgroup.com/news-center/dynamic/25040.html',
+        publishedAt: 'November 4, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
     id: '2026-11-ambience-memorial-hermann-klas',
     headline: 'Ambience gets a named ROI result, with the denominator still visible',
     entryDate: 'November 3, 2026',

@@ -283,7 +283,7 @@ export const COMPANIES: Company[] = [
     problem:
       'Medical knowledge doubles faster than any clinician can read, and the moment of need is not a moment with time in it. A physician sees a patient with an unusual drug interaction or an atypical presentation, and needs an answer during the visit. The realistic alternatives are recalling something from training, asking whoever is nearby, or using a general search engine that surfaces content optimised for consumers rather than clinicians. UpToDate exists and is good, but it is a subscription product with editorial lag, and it answers the question someone anticipated rather than the one being asked.',
     product:
-      'A search interface that takes a clinical question in natural language and returns a synthesised answer with inline citations to primary literature. The distinguishing feature is not the model, it is the corpus. OpenEvidence signed multi-year content agreements with NEJM Group in February 2025 and the JAMA Network in June 2025, giving it licensed full text of the journals US physicians actually trust rather than abstracts scraped from PubMed. DeepConsult, launched July 2025, extends this into an agent that cross-references studies autonomously rather than answering one question at a time. Access is free to verified clinicians and monetised through pharma advertising.',
+      'A search interface that takes a clinical question in natural language and returns a synthesised answer with inline citations to primary literature. The distinguishing feature is not the model, it is the corpus. OpenEvidence signed multi-year content agreements with NEJM Group in February 2025 and the JAMA Network in June 2025, giving it licensed full text of the journals US physicians actually trust rather than abstracts scraped from PubMed. DeepConsult, launched July 2025, extends this into an agent that cross-references studies autonomously rather than answering one question at a time. Learn, launched in November 2026, applies the same evidence layer to board-style questions, simulated cases, flashcards and CME. Access is free to verified clinicians and monetised through pharma advertising.',
     whyNow:
       'Two things converged. Language models got good enough to synthesise medical literature reliably around 2023, and the journals became willing to license. The second is the harder and more recent condition. Publishers spent two decades treating AI as a threat to their subscription businesses; the shift to seeing it as a distribution channel is what makes this company possible now and not in 2019. There is also a bleaker driver: physician time per patient keeps compressing, so anything that resolves a question in seconds rather than minutes gets adopted without a procurement process.',
     market:
@@ -335,6 +335,11 @@ export const COMPANIES: Company[] = [
         "read": "The partners describe planned work combining evidence and patient history. The release gives no commercial terms or patient-outcome results."
       },
       {
+        label: 'Learn launch',
+        value: 'Free education platform launched November 4, 2026',
+        read: 'The first release includes 50,000+ board-style questions, simulated cases, flashcards and CME. Hopkins and Penn are inviting users to test it, but OpenEvidence discloses no Learn usage, learning outcomes, partner payments or separate revenue.',
+      },
+      {
         "label": "Defined usage and retention",
         "value": "703,265 monthly active users in June 2026; ~90% monthly retention in 2026",
         "read": "Active means at least one query in a month, not daily use. Retention means another query the next month, not an advertiser renewal."
@@ -369,7 +374,7 @@ export const COMPANIES: Company[] = [
       "What does weekly active use look like against the 757,000 registration figure? Registrations and habits are different assets. The October 15 JAMA paper supplies monthly use and retention, but not weekly activity.",
       'What are the commercial terms of enterprise deployments such as Northwestern and NYU Langone: who pays, what is priced, and do the arrangements diversify revenue beyond advertising?',
       'For patient-aware deployments, which chart fields can OpenEvidence use, how are permissions enforced and how does a clinician audit the patient context behind an answer?',
-      "Which tools emerge from the Johns Hopkins collaboration, and how will their effects on clinical decisions and patient outcomes be evaluated?",
+      "How many users return to Learn after the first session, and do its questions or simulated cases improve performance? The launch names Hopkins and Penn as feedback partners but gives no usage, outcome or commercial data.",
     ],
     changeMyMind: [
       'Any regulatory action or credible journalism on advertiser influence over clinical answers.',
@@ -378,9 +383,9 @@ export const COMPANIES: Company[] = [
       'Disclosure that revenue depends on a small number of advertisers.',
     ],
     view:
-      "My view as of October 2026 is still favourable, but the September round changes the entry question. At $15 billion, the valuation is roughly 50 times Sacra’s estimated July annualised run rate and 30 to 38 times the Financial Times source’s projected 2026 advertising revenue. Both are estimates, not audited revenue. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic access and NYU Langone’s patient-aware integration strengthen the distribution case. Neither announcement discloses contract value, usage or a new revenue stream. JAMA now adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
+      "My view as of November 2026 is still favourable, but the September round changes the entry question. At $15 billion, the valuation is roughly 50 times Sacra’s estimated July annualised run rate and 30 to 38 times the Financial Times source’s projected 2026 advertising revenue. Both are estimates, not audited revenue. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic access and NYU Langone’s patient-aware integration strengthen the distribution case. Learn now extends the product into training and continuing education, but the launch gives no usage, outcomes or new revenue. JAMA adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
 
-    lastReviewed: "October 29, 2026",
+    lastReviewed: "November 4, 2026",
     sources: [
       {
         "title": "The $15bn 'viral' AI start-up changing how American doctors treat patients",
@@ -428,6 +433,12 @@ export const COMPANIES: Company[] = [
         "publisher": "Johns Hopkins Medicine",
         "url": "https://www.hopkinsmedicine.org/news/newsroom/news-releases/2026/10/openevidence-and-johns-hopkins-medicine-announce-landmark-collaboration-to-design-the-future-of-medicine-and-medical-education-in-the-age-of-ai",
         "publishedAt": "October 13, 2026"
+      },
+      {
+        title: 'Announcing Learn: OpenEvidence\'s Personalized Medical Education Platform',
+        publisher: 'OpenEvidence',
+        url: 'https://www.openevidence.foundation/announcements/announcing-learn',
+        publishedAt: 'November 4, 2026',
       },
       {
         "title": "Suki launches Ask with UpToDate Expert AI",
