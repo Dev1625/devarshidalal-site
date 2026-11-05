@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 111,
+  "revision": 112,
   "lock": {
     "owner": "daily-2026-11-04-1793847400589-w6qfvv",
     "acquiredAt": "2026-11-05T02:56:40.589Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "4f932c8e245451d180e8381f0fa47a53cad451cb",
-    "vercelDeploymentId": "dpl_A25vmTH3bfRU9C5Pz23thWap67ib",
-    "lastVerifiedAt": "2026-11-04T03:04:57.622Z",
+    "lastVerifiedSha": "6c5316ff4e0b1ec1859191af50b671e2c2319694",
+    "vercelDeploymentId": "dpl_GDY6iEv8nz9g1puR6fAXqZXby7nT",
+    "lastVerifiedAt": "2026-11-05T03:03:38.191Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-11-03",
-      "checkpointProvenance": "Published Ambience's Memorial Hermann ROI validation and Beeline's DISCOVERY recruiting protocol, with the vendor/public-dataset and Stage 1 dose-selection limits kept explicit.",
-      "sourceWindowStart": "2026-11-03T03:04:32.548Z",
-      "sourceWindowEnd": "2026-11-04T03:04:57.622Z",
-      "lastSuccessfulReviewAt": "2026-11-04T03:04:57.622Z",
-      "lastSuccessfulPublicationAt": "2026-11-04T03:04:57.622Z"
+      "lastSuccessfulEasternDate": "2026-11-04",
+      "checkpointProvenance": "Published OpenEvidence Learn and the Boehringer/SBP six-program option structure, with product-usage and contingent-deal limitations explicit.",
+      "sourceWindowStart": "2026-11-04T03:04:57.622Z",
+      "sourceWindowEnd": "2026-11-05T03:03:38.191Z",
+      "lastSuccessfulReviewAt": "2026-11-05T03:03:38.191Z",
+      "lastSuccessfulPublicationAt": "2026-11-05T03:03:38.191Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-31",
@@ -32,43 +32,7 @@
       "lastSuccessfulPublicationAt": "2026-11-01T02:09:46.071Z"
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-11-04",
-    "baseSha": "4f932c8e245451d180e8381f0fa47a53cad451cb",
-    "candidateSha": "6c5316ff4e0b1ec1859191af50b671e2c2319694",
-    "candidateTree": "210f539f42c9f92a94a9e1b3a7f73d60a81a373a",
-    "candidateBranch": "healthcare-daily-2026-11-04-openevidence-sbp",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-11-05T03:01:33.328Z",
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 242
-    },
-    "newEntryIds": [
-      "2026-11-openevidence-learn",
-      "2026-11-boehringer-sbp-options"
-    ],
-    "affectedMemos": [
-      "openevidence"
-    ],
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 242 notes, 1 prior thesis",
-      "build": "PASS exact tree 210f539f42c9f92a94a9e1b3a7f73d60a81a373a",
-      "preservation": "PASS model-only semantic and structural review; prior notes, thesis, company IDs, archives, forecasts, links and unrelated content retained; git diff check clean",
-      "writingReview": "Contextual Avoid AI Writing review completed; precise deal terms and evidence limits retained, with no unsupported personal claim or promotional inflation. Packaged deterministic detector/validator was unavailable from this skill host, so no score is claimed.",
-      "remoteTreeAndFileReadback": "PASS exact validated tree and both file blobs on isolated candidate branch"
-    },
-    "sourceUrls": [
-      "https://www.openevidence.foundation/announcements/announcing-learn",
-      "https://www.boehringer-ingelheim.com/human-health/boehringer-announces-new-oncology-partnership-sbp-group",
-      "https://www.en.sbpgroup.com/news-center/dynamic/25040.html"
-    ],
-    "limitations": "OpenEvidence discloses no Learn usage, learning outcomes, partner payments or separate revenue. The SBP agreement combines upfront and near-term payments without breaking them out; the $7 billion headline is contingent on option exercise and later development, regulatory and commercial milestones.",
-    "mainAdvancedAt": "2026-11-05T03:02:01.370Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -1259,6 +1223,62 @@
         "archives": "2 stable archived routes, turn-bio and evolutionaryscale, both HTTP 200",
         "affectedMemos": "Ambience and Beeline memo routes HTTP 200 with updated evidence, diligence and source markers",
         "home": "10 current, 2 past cases, 240 entries",
+        "vercel": "READY exact tested SHA on existing production domain"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-11-04",
+      "baseSha": "4f932c8e245451d180e8381f0fa47a53cad451cb",
+      "candidateSha": "6c5316ff4e0b1ec1859191af50b671e2c2319694",
+      "candidateTree": "210f539f42c9f92a94a9e1b3a7f73d60a81a373a",
+      "candidateBranch": "healthcare-daily-2026-11-04-openevidence-sbp",
+      "completedAt": "2026-11-05T03:03:38.191Z",
+      "result": "published-and-verified",
+      "commit": "6c5316ff4e0b1ec1859191af50b671e2c2319694",
+      "deploymentId": "dpl_GDY6iEv8nz9g1puR6fAXqZXby7nT",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 242
+      },
+      "newEntryIds": [
+        "2026-11-openevidence-learn",
+        "2026-11-boehringer-sbp-options"
+      ],
+      "affectedMemos": [
+        "openevidence"
+      ],
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 242 notes, 1 prior thesis",
+        "build": "PASS exact tree 210f539f42c9f92a94a9e1b3a7f73d60a81a373a",
+        "preservation": "PASS model-only semantic and structural review; prior notes, current/prior thesis, company IDs, archives, forecasts, links and unrelated content retained; git diff check clean",
+        "writingReview": "Contextual Avoid AI Writing review completed; precise deal terms and evidence limits retained, with no unsupported personal claim or promotional inflation. Packaged deterministic detector/validator was unavailable from this skill host, so no score is claimed.",
+        "remoteTreeAndFileReadback": "PASS exact validated tree and both file blobs on isolated candidate branch"
+      },
+      "sourceUrls": [
+        "https://www.openevidence.foundation/announcements/announcing-learn",
+        "https://www.boehringer-ingelheim.com/human-health/boehringer-announces-new-oncology-partnership-sbp-group",
+        "https://www.en.sbpgroup.com/news-center/dynamic/25040.html"
+      ],
+      "sourceWindowStart": "2026-11-04T03:04:57.622Z",
+      "sourceWindowEnd": "2026-11-05T03:03:38.191Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies, competitors and wider healthcare financing, licensing/M&A, clinical, trial, device, regulation, manufacturing and leadership developments. November 3 overlap was deduplicated. OpenEvidence's Learn launch and Boehringer/SBP's six-program option deal were the two material records added; other same-day company earnings, trial announcements and early device milestones did not alter a current case enough to justify quota-driven notes.",
+      "limitations": "OpenEvidence discloses no Learn usage, learning outcomes, partner payments or separate revenue. The SBP agreement combines upfront and near-term payments without breaking them out; the $7 billion headline is contingent on option exercise and later development, regulatory and commercial milestones.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "liveVerification": {
+        "following": "Both November 4 notes live with separate writing/event dates, evidence limits and original source links",
+        "filters": "Platform filter includes OpenEvidence Learn; M&A/licensing filter includes Boehringer/SBP",
+        "current": "10 current company cards retained",
+        "archives": "2 stable archived routes, turn-bio and evolutionaryscale, both HTTP 200",
+        "affectedMemos": "OpenEvidence memo HTTP 200 with Learn launch, 50,000+ question detail, November 4 review date and source",
+        "home": "10 current, 2 past cases, 242 entries",
         "vercel": "READY exact tested SHA on existing production domain"
       }
     }
