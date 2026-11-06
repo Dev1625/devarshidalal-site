@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 115,
+  "revision": 116,
   "lock": {
     "owner": "daily-2026-11-05-1793934258152-hp7mf9",
     "acquiredAt": "2026-11-06T03:04:18.152Z",
@@ -39,7 +39,7 @@
     "candidateSha": "63eb997e8c5a2204e10be94f53f02a121f18de85",
     "candidateTree": "acf55e614f8982892492f3ea5c67bc7f824be082",
     "candidateBranch": "healthcare-candidate-2026-11-05-63eb997e",
-    "stage": "validated-candidate",
+    "stage": "main-advanced-awaiting-vercel",
     "createdAt": "2026-11-06T03:09:17.127Z",
     "checks": {
       "npmCi": "PASS remote lockfile",
@@ -68,11 +68,12 @@
     "sourceCoverage": "Targeted delta searches across all ten current companies, competitors, official company and regulatory streams, and wider healthcare financing, licensing/M&A, clinical, trial, device, manufacturing and leadership developments. November 4 overlap was deduplicated. BioAge's Q3 disclosure directly answered a current runway question; other financings, approvals and trial announcements did not alter a current case enough to justify quota-driven notes.",
     "limitations": "BioAge's 2029 runway is a company estimate under its current operating plan. QUELL-CV is a dose-ranging hsCRP biomarker study, not a cardiovascular outcomes trial; the Q4 topline remains pending.",
     "verification": {
-      "mainAdvanced": false,
+      "mainAdvanced": true,
       "vercelReady": false,
       "domain": "devarshidalal.com",
       "liveChecked": false
-    }
+    },
+    "mainAdvancedAt": "2026-11-06T03:09:45.114Z"
   },
   "recentRuns": [
     {
