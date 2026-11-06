@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 116,
+  "revision": 117,
   "lock": {
     "owner": "daily-2026-11-05-1793934258152-hp7mf9",
     "acquiredAt": "2026-11-06T03:04:18.152Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "6c5316ff4e0b1ec1859191af50b671e2c2319694",
-    "vercelDeploymentId": "dpl_GDY6iEv8nz9g1puR6fAXqZXby7nT",
-    "lastVerifiedAt": "2026-11-05T03:03:38.191Z",
+    "lastVerifiedSha": "63eb997e8c5a2204e10be94f53f02a121f18de85",
+    "vercelDeploymentId": "dpl_uUBMmQ9g33d2Rb27qVmrTcDithB6",
+    "lastVerifiedAt": "2026-11-06T03:12:16.927Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-11-04",
-      "checkpointProvenance": "Published OpenEvidence Learn and the Boehringer/SBP six-program option structure, with product-usage and contingent-deal limitations explicit.",
-      "sourceWindowStart": "2026-11-04T03:04:57.622Z",
-      "sourceWindowEnd": "2026-11-05T03:03:38.191Z",
-      "lastSuccessfulReviewAt": "2026-11-05T03:03:38.191Z",
-      "lastSuccessfulPublicationAt": "2026-11-05T03:03:38.191Z"
+      "lastSuccessfulEasternDate": "2026-11-05",
+      "checkpointProvenance": "Published BioAge Q3 runway and trial-spend update, preserving the distinction between company-estimated funding, biomarker evidence and cardiovascular outcomes.",
+      "sourceWindowStart": "2026-11-05T03:03:38.191Z",
+      "sourceWindowEnd": "2026-11-06T03:09:17.127Z",
+      "lastSuccessfulReviewAt": "2026-11-06T03:12:16.927Z",
+      "lastSuccessfulPublicationAt": "2026-11-06T03:12:16.927Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-31",
@@ -32,49 +32,7 @@
       "lastSuccessfulPublicationAt": "2026-11-01T02:09:46.071Z"
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-11-05",
-    "baseSha": "6c5316ff4e0b1ec1859191af50b671e2c2319694",
-    "candidateSha": "63eb997e8c5a2204e10be94f53f02a121f18de85",
-    "candidateTree": "acf55e614f8982892492f3ea5c67bc7f824be082",
-    "candidateBranch": "healthcare-candidate-2026-11-05-63eb997e",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-11-06T03:09:17.127Z",
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 243 notes, 1 prior thesis",
-      "build": "PASS exact tree acf55e614f8982892492f3ea5c67bc7f824be082",
-      "preservation": "PASS deterministic validator; prior notes, current/prior thesis, company IDs, archives, forecasts, source links and unrelated content retained. Date/timing numeral warning reviewed and expected.",
-      "writingReview": "Bundled deterministic detector executed on complete changed passages in context: score 0, Clean. Legitimate clinical and financial terms retained.",
-      "remoteTreeAndFileReadback": "PASS exact validated tree and both file blobs on isolated candidate branch"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 243
-    },
-    "newEntryIds": [
-      "2026-11-bioage-q3-runway"
-    ],
-    "affectedMemos": [
-      "bioage-labs"
-    ],
-    "sourceUrls": [
-      "https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-reports-third-quarter-2026-financial-results-and"
-    ],
-    "sourceWindowStart": "2026-11-05T03:03:38.191Z",
-    "sourceWindowEnd": "2026-11-06T03:09:17.127Z",
-    "sourceCoverage": "Targeted delta searches across all ten current companies, competitors, official company and regulatory streams, and wider healthcare financing, licensing/M&A, clinical, trial, device, manufacturing and leadership developments. November 4 overlap was deduplicated. BioAge's Q3 disclosure directly answered a current runway question; other financings, approvals and trial announcements did not alter a current case enough to justify quota-driven notes.",
-    "limitations": "BioAge's 2029 runway is a company estimate under its current operating plan. QUELL-CV is a dose-ranging hsCRP biomarker study, not a cardiovascular outcomes trial; the Q4 topline remains pending.",
-    "verification": {
-      "mainAdvanced": true,
-      "vercelReady": false,
-      "domain": "devarshidalal.com",
-      "liveChecked": false
-    },
-    "mainAdvancedAt": "2026-11-06T03:09:45.114Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -1321,6 +1279,59 @@
         "archives": "2 stable archived routes, turn-bio and evolutionaryscale, both HTTP 200",
         "affectedMemos": "OpenEvidence memo HTTP 200 with Learn launch, 50,000+ question detail, November 4 review date and source",
         "home": "10 current, 2 past cases, 242 entries",
+        "vercel": "READY exact tested SHA on existing production domain"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-11-05",
+      "baseSha": "6c5316ff4e0b1ec1859191af50b671e2c2319694",
+      "candidateSha": "63eb997e8c5a2204e10be94f53f02a121f18de85",
+      "candidateTree": "acf55e614f8982892492f3ea5c67bc7f824be082",
+      "candidateBranch": "healthcare-candidate-2026-11-05-63eb997e",
+      "completedAt": "2026-11-06T03:12:16.927Z",
+      "result": "published-and-verified",
+      "commit": "63eb997e8c5a2204e10be94f53f02a121f18de85",
+      "deploymentId": "dpl_uUBMmQ9g33d2Rb27qVmrTcDithB6",
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 243
+      },
+      "newEntryIds": [
+        "2026-11-bioage-q3-runway"
+      ],
+      "affectedMemos": [
+        "bioage-labs"
+      ],
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 243 notes, 1 prior thesis",
+        "build": "PASS exact tree acf55e614f8982892492f3ea5c67bc7f824be082",
+        "preservation": "PASS deterministic validator; prior notes, current/prior thesis, company IDs, archives, forecasts, source links and unrelated content retained. Date/timing numeral warning reviewed and expected.",
+        "writingReview": "Bundled deterministic detector executed on complete changed passages in context: score 0, Clean. Legitimate clinical and financial terms retained.",
+        "remoteTreeAndFileReadback": "PASS exact validated tree and both file blobs on isolated candidate branch"
+      },
+      "sourceUrls": [
+        "https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-reports-third-quarter-2026-financial-results-and"
+      ],
+      "sourceWindowStart": "2026-11-05T03:03:38.191Z",
+      "sourceWindowEnd": "2026-11-06T03:09:17.127Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies, competitors, official company and regulatory streams, and wider healthcare financing, licensing/M&A, clinical, trial, device, manufacturing and leadership developments. November 4 overlap was deduplicated. BioAge's Q3 disclosure directly answered a current runway question; other financings, approvals and trial announcements did not alter a current case enough to justify quota-driven notes.",
+      "limitations": "BioAge's 2029 runway is a company estimate under its current operating plan. QUELL-CV is a dose-ranging hsCRP biomarker study, not a cardiovascular outcomes trial; the Q4 topline remains pending.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "liveVerification": {
+        "following": "243 entries; November 5 BioAge note visible with separate writing date, evidence limits, and primary-source attribution in the note/memo",
+        "filters": "Science and regulation view includes the BioAge clinical/runway note",
+        "current": "10 current company routes retained",
+        "archives": "2 stable archived routes, turn-bio and evolutionaryscale, both HTTP 200",
+        "affectedMemos": "BioAge memo HTTP 200 with Q4 catalyst, September 30 cash, company-estimated 2029 runway, updated diligence question, November 5 review date, and source",
+        "home": "10 current, 2 past cases, 243 entries",
         "vercel": "READY exact tested SHA on existing production domain"
       }
     }
