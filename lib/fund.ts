@@ -1819,7 +1819,7 @@ export const COMPANIES: Company[] = [
       { label: 'IPO', value: 'September 2024' },
       { label: 'Lead asset', value: 'BGE-102, oral brain-penetrant NLRP3 inhibitor' },
       { label: 'Discontinued', value: 'Azelaprag, December 6 2024, liver transaminitis' },
-      { label: 'Near-term catalyst', value: 'QUELL-CV Phase 2 topline, H2 2026' },
+      { label: 'Near-term catalyst', value: 'QUELL-CV Phase 2 topline, Q4 2026' },
     ],
     summary:
       'The thesis that drew me in was that GLP-1 drugs cause people to lose a large share of their weight as muscle rather than fat, which is dangerous specifically in older patients, and a drug preserving muscle during that treatment would be close to mandatory. I still think that argument is right. It was just not an argument about this drug. The company killed azelaprag on liver toxicity in December 2024 and has rebuilt around an NLRP3 inhibitor, which is arguably a more interesting company than the one I thought I owned.',
@@ -1867,6 +1867,11 @@ export const COMPANIES: Company[] = [
         "value": "First-target hits reported October 14, 2026; hit-to-lead optimization",
         "read": "These are collaborator-reported early discovery results, with success-based milestone amounts undisclosed. They do not establish a new clinical candidate."
       },
+      {
+        label: 'Cash and runway',
+        value: '$352.3M at September 30, 2026; company estimates funding through 2029',
+        read: 'Q3 R&D expense rose to $30.2M, mainly from the two BGE-102 trials and manufacturing. The balance sheet can fund the planned readouts, but the runway is a company estimate under its current operating plan.',
+      },
     ],
     competition:
       'NLRP3 is crowded, with programs at Novartis, Roche and several biotechs, and a mixed clinical history. On the cardiovascular inflammation thesis the reference point is colchicine and canakinumab, both of which showed that reducing inflammation reduces events and neither of which became a commercial success. That is the cautionary structure here: being right about the biology has not historically been sufficient.',
@@ -1893,7 +1898,7 @@ export const COMPANIES: Company[] = [
     diligence: [
       "How would a successful hsCRP result translate into the design, cost and timing of a cardiovascular outcomes trial?",
       "What is the full safety database on BGE-102 to date, particularly any hepatic signal given the azelaprag history?",
-      "What is cash on hand and runway through the DME readout?",
+      "How quickly do the two BGE-102 trials and manufacturing work consume the September 2026 cash balance?",
       "How does the hsCRP reduction compare quantitatively to canakinumab and to competing NLRP3 programs?",
       "What did the biobank actually contribute to identifying BGE-102, as opposed to the platform narrative?",
       "Has the azelaprag mechanism been abandoned entirely, or is a backup being pursued?",
@@ -1906,9 +1911,9 @@ export const COMPANIES: Company[] = [
       "A competitor NLRP3 program failing on outcomes despite biomarker success."
     ],
     view:
-      "My view as of October 2026 is that I asked the wrong question of QUELL-CV. It is a roughly 160-person, twelve-week dose-ranging study with hsCRP as its primary endpoint. It cannot establish fewer heart attacks. I expect biomarker activity, but the useful questions are dose response, safety and whether the result justifies the next trial. The October 2 filing makes the retinal comparison clearer: QUELL-DME tests visual acuity at week 12, with BGE-102 alone and alongside anti-VEGF. That is a separate functional question, with topline expected in H2 2027. I still like having a public company whose assumptions I can check against filings.",
+      "My view as of November 2026 is that I asked the wrong question of QUELL-CV. It is a roughly 160-person, twelve-week dose-ranging study with hsCRP as its primary endpoint. It cannot establish fewer heart attacks. Enrolment is complete and the readout is still expected this quarter; the useful questions are dose response, safety and whether the result justifies the next trial. QUELL-DME asks a separate functional question through visual acuity at week 12. BioAge reported $352.3 million of cash and marketable securities at September 30 and estimates funding through 2029, so the balance sheet should not force a financing before the planned readouts. I now want to see the burn as both trials and manufacturing scale.",
 
-    lastReviewed: "October 14, 2026",
+    lastReviewed: "November 5, 2026",
     sources: [
       {
         "title": "QUELL-CV trial design and primary endpoint",
@@ -1939,6 +1944,12 @@ export const COMPANIES: Company[] = [
         "publisher": "Deep Origin",
         "url": "https://deeporigin.com/news/deep-origin-announces-multi-target-collaboration-with-bioage-labs/",
         "publishedAt": "October 14, 2026"
+      },
+      {
+        title: 'Third-quarter 2026 financial results and business updates',
+        publisher: 'BioAge Labs',
+        url: 'https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-reports-third-quarter-2026-financial-results-and',
+        publishedAt: 'November 5, 2026',
       },
     ],
   },

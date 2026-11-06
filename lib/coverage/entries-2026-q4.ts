@@ -3,6 +3,28 @@ import type { CoverageEntry } from './types';
 // Notes written in Q4. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    id: '2026-11-bioage-q3-runway',
+    headline: 'BioAge can fund the readouts, while BGE-102 spend starts to show',
+    entryDate: 'November 5, 2026',
+    sortKey: '2026-11-05',
+    eventDate: 'November 5, 2026 results; September 30 balance sheet',
+    analysis:
+      'BioAge says QUELL-CV has completed enrolment at about 160 participants and still expects topline in the fourth quarter. The study compares three daily doses of BGE-102 with placebo over twelve weeks, with percent change in hsCRP as the primary endpoint. That makes the next result a dose-selection and biomarker readout, not evidence that the drug prevents cardiovascular events.\n\nThe more useful new information is financial. BioAge reported $352.3 million of cash, cash equivalents and marketable securities at September 30 and estimates that its current plan is funded through 2029. Third-quarter R&D expense rose to $30.2 million from $18.5 million a year earlier. The company attributes most of the increase to QUELL-CV, QUELL-DME and drug-product manufacturing. This is not a precise forecast of cash available at the 2027 eye readout, but it answers my basic runway question: the current balance sheet is not forcing an immediate financing before either planned dataset.\n\nI now want to see how quickly the two trials and manufacturing work consume that cushion, and whether a positive hsCRP result produces a credible next study rather than another biomarker claim. The company still expects the first APJ-program IND by year-end; that is a development target, not a clinical result.',
+    entryType: 'clinical',
+    scope: 'company',
+    relatedCompanyIds: ['bioage-labs'],
+    relatedEntryIds: ['2026-10-bioage-endpoint-correction'],
+    sources: [
+      {
+        title: 'BioAge Labs reports third-quarter 2026 results and business updates',
+        publisher: 'BioAge Labs',
+        url: 'https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-reports-third-quarter-2026-financial-results-and',
+        publishedAt: 'November 5, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
     id: '2026-11-openevidence-learn',
     headline: 'OpenEvidence turns its answer habit into a free education product',
     entryDate: 'November 4, 2026',
