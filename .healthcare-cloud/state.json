@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 121,
+  "revision": 122,
   "lock": {
     "owner": "daily-2026-11-06-1794020728187-7ncw8g",
     "acquiredAt": "2026-11-07T03:05:28.187Z",
@@ -9,19 +9,19 @@
   },
   "production": {
     "branch": "main",
-    "lastVerifiedSha": "63eb997e8c5a2204e10be94f53f02a121f18de85",
-    "vercelDeploymentId": "dpl_uUBMmQ9g33d2Rb27qVmrTcDithB6",
-    "lastVerifiedAt": "2026-11-06T03:12:16.927Z",
+    "lastVerifiedSha": "d771b0d39359a2f4fd163b03c281020e52d7cae6",
+    "vercelDeploymentId": "dpl_4TN887yDnFDCPubmVFFwg5Jg6jmj",
+    "lastVerifiedAt": "2026-11-07T03:15:57.547Z",
     "domain": "devarshidalal.com"
   },
   "reviews": {
     "daily": {
-      "lastSuccessfulEasternDate": "2026-11-05",
-      "checkpointProvenance": "Published BioAge Q3 runway and trial-spend update, preserving the distinction between company-estimated funding, biomarker evidence and cardiovascular outcomes.",
-      "sourceWindowStart": "2026-11-05T03:03:38.191Z",
-      "sourceWindowEnd": "2026-11-06T03:09:17.127Z",
-      "lastSuccessfulReviewAt": "2026-11-06T03:12:16.927Z",
-      "lastSuccessfulPublicationAt": "2026-11-06T03:12:16.927Z"
+      "lastSuccessfulEasternDate": "2026-11-06",
+      "checkpointProvenance": "Published the OpenEvidence/ACR patient-education integration while preserving the distinction between product distribution and evidence of patient use or outcomes.",
+      "sourceWindowStart": "2026-11-06T03:09:17.127Z",
+      "sourceWindowEnd": "2026-11-07T03:10:53.333Z",
+      "lastSuccessfulReviewAt": "2026-11-07T03:15:57.547Z",
+      "lastSuccessfulPublicationAt": "2026-11-07T03:15:57.547Z"
     },
     "saturday": {
       "lastSuccessfulEasternDate": "2026-10-31",
@@ -32,49 +32,7 @@
       "lastSuccessfulPublicationAt": "2026-11-01T02:09:46.071Z"
     }
   },
-  "pendingPublication": {
-    "kind": "daily",
-    "easternReviewDate": "2026-11-06",
-    "baseSha": "63eb997e8c5a2204e10be94f53f02a121f18de85",
-    "candidateSha": "d771b0d39359a2f4fd163b03c281020e52d7cae6",
-    "candidateTree": "7a65714805ab1393a36de59ec9a8c45f5b0a2b10",
-    "candidateBranch": "healthcare-candidate-2026-11-06-d771b0d3",
-    "stage": "main-advanced-awaiting-vercel",
-    "createdAt": "2026-11-07T03:10:53.333Z",
-    "checks": {
-      "npmCi": "PASS remote lockfile",
-      "checkHealthcare": "PASS: 10 current, 2 archived, 244 notes, 1 prior thesis",
-      "build": "PASS exact tree 7a65714805ab1393a36de59ec9a8c45f5b0a2b10",
-      "preservation": "PASS deterministic validator; prior notes, current/prior thesis, company IDs, archives, forecasts, source links and unrelated content retained. Review-date numeral warning inspected and expected.",
-      "writingReview": "Bundled deterministic detector executed on complete changed passages in context. New note score 0, Clean; memo passage classified human-only with one low-severity vocabulary-repetition flag attributable to the full technical passage.",
-      "remoteTreeAndFileReadback": "PASS exact validated tree and both file blobs on isolated candidate branch"
-    },
-    "counts": {
-      "current": 10,
-      "archived": 2,
-      "notes": 244
-    },
-    "newEntryIds": [
-      "2026-11-openevidence-acr-patient-education"
-    ],
-    "affectedMemos": [
-      "openevidence"
-    ],
-    "sourceUrls": [
-      "https://www.openevidence.foundation/announcements/american-college-of-rheumatology-and-openevidence-collaborate-to-expand-access-to-trusted-patient-education-resources"
-    ],
-    "sourceWindowStart": "2026-11-06T03:09:17.127Z",
-    "sourceWindowEnd": "2026-11-07T03:10:53.333Z",
-    "sourceCoverage": "Targeted delta searches across all ten current companies, official company and regulatory streams, competitors and wider healthcare financing, licensing/M&A, clinical, trial, device, manufacturing and leadership developments. November 5 overlap was deduplicated. The OpenEvidence/ACR collaboration was the one material current-company update; stale or pre-cutoff results and incremental non-current-company items were not promoted to quota-driven notes.",
-    "limitations": "The ACR collaboration announcement describes product distribution and intended sharing, not actual clinician use, patient comprehension, adherence, outcomes or commercial terms.",
-    "verification": {
-      "mainAdvanced": true,
-      "vercelReady": false,
-      "domain": "devarshidalal.com",
-      "liveChecked": false
-    },
-    "mainAdvancedAt": "2026-11-07T03:11:21.079Z"
-  },
+  "pendingPublication": null,
   "recentRuns": [
     {
       "kind": "setup-lock-test",
@@ -1374,6 +1332,62 @@
         "archives": "2 stable archived routes, turn-bio and evolutionaryscale, both HTTP 200",
         "affectedMemos": "BioAge memo HTTP 200 with Q4 catalyst, September 30 cash, company-estimated 2029 runway, updated diligence question, November 5 review date, and source",
         "home": "10 current, 2 past cases, 243 entries",
+        "vercel": "READY exact tested SHA on existing production domain"
+      }
+    },
+    {
+      "kind": "daily",
+      "easternReviewDate": "2026-11-06",
+      "baseSha": "63eb997e8c5a2204e10be94f53f02a121f18de85",
+      "candidateSha": "d771b0d39359a2f4fd163b03c281020e52d7cae6",
+      "candidateTree": "7a65714805ab1393a36de59ec9a8c45f5b0a2b10",
+      "candidateBranch": "healthcare-candidate-2026-11-06-d771b0d3",
+      "stage": "published-and-verified",
+      "createdAt": "2026-11-07T03:10:53.333Z",
+      "checks": {
+        "npmCi": "PASS remote lockfile",
+        "checkHealthcare": "PASS: 10 current, 2 archived, 244 notes, 1 prior thesis",
+        "build": "PASS exact tree 7a65714805ab1393a36de59ec9a8c45f5b0a2b10",
+        "preservation": "PASS deterministic validator; prior notes, current/prior thesis, company IDs, archives, forecasts, source links and unrelated content retained. Review-date numeral warning inspected and expected.",
+        "writingReview": "Bundled deterministic detector executed on complete changed passages in context. New note score 0, Clean; memo passage classified human-only with one low-severity vocabulary-repetition flag attributable to the full technical passage.",
+        "remoteTreeAndFileReadback": "PASS exact validated tree and both file blobs on isolated candidate branch"
+      },
+      "counts": {
+        "current": 10,
+        "archived": 2,
+        "notes": 244
+      },
+      "newEntryIds": [
+        "2026-11-openevidence-acr-patient-education"
+      ],
+      "affectedMemos": [
+        "openevidence"
+      ],
+      "sourceUrls": [
+        "https://www.openevidence.foundation/announcements/american-college-of-rheumatology-and-openevidence-collaborate-to-expand-access-to-trusted-patient-education-resources"
+      ],
+      "sourceWindowStart": "2026-11-06T03:09:17.127Z",
+      "sourceWindowEnd": "2026-11-07T03:10:53.333Z",
+      "sourceCoverage": "Targeted delta searches across all ten current companies, official company and regulatory streams, competitors and wider healthcare financing, licensing/M&A, clinical, trial, device, manufacturing and leadership developments. November 5 overlap was deduplicated. The OpenEvidence/ACR collaboration was the one material current-company update; stale or pre-cutoff results and incremental non-current-company items were not promoted to quota-driven notes.",
+      "limitations": "The ACR collaboration announcement describes product distribution and intended sharing, not actual clinician use, patient comprehension, adherence, outcomes or commercial terms.",
+      "verification": {
+        "mainAdvanced": true,
+        "vercelReady": true,
+        "domain": "devarshidalal.com",
+        "liveChecked": true
+      },
+      "mainAdvancedAt": "2026-11-07T03:11:21.079Z",
+      "completedAt": "2026-11-07T03:15:57.547Z",
+      "result": "published-and-verified",
+      "commit": "d771b0d39359a2f4fd163b03c281020e52d7cae6",
+      "deploymentId": "dpl_4TN887yDnFDCPubmVFFwg5Jg6jmj",
+      "liveVerification": {
+        "following": "244 entries; November 6 OpenEvidence note visible with separate writing/event date, evidence limits and original source attribution",
+        "filters": "Platforms view includes the OpenEvidence ACR patient-education note",
+        "current": "10 stable current company routes retained",
+        "archives": "2 stable archived routes, turn-bio and evolutionaryscale, both HTTP 200",
+        "affectedMemos": "OpenEvidence memo HTTP 200 with ACR fact-sheet detail, explicit usage/outcome limitations, November 6 review date and source link",
+        "home": "10 current, 2 past cases, 244 entries",
         "vercel": "READY exact tested SHA on existing production domain"
       }
     }
