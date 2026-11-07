@@ -3,6 +3,29 @@ import type { CoverageEntry } from './types';
 // Notes written in Q4. Underlying event dates are kept separate.
 export const ENTRIES_2026_Q4: CoverageEntry[] = [
   {
+    id: '2026-11-openevidence-acr-patient-education',
+    headline: 'OpenEvidence adds patient material to the evidence workflow',
+    entryDate: 'November 6, 2026',
+    sortKey: '2026-11-06',
+    eventDate: 'November 6, 2026 collaboration announcement',
+    analysis:
+      'OpenEvidence and the American College of Rheumatology are bringing ACR patient fact sheets into the product. When a clinical question is relevant, material on diseases, conditions and treatments can surface alongside the literature. The fact sheets are available in English and Spanish, link back to ACR and are meant to be shared with patients and caregivers.\n\nThis extends the product in a small but useful direction. OpenEvidence has mostly helped clinicians answer their own questions; the same workflow can now produce something a patient can take away. It also gives ACR distribution at the moment a clinician is deciding how to explain a diagnosis or treatment.\n\nThe announcement does not disclose how often clinicians share the material, whether patients understand or use it, or any commercial terms. I would want those measures before treating this as evidence of another moat or a patient outcome. For now it is a distribution and product-scope update.',
+    entryType: 'platform',
+    scope: 'company',
+    themes: ['clinical-ai'],
+    relatedCompanyIds: ['openevidence'],
+    relatedEntryIds: ['2026-11-openevidence-learn'],
+    sources: [
+      {
+        title: 'American College of Rheumatology and OpenEvidence collaborate to expand access to trusted patient education resources',
+        publisher: 'OpenEvidence',
+        url: 'https://www.openevidence.foundation/announcements/american-college-of-rheumatology-and-openevidence-collaborate-to-expand-access-to-trusted-patient-education-resources',
+        publishedAt: 'November 6, 2026',
+      },
+    ],
+    status: 'current-view',
+  },
+  {
     id: '2026-11-bioage-q3-runway',
     headline: 'BioAge can fund the readouts, while BGE-102 spend starts to show',
     entryDate: 'November 5, 2026',

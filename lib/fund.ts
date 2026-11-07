@@ -340,6 +340,11 @@ export const COMPANIES: Company[] = [
         read: 'The first release includes 50,000+ board-style questions, simulated cases, flashcards and CME. Hopkins and Penn are inviting users to test it, but OpenEvidence discloses no Learn usage, learning outcomes, partner payments or separate revenue.',
       },
       {
+        label: 'ACR patient education',
+        value: 'English- and Spanish-language fact sheets added November 6, 2026',
+        read: 'Relevant ACR material can surface alongside the literature for clinicians to share with patients and caregivers. The announcement gives no usage, comprehension, outcome or commercial data.',
+      },
+      {
         "label": "Defined usage and retention",
         "value": "703,265 monthly active users in June 2026; ~90% monthly retention in 2026",
         "read": "Active means at least one query in a month, not daily use. Retention means another query the next month, not an advertiser renewal."
@@ -375,6 +380,7 @@ export const COMPANIES: Company[] = [
       'What are the commercial terms of enterprise deployments such as Northwestern and NYU Langone: who pays, what is priced, and do the arrangements diversify revenue beyond advertising?',
       'For patient-aware deployments, which chart fields can OpenEvidence use, how are permissions enforced and how does a clinician audit the patient context behind an answer?',
       "How many users return to Learn after the first session, and do its questions or simulated cases improve performance? The launch names Hopkins and Penn as feedback partners but gives no usage, outcome or commercial data.",
+      'How often do clinicians share the ACR patient material, and is it understood or used? The launch describes distribution, not patient engagement or outcomes.',
     ],
     changeMyMind: [
       'Any regulatory action or credible journalism on advertiser influence over clinical answers.',
@@ -383,9 +389,9 @@ export const COMPANIES: Company[] = [
       'Disclosure that revenue depends on a small number of advertisers.',
     ],
     view:
-      "My view as of November 2026 is still favourable, but the September round changes the entry question. At $15 billion, the valuation is roughly 50 times Sacra’s estimated July annualised run rate and 30 to 38 times the Financial Times source’s projected 2026 advertising revenue. Both are estimates, not audited revenue. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic access and NYU Langone’s patient-aware integration strengthen the distribution case. Learn now extends the product into training and continuing education, but the launch gives no usage, outcomes or new revenue. JAMA adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
+      "My view as of November 2026 is still favourable, but the September round changes the entry question. At $15 billion, the valuation is roughly 50 times Sacra’s estimated July annualised run rate and 30 to 38 times the Financial Times source’s projected 2026 advertising revenue. Both are estimates, not audited revenue. The Doximity comparison makes me cautious about the advertising budget; it does not prove OpenEvidence took its growth specifically from Doximity. Northwestern’s Epic access and NYU Langone’s patient-aware integration strengthen the distribution case. Learn extends the product into training, while the ACR collaboration adds patient material inside the clinical workflow. Neither announcement provides usage, outcomes or new revenue. JAMA adds defined monthly usage retention. I still want advertiser concentration, enterprise terms and commercial retention.",
 
-    lastReviewed: "November 4, 2026",
+    lastReviewed: "November 6, 2026",
     sources: [
       {
         "title": "The $15bn 'viral' AI start-up changing how American doctors treat patients",
@@ -439,6 +445,12 @@ export const COMPANIES: Company[] = [
         publisher: 'OpenEvidence',
         url: 'https://www.openevidence.foundation/announcements/announcing-learn',
         publishedAt: 'November 4, 2026',
+      },
+      {
+        title: 'American College of Rheumatology and OpenEvidence collaborate to expand access to trusted patient education resources',
+        publisher: 'OpenEvidence',
+        url: 'https://www.openevidence.foundation/announcements/american-college-of-rheumatology-and-openevidence-collaborate-to-expand-access-to-trusted-patient-education-resources',
+        publishedAt: 'November 6, 2026',
       },
       {
         "title": "Suki launches Ask with UpToDate Expert AI",
